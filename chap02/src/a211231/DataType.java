@@ -1,4 +1,4 @@
-package chap02;
+package a211231;
 
 public class DataType {  //상수와 리터럴(constant & literal)
 	public static void main(String[] args) {

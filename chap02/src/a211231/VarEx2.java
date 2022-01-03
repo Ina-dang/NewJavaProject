@@ -1,4 +1,4 @@
-package chap02;
+package a211231;
 
 public class VarEx2 {
 	// 두 변수의 값을 교환하고 싶을 때 tmp 라는 임시저장공간을 만들어주기
