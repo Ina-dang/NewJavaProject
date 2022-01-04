@@ -1,4 +1,4 @@
-package chap02;
+package a211231;
 
 public class VarType {
 	public static void main(String[] args) { //참조변수 args의 파일 string[]

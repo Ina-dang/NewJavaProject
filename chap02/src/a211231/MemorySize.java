@@ -1,4 +1,4 @@
-package chap02;
+package a211231;
 
 public class MemorySize {
 	public static void main(String[] args) {
