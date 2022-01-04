@@ -70,7 +70,7 @@ public class PrimitiveType {//기본형 의 세부타입 들여다 볼 생각
 	 * int 주로 씀 
 	 * long 64비트는 이게 더나음 8바이트라 근데 연습이니까 int
 	 * 
-	 * long타입의 번위를 벗어나는 값을 다룰때는 실수형 타입이나 Biginteger클래스 사용
+	 * long타입의 범위를 벗어나는 값을 다룰때는 실수형 타입이나 Biginteger클래스 사용
 	 * 
 	 */
 
