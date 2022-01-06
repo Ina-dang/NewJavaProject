@@ -11,7 +11,7 @@ public class ScannerPrac {
 //	int c ; //선언만 해도됨
 	
 	System.out.print("첫번째 숫자를 입력하세요");
-	String input = scanner.nextLine();
+	String input = new String(scanner.nextLine());
 	int a = Integer.parseInt(input); // int 입력하면 중복선언이라 지워야함. (위에 선언이 없으면 int 입력)
 
 	System.out.print("두번째 숫자를 입력하세요");
