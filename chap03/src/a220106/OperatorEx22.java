@@ -7,8 +7,8 @@ public class OperatorEx22 {
 		double d2 = (double)f;
 		double d3 = .1f;
 		
-		
-		System.out.printf("10.0==10.0f %b%n", 10.0==10.0f);
+//자바 자꾸 똑같은거 왜하냬서 주석처리함		
+//		System.out.printf("10.0==10.0f %b%n", 10.0==10.0f);
 		System.out.printf("0.1==0.1f %b%n", .1==.1f);
 		System.out.printf("f  = %19.17f%n", f); //19.17 == 19자리 출력하고 17번째자리까지 소수점
 		System.out.printf("d  = %19.17f%n", d);
