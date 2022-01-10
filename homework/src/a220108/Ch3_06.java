@@ -9,7 +9,10 @@ public class Ch3_06 {
 	 * 변수 num 의 값이 24라면 6을 결과로 얻어야 한다. ()에 알맞은 코드를 넣으시오
 	 */
 	public static void main(String[] args) {
-		int num = 1634;
-		System.out.print(10-num%10);
+		int num = 24;
+		System.out.println(10-num%10);
+		System.out.println((num + 9)/10*10 - num);
+		
+		
 	}
 }

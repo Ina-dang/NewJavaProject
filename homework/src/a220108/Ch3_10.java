@@ -7,9 +7,9 @@ public class Ch3_10 {
 	 * 문자코드는 소문자가 대문자보다 32만큼 더 크다 
 	 */
 	public static void main(String[] args) {
-		char ch = 'B';
+		char ch = 'Z';
 		
-		char lowerCase= (char)(( ch>='A' && ch <='Z') ? (ch+32) : ch);
+		char lowerCase= (char)(( ch >= 'A' && ch <='Z') ? (ch+32) : ch);
 		
 		System.out.println("ch : "+ch);
 		System.out.println("ch to lowerCase : "+lowerCase);

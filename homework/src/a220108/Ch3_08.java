@@ -16,7 +16,7 @@ public class Ch3_08 {
 		long l = 3000 * 3000 * 3000l; //l적어주어야 int오버플로우 사라짐
 		
 		float f2 = 0.1f;
-		double d = 0.1;
+		double d = 0.1; //여기 형변환해두됨
 		
 		boolean result = d!=f2; //두개는 다르기때문
 		

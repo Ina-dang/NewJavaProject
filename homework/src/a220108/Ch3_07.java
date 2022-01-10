@@ -9,9 +9,11 @@ public class Ch3_07 {
 	 */
 	public static void main(String[] args) {
 		int fahrenheit = 100;
-		float celcius = (int)(5/9f * (fahrenheit-32)*100 + 0.5f)/100f;
+		float celcius = (int)(5/9f * (fahrenheit-32)*100 + 0.5)/100f;
 						
 		System.out.println("Fahrenheit : " + fahrenheit);
 		System.out.println("Celcius : " + celcius);
+		
+		//선생님 답 또같음~!
 	}
 }

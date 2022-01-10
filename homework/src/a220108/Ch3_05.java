@@ -10,5 +10,7 @@ public class Ch3_05 {
 		int num = 777;
 //		System.out.println((int)Math.ceil(num/10)*10+1);
 		System.out.println(num/10*10+1);
+
+		System.out.println(num - num%10+1);
 	}
 }
