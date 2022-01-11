@@ -20,7 +20,7 @@ public class Homework {//윷놀이 만들어오기
 		
 	Scanner scanner = new Scanner(System.in);
 	System.out.print("던지려면 아무 단어나 입력하시오 >> ");
-	String input = scanner.nextLine();
+//	String input = scanner.nextLine(); 이거없으면 바로 윷던져짐
 	
 	int num = (int)(Math.random() * 16) + 1;
 	if (num <= 4) {
@@ -34,6 +34,7 @@ public class Homework {//윷놀이 만들어오기
 	} else
 		System.out.println("모");
 	
+
 	scanner.close();
 	}
 }

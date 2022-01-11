@@ -41,7 +41,6 @@ public class FlowEx7 {
 //			int com = (int)(Math.random() * 6 ) + 1 + (int)(Math.random() * 6 ) + 1
 					  // 이렇게 주사위 두 개 처럼 두 번 굴려야한다
 			
-			
 //			윷놀이로 예시
 //			0000 : 윷 1/16
 //			0111 : 
