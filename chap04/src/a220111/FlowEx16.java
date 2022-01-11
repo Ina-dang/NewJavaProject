@@ -13,11 +13,11 @@ public class FlowEx16 {
 		for(int i= 0; i < 5; i++) {
 			for(int j= 0; j < 5; j++) {
 						//여기를 제어하는건 좋지않은 습관
-				boolean b = i >= j ; //if보다 boolean으로 넣으면 나중에 바꾸기 슆다
+				boolean b = i == j ; //if보다 boolean으로 넣으면 나중에 바꾸기 슆다
 				if(b) {
 					//여기에 하나 더 if를 끼어넣어준다
-					System.out.print("*");
-//					System.out.printf("[%d,%d]", i, j);
+//					System.out.print("*");
+					System.out.printf("[%d,%d]", i, j);
 				} else {
 //					System.out.print("");
 				}

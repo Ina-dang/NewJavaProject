@@ -19,7 +19,7 @@ public class Homework {//윷놀이 만들어오기
 		 */
 		
 	Scanner scanner = new Scanner(System.in);
-	System.out.print("던지려면 아무 단어나 입력하시오 >> ");
+	System.out.print("윷놀이>> ");
 //	String input = scanner.nextLine(); 이거없으면 바로 윷던져짐
 	
 	int num = (int)(Math.random() * 16) + 1;
