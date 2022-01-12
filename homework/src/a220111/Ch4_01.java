@@ -38,9 +38,9 @@ public class Ch4_01 {
 //		int a = 3;
 //		String str = a >= 3 ? "yes" : "false"; 
 //		System.out.println(str);
-		String str = "yes";
-		boolean b9 = str.equals("yes");
+//		String str = "yes";
+//		boolean b9 = str.equals("yes");
 		
-		int value = (int)(Math.random() * 6) + 1 ;		
+//		int value = (int)(Math.random() * 6) + 1 ;		
 	}
 }
