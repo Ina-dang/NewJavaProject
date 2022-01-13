@@ -8,7 +8,7 @@ public class Array { //배열
 //		int result = 0;
 		int i = 10;
 		System.out.println(value);
-		int [] score = new int [8]; //배열 선언
+		int [] score = new int [5]; //배열 선언
 		System.out.println(score[0]);
 		System.out.println(score[1]);
 		System.out.println(score[2]);

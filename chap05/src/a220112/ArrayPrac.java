@@ -20,8 +20,8 @@ public class ArrayPrac {
 		for(int i = 0; i < tmp.length; i++) {
 			tmp[i] = arr[i]; // arr[i]의 값 (i + 1) * 4 를 tmp[i]에 저장
 							
-//		tmp = arr; // 주소 연결이 tmp 로 바뀜 책처럼 쓰면 배정안되는디..?
-		arr = tmp;
+		tmp = arr; // 주소 연결이 tmp 로 바뀜 책처럼 쓰면 배정안되는디..?
+//		arr = tmp;
 		
 		System.out.println(tmp[i]);
 		// arr 배열은 더 이상 사용할 수 없고 JVM가비지 컬렉터에 의해서 자동적으로 메모리에서 제거된다
