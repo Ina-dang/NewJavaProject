@@ -7,6 +7,7 @@ public class Ch5_07 {
 //	프로그램을 완성하시오.
 	
 //	[Hint] 나눗셈 연산자와 나머지 연산자를 사용해야 한다.
+	
 //	문제 5-6에 동전의 개수를 추가한 프로그램이다. 커맨드라인으로부터 거슬러 줄
 //	금액을 입력받아 계산한다. 보유한 동전의 개수로 거스름돈을 지불할 수 없으면, ‘거스름
 //	돈이 부족합니다.’라고 출력하고 종료한다. 지불할 돈이 충분히 있으면, 거스름돈을 지불
@@ -27,9 +28,26 @@ public class Ch5_07 {
 		int[] coinUnit = {500, 100, 50, 10};  // 동전의 단위
 		int[] coin     = {5  , 5  , 5 , 5 };  // 단위별 동전의 개수
 		
-		for (int i = 0; i < coinUnit.length; i++) {
+//			1. 초기화	2. 조건식			4.증감식  -> 참일경우 다시 조건식~ 조건 달성까지	
+		System.out.println("=1====1========1======1======" + money);	
+		for (int i = 0; i < coinUnit.length; i++) { // 부터 coinUnit길이(4)까지 1씩증가
+//			3. 문장
 			int coinNum = 0;
-		
+			coinNum = money / coinUnit[i] ; //1 필요한 동전의 개수 구하기
+			System.out.println(coinNum);
+			//6이나와서 if 로 걸러냄
+			if (coin[i] >= coinNum) {  //5 >= 코인이 코인넘보다 클 때
+				
+				coin[i] -= coinNum; // 5 = 5 - coinNum;
+				
+			} else { //5가 coinNum보다 작을때
+				coinNum = coin[i]; 
+				coin[i] = 0;
+			}
+			
+				 money -= (coinNum * coinUnit[i]);// 금액에서 (동전의 개수와 동전단위를 곱한값)을 뺀다
+				 System.out.println("==---for문싸이클---------===" + money);
+//			money = money - coinNum * coinUnit[i];돈 = 돈 - 동전갯수 * 동전단위
 			/*
 			 * 아래의 로직에 맞게 코드를 작성하시오
 			 * 1. 금액(money)를 동전단위로 나눠서 필요한 동전의 개수(coinNum)를 구한다
