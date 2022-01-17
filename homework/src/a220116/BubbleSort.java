@@ -13,7 +13,7 @@ public class BubbleSort { //버블정렬
 			boolean changed = false;
 			
 			for (int j = 0; j < numArr.length-1-i; j++) { 
-				if(numArr[j] > numArr[j+1]) {
+				if(numArr[j] > numArr[j+1]) { 
 				int temp = numArr[j];
 				numArr[j] = numArr[j+1];   // =====================> 이 부분 잘 정렬하기
 				numArr[j+1] = temp;
