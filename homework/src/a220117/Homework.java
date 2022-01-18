@@ -2,7 +2,7 @@ package a220117;
 
 import java.util.Scanner;
 
-public class homework { 
+public class Homework { 
 /*
  * ﻿
 오늘 과제
