@@ -6,7 +6,6 @@ public class StudentEx {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		//이거 왜 들어가는지 과정이 정확히 이해가 안됨
 		StudentService service = new StudentService();
 		
 		for (boolean b = true ; b ;) {

@@ -17,7 +17,14 @@ class Student {
 	int eng;
 	int math;
 	
-	Student(){ //持失切
 	
-	}
+	Student(String n, String n1, int k, int e, int m){ //持失切
+			no = n;
+			name = n1;
+			kor = k;
+			eng = e;
+			math = m;
+
+// sum, avg 嬢追隔
+		}
 }
