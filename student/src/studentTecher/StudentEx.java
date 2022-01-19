@@ -3,6 +3,7 @@ package studentTecher;
 import java.util.Scanner;
 
 public class StudentEx { //Ex가 실행부분이 있다는 뜻
+	public static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args) { //메인메서드 추우가아
 //		Student student = new Student(); // 이게 학생 한 명 이라는 뜻
 //		student.no = "220001"; //학생한테 학번 부여
@@ -15,7 +16,6 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 //		System.out.println(student.sum());
 //		System.out.println(student.avg());
 		
-		Scanner scanner = new Scanner(System.in);
 		StudentService service = new StudentService();
 		
 		

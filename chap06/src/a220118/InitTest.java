@@ -1,7 +1,7 @@
 package a220118;
 
 public class InitTest {
-	public static void main(String[] args) { 
+	public static void main(String[] args) { //클래스가 로드될때 클래스는 초기화됨
 		
 //		System.out.println(Init.si);
 //		System.out.println(Init.si);
