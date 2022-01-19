@@ -1,6 +1,6 @@
 package studentEx;
 
-class Student {
+class Student1 {//¼³°èµµ
 	
 	//ava ctr mtd ¼ø¼­
 	
@@ -11,11 +11,18 @@ class Student {
 	int eng;
 	int math;
 	
-	public Student() {
+	public Student1() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Student(String no, String name, int kor, int eng, int math) {
+	public Student1(String name, int kor, int eng, int math) {
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+	}
+	
+	public Student1(String no, String name, int kor, int eng, int math) {
 		this.no = no;
 		this.name = name;
 		this.kor = kor;
@@ -31,4 +38,15 @@ class Student {
 	double avg() {
 		return (int)(sum() / 3d * 100) / 100d;
 	}
+	
+	//Á¶È¸ Ãâ·ÂºÎºÐ
+	public String toString() {
+		String[] names = {"±è°æº¸", "±èµ¿¿±", "±è»óÇö", "±è½ÂÁ¾", "±è¿¹Âù", "±èÄ¡Çü", "±èÅÂÀ±"};
+		
+		return String.format("%s \t %s\t  %d\t %d\t %d\t %d\t %s", no, name, kor, eng, math, sum(), avg());
+	}
+	
+	//¼öÁ¤ Ãâ·ÂºÎºÐ »ý¼ºÀÚ º¹»ç
+	
+	
 }

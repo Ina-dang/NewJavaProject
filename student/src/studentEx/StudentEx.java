@@ -3,10 +3,10 @@ package studentEx;
 import java.util.Scanner;
 
 public class StudentEx {
+	public static Scanner scanner = new Scanner(System.in); //스캐너 클래스 변수 지정 후 광역사용
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
 		
-		StudentService service = new StudentService();
+		StudentService service = new StudentService(); //StudentService타입의 service 인스턴스 객체 생성
 		
 		for (boolean b = true ; b ;) {
 			System.out.print("1.학생조회 2.학생등록 3.학생정보수정. 학생삭제. 5.종료 >> ");
@@ -20,7 +20,7 @@ public class StudentEx {
 				service.register();
 				break;
 			case 3:
-				System.out.println("학생 정보 수정입니다");
+				service.modify();
 				
 				break;
 			case 4:

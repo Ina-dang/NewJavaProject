@@ -88,7 +88,6 @@ public class Student {
 	}
 	
 	//생성자 메서드 
-//	Student student2 = new Student("220002", "고길동", 80, 70, 50);
 	public static void main(String[] args) {
 		Student student2 = new Student("220003", "혼길돈", 80, 40, 30);
 		Student student3 = new Student(80, 90, 90);
