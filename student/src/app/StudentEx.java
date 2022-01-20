@@ -1,6 +1,8 @@
-package studentTecher;
+package app;
 
+import static utils.StudentUtil.*;
 import java.util.Scanner;
+import service.StudentService;
 
 public class StudentEx { //Ex가 실행부분이 있다는 뜻
 	public static Scanner scanner = new Scanner(System.in);
@@ -10,8 +12,8 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 //		student.name = "홍길동";
 //		student.kor = 90;
 //		student.eng = 86;
-//		student.math = 44;
-//		
+//		student.math = 44;1
+		
 //		System.out.println(student); //이렇게 하면 주소만 나옴
 //		System.out.println(student.sum());
 //		System.out.println(student.avg());
@@ -21,8 +23,10 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 		
 		for (boolean b = true ; b ;) { 
 //		while(true) {
-			System.out.print("1.학생조회 2.학생등록 3.학생정보수정. 학생삭제. 5.종료 >> ");
-			int input = Integer.parseInt(scanner.nextLine());
+//			System.out.print("1.학생조회 2.학생등록 3.학생정보수정. 학생삭제. 5.종료 >> ");
+//			int input = parseInt(scanner.nextLine());
+			
+			int input = nextInt("1.학생조회 2.학생등록 3.학생정보수정. 학생삭제. 5.종료 ");
 			
 			switch (input) {
 			case 1:
@@ -34,7 +38,7 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 				
 				break;
 			case 3:
-				System.out.println("학생 정보 수정입니다");
+				service.modify();
 				
 				break;
 			case 4:

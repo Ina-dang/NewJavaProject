@@ -1,4 +1,4 @@
-package studentTecher;
+package domain;
 
 import java.util.Arrays;
 
@@ -10,11 +10,11 @@ import java.util.Arrays;
 public class Student {
 	// 학번, 이름, 국어, 영어, 수학
 	
-	String no; 
-	String name;
-	int kor;               //==> int kor = 1; 명시적초기화  
-	int eng;
-	int math;
+	public String no; 
+	public String name;
+	public int kor;               //==> int kor = 1; 명시적초기화  
+	public int eng;
+	public int math;
 	
 	{
 		//인스턴스초기화
@@ -27,10 +27,6 @@ public class Student {
 	}
 	
 	
-	
-	
-	
-//	static String schoolName = "휴먼초등학교"; //위에 학생은 이름이 바뀌지만 학교 이름은 안바뀌니까 static
 	
 	//생성자 목적 : 인스턴스 초기화
 	// 인스턴스 초기화 작업이 요구되어지지않는다면 각 값을 따로 입력해야함 => 코드 라인이 길어짐
@@ -50,20 +46,10 @@ public class Student {
 	// 위에 처럼 쓰면 괄호 String no라고 썼을때 서로 다른걸 가리키게된다
 	// 
 	public Student() {
-		this("220003", "혼길돈", 80, 40, 30);
 	}
+
 	
-	public Student(int kor, int eng, int math){
-		this("220003", "혼길돈", 80, 40, 30);
-	}
-	
-	public Student(String no, String name){
-		this(70,70,70);
-		this.no = no;
-		this.name = name;
-	}
-	
-	Student(String no, String name, int kor, int eng, int math){
+	public Student(String no, String name, int kor, int eng, int math){
 		this.no = no;
 		this.name = name;
 		this.kor = kor;
@@ -87,23 +73,18 @@ public class Student {
 		return (int)(sum() / 3d * 100) /100d;
 	}
 	
+	public String toString() { //format으로 하는게 가장 좋음
+		String str = no + "    "+ name + "    " + kor + "    " + eng + "    " + math +
+				"    " + sum() + "    " + avg() ; 
+
+		return str;
+	}
+	
+	
 	//생성자 메서드 
 	public static void main(String[] args) {
-		Student student2 = new Student("220003", "혼길돈", 80, 40, 30);
-		Student student3 = new Student(80, 90, 90);
-		System.out.println(student2.no + "\t\t" + student2.name + "\t\t" + student2.kor + "\t" + student2.eng + "\t" + student2.math);
-		System.out.println(student3.no);
-		System.out.println(student3.name);
-		System.out.println(student3.kor);
 	
-	
-	int[] arr1 = {3,4,5,6};
-	int[] arr2 = arr1; // 복사
-	int[] arr3 = arr1.clone(); // 복제
-	System.out.println(Arrays.toString(arr2));
-	
-//	Student student5= student3.clone(); //컨버트 안된다고 오류뜸
-//	Student student5 = (Student)student3.clone(); //컨버트 안된다고 다른오류뜸
-	
+	 Student student = new Student("220005", "김길동", 90, 80, 70);
+	 System.out.println(student);
 	}
 }

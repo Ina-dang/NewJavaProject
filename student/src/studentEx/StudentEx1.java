@@ -1,16 +1,17 @@
 package studentEx;
 
 import java.util.Scanner;
+import static utils.StudentUtil.*; 
 
-public class StudentEx {
+public class StudentEx1 {
 	public static Scanner scanner = new Scanner(System.in); //스캐너 클래스 변수 지정 후 광역사용
 	public static void main(String[] args) {
 		
-		StudentService service = new StudentService(); //StudentService타입의 service 인스턴스 객체 생성
+		StudentService1 service = new StudentService1(); //StudentService타입의 service 인스턴스 객체 생성
 		
 		for (boolean b = true ; b ;) {
-			System.out.print("1.학생조회 2.학생등록 3.학생정보수정. 학생삭제. 5.종료 >> ");
-			int input = Integer.parseInt(scanner.nextLine());
+			
+			int input = nextInt("1.학생조회 2.학생등록 3.학생정보수정. 학생삭제. 5.종료 >> ");
 			
 			switch (input) {
 			case 1:

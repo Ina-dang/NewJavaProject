@@ -1,25 +1,22 @@
-package studentTecher;
+package service;
+
+import static utils.StudentUtil.*;
+
+import app.StudentEx;
+import domain.Student;
 
 public class StudentService {
 	
 	// 01/17 : Student 필드 정의, main 메서드 메뉴 정리
 	// 01/18 : 생성자 작성, 조회기능, 등록기능 구현
 	// 01/19 : toString정의, 수정기능 구현
+	// 01/20 : 패키지 분리, 
+//			Student : student.domain에존재
+//			StudentEx : student.app에 존재
+//			StudentService : student.service에 존재
+//			StudentUtil : student.utils에 존재
+//						, 모든 필드에 private 적용 (get,set), 삭제 기능 구현
 	
-// 기능 담당 클래스
-	//MVC Model View Controller
-	/*
-	 * 스프링 MVC 이해
-	 * 
-	 * Model
-	 * 
-	 * 브라우저를 통해 들어온걸
-	 * 요청처리 컨트롤러로 하고
-	 * DB처리 모델처리후 
-	 * 뷰를통해 보여줌
-	 * 
-	 * 서비스 = business logic
-	 */
 	//객체배열 인스턴스변수 
 	Student[] students = new Student[10]; //학생들 관리
 	
@@ -44,17 +41,7 @@ public class StudentService {
 	 * 맨밑에 main 만들어서 설명할것
 	 */
 	
-//	public StudentService() { //StudentService 기본생성자 => 인자없이 할때 생성
-//		// TODO Auto-generated constructor stub
-//	}
-	
-//							  //초기화블럭
-//	public StudentService() { //스튜던트서비스 생성자
-//		for (int i = 0; i < 5; i++) {
-//			students[i] = new Student("220001", "홍길동", 80, 80, 80);
-//		} //for문은 항상 매서드 내에 있어야하고, print도 메서드 몸통에 있어야함 
-//	}	  // ,but {}블럭처리 해주면 생성자 내부로 인식돼서 가넝
-//	
+
 	//220119 추가
 	String[] names = {"김경보", "김동엽", "김상현", "김승종", "김예찬", "김치형", "김태윤"};
 	
@@ -71,8 +58,7 @@ public class StudentService {
 	
 //	students[cnt++] = new Student("220001", "고길동", 80, 80, 80); //원래 이렇게 생겼다
 //	students[cnt++] = new Student("220002", "이길동", getScore(), getScore(), getScore());
-//	students[cnt++] = new Student(220000 + cnt + 1 + "", "고길동", getScore(), getScore(), getScore()); //원래 이렇게 생겼다
-//	students[cnt++] = new Student("220003", "고길동", 80, 80, 80); //원래 이렇게 생겼다
+//	students[cnt++] = new Student(220000 + cnt + 1 + "", "고길동", getScore(), getScore(), getScore()); 
 	
 	//220119 추가  랜덤값을 추가해서 위쪽 점수에 값초기화
 	int getScore() {
@@ -81,44 +67,24 @@ public class StudentService {
 	
 	
 	
-//	CRUD Create Read U? Delete
+
 	// 1. 조회
 	//모든 메서드는 void로 해서 리턴안함
-	void list() {
-		//위에 들어간 학생데이터로
-		//조회기능 구현
-
-		System.out.println("학번\t\t이름\t\t국어\t영어\t수학\t총점\t평균");
-		System.out.println("=====================================================================");
-//		for (int i = 0; i < cnt; i++) { //인스턴스 메서드끼리 는 클래스 안붙임
-		for (int i = 0; i < students.length; i++) { //인스턴스 메서드끼리 는 클래스 안붙임
-			if(students[i] != null) { //null이 아닐때.
-//			System.out.print(students[i].no);
-//			System.out.print("    ");
-//			System.out.print(students[i].name);
-//			System.out.print("    ");
-//			System.out.print(students[i].kor);
-//			System.out.print("    ");
-//			System.out.print(students[i].eng);
-//			System.out.print("    ");
-//			System.out.print(students[i].math);
-//			System.out.print("    ");
-//			System.out.print(students[i].sum());
-//			System.out.print("    ");
-//			System.out.print(students[i].avg());
-//			System.out.println();
-			System.out.print(students[i].no + "\t\t" + students[i].name + "\t\t" + students[i].kor + "\t" + students[i].eng + "\t" + students[i].math + "\t" + students[i].sum() + "\t" + students[i].avg() +"\n" );
-
+	public void list() {
+		//위에 들어간 학생데이터로 조회기능 구현
+		System.out.println("학번\t   이름\t   국어\t  영어\t수학  총점   평균");
+		System.out.println("========================================================");
+		for (int i = 0; i < cnt; i++) { //인스턴스 메서드끼리 는 클래스 안붙임
 			
 //	220119		// toString 사용해서 변경하셈 
-			
-			
-			}//이렇게 하나하나 적어야 하는거였구나 
-		} //null 확인하고 초기화 시키고 .. 순서가 너모헷갈립니다
-	}
+			System.out.println(students[i]);
+		}
+	}//void list() 끝
+	
+	
 	
 	// 2. 등록
-	void register() { //자동으로 리턴값 o, 생성자는 리턴값이 없다
+	public void register() { //자동으로 리턴값 o, 생성자는 리턴값이 없다
 
 		//등록기능 구현
 		
@@ -136,46 +102,48 @@ public class StudentService {
 		 */
 		
 		//1 데이터 입력받기
-		System.out.print("학번>");
-		String no = StudentEx.scanner.nextLine();
-		System.out.print("이름>");
-		String name = StudentEx.scanner.nextLine();
-		System.out.print("국어>");
-		int kor = Integer.parseInt(StudentEx.scanner.nextLine());
-		System.out.print("영어>");
-		int eng = Integer.parseInt(StudentEx.scanner.nextLine());
-		System.out.print("수학>");
-		int math = Integer.parseInt(StudentEx.scanner.nextLine());
+//		System.out.print("학번>");
+//		String no = StudentEx.scanner.nextLine();
+		
 		//2 입력받은 데이터를 학생타입의 인스턴스로 생성 ==> 1번 입력 다해야한다
-		Student student = new Student(no, name, kor, eng, math);
+		students[cnt++] = new Student(nextLine("학번> "), nextLine("이름> "), nextInt("국어>"), 
+										nextInt("영어>"), nextInt("수학>") );
+		
 //220119		//3 students 배열의 cnt위치에 대입
-//		students[cnt++] = student; 로 변경
+//		students[cnt++] = student;
 		//3 students 배열의 null위치에 대입
-		for (int i = 0; i < students.length; i++) {
-			if (students[i] == null) {
-				break;			
-			}
-		}
+
 	}
-	
 	
 	// 3. 수정
-	void modify() {
+	public void modify() {
 		//학번으로 학생을 탐색 후 학생 데이터 중 이름 , 성적 수정
-		//덮어쓰기
-	}
+		System.out.println("수정할 학생의 학번 >> ");
+		String no = StudentEx.scanner.nextLine(); 
+		for (int i = 0; i < cnt; i++) {
+			if (students[i].no.equals(no)) { //equals 확인
+				System.out.println(students[i]);
+				System.out.print("이름>");
+				String name = StudentEx.scanner.nextLine();
+				System.out.print("국어>");
+				int kor = Integer.parseInt(StudentEx.scanner.nextLine());
+				System.out.print("영어>");
+				int eng = Integer.parseInt(StudentEx.scanner.nextLine());
+				System.out.print("수학>");
+				int math = Integer.parseInt(StudentEx.scanner.nextLine());
+				students[i].name = name;
+				students[i].kor = kor;
+				students[i].eng = eng;
+				students[i].math = math;
+			}
+		}
+	}//modify 끝
+	
+	
 	
 	// 4. 삭제
 	
-	
-	
-	
-	////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////////////
+
 	////////////////////////////////////////////////////////////////////////
 	public static void main(String[] args) {
 		/*
