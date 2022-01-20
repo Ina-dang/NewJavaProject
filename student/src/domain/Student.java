@@ -10,12 +10,31 @@ import java.util.Arrays;
 public class Student {
 	// 학번, 이름, 국어, 영어, 수학
 	
-	public String no; 
-	public String name;
-	public int kor;               //==> int kor = 1; 명시적초기화  
-	public int eng;
-	public int math;
+	private String no; 
+	private String name;
+	private int kor;               //==> int kor = 1; 명시적초기화  
+	private int eng;
+	private int math;
 	
+	public String getNo() {return no;}
+	public void setNo(String no) {this.no = no;}
+
+	public String getName() {return name;}
+	public void setName(String name) {this.name = name;}
+
+
+	public int getKor() {return kor;}
+	public void setKor(int kor) {this.kor = kor;}
+
+
+	public int getEng() {return eng;}
+	public void setEng(int eng) {this.eng = eng;}
+
+
+	public int getMath() {return math;}
+	public void setMath(int math) {this.math = math;}
+
+
 	{
 		//인스턴스초기화
 		//주로생성자사용
@@ -34,17 +53,7 @@ public class Student {
 	
 	//생성자 
 //	Student(){}
-//		
-//	Student(String String, String String2, int k, int e, int m){
-//		no = String;
-//		name = String2;
-//		kor = k;
-//		eng = e;
-//		math = m;
-//	}
-	
-	// 위에 처럼 쓰면 괄호 String no라고 썼을때 서로 다른걸 가리키게된다
-	// 
+ 
 	public Student() {
 	}
 

@@ -22,26 +22,9 @@ public class StudentService {
 	
 	//220119 추가
 	int cnt; // 인트타입 카운트. 여기에 현재학생인원수 담을거
-		//이거 넣으면 장점
-	
-	
-	//학생 데이터 여기에 들어갈 예정
-	
-//	↓ 이게 어려운이유	
-	// Student 자체가 이미 참조자료형
-	// []배열 도 참조자료형
-	// 참조자료형을 참조했다
-	
-	// 사실 문자열 배열도 같은 내용이긴한데 String[] 한단계 벗기면 String 기본형이 되는데 저건 참졸 벗겨도 참조
-	// 킹받음
-	
-	/*
-	 * 어떠한 public 클래스에서도 출력 가넝
-	 * 
-	 * 맨밑에 main 만들어서 설명할것
-	 */
-	
 
+	
+	
 	//220119 추가
 	String[] names = {"김경보", "김동엽", "김상현", "김승종", "김예찬", "김치형", "김태윤"};
 	
@@ -54,17 +37,10 @@ public class StudentService {
 			cnt++;
 		} //for문은 항상 매서드 내에 있어야하고, print도 메서드 몸통에 있어야함 
 	}	  // ,but {}블럭처리 해주면 생성자 내부로 인식돼서 가넝
-	
-	
-//	students[cnt++] = new Student("220001", "고길동", 80, 80, 80); //원래 이렇게 생겼다
-//	students[cnt++] = new Student("220002", "이길동", getScore(), getScore(), getScore());
-//	students[cnt++] = new Student(220000 + cnt + 1 + "", "고길동", getScore(), getScore(), getScore()); 
-	
-	//220119 추가  랜덤값을 추가해서 위쪽 점수에 값초기화
+
 	int getScore() {
 		return (int)(Math.random()*41)+60;
 	}
-	
 	
 	
 
@@ -114,14 +90,16 @@ public class StudentService {
 		//3 students 배열의 null위치에 대입
 
 	}
-	
+	Student student = new Student();
+
 	// 3. 수정
+	
 	public void modify() {
 		//학번으로 학생을 탐색 후 학생 데이터 중 이름 , 성적 수정
 		System.out.println("수정할 학생의 학번 >> ");
 		String no = StudentEx.scanner.nextLine(); 
 		for (int i = 0; i < cnt; i++) {
-			if (students[i].no.equals(no)) { //equals 확인
+			if (students[i].getNo().equals(no)) { //equals 확인
 				System.out.println(students[i]);
 				System.out.print("이름>");
 				String name = StudentEx.scanner.nextLine();
@@ -131,10 +109,10 @@ public class StudentService {
 				int eng = Integer.parseInt(StudentEx.scanner.nextLine());
 				System.out.print("수학>");
 				int math = Integer.parseInt(StudentEx.scanner.nextLine());
-				students[i].name = name;
-				students[i].kor = kor;
-				students[i].eng = eng;
-				students[i].math = math;
+				students[i].getName() = name;
+				students[i].getKor() = kor;
+				students[i].getEng() = eng;
+				students[i].getMath() = math;
 			}
 		}
 	}//modify 끝

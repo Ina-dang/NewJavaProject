@@ -2,7 +2,10 @@ package a220120;
 
 public class TimeTest {
 	public static void main(String[] args) {
-		
+		Time t = new Time(12, 35, 30);
+		System.out.println(t);
+		t.setHour(t.getHour() + 1);
+		System.out.println(t);
 	}
 }
 
@@ -29,5 +32,9 @@ class Time {
 	public void setSecond(int second) {
 		if (second < 0 || second > 59 ) return;
 		this.second = second;		
+	}
+	
+	public String toString() {
+		return hour + ":" + minute + ":" + second;
 	}
 }
