@@ -2,12 +2,10 @@ package service;
 
 import static utils.StudentUtil.*;
 import static domain.Student.*;
-import javax.swing.text.StyledEditorKit.ForegroundAction;
-
 import app.StudentEx;
 import domain.Student;
 
-class StudentService1 {
+public class StudentService1 {
 	
 	//학생데이터
 	Student[] students = new Student[10];
@@ -51,25 +49,21 @@ class StudentService1 {
 	Student student = new Student();
 	
 	//수정
-	public void modify() {
+	public void modify() { 
 		//학번으로 학생을 탐색 후 학생 데이터 중 이름 , 성적 수정
-		System.out.println("수정할 학생의 학번 >> ");
-		String no = StudentEx.scanner.nextLine(); 
+		String no = nextLine("수정할 학생의 학번 >> "); 
 		for (int i = 0; i < cnt; i++) {
 			if (students[i].getNo().equals(no)) { //equals 확인
 				System.out.println(students[i]);
-				System.out.print("이름>");
-				String name = StudentEx.scanner.nextLine();
-				System.out.print("국어>");
-				int kor = Integer.parseInt(StudentEx.scanner.nextLine());
-				System.out.print("영어>");
-				int eng = Integer.parseInt(StudentEx.scanner.nextLine());
-				System.out.print("수학>");
-				int math = Integer.parseInt(StudentEx.scanner.nextLine());
-				students[i].getName = name;
-				students[i].getKor = kor;
-				students[i].getEng = eng;
-				students[i].getMath = math;
+				String name = nextLine("이름>");
+				int kor = nextInt("국어>");
+				int eng = nextInt("영어>");
+				int math = nextInt("수학>");
+
+				students[i].setName(name);
+				students[i].setKor(kor);
+				students[i].setEng(eng);
+				students[i].setMath(math);
 			}
 		}
 	}//modify 끝
@@ -78,11 +72,10 @@ class StudentService1 {
 	boolean flag = false;
 	
 	public void delete() {
-		System.out.println("삭제할 학생의 학번 >>");
-		String no = StudentEx.scanner.nextLine(); 
+		String no = nextLine("삭제할 학생의 학번 >>"); 
 		for (int i = 0; i < cnt; i++) {
 			if (students[i].getNo().equals(no)) { //equals 확인
-				System.out.println( getName() + "을 삭제합니다");
+				System.out.println(this.names + "을 삭제합니다");
 				for (int j = 0; j < cnt-1; j++) {
 					students[j] = students[j+1]; 
 				}

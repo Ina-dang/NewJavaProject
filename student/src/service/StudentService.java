@@ -5,6 +5,7 @@ import static utils.StudentUtil.*;
 import app.StudentEx;
 import domain.Student;
 
+
 public class StudentService {
 	
 	// 01/17 : Student 필드 정의, main 메서드 메뉴 정리
@@ -16,6 +17,7 @@ public class StudentService {
 //			StudentService : student.service에 존재
 //			StudentUtil : student.utils에 존재
 //						, 모든 필드에 private 적용 (get,set), 삭제 기능 구현
+	// 01/21 : 이름등록제한, 점수범위
 	
 	//객체배열 인스턴스변수 
 	Student[] students = new Student[10]; //학생들 관리
@@ -94,68 +96,63 @@ public class StudentService {
 
 	// 3. 수정
 	
-	public void modify() {
-		//학번으로 학생을 탐색 후 학생 데이터 중 이름 , 성적 수정
-		System.out.println("수정할 학생의 학번 >> ");
-		String no = StudentEx.scanner.nextLine(); 
-		for (int i = 0; i < cnt; i++) {
-			if (students[i].getNo().equals(no)) { //equals 확인
-				System.out.println(students[i]);
-				System.out.print("이름>");
-				String name = StudentEx.scanner.nextLine();
-				System.out.print("국어>");
-				int kor = Integer.parseInt(StudentEx.scanner.nextLine());
-				System.out.print("영어>");
-				int eng = Integer.parseInt(StudentEx.scanner.nextLine());
-				System.out.print("수학>");
-				int math = Integer.parseInt(StudentEx.scanner.nextLine());
-				students[i].getName() = name;
-				students[i].getKor() = kor;
-				students[i].getEng() = eng;
-				students[i].getMath() = math;
-			}
+	public void modify() { 
+//		//학번으로 학생을 탐색 후 학생 데이터 중 이름 , 성적 수정
+
+		Student student = findBy(nextLine("수정할 학생의 학번>"));
+		if(student == null) {
+			System.out.println("존재하지 않는 학번입니다");
+			return;
+		} else {
+			System.out.println("수정 대상 : " + student);
 		}
+		student.setName(nextLine("이름 >"));
+		student.setKor(nextInt("국어>"));
+		student.setEng(nextInt("영어>"));
+		student.setMath(nextInt("수학>"));
 	}//modify 끝
+	
 	
 	
 	
 	// 4. 삭제
 	
+	public void remove() { 
 
-	////////////////////////////////////////////////////////////////////////
-	public static void main(String[] args) {
-		/*
-		 * 
-		 * 위에 있는 students에 
-		 * new를 만들어서 인스턴스 생성할거임
-		 */
+		int idx = findIndexBy(nextLine("삭제할 학생의 학번 >> "));
+		if(idx == -1 ) {
+			System.out.println("존재하지 않는 학번입니다");
+					return;
+		}
+		System.arraycopy(students, idx+1, students, idx, cnt-- - idx + 1);
+		System.out.println("삭제되었습니다");
+		// 학번을 입력받아 해당 학생의 내용을 삭제
+		// [1, 2, null, 4, 5] >> [1, 2, 4, 5, 5] 실제로 들어있지만 cnt까지 탐색이라 결과적으론 [1, 2, 4, 5] 출력
 		
-		
-		//근데 위치 어딘지 잘봐야함. 지금 있는곳 studentService임
-		StudentService service = new StudentService(); //이거 생성해야지 students[i]사용가능
-//		System.out.println(service.students[]);
-		
-		
-// 		초기화 시킴
-//		service.students[0] = new Student("220002", "고길동", 70, 60, 50);
-		//초기화 안시키고.no 하면 nullpointexception뜸
+//		[1, null, 3, 4, 5] 이러면 3이 나와야함 >> 5 - 2 = 3
+//		[1, 2, null, 4, 5] >> 5 - 3 = 2
+	}//remove 끝
 	
+	//remove == 학생을 받아서 찾겠다
+	
+	private Student findBy(String no) {
+		int idx = findIndexBy(no);
+		if ( idx == -1) {
+			return null;
+		}		
+		return students[findIndexBy(no)];
 		
-//		//조회기능구현
-//		for (int i = 0; i < service.students.length; i++) {
-//			System.out.println(service.students[i]);
-//		}
-		
-//		System.out.println(service.students[0].no); //생성자 호출시 
-//		service.students[0] ==> 위쪽 Student
-		
-		service.list();
-		
-		
-		
-		// StudentService클래스의 Student[]배열타입이다
-		// service.students의 타입 = Student[] 배열타입
-		
-		
+	}
+	
+	//해당 학생의 인덱스번째 리턴
+	private int findIndexBy(String no) {
+		int ret = -1; //(찾으면 해당번째 못찾으면 -1이 나와서 기준값을 -1로 잡음)
+		for (int i = 0; i < cnt; i++) {
+			if (students[i].getNo().equals(no)) {
+				ret = i;
+				break;
+			}
+		}
+		return ret;
 	}
 }

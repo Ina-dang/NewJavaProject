@@ -1,32 +1,22 @@
 package app;
 
 import static utils.StudentUtil.*;
-import java.util.Scanner;
 import service.StudentService;
 
 public class StudentEx { //Ex가 실행부분이 있다는 뜻
-	public static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args) { //메인메서드 추우가아
 //		Student student = new Student(); // 이게 학생 한 명 이라는 뜻
-//		student.no = "220001"; //학생한테 학번 부여
-//		student.name = "홍길동";
-//		student.kor = 90;
-//		student.eng = 86;
-//		student.math = 44;1
 		
 //		System.out.println(student); //이렇게 하면 주소만 나옴
 //		System.out.println(student.sum());
 //		System.out.println(student.avg());
 		
 		StudentService service = new StudentService();
-		
+	
 		
 		for (boolean b = true ; b ;) { 
-//		while(true) {
-//			System.out.print("1.학생조회 2.학생등록 3.학생정보수정. 학생삭제. 5.종료 >> ");
-//			int input = parseInt(scanner.nextLine());
 			
-			int input = nextInt("1.학생조회 2.학생등록 3.학생정보수정. 학생삭제. 5.종료 ");
+			int input = nextInt("1.학생조회 2.학생등록 3.학생정보수정 4.학생삭제 5.종료 ");
 			
 			switch (input) {
 			case 1:
@@ -42,14 +32,14 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 				
 				break;
 			case 4:
-				System.out.println("학생 삭제입니다");
+				service.remove();
 				
 				break;
 			case 5:
 				System.out.println("종료합니다");
 				
 				b = false;
-//				return;
+
 				break;
 				
 			default:
@@ -58,7 +48,6 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 			
 			}
 		}
-//		}
-		scanner.close();
+
 	}
 }
