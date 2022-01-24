@@ -44,8 +44,8 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 				
 			default:
 				System.out.println("올바른 번호를 입력하세요");
-
 				break;
+			
 			}
 		}
 
