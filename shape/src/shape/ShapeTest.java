@@ -2,9 +2,69 @@ package shape;
 
 public class ShapeTest {
 	public static void main(String[] args) {
+		Shape[] shapes = new Shape[6];
+		
+		shapes[0] = new Circle();
+		shapes[1] = new Square();
+		shapes[2] = new Triangle();
+		shapes[3] = new Pringles();
+		shapes[4] = new Hexahedron();
+		shapes[5] = new TriangularPrism();
+		
+		System.out.println(shapes[5]);
 		
 	}
 }
+
+interface perimeterable {void perimeter (int a, int b);}
+interface areable {final double a = 3.14;}
+
+class Shape {
+	int x; //x값
+	int y; //y값
+	double PI = 3.14;
+	
+	public Shape() {}
+	
+}
+
+class Circle extends Shape {
+
+	public Circle() {}
+	public Circle(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+		
+	
+}
+
+class Square extends Shape {
+	public Square() {
+		// TODO Auto-generated constructor stub
+	}
+}
+class Triangle extends Shape {
+	public Triangle() {
+		// TODO Auto-generated constructor stub
+	}
+}
+class Pringles extends Shape {
+	public Pringles() {
+		// TODO Auto-generated constructor stub
+	}
+}
+class Hexahedron extends Shape {
+	public Hexahedron() {
+		// TODO Auto-generated constructor stub
+	}
+}
+class TriangularPrism extends Shape {
+	public TriangularPrism() {
+		// TODO Auto-generated constructor stub
+	}
+}
+
 
 //shape : 도형
 // 하위 클래스 제작 ( 2차원 도형, 3차원 도형 )
