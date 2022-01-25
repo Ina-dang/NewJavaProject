@@ -5,7 +5,7 @@ import static domain.Student.*;
 import app.StudentEx;
 import domain.Student;
 
-public class StudentService1 {
+public class StudentService1 { //기능
 	
 	//학생데이터
 	Student[] students = new Student[10];
