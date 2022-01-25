@@ -1,26 +1,26 @@
-package a220119;
+ï»¿package a220119;
 
 import java.util.Arrays;
 
-//Ãâ·Â Å¬·¡½º
-public class DeckTest { //ÀÌ°ÅÀû±âÀü¿¡ ¼³°èµµÈ®ÀÎ
+//ì¶œë ¥ í´ë˜ìŠ¤
+public class DeckTest { //ì´ê±°ì ê¸°ì „ì— ì„¤ê³„ë„í™•ì¸
 	public static void main(String[] args) {
-		Deck d = new Deck(); 		//Ä«µå Deck Å¸ÀÔÀÇ º¯¼ö d ÀÎ½ºÅÏ½º °´Ã¼ »ı¼º
+		Deck d = new Deck(); 		//ì¹´ë“œ Deck íƒ€ì…ì˜ ë³€ìˆ˜ d ì¸ìŠ¤í„´ìŠ¤ ê°ì²´ ìƒì„±
 		System.out.println(Arrays.toString(d.cardArr));
-//		d.shuffle();				//ÀÌ°Å ÀÖÀ¸¸é ¡é¾Æ·¡¿¡ Á¦ÀÏ À§ ¾Æ´Ï°í ÇÑ¹ø ¼¯°í Á¦ÀÏ À§¿¡ Ä«µå ¼±ÅÃÇÔ
-		Card c = d.pick(0);  		//¼¯±âÀü¿¡ Á¦ÀÏ À§ Ä«µå ¼±ÅÃÇÑ´Ù (0ºÎÅÍ 51¹ø±îÁö 52°³Ä«µå ÀÖÀ½)
-		System.out.println(c);		//System.out.println(c.toString());ÀÌ¶û °°´Ù
+//		d.shuffle();				//ì´ê±° ìˆìœ¼ë©´ â†“ì•„ë˜ì— ì œì¼ ìœ„ ì•„ë‹ˆê³  í•œë²ˆ ì„ê³  ì œì¼ ìœ„ì— ì¹´ë“œ ì„ íƒí•¨
+		Card c = d.pick(0);  		//ì„ê¸°ì „ì— ì œì¼ ìœ„ ì¹´ë“œ ì„ íƒí•œë‹¤ (0ë¶€í„° 51ë²ˆê¹Œì§€ 52ê°œì¹´ë“œ ìˆìŒ)
+		System.out.println(c);		//System.out.println(c.toString());ì´ë‘ ê°™ë‹¤
 		System.out.println();
 		
-		d.shuffle();				//¼¯¼¯
+		d.shuffle();				//ì„ì„
 		System.out.println(Arrays.toString(d.cardArr));
 		c = d.pick(0);				//pick
-		System.out.println(c);		//System.out.println(c.toString());ÀÌ¶û °°´Ù
+		System.out.println(c);		//System.out.println(c.toString());ì´ë‘ ê°™ë‹¤
 		System.out.println();
 		
 		System.out.println(Arrays.toString(d.cardArr));
 		c = d.pick();
-		System.out.println(c);		//System.out.println(c.toString());ÀÌ¶û °°´Ù
+		System.out.println(c);		//System.out.println(c.toString());ì´ë‘ ê°™ë‹¤
 	}
-	//CardÅ¸ÀÔ c ÀûÀ¸¸é ¿ø·¡ ÁÖ¼Ò°ª³ª¿Í¾ßÇÏ´Âµ¥ Card class¿¡ ÀÖ´Â toString ¶§¹®¿¡ ÁÖ¼Ò´ë½Å °ª³ª¿È 
+	//Cardíƒ€ì… c ì ìœ¼ë©´ ì›ë˜ ì£¼ì†Œê°’ë‚˜ì™€ì•¼í•˜ëŠ”ë° Card classì— ìˆëŠ” toString ë•Œë¬¸ì— ì£¼ì†ŒëŒ€ì‹  ê°’ë‚˜ì˜´ 
 }

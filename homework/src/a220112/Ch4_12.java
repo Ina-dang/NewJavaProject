@@ -1,6 +1,6 @@
-package a220112;
+ï»¿package a220112;
 
 public class Ch4_12 {
-// ±¸±¸´ÜÀÇ ÀÏºÎºÐÀ» ´ÙÀ½°ú °°ÀÌ Ãâ·ÂÇÏ½Ã¿À
+// êµ¬êµ¬ë‹¨ì˜ ì¼ë¶€ë¶„ì„ ë‹¤ìŒê³¼ ê°™ì´ ì¶œë ¥í•˜ì‹œì˜¤
 	
 }

@@ -1,4 +1,4 @@
-package a220104;
+ï»¿package a220104;
 
 public class OverflowEx {
 	public static void main(String[] args) {
@@ -7,12 +7,12 @@ public class OverflowEx {
 		char cMin = 0;
 		char cMax = 65535;
 		
-		System.out.println("==short ÃÖ¼ÒÃÖ´ë== (½Ç¼ö)");
+		System.out.println("==short ìµœì†ŒìµœëŒ€== (ì‹¤ìˆ˜)");
 		System.out.println("sMin   = " + sMin);
 		System.out.println("sMin-1 = " + (short)(sMin-1));
 		System.out.println("sMax   = " + sMax);
 		System.out.println("sMax+1 = " + (short)(sMax+1));
-		System.out.println("== char ÃÖ¼ÒÃÖ´ë== (Á¤¼ö)");
+		System.out.println("== char ìµœì†ŒìµœëŒ€== (ì •ìˆ˜)");
 		System.out.println("Cmin   = " + (int)cMin);
 		System.out.println("Cmin-1 = " + (int)--cMin);
 		System.out.println("Cmax   = " + (int)cMax);
@@ -20,8 +20,8 @@ public class OverflowEx {
 
 		System.out.println("=====================");
 		System.out.println(Short.MAX_VALUE);
-		System.out.println(Short.MIN_VALUE); //short ´Â Á¤¼ö¶ó int ¾ÈÀû¾îµµ µÇ´Âµ¥
-		System.out.println((int)Character.MAX_VALUE); //char´Â ¹®ÀÚ¶ó Á¤¼öÇüº¯È¯ ÇØÁà¾ßÇÔ
+		System.out.println(Short.MIN_VALUE); //short ëŠ” ì •ìˆ˜ë¼ int ì•ˆì ì–´ë„ ë˜ëŠ”ë°
+		System.out.println((int)Character.MAX_VALUE); //charëŠ” ë¬¸ìë¼ ì •ìˆ˜í˜•ë³€í™˜ í•´ì¤˜ì•¼í•¨
 		System.out.println((int)Character.MIN_VALUE);
 	}
 }

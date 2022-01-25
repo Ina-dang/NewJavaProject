@@ -1,9 +1,9 @@
-package a220120;
+ï»¿package a220120;
 
 class SuperTest2 {
 	public static void main(String[] args) {
 		Child1 c = new Child1();
-		c.method(); //¸Ş¼­µåÈ£Ãâ
+		c.method(); //ë©”ì„œë“œí˜¸ì¶œ
 		
 	}
 }	
@@ -17,13 +17,13 @@ class Parent1 extends GrandParent1{
 }
 
 
-class Child1 extends Parent1{ //»ó¼Ó°ü°è
+class Child1 extends Parent1{ //ìƒì†ê´€ê³„
 	int x = 20;
 		
 	void method() {
 		System.out.println("x=" + x);
 		System.out.println("this.x=" + this.x);
-		System.out.println("super.x=" + super.x); //extendsÇÑ ´ë»ó±îÁö¸¸ °¨(GrandParent°ª ±îÁö ¾È°¨)
+		System.out.println("super.x=" + super.x); //extendsí•œ ëŒ€ìƒê¹Œì§€ë§Œ ê°(GrandParentê°’ ê¹Œì§€ ì•ˆê°)
 	}
 }
 

@@ -1,8 +1,8 @@
-package a220114;
+ï»¿package a220114;
 
-public class Ex13String0xToBin { //16Áø¼ö¸¦ 2Áø¼ö·Î
-	public static void main(String[] args) { //¸Þ¼­µå = ±â´É
-		char[] hex = { 'C', 'A', 'F', 'E', }; // 16Áø¼ö 12, 10, 16, 15
+public class Ex13String0xToBin { //16ì§„ìˆ˜ë¥¼ 2ì§„ìˆ˜ë¡œ
+	public static void main(String[] args) { //ë©”ì„œë“œ = ê¸°ëŠ¥
+		char[] hex = { 'C', 'A', 'F', 'E', }; // 16ì§„ìˆ˜ 12, 10, 16, 15
 		
 		String[] binary = { "0000", "0001", "0010", "0011", 
 							"0100", "0101", "0110", "0111", 
@@ -12,40 +12,40 @@ public class Ex13String0xToBin { //16Áø¼ö¸¦ 2Áø¼ö·Î
 		String result = "";
 		
 		for (int i = 0; i < hex.length; i++) {
-			if (hex[i] >= '0' && hex[i] <= '9') { //'0' ºÎÅÍ '9'±îÁö ¼ýÀÚÀÇ ¹üÀ§ÀÎÁö ¹°¾îº½
-				result += binary[hex[i]-'0'];		// '8'-'0'ÀÇ °á°ú´Â 8ÀÌ´Ù.
-				//¼ýÀÚ´Â ±×³É ¿©±â¼­ '0'»©¸é µÊ
-			} else { 	// A~FÀÌ¸é
+			if (hex[i] >= '0' && hex[i] <= '9') { //'0' ë¶€í„° '9'ê¹Œì§€ ìˆ«ìžì˜ ë²”ìœ„ì¸ì§€ ë¬¼ì–´ë´„
+				result += binary[hex[i]-'0'];		// '8'-'0'ì˜ ê²°ê³¼ëŠ” 8ì´ë‹¤.
+				//ìˆ«ìžëŠ” ê·¸ëƒ¥ ì—¬ê¸°ì„œ '0'ë¹¼ë©´ ë¨
+			} else { 	// A~Fì´ë©´
 				result += binary[hex[i]-'A'+10];						
-			}					// ¹®ÀÚÀÏ°æ¿ì 'A' - 'A' + 10 , 'C' - 'A'ÀÇ °á°ú´Â 2
+			}					// ë¬¸ìžì¼ê²½ìš° 'A' - 'A' + 10 , 'C' - 'A'ì˜ ê²°ê³¼ëŠ” 2
 		}
 									// String(char[] value)
 		System.out.println("hex:" + new String(hex));
-		System.out.println(hex); //println Áß (char)½áÁø°Å´Â ÁÖ¼Ò¾È³ª¿À°í ¹®ÀÚ¿­·Î Ãâ·Â
-		System.out.println("hex:" + hex); //ÀÌ°Ç ÁÖ¼Ò³ª¿È
+		System.out.println(hex); //println ì¤‘ (char)ì¨ì§„ê±°ëŠ” ì£¼ì†Œì•ˆë‚˜ì˜¤ê³  ë¬¸ìžì—´ë¡œ ì¶œë ¥
+		System.out.println("hex:" + hex); //ì´ê±´ ì£¼ì†Œë‚˜ì˜´
 		System.out.println("binary:" + result);
 		
-//		¹®ÀÚ¿­ : ¹®ÀÚ¸¦ ¿¬ÀÌ¾î ´Ã¾î³õÀº °Í (String types)
-//			== ¹®ÀÚ¹è¿­ÀÎ char¹è¿­°ú °°Àº ¸»
-//		±×·¯³ª ´Ù¸¥Á¡ÀÌ ÀÖ´Âµ¥
-//		String°´Ã¼(¹®ÀÚ¿­)´Â ÀÐÀ»¼ö¸¸ ÀÖÀ» »Ó ³»¿ëÀ» º¯°æÇÒ ¼ö ¾ø´Ù
+//		ë¬¸ìžì—´ : ë¬¸ìžë¥¼ ì—°ì´ì–´ ëŠ˜ì–´ë†“ì€ ê²ƒ (String types)
+//			== ë¬¸ìžë°°ì—´ì¸ charë°°ì—´ê³¼ ê°™ì€ ë§
+//		ê·¸ëŸ¬ë‚˜ ë‹¤ë¥¸ì ì´ ìžˆëŠ”ë°
+//		Stringê°ì²´(ë¬¸ìžì—´)ëŠ” ì½ì„ìˆ˜ë§Œ ìžˆì„ ë¿ ë‚´ìš©ì„ ë³€ê²½í•  ìˆ˜ ì—†ë‹¤
 		
-		String str2 = "ab" + "cd"; //ab , cd, abcd°¡ Á¸ÀçÇÏ°ÔµÊ
-//		¹®ÀÚ¿­Àº º¯°æÇÒ ¼ö ¾øÀ¸¹Ç·Î »õ·Î¿î ³»¿ëÀÇ ¹®ÀÚ¿­ÀÌ »ý¼ºµÈ´Ù
-//		¿¹½Ã
+		String str2 = "ab" + "cd"; //ab , cd, abcdê°€ ì¡´ìž¬í•˜ê²Œë¨
+//		ë¬¸ìžì—´ì€ ë³€ê²½í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ ìƒˆë¡œìš´ ë‚´ìš©ì˜ ë¬¸ìžì—´ì´ ìƒì„±ëœë‹¤
+//		ì˜ˆì‹œ
 		String str3 = "Java";
-		str3 = str3 + "8";			//"Java8"ÀÌ¶ó´Â »õ·Î¿î ¹®ÀÚ¿­ÀÌ str¿¡ ÀúÀåµÈ´Ù
-		System.out.println(str3);	// "Java8" ÀÌ Ãâ·ÂµÇÁö¸¸ "Java", "8", "Java8"ÀÌ ÀúÀåµÈ´Ù
+		str3 = str3 + "8";			//"Java8"ì´ë¼ëŠ” ìƒˆë¡œìš´ ë¬¸ìžì—´ì´ strì— ì €ìž¥ëœë‹¤
+		System.out.println(str3);	// "Java8" ì´ ì¶œë ¥ë˜ì§€ë§Œ "Java", "8", "Java8"ì´ ì €ìž¥ëœë‹¤
 		
 		String str = "CAFE";
-		String r   = str.substring(2); //2¹øÂ° ±îÁö Àß¶óÁÖ¼¼¿ä
-		System.out.println(r); // CAFEÁß CAÀß¸° FE¸¸ Ãâ·Â 
+		String r   = str.substring(2); //2ë²ˆì§¸ ê¹Œì§€ ìž˜ë¼ì£¼ì„¸ìš”
+		System.out.println(r); // CAFEì¤‘ CAìž˜ë¦° FEë§Œ ì¶œë ¥ 
 
 		String str1 = "https://www.naver.com";
-		String r2   = str1.substring(12); //12¹øÂ° ±îÁö Àß¶óÁÖ¼¼¿ä
-		System.out.println(r2); // naver.com Ãâ·Â
-		System.out.println(str1.substring(12, 17)); // 12¹øºÎÅÍ 17¹ø±îÁö¸¸ Ãâ·ÂÇØÁÖ¼¼¿ä naver¸¸ Ãâ·Â
-//														 ÀÌ»ó     ¹Ì¸¸(17Àº Ãâ·Â¾ÈÇÔ) ÀÌ¶ó´Â ¶æ
+		String r2   = str1.substring(12); //12ë²ˆì§¸ ê¹Œì§€ ìž˜ë¼ì£¼ì„¸ìš”
+		System.out.println(r2); // naver.com ì¶œë ¥
+		System.out.println(str1.substring(12, 17)); // 12ë²ˆë¶€í„° 17ë²ˆê¹Œì§€ë§Œ ì¶œë ¥í•´ì£¼ì„¸ìš” naverë§Œ ì¶œë ¥
+//														 ì´ìƒ     ë¯¸ë§Œ(17ì€ ì¶œë ¥ì•ˆí•¨) ì´ë¼ëŠ” ëœ»
 		
 				
 	}

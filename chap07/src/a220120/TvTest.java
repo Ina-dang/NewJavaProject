@@ -1,17 +1,17 @@
-package a220120;
+ï»¿package a220120;
 
 import java.util.Scanner;
 
 class Tv {
 								
-	private String color;						// »ö»ó					==> null 			 (±¸Á¶Ã¼)
-	private boolean power;						// Àü¿ø»óÅÂ(on/off)		==> false		=====°¢°¢ÀÇ ÀúÀå°ø°£
-	private int channel;						// Ã¤³Î					==> 0
+	private String color;						// ìƒ‰ìƒ					==> null 			 (êµ¬ì¡°ì²´)
+	private boolean power;						// ì „ì›ìƒíƒœ(on/off)		==> false		=====ê°ê°ì˜ ì €ì¥ê³µê°„
+	private int channel;						// ì±„ë„					==> 0
 	
-	// TvÀÇ ±â´É(¸Ş¼­µå)
-	public void setPower() {power = !power;}		// TV¸¦ ÄÑ°Å³ª ²ô´Â ±â´ÉÀ» ÇÏ´Â ¸Ş¼­µå
-	void channelUp() {++channel;}		// TVÀÇ Ã¤³ÎÀ» ³ôÀÌ´Â ±â´ÉÀ» ÇÏ´Â ¸Ş¼­µå
-	void channelDown() {--channel;}		// TVÀÇ Ã¤³ÎÀ» ³·Ãß´Â ±â´ÉÀ» ÇÏ´Â ¸Ş¼­µå
+	// Tvì˜ ê¸°ëŠ¥(ë©”ì„œë“œ)
+	public void setPower() {power = !power;}		// TVë¥¼ ì¼œê±°ë‚˜ ë„ëŠ” ê¸°ëŠ¥ì„ í•˜ëŠ” ë©”ì„œë“œ
+	void channelUp() {++channel;}		// TVì˜ ì±„ë„ì„ ë†’ì´ëŠ” ê¸°ëŠ¥ì„ í•˜ëŠ” ë©”ì„œë“œ
+	void channelDown() {--channel;}		// TVì˜ ì±„ë„ì„ ë‚®ì¶”ëŠ” ê¸°ëŠ¥ì„ í•˜ëŠ” ë©”ì„œë“œ
 	
 	public void  setColor(String color) {
 		this.color = color;
@@ -40,18 +40,18 @@ class Tv {
 	
 } 
 
-public class TvTest { //¡é¸ŞÀÎ ¸Ş¼­µå°¡ ÀÖ´Â³à¼®À¸·Î Á¦¸ñ ÇØ¾ß Á¤»óÀÛµ¿ 
+public class TvTest { //â†“ë©”ì¸ ë©”ì„œë“œê°€ ìˆëŠ”ë…€ì„ìœ¼ë¡œ ì œëª© í•´ì•¼ ì •ìƒì‘ë™ 
 	public static void main(String[] args) {
 		int[] arr = new int[3];
 		Scanner scanner = new Scanner(System.in);
-		Tv t = new Tv();					// TVÀÎ½ºÅÏ½º »ı¼º
+		Tv t = new Tv();					// TVì¸ìŠ¤í„´ìŠ¤ ìƒì„±
 		
-		System.out.println(t); //ÁÖ¼ÒÃâ·Â
-		// . ~ÀÇ
+		System.out.println(t); //ì£¼ì†Œì¶œë ¥
+		// . ~ì˜
 //		t.channel = 7;	
 		t.setChannel(7);
-		t.channelUp();				// TVÀÎ½ºÅÏ½ºÀÇ ¸Ş¼­µå channelDown()À» È£ÃâÇÑ´Ù
-		System.out.println("ÇöÀç Ã¤³ÎÀº " + t.getChannel() + " ÀÔ´Ï´Ù.");
+		t.channelUp();				// TVì¸ìŠ¤í„´ìŠ¤ì˜ ë©”ì„œë“œ channelDown()ì„ í˜¸ì¶œí•œë‹¤
+		System.out.println("í˜„ì¬ ì±„ë„ì€ " + t.getChannel() + " ì…ë‹ˆë‹¤.");
 		
 	}
 }

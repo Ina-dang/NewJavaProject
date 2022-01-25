@@ -1,27 +1,27 @@
-package a220105;
+ï»¿package a220105;
 
 public class OperatorEx16 { //rounding
 	public static void main(String[] args) {
 		float pi = 3.141592f;
-//		float shortPi = (int) (pi * 1000) / 1000f; 		 //--> ¹İ¿Ã¸²¾ÈÇÏ°í ¹ö¸²
-		// °è»ê¼ø¼­ (pi * 1000) = 3141.592f --> Çüº¯È¯(float -> int) --> /1000f (´Ù½Ã 1000³ª´©°í float·Î)
+//		float shortPi = (int) (pi * 1000) / 1000f; 		 //--> ë°˜ì˜¬ë¦¼ì•ˆí•˜ê³  ë²„ë¦¼
+		// ê³„ì‚°ìˆœì„œ (pi * 1000) = 3141.592f --> í˜•ë³€í™˜(float -> int) --> /1000f (ë‹¤ì‹œ 1000ë‚˜ëˆ„ê³  floatë¡œ)
 		// 3.141
 		
-		float shortPi = (int) (pi * 1000 + 0.5) / 1000f; //¼Ò¼öÁ¡ ³İÂ°ÀÚ¸® ±âÁØÀ¸·Î ¹İ¿Ã¸²
-		// °è»ê¼ø¼­ (pi * 1000) = 3141.592f --> 3141.592f + 0.5 = 3142.092f 
-		//  --> Çüº¯È¯(float -> int) --> /1000f (´Ù½Ã 1000³ª´©°í float·Î)
+		float shortPi = (int) (pi * 1000 + 0.5) / 1000f; //ì†Œìˆ˜ì  ë„·ì§¸ìë¦¬ ê¸°ì¤€ìœ¼ë¡œ ë°˜ì˜¬ë¦¼
+		// ê³„ì‚°ìˆœì„œ (pi * 1000) = 3141.592f --> 3141.592f + 0.5 = 3142.092f 
+		//  --> í˜•ë³€í™˜(float -> int) --> /1000f (ë‹¤ì‹œ 1000ë‚˜ëˆ„ê³  floatë¡œ)
 			System.out.println(shortPi);
 
 		
-		float shortPi1 = (int) (pi * 100 + .9) / 100f; //¼Ò¼öÁ¡ ¼ÂÂ°ÀÚ¸® ±âÁØÀ¸·Î ¿Ã¸²
+		float shortPi1 = (int) (pi * 100 + .9) / 100f; //ì†Œìˆ˜ì  ì…‹ì§¸ìë¦¬ ê¸°ì¤€ìœ¼ë¡œ ì˜¬ë¦¼
 			System.out.println(shortPi1);
 
 		
-		// ¿Ã¸² ceil
-		// ³»¸² floor  
+		// ì˜¬ë¦¼ ceil
+		// ë‚´ë¦¼ floor  
 		
-//		System.out.println(Math.PI); //´õºíÅ¸ÀÔ ÃÖ´ë 15ÀÚ¸®±îÁö ³ª¿È
-//		Math. À¸·Î °Ë»öÇØº¸¸é ¹¹°¡ ¸¹ÀÌ ¶ä
+//		System.out.println(Math.PI); //ë”ë¸”íƒ€ì… ìµœëŒ€ 15ìë¦¬ê¹Œì§€ ë‚˜ì˜´
+//		Math. ìœ¼ë¡œ ê²€ìƒ‰í•´ë³´ë©´ ë­ê°€ ë§ì´ ëœ¸
 //		System.out.println(Math.ceil(pi)); //4.0 - double type
 //		System.out.println(Math.floor(pi));//3.0 -      "
 //		System.out.println(Math.round(pi));//3   -   int  type

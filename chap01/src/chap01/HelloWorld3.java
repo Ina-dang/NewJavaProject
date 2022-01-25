@@ -1,8 +1,8 @@
-package chap01;
+ï»¿package chap01;
 
 public class HelloWorld3 {
-	//main Àû°í ctrl + space ÇÏ¸é »ı¼º°¡´É
+	//main ì ê³  ctrl + space í•˜ë©´ ìƒì„±ê°€ëŠ¥
 	public static void main(String[] args) { 
-		//syso Àû°í ctrl + space ÇÏ¸é ÅÛÇÃ¸´ÀÌ ÀÖ¾î¼­ ¹Ù·Î »ı¼º -> ¼ÕÀ» ´ú ¾´´Ù -> ¿ÀÅ»ÀÚ ÁØ´Ù
-		System.out.println("Çï·Î¿ùµå");}
+		//syso ì ê³  ctrl + space í•˜ë©´ í…œí”Œë¦¿ì´ ìˆì–´ì„œ ë°”ë¡œ ìƒì„± -> ì†ì„ ëœ ì“´ë‹¤ -> ì˜¤íƒˆì ì¤€ë‹¤
+		System.out.println("í—¬ë¡œì›”ë“œ");}
 }

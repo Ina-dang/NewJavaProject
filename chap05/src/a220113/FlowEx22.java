@@ -1,4 +1,4 @@
-package a220113;
+ï»¿package a220113;
 
 import java.util.Arrays;
 
@@ -13,17 +13,17 @@ public class FlowEx22 {
 			arr [i] = i+1;
 			System.out.printf("%d ", arr[i]);
 		}	
-		   System.out.println(); //ÁÙ¹Ù²Ş
+		   System.out.println(); //ì¤„ë°”ê¿ˆ
 		
-		for (int tmp : arr) { //¹è¿­ arrÀ» ³ª´Â tmp·Î È£ÃâÇÒ°Å´Ù
+		for (int tmp : arr) { //ë°°ì—´ arrì„ ë‚˜ëŠ” tmpë¡œ í˜¸ì¶œí• ê±°ë‹¤
 			tmp = 10;
 			System.out.printf("%d ", tmp);
 			sum += tmp;			
-		} //°ª¿¡ ´ëÇÑ ¼ø¼öÇÑ È£ÃâÀ» ÇÒ ¶§´Â ¸¹ÀÌ ¾¸ (ÀĞ±âÀü¿ë)
-		System.out.println(); //ÁÙ¹Ù²Ş
+		} //ê°’ì— ëŒ€í•œ ìˆœìˆ˜í•œ í˜¸ì¶œì„ í•  ë•ŒëŠ” ë§ì´ ì”€ (ì½ê¸°ì „ìš©)
+		System.out.println(); //ì¤„ë°”ê¿ˆ
 		System.out.println(Arrays.toString(arr));
 		
-		System.out.println(); //50±îÁö Ãâ·Â ÈÄ ´Ù½Ã ÁÙ¹Ù²Ş
+		System.out.println(); //50ê¹Œì§€ ì¶œë ¥ í›„ ë‹¤ì‹œ ì¤„ë°”ê¿ˆ
 		System.out.println("sum=" + sum);
 		
 

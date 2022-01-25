@@ -1,16 +1,16 @@
-package a220118;
+ï»¿package a220118;
 
 public class FactorialTest {
 	public static void main(String[] args) {
-		int result = factorial(4); // !4 >> 4 * 3 * 2 * 1 //ÀÚ±âº¸´Ù ÀÛÀº¼ıÀÚµé °ö¼À
+		int result = factorial(4); // !4 >> 4 * 3 * 2 * 1 //ìê¸°ë³´ë‹¤ ì‘ì€ìˆ«ìë“¤ ê³±ì…ˆ
 		System.out.println(result);
 		
 		int result1 = factorial2(4);
 		System.out.println(result);
 	}
-//factorial method == static method ==> ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇÏÁö ¾Ê°í Á÷Á¢ È£Ãâ °¡´É
-//	main method¿Í °°Àº Å¬·¡½º¿¡ ÀÖ±â ¶§¹®¿¡ static¸Ş¼­µå¸¦ È£ÃâÇÒ ¶§ Å¬·¡½º ÀÌ¸§ »ı·« °¡´É
-//	±×·¡¼­ FactorialTest.factorial(4)´ë½Å factorial(4)
+//factorial method == static method ==> ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•˜ì§€ ì•Šê³  ì§ì ‘ í˜¸ì¶œ ê°€ëŠ¥
+//	main methodì™€ ê°™ì€ í´ë˜ìŠ¤ì— ìˆê¸° ë•Œë¬¸ì— staticë©”ì„œë“œë¥¼ í˜¸ì¶œí•  ë•Œ í´ë˜ìŠ¤ ì´ë¦„ ìƒëµ ê°€ëŠ¥
+//	ê·¸ë˜ì„œ FactorialTest.factorial(4)ëŒ€ì‹  factorial(4)
 	static int factorial(int n) {
 		int result = 0;
 		
@@ -22,7 +22,7 @@ public class FactorialTest {
 		return result;		
 	}
 	
-	//ÀÌ°Ô ´õ È¿À²Àû
+	//ì´ê²Œ ë” íš¨ìœ¨ì 
 	static int factorial2(int n) {
 		int result1 = 1;
 		for (int i = 1; i <= n; i++) {

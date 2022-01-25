@@ -1,30 +1,30 @@
-package a220111;
+ï»¿package a220111;
 
-public class HwResult {//220110À·³îÀÌ ¼÷Á¦ ½ÜÇØ¼³
+public class HwResult {//220110ìœ·ë†€ì´ ìˆ™ì œ ìŒ¤í•´ì„¤
 	public static void main(String[] args) {
-		// À·³îÀÌ °æ¿ìÀÇ ¼ö 16
-		// how come? 4°³¸·´ë±â°¡ ¾ş¾îÁ³³Ä µÚÁı¾îÁ³³Ä 2^4 = 16
+		// ìœ·ë†€ì´ ê²½ìš°ì˜ ìˆ˜ 16
+		// how come? 4ê°œë§‰ëŒ€ê¸°ê°€ ì—ì–´ì¡Œëƒ ë’¤ì§‘ì–´ì¡Œëƒ 2^4 = 16
 		// 0000 ~ 1111
 		for(int i = 0 ; i < 20 ; i++) {
-		//ÀÌ·¸°ÔÇØ¼­ ¹İº¹¹® ¸¸µé¾î¼­ °ıÈ£¿¡ ³Ö¾îÁàµµµÊ
-			int result = (int)(Math.random() * 16); // 0~15ÀÓ 1ºÎÅÍ 16¾Æ´Ô!!
-		// 0À» ¸ğ·ÎÇØµµ µÊ È®·ü ¹èºĞ ÇÏ¼À
+		//ì´ë ‡ê²Œí•´ì„œ ë°˜ë³µë¬¸ ë§Œë“¤ì–´ì„œ ê´„í˜¸ì— ë„£ì–´ì¤˜ë„ë¨
+			int result = (int)(Math.random() * 16); // 0~15ì„ 1ë¶€í„° 16ì•„ë‹˜!!
+		// 0ì„ ëª¨ë¡œí•´ë„ ë¨ í™•ë¥  ë°°ë¶„ í•˜ì…ˆ
 		switch (result) {
 		case 0:
-			System.out.println("'¸ğ'ÀÔ´Ï´Ù");
+			System.out.println("'ëª¨'ì…ë‹ˆë‹¤");
 			break;
 		case 1:
-			System.out.println("'À·'ÀÔ´Ï´Ù");
+			System.out.println("'ìœ·'ì…ë‹ˆë‹¤");
 			break;
 		case 2: case 3: case 4: case 5:
-			System.out.println("'µµ'ÀÔ´Ï´Ù"); 
-			// È®·üÀ» Ãß°¡ÇÏ´Â°Ô ¾Æ´Ô »ªµµ°°Àº°æ¿ì µµ 4°³Áß¿¡ 1°³¸¸ »©¼­ »ªµµ ¸¸µé¸éµÊ
+			System.out.println("'ë„'ì…ë‹ˆë‹¤"); 
+			// í™•ë¥ ì„ ì¶”ê°€í•˜ëŠ”ê²Œ ì•„ë‹˜ ë¹½ë„ê°™ì€ê²½ìš° ë„ 4ê°œì¤‘ì— 1ê°œë§Œ ë¹¼ì„œ ë¹½ë„ ë§Œë“¤ë©´ë¨
 			break;							  
 		case 6: case 7: case 8: case 9:
-			System.out.println("'°É'ÀÔ´Ï´Ù");
+			System.out.println("'ê±¸'ì…ë‹ˆë‹¤");
 			break;
 		default:
-			System.out.println("'°³'ÀÔ´Ï´Ù");
+			System.out.println("'ê°œ'ì…ë‹ˆë‹¤");
 			break;
 			}
 		}

@@ -1,4 +1,4 @@
-package a220118;
+ï»¿package a220118;
 
 public class CarTest {
 	public static void main(String[] args) {
@@ -8,16 +8,16 @@ public class CarTest {
 		c1.door = 4;
 		
 		
-		System.out.printf("C1ÀÇ color=%s, gearType=%s, door%s%n", 
+		System.out.printf("C1ì˜ color=%s, gearType=%s, door%s%n", 
 				c1.color, c1.gearType, c1.door);
 		
 		Car c2 = new Car ("white", "auto", 4);
-		//»ı¼ºÇÏ¸é¼­ °ª³ÖÀ½ ==> ´õ È¿À²Àû
+		//ìƒì„±í•˜ë©´ì„œ ê°’ë„£ìŒ ==> ë” íš¨ìœ¨ì 
 		
-		System.out.printf("C2ÀÇ color=%s, gearType=%s, door%s%n", 
+		System.out.printf("C2ì˜ color=%s, gearType=%s, door%s%n", 
 				c2.color, c2.gearType, c2.door);
 		
 	}
 }
 
-// this : ¹Ì·¡¿¡ »ı¼³µÉ °´Ã¼ÀÇ ÁÖ¼Ò°ª
+// this : ë¯¸ë˜ì— ìƒì„¤ë  ê°ì²´ì˜ ì£¼ì†Œê°’

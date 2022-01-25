@@ -1,7 +1,7 @@
-package domain;
+ï»¿package domain;
 
 //import java.util.Arrays;
-// Å¬·¡½º ¼³°èµµ ±×¸®´Â ½ÃÁ¡¿¡´Â ÀÎ½ºÅÏ½º°¡ ¾ø´Ù´Â °É ±â¾ïÇÏ°í ÀÎ½ºÅÏ½º°¡ ³ªÁß¿¡ µé¾î¿Ã ÀÚ¸®¿¡ this·Î ÀÌÇØ
+// í´ë˜ìŠ¤ ì„¤ê³„ë„ ê·¸ë¦¬ëŠ” ì‹œì ì—ëŠ” ì¸ìŠ¤í„´ìŠ¤ê°€ ì—†ë‹¤ëŠ” ê±¸ ê¸°ì–µí•˜ê³  ì¸ìŠ¤í„´ìŠ¤ê°€ ë‚˜ì¤‘ì— ë“¤ì–´ì˜¬ ìë¦¬ì— thisë¡œ ì´í•´
 
 public class Student {
 	
@@ -54,7 +54,7 @@ public class Student {
 		this.math = math;
 	}
 
-	//ÃÑÁ¡, Æò±Õ
+	//ì´ì , í‰ê· 
 	
 	public int sum() {
 		return this.kor + this.eng + this.math;
@@ -64,7 +64,7 @@ public class Student {
 		return (int)(sum() / 3d * 100) /100d;
 	}
 
-	public String toString() { //formatÀ¸·Î ÇÏ´Â°Ô °¡Àå ÁÁÀ½
+	public String toString() { //formatìœ¼ë¡œ í•˜ëŠ”ê²Œ ê°€ì¥ ì¢‹ìŒ
 		String str = no + "    "+ name + "    " + kor + "    " + eng + "    " + math +
 				"    " + sum() + "    " + avg() ; 
 

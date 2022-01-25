@@ -1,14 +1,14 @@
-package a220111;
+ï»¿package a220111;
 
-public class Ch4_05 {//´ÙÀ½ÀÇ for ¹®À» while¹®À¸·Î º¯°æÇÏ½Ã¿À
+public class Ch4_05 {//ë‹¤ìŒì˜ for ë¬¸ì„ whileë¬¸ìœ¼ë¡œ ë³€ê²½í•˜ì‹œì˜¤
 	public static void main(String[] args) {
 //		for(int i=0; i<=10; i++) {
 //			for(int j=0; j<=i; j++)
 //				System.out.print("*");
 //			System.out.println();
 //		}
-		// for ¼ø¼­ 
-		// 1 ÃÊ±â½Ä 2Á¶°Ç½Ä 3 ¹®Àå 4Áõ°¨½Ä ±×´ÙÀ½¿¡ ´Ù½Ã 2Á¶°Ç½Ä . . . 
+		// for ìˆœì„œ 
+		// 1 ì´ˆê¸°ì‹ 2ì¡°ê±´ì‹ 3 ë¬¸ì¥ 4ì¦ê°ì‹ ê·¸ë‹¤ìŒì— ë‹¤ì‹œ 2ì¡°ê±´ì‹ . . . 
 		
 		int i = 0;
 		while (i <= 10 ) {

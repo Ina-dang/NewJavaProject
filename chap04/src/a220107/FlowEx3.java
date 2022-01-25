@@ -1,4 +1,4 @@
-package a220107;
+ï»¿package a220107;
 
 import java.util.Scanner;
 
@@ -6,18 +6,18 @@ public class FlowEx3 { //if else
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >>");
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”. >>");
 		
 		int input = scanner.nextInt();
 		
 		if(input==0) {
-			System.out.println("ÀÔ·ÂÇÏ½Å ¼ıÀÚ´Â 0ÀÔ´Ï´Ù");
+			System.out.println("ì…ë ¥í•˜ì‹  ìˆ«ìëŠ” 0ì…ë‹ˆë‹¤");
 		} else { 
-			System.out.println("ÀÔ·ÂÇÏ½Å ¼ıÀÚ´Â 0ÀÌ ¾Æ´Õ´Ï´Ù");
+			System.out.println("ì…ë ¥í•˜ì‹  ìˆ«ìëŠ” 0ì´ ì•„ë‹™ë‹ˆë‹¤");
 		}
-//////////////////À§ÀÇ ¿¹½Ã¿¡ °ãÄ¡´Â ÅØ½ºÆ®¸¦ ÃÖ´ëÇÑ ÁÙ¿©º¸·¨´Ù
+//////////////////ìœ„ì˜ ì˜ˆì‹œì— ê²¹ì¹˜ëŠ” í…ìŠ¤íŠ¸ë¥¼ ìµœëŒ€í•œ ì¤„ì—¬ë³´ë¬ë‹¤
 		
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >>");
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”. >>");
 		
 		int input2 = scanner.nextInt();
 		
@@ -27,21 +27,21 @@ public class FlowEx3 { //if else
 			System.out.println("!=0");
 		}
 		
-		///////³»°¡ ¾´ ´ä ¤»; ¿ÏÀü ºÒÄ£Àı
+		///////ë‚´ê°€ ì“´ ë‹µ ã…‹; ì™„ì „ ë¶ˆì¹œì ˆ
 		
 		
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >>");
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”. >>");
 		
 		int input1 = scanner.nextInt();
-		System.out.print("ÀÔ·ÂÇÏ½Å ¼ıÀÚ´Â 0");
+		System.out.print("ì…ë ¥í•˜ì‹  ìˆ«ìëŠ” 0");
 		
 		if(input1==0) {
-			System.out.println("ÀÔ´Ï´Ù");
+			System.out.println("ì…ë‹ˆë‹¤");
 		} else { 
-			System.out.println("ÀÌ ¾Æ´Õ´Ï´Ù");
+			System.out.println("ì´ ì•„ë‹™ë‹ˆë‹¤");
 		}
-		/////// ¼±»ı´ÔÀÌ ¿øÇß´ø ´ä
-		// ¼¾½º¾ø´Â ³ª..
+		/////// ì„ ìƒë‹˜ì´ ì›í–ˆë˜ ë‹µ
+		// ì„¼ìŠ¤ì—†ëŠ” ë‚˜..
 		
 		
 		

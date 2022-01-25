@@ -1,25 +1,25 @@
-package a220124;
+ï»¿package a220124;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
 public class InnerTest {
 	public static void main(String[] args) {
-		// ÀÎ½ºÅÏ½º Å¬·¡½º
-		// static Å¬·¡½º
-		// Áö¿ª Å¬·¡½º
-		// ÀÍ¸í Å¬·¡½º
+		// ì¸ìŠ¤í„´ìŠ¤ í´ë˜ìŠ¤
+		// static í´ë˜ìŠ¤
+		// ì§€ì—­ í´ë˜ìŠ¤
+		// ìµëª… í´ë˜ìŠ¤
 		
-		//Áö¿ªÅ¬·¡½º
+		//ì§€ì—­í´ë˜ìŠ¤
 		class Local {
 			
 		}
-		// ÀÎ½ºÅÏ½º º¯¼ö´Â ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇØ¾ßÇÑ´Ù
-		Inner inner = new InnerTest().new Inner(); //ÀÌ·±½ÄÀ¸·Î
+		// ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•´ì•¼í•œë‹¤
+		Inner inner = new InnerTest().new Inner(); //ì´ëŸ°ì‹ìœ¼ë¡œ
 		Outer.Inner inner2 = new Outer().new Inner(); 
-		Outer.Sinner inSinner = new Outer.Sinner(); //Outer.Sinner°¡ Å¬¤­
+		Outer.Sinner inSinner = new Outer.Sinner(); //Outer.Sinnerê°€ í´ã„½
 		
-		//Á¤·Ä
+		//ì •ë ¬
 		Integer[] arr = {3, 5, 2, 1, 4};
 		Arrays.sort(arr);
 		System.out.println(Arrays.toString(arr));
@@ -37,16 +37,16 @@ public class InnerTest {
 	
 	
 	int i;
-//	¾ê³× ÁÖ¼®Ã³¸®ÇÏ¸é Inner ineer =¾îÂ¼±¸ ¿À·ù¶ä == ´Ù¸¥ Å¬·¡½ºÀÏ¶§´Â Á¢±Ù ¾î·Á¿ò
-//		Outer.Inner inner2 = new Outer().new Inner(); ·Î ÇØ¾ßµÊ
+//	ì–˜ë„¤ ì£¼ì„ì²˜ë¦¬í•˜ë©´ Inner ineer =ì–´ì©Œêµ¬ ì˜¤ë¥˜ëœ¸ == ë‹¤ë¥¸ í´ë˜ìŠ¤ì¼ë•ŒëŠ” ì ‘ê·¼ ì–´ë ¤ì›€
+//		Outer.Inner inner2 = new Outer().new Inner(); ë¡œ í•´ì•¼ë¨
 
-	//ÀÎ½ºÅÏ½ºÅ¬·¡½º
+	//ì¸ìŠ¤í„´ìŠ¤í´ë˜ìŠ¤
 	class Inner {
-		//InterTestÅ¬·¡½º¹Ø¿¡ ¼±¾ğºÎ ÀÓ
+		//InterTestí´ë˜ìŠ¤ë°‘ì— ì„ ì–¸ë¶€ ì„
 		
 	}
 	
-	//static Å¬·¡½º
+	//static í´ë˜ìŠ¤
 	static class Sinner {
 		
 	}
@@ -54,13 +54,13 @@ public class InnerTest {
 }
 
 class Outer {
-//ÀÎ½ºÅÏ½ºÅ¬·¡½º
+//ì¸ìŠ¤í„´ìŠ¤í´ë˜ìŠ¤
 	class Inner {
-		//InterTestÅ¬·¡½º¹Ø¿¡ ¼±¾ğºÎ ÀÓ
+		//InterTestí´ë˜ìŠ¤ë°‘ì— ì„ ì–¸ë¶€ ì„
 		
 	}
 	
-//static Å¬·¡½º
+//static í´ë˜ìŠ¤
 	static class Sinner {
 		
 	}

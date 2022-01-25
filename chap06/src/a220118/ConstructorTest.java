@@ -1,4 +1,4 @@
-package a220118;
+ï»¿package a220118;
 
 class Data1{
 	int value;
@@ -8,7 +8,7 @@ class Data2{
 	int value;
 	
 //	Data2(){
-//		//¿À¹ö·Îµù ÇÏ¸é complie error »ç¶óÁü
+//		//ì˜¤ë²„ë¡œë”© í•˜ë©´ complie error ì‚¬ë¼ì§
 //	}
 	
 	Data2(int x){
@@ -19,13 +19,13 @@ class Data2{
 
 public class ConstructorTest {
 	public static void main(String[] args) {
-		Data1 d1 = new Data1(); //»ı¼ºÀÚ´Â new¿¡ ÀÇÇØ¼­ È£Ãâ. ¹è¿­»©°í ½Ï´Ù »ı¼ºÀÚ¶ó°í »ı°¢ÇÏ¼À
+		Data1 d1 = new Data1(); //ìƒì„±ìëŠ” newì— ì˜í•´ì„œ í˜¸ì¶œ. ë°°ì—´ë¹¼ê³  ì‹¹ë‹¤ ìƒì„±ìë¼ê³  ìƒê°í•˜ì…ˆ
 		System.out.println(d1);
-//		Data2 d2 = new Data2(); //compile error »ı¼º
+//		Data2 d2 = new Data2(); //compile error ìƒì„±
 		Data2 data2_2 = new Data2(5);
 		
 		String str = new String();
-		System.out.println(str); //¾Æ¹«°Íµµ¾È³ª¿È
+		System.out.println(str); //ì•„ë¬´ê²ƒë„ì•ˆë‚˜ì˜´
 		String str2 = new String("abcd");
 		System.out.println(str2);
 		String str3 = new String(new char[] {'a', 'b', 'c', 'd'});

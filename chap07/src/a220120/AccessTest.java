@@ -1,4 +1,4 @@
-package a220120;
+﻿package a220120;
 
 public class AccessTest {
 	private static class Inner {

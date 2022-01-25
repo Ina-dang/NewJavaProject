@@ -1,19 +1,19 @@
-package a220105;
+ï»¿package a220105;
 
 import java.util.*;
 
-public class Operator1 { //p97~ »ê¼ú¿¬»êÀÚ~
+public class Operator1 { //p97~ ì‚°ìˆ ì—°ì‚°ì~
 	public static void main(String[] args) {
 		
-		// µÎ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ »çÄ¢¿¬»ê °á°ú¸¦ Ãâ·ÂÇÏ½Ã¿À - ¼±»ı´Ô
+		// ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì‚¬ì¹™ì—°ì‚° ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤ - ì„ ìƒë‹˜
 		int a = 10;
 		int b = 4;
 		
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Ã¹¹øÂ° ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä>>"); //ÀÔ·ÂÇÒ ¼ö ÀÖ´Â ¸Ş½ÃÁö¸¦ ÁÙ¶§´Â println¸»°í print·Î
+		System.out.print("ì²«ë²ˆì§¸ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”>>"); //ì…ë ¥í•  ìˆ˜ ìˆëŠ” ë©”ì‹œì§€ë¥¼ ì¤„ë•ŒëŠ” printlnë§ê³  printë¡œ
 		a = Integer.parseInt(scanner.nextLine());
 		
-		System.out.print("µÎ¹øÂ° ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä>>");
+		System.out.print("ë‘ë²ˆì§¸ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”>>");
 		String input = scanner.nextLine();
 		b = Integer.parseInt(input);
 
@@ -23,16 +23,16 @@ public class Operator1 { //p97~ »ê¼ú¿¬»êÀÚ~
 		System.out.printf("%d / %d = %d%n", a, b, a / b);
 		System.out.printf("%d / %f = %f%n", a, (float)b, a / (float)b); 
 		
-		// µÎ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ »çÄ¢¿¬»ê °á°ú¸¦ Ãâ·ÂÇÏ½Ã¿À - ¿ÍÅ¸½Ã°¡ÇÑ°Å
+		// ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì‚¬ì¹™ì—°ì‚° ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤ - ì™€íƒ€ì‹œê°€í•œê±°
 		/*Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("µÎ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ »çÄ¢¿¬»ê °á°ú¸¦ Ãâ·ÂÇÏ½Ã¿À");
+		System.out.print("ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì‚¬ì¹™ì—°ì‚° ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤");
 		String input = scanner.nextLine();
-		int a = Integer.parseInt(input); // ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­À» ¼ıÀÚ·Î º¯È¯
-		int b = Integer.parseInt(input); // ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­À» ¼ıÀÚ·Î º¯È¯
-		int num = Integer.parseInt(input); // ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­À» ¼ıÀÚ·Î º¯È¯
+		int a = Integer.parseInt(input); // ì…ë ¥ë°›ì€ ë¬¸ìì—´ì„ ìˆ«ìë¡œ ë³€í™˜
+		int b = Integer.parseInt(input); // ì…ë ¥ë°›ì€ ë¬¸ìì—´ì„ ìˆ«ìë¡œ ë³€í™˜
+		int num = Integer.parseInt(input); // ì…ë ¥ë°›ì€ ë¬¸ìì—´ì„ ìˆ«ìë¡œ ë³€í™˜
 		
-		System.out.println("ÀÔ·Â³»¿ë :" + input);
+		System.out.println("ì…ë ¥ë‚´ìš© :" + input);
 		System.out.printf("num=%d + %d = %d%n", num, a, b, a - b);
 		*/
 				
@@ -40,22 +40,22 @@ public class Operator1 { //p97~ »ê¼ú¿¬»êÀÚ~
 		System.out.println("=====================================================");
 		
 		// 9 / 4 = 2 . . 1  | 1 + 2 * 4 = 9
-		// Á¦¼ö 0
+		// ì œìˆ˜ 0
 		
-		//³ª´°¼ÀÇÒ¶§ Á¦¼ö(³ª´©´Â¼ö)°¡ 0ÀÌ µÇ´Â°æ¿ì 
+		//ë‚˜ëˆ—ì…ˆí• ë•Œ ì œìˆ˜(ë‚˜ëˆ„ëŠ”ìˆ˜)ê°€ 0ì´ ë˜ëŠ”ê²½ìš° 
 		// 8 / 2 = 4 		| 4 * 2 = 8
 		
-//		System.out.println(3/0); Exception in thread "main" java.lang.ArithmeticException: / by zero ¤·¿À·ù¶ä
+//		System.out.println(3/0); Exception in thread "main" java.lang.ArithmeticException: / by zero ã…‡ì˜¤ë¥˜ëœ¸
 		
-		//½Ç¼ö°£ ¿¬»êÀº ¾à°£ÀÇ Çã¿ëÀÌ ÀÖÀ½
-		System.out.println(3/0d); // ÇÇÁ¦¼ö°¡ 0ÀÌ ¾Æ´Ñ°æ¿ì Infinity		(d, fµÑ´Ù) 
-		System.out.println(0/0f); // ÇÇÁ¦¼ö°¡ 0ÀÏ °æ¿ì	   Not a Number (¼ıÀÚ´Â ¸Â´Âµ¥ Á¤ÀÇÇÒ ¼ö ¾øÀ» ¶§)
+		//ì‹¤ìˆ˜ê°„ ì—°ì‚°ì€ ì•½ê°„ì˜ í—ˆìš©ì´ ìˆìŒ
+		System.out.println(3/0d); // í”¼ì œìˆ˜ê°€ 0ì´ ì•„ë‹Œê²½ìš° Infinity		(d, fë‘˜ë‹¤) 
+		System.out.println(0/0f); // í”¼ì œìˆ˜ê°€ 0ì¼ ê²½ìš°	   Not a Number (ìˆ«ìëŠ” ë§ëŠ”ë° ì •ì˜í•  ìˆ˜ ì—†ì„ ë•Œ)
 		
-		//java¿¡¼­ ½Ç¼ö ÀÚ·áÇü Àß ¾È½á¼­ °ÅÀÇ º¼ ÀÏ ¾øÀ½
+		//javaì—ì„œ ì‹¤ìˆ˜ ìë£Œí˜• ì˜ ì•ˆì¨ì„œ ê±°ì˜ ë³¼ ì¼ ì—†ìŒ
 		
 		byte a1 = 10;
 		byte b1 = 30;
-//		byte c1 = a1 + b1; ÄÄÆÄÀÏ ¿¡·¯°¡ ¹ß»ıÇÑ´Ù. ¸í½ÃÀûÀ¸·Î Çüº¯È¯ ÇÊ¿ä
+//		byte c1 = a1 + b1; ì»´íŒŒì¼ ì—ëŸ¬ê°€ ë°œìƒí•œë‹¤. ëª…ì‹œì ìœ¼ë¡œ í˜•ë³€í™˜ í•„ìš”
 //						 a,b 
 		byte c1 = (byte)(a1 * b1);
 		System.out.println(a1);

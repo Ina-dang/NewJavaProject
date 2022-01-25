@@ -1,21 +1,21 @@
-package a220108;
+ï»¿package a220108;
 
 public class Ch3_02_ { //ch3/Exercise3_2
 	public static void main(String[] args) {
-		int numOfApples = 121;		// »ç°úÀÇ °³¼ö
-		int sizeOfBucket = 10;		// ¹Ù±¸´ÏÀÇ Å©±â(¹Ù±¸´Ï¿¡ ´ãÀ» ¼ö ÀÖ´Â »ç°úÀÇ °³¼ö)
+		int numOfApples = 121;		// ì‚¬ê³¼ì˜ ê°œìˆ˜
+		int sizeOfBucket = 10;		// ë°”êµ¬ë‹ˆì˜ í¬ê¸°(ë°”êµ¬ë‹ˆì— ë‹´ì„ ìˆ˜ ìˆëŠ” ì‚¬ê³¼ì˜ ê°œìˆ˜)
 		int numOfBucket = numOfApples/sizeOfBucket + (numOfApples%sizeOfBucket > 0 ? 1 : 0);	
-									// ¸ğµç »ç°ú¸¦ ´ã´Âµ¥ ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ ¼ö
-						 // ÁÖ¼®¾È¿¡ ¾Ë¸ÂÀº ÄÚµå¸¦ ³Ö±â
-		System.out.println("ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ ¼ö :" + numOfBucket);
+									// ëª¨ë“  ì‚¬ê³¼ë¥¼ ë‹´ëŠ”ë° í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ ìˆ˜
+						 // ì£¼ì„ì•ˆì— ì•Œë§ì€ ì½”ë“œë¥¼ ë„£ê¸°
+		System.out.println("í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ ìˆ˜ :" + numOfBucket);
 		
 		
-		//ÇØ¼® º¸´Âµ¥µµ ÀÌÇØ°¡ ¾È°¨
+		//í•´ì„ ë³´ëŠ”ë°ë„ ì´í•´ê°€ ì•ˆê°
 		
 		/*
-		 * ¼±»ı´Ô ÇØ¼³
+		 * ì„ ìƒë‹˜ í•´ì„¤
 		 * 
-		 * »ç°ú¼ö ¹Ù±¸´Ï¼ö
+		 * ì‚¬ê³¼ìˆ˜ ë°”êµ¬ë‹ˆìˆ˜
 		 *  118     12
 		 *  119     12
 		 *  120     12
@@ -26,11 +26,11 @@ public class Ch3_02_ { //ch3/Exercise3_2
 		int numOfBucket1 = numOfApples % sizeOfBucket == 0 ? numOfApples/sizeOfBucket : numOfApples/sizeOfBucket + 1;
 		System.out.println(numOfBucket1);
 
-		//ÀÌ·¸°Ô ±×³É ¿Ã¸² ÇØ¹ö·Áµµ µÈ´Ù
+		//ì´ë ‡ê²Œ ê·¸ëƒ¥ ì˜¬ë¦¼ í•´ë²„ë ¤ë„ ëœë‹¤
 		int numOfBucket2 = (numOfApples + 9) / 10;
 		System.out.println(numOfBucket2);
 		
-		//ÀÌ·¸°Ôµµ ÇÒ ¼ö ÀÖ´Ù
+		//ì´ë ‡ê²Œë„ í•  ìˆ˜ ìˆë‹¤
 		int numOfBucket3 = (numOfApples -1) / 10 + 1;
 		System.out.println(numOfBucket3);
 	}

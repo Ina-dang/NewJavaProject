@@ -1,45 +1,45 @@
-package a220107;
+ï»¿package a220107;
 
 import java.util.Scanner;
 
-public class LeapYear { //À±³â°è»ê 2¿ùÀÌ 29ÀÏ
+public class LeapYear { //ìœ¤ë…„ê³„ì‚° 2ì›”ì´ 29ì¼
 	public static void main(String[] args) {
 	Scanner scanner = new Scanner(System.in);	
 			
-	System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+	System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 	int year = Integer.parseInt(scanner.nextLine());
-	String result = ((year%4==0 && year%100!=0) || year%400==0) ? "À±³â" : "Æò³â" ;
-	System.out.printf("ÀÔ·ÂÇÏ½Å ¼ıÀÚ´Â %sÀÔ´Ï´Ù", result); 
+	String result = ((year%4==0 && year%100!=0) || year%400==0) ? "ìœ¤ë…„" : "í‰ë…„" ;
+	System.out.printf("ì…ë ¥í•˜ì‹  ìˆ«ìëŠ” %sì…ë‹ˆë‹¤", result); 
 	/*
-	 * »ïÇ×¿¬»êÀÚ ¾µ°Í.
-	 * booleanÅ¸ÀÔ ³ª¿À°Ô
+	 * ì‚¼í•­ì—°ì‚°ì ì“¸ê²ƒ.
+	 * booleaníƒ€ì… ë‚˜ì˜¤ê²Œ
 	 */
 	
-	//½ÜÀÌ ¿øÇÏ´Â´ä
+	//ìŒ¤ì´ ì›í•˜ëŠ”ë‹µ
 	int year1 = 400;
 //1
-	System.out.println( year1 % 4 == 0 && year1 % 100 != 0 || year1 % 400==0 ? "À±³â" : "Æò³â");
+	System.out.println( year1 % 4 == 0 && year1 % 100 != 0 || year1 % 400==0 ? "ìœ¤ë…„" : "í‰ë…„");
 //2
 	if(year1 % 4 == 0 && year1 % 100 != 0 || year1 % 400==0) {
-		System.out.println("À±³â");
+		System.out.println("ìœ¤ë…„");
 	}
 	else {
-		System.out.println("Æò³â");
+		System.out.println("í‰ë…„");
 	}
 	
 	
-	//4³â¸¶´Ù À±³â 100³â¸¶´Ù ¾Æ´Ï°í 400³â¸¶´Ù À±³â
+	//4ë…„ë§ˆë‹¤ ìœ¤ë…„ 100ë…„ë§ˆë‹¤ ì•„ë‹ˆê³  400ë…„ë§ˆë‹¤ ìœ¤ë…„
 //	System.out.println( year = (year%4==0) && (year%100!=0) || (year%400==0) ? 1 : 0);
 	
 	
 //	if ( year%4==0 ) {
-//		System.out.print( year + " Àº À±³âÀÔ´Ï´Ù");
+//		System.out.print( year + " ì€ ìœ¤ë…„ì…ë‹ˆë‹¤");
 //	} else if ( year%400==0) {
-//		System.out.print( year + " Àº À±³â ÀÔ´Ï´Ù");
+//		System.out.print( year + " ì€ ìœ¤ë…„ ì…ë‹ˆë‹¤");
 //	} else if ( year%100==0 ) {
-//		System.out.print( year + " Àº À±³âÀÌ ¾Æ´Õ´Ï´Ù");
+//		System.out.print( year + " ì€ ìœ¤ë…„ì´ ì•„ë‹™ë‹ˆë‹¤");
 //	} else {
-//		System.out.println(year + " Àº À±³âÀÌ ¾Æ´Õ´Ï´Ù");
+//		System.out.println(year + " ì€ ìœ¤ë…„ì´ ì•„ë‹™ë‹ˆë‹¤");
 //	}
 	
 	

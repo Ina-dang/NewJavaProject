@@ -1,23 +1,23 @@
-package a220110;
+ï»¿package a220110;
 
 import java.util.Scanner;
 
 public class FlowEx7 {
 	public static void main(String[] args) {
-		System.out.print("°¡À§(1), ¹ÙÀ§(2), º¸(3) Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >");
+		System.out.print("ê°€ìœ„(1), ë°”ìœ„(2), ë³´(3) ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. >");
 		
 		Scanner scanner = new Scanner(System.in);
 		int user = scanner.nextInt();
 		int com = (int) (Math.random() * 3 ) + 1;
-		//Math.random = ³­¼ö ¹«ÀÛÀ§
-		// 0.0 <= Math.random() < 1.0 -> 0ÀÌ»ó 1¹Ì¸¸ÀÇ ³­¼ö°¡ ³ª¿Â´Ù
+		//Math.random = ë‚œìˆ˜ ë¬´ì‘ìœ„
+		// 0.0 <= Math.random() < 1.0 -> 0ì´ìƒ 1ë¯¸ë§Œì˜ ë‚œìˆ˜ê°€ ë‚˜ì˜¨ë‹¤
 		// Math.random()   : 0 ~ 0.999999999999999 (double type) 
 		// Math.random()*3 : 0 ~ 2.999999999999999
 		// (int)(Math.random() * 3)    : 0, 1, 2
 		// (int)(Math.random() * 3) +1 : 1, 2, 3
 		
-		System.out.println("´ç½ÅÀº " + user + "ÀÔ´Ï´Ù.");
-		System.out.println("´ç½ÅÀº " + com + "ÀÔ´Ï´Ù.");
+		System.out.println("ë‹¹ì‹ ì€ " + user + "ì…ë‹ˆë‹¤.");
+		System.out.println("ë‹¹ì‹ ì€ " + com + "ì…ë‹ˆë‹¤.");
 		
 //		int com = (int) (Math.random() * 3 ) + 1;
 //		7~13
@@ -26,30 +26,30 @@ public class FlowEx7 {
 		
 		switch (user-com) {
 		case 2: case -1:
-			System.out.println("´ç½ÅÀÌ Á³½À´Ï´Ù");
+			System.out.println("ë‹¹ì‹ ì´ ì¡ŒìŠµë‹ˆë‹¤");
 			break;
 		case 1: case -2:
-			System.out.println("´ç½ÅÀÌ ÀÌ°å½À´Ï´Ù");
+			System.out.println("ë‹¹ì‹ ì´ ì´ê²¼ìŠµë‹ˆë‹¤");
 			break;
 		case 0:
-			System.out.println("ºñ°å½À´Ï´Ù");
-//			break; ¸¶Áö¸· ¹®ÀåÀÌ¹Ç·Î break¸¦ »ç¿ëÇÒ ÇÊ¿ä°¡ ¾ø´Ù.
+			System.out.println("ë¹„ê²¼ìŠµë‹ˆë‹¤");
+//			break; ë§ˆì§€ë§‰ ë¬¸ì¥ì´ë¯€ë¡œ breakë¥¼ ì‚¬ìš©í•  í•„ìš”ê°€ ì—†ë‹¤.
 			
-			//6¸éÃ¼ÀÇ ÁÖ»çÀ§ 2¹ø ±¼·ÈÀ» ¶§ ÇÕ (¹üÀ§ 2~12)
+			//6ë©´ì²´ì˜ ì£¼ì‚¬ìœ„ 2ë²ˆ êµ´ë ¸ì„ ë•Œ í•© (ë²”ìœ„ 2~12)
 //			int com = (int)(Math.random() * 11 ) + 2;
-			//ÀÌ·¸°ÔÇÏ¸é 2³ª 12°¡ µÎ¹ø¾¿ ³ª¿Ã È®·üÀÌ ÀÖ´Ù ±×·¸±â ¶§¹®¿¡
+			//ì´ë ‡ê²Œí•˜ë©´ 2ë‚˜ 12ê°€ ë‘ë²ˆì”© ë‚˜ì˜¬ í™•ë¥ ì´ ìˆë‹¤ ê·¸ë ‡ê¸° ë•Œë¬¸ì—
 //			int com = (int)(Math.random() * 6 ) + 1 + (int)(Math.random() * 6 ) + 1
-					  // ÀÌ·¸°Ô ÁÖ»çÀ§ µÎ °³ Ã³·³ µÎ ¹ø ±¼·Á¾ßÇÑ´Ù
+					  // ì´ë ‡ê²Œ ì£¼ì‚¬ìœ„ ë‘ ê°œ ì²˜ëŸ¼ ë‘ ë²ˆ êµ´ë ¤ì•¼í•œë‹¤
 			
-//			À·³îÀÌ·Î ¿¹½Ã
-//			0000 : À· 1/16
+//			ìœ·ë†€ì´ë¡œ ì˜ˆì‹œ
+//			0000 : ìœ· 1/16
 //			0111 : 
-//			1000 : °É 4/16
-//			1100 : °³ 6/16
-//			1110 : µµ 4/16 = 1/4
-//			1111 : ¸ğ 1/16
+//			1000 : ê±¸ 4/16
+//			1100 : ê°œ 6/16
+//			1110 : ë„ 4/16 = 1/4
+//			1111 : ëª¨ 1/16
 			
-//			À·³îÀÌ ¸¸µé¾î¿À¼À ¤Ì
+//			ìœ·ë†€ì´ ë§Œë“¤ì–´ì˜¤ì…ˆ ã…œ
 		}
 		scanner.close();
 	}

@@ -1,10 +1,10 @@
-package a220108;
+ï»¿package a220108;
 
 public class Ch3_05 {
 	/*
-	 * ¾Æ·¡´Â º¯¼ö numÀÇ °ª Áß¿¡¼­ ÀÏÀÇ ÀÚ¸®¸¦ 1·Î ¹Ù²Û´À ÄÚµåÀÌ´Ù. 
-	 * ¸¸ÀÏ º¯¼ö numÀÇ °ªÀÌ 333ÀÌ¶ó¸é 331ÀÌ µÇ°í, 777ÀÌ¶ó¸é 771ÀÌ µÈ´Ù
-	 * ()¿¡ ¾Ë¸ÂÀº ÄÚµå¸¦ ³ÖÀ¸½Ã¿À
+	 * ì•„ëž˜ëŠ” ë³€ìˆ˜ numì˜ ê°’ ì¤‘ì—ì„œ ì¼ì˜ ìžë¦¬ë¥¼ 1ë¡œ ë°”ê¾¼ëŠ ì½”ë“œì´ë‹¤. 
+	 * ë§Œì¼ ë³€ìˆ˜ numì˜ ê°’ì´ 333ì´ë¼ë©´ 331ì´ ë˜ê³ , 777ì´ë¼ë©´ 771ì´ ëœë‹¤
+	 * ()ì— ì•Œë§žì€ ì½”ë“œë¥¼ ë„£ìœ¼ì‹œì˜¤
 	 */
 	public static void main(String[] args) {
 		int num = 777;

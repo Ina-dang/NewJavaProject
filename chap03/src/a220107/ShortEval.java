@@ -1,27 +1,27 @@
-package a220107;
+ï»¿package a220107;
 
 public class ShortEval {
 	public static void main(String[] args) {
 		// && & 
 		// || |
 		
-		//¾Õ¸¸ °è»ê = È¿À²Àû
+		//ì•žë§Œ ê³„ì‚° = íš¨ìœ¨ì 
 		System.out.println(true  && true);
 		System.out.println(false || true);
 		System.out.println(true  && false);
 		System.out.println(false || false);
-		//µÚµµ ´Ù °è»ê
+		//ë’¤ë„ ë‹¤ ê³„ì‚°
 		System.out.println(true  & true); 
 		System.out.println(false & true);
 		System.out.println(true  & false);
 		System.out.println(false & false);
 		
 		int i = 0;
-//		System.out.println(i != 0 &  10 / i > 10); //¿¡·¯¶ä - ¾ê´Â 10/i(0)À» °è»êÇÏ·Á µé¾î¼­ ¿À·ù¶ä NaN
+//		System.out.println(i != 0 &  10 / i > 10); //ì—ëŸ¬ëœ¸ - ì–˜ëŠ” 10/i(0)ì„ ê³„ì‚°í•˜ë ¤ ë“¤ì–´ì„œ ì˜¤ë¥˜ëœ¸ NaN
 		//
-		System.out.println(i != 0 && 10 / i > 10); //false . &&´Â ÁÂº¯ÀÌ false¸é false »ÕÀ½ - ºÒÇÊ¿äÇÑ ¿¬»ê ¾ÈÇÔ
-		System.out.println(i == 0 || 10 / i > 10); //true .  ||´Â ÁÂº¯ÀÌ  true¸é  true »ÕÀ½ - ºÒÇÊ¿äÇÑ ¿¬»ê ¾ÈÇÔ
+		System.out.println(i != 0 && 10 / i > 10); //false . &&ëŠ” ì¢Œë³€ì´ falseë©´ false ë¿œìŒ - ë¶ˆí•„ìš”í•œ ì—°ì‚° ì•ˆí•¨
+		System.out.println(i == 0 || 10 / i > 10); //true .  ||ëŠ” ì¢Œë³€ì´  trueë©´  true ë¿œìŒ - ë¶ˆí•„ìš”í•œ ì—°ì‚° ì•ˆí•¨
 		
-		//È¿À²Àû ¿¬»êÀ» À§ÇØ && || µÎ°³ ¾¿ ¾²´Â°Å
+		//íš¨ìœ¨ì  ì—°ì‚°ì„ ìœ„í•´ && || ë‘ê°œ ì”© ì“°ëŠ”ê±°
 	}
 }

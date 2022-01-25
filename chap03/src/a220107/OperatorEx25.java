@@ -1,44 +1,44 @@
-package a220107;
+ï»¿package a220107;
 
-// C¾ğ¾î ½ÃÀÛ #include <studio.h> c¾ğ¾î´Â ÀÌ°Ô¾øÀ¸¸é Ãâ·ÂÀÌ¾ÈµÊ
-//import java.lang*;//ÀÚ¹Ù´Â ÇÊ¿ä¾ø´ÂÀÌÀ¯ ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿Ãâ·ÂÇØÁÜ
+// Cì–¸ì–´ ì‹œì‘ #include <studio.h> cì–¸ì–´ëŠ” ì´ê²Œì—†ìœ¼ë©´ ì¶œë ¥ì´ì•ˆë¨
+//import java.lang*;//ìë°”ëŠ” í•„ìš”ì—†ëŠ”ì´ìœ  ì»´íŒŒì¼ëŸ¬ê°€ ìë™ì¶œë ¥í•´ì¤Œ
 
 import java.util.Scanner; 
 
 public class OperatorEx25 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-									//Ç¥ÁØÀÔ·Â
+									//í‘œì¤€ì…ë ¥
 		char ch = ' ';
-		System.out.printf("¹®ÀÚ¸¦ ÇÏ³ª ÀÔ·ÂÇÏ¼¼¿ä. >>");
+		System.out.printf("ë¬¸ìë¥¼ í•˜ë‚˜ ì…ë ¥í•˜ì„¸ìš”. >>");
 		
 		String input = scanner.nextLine();
 		ch = input.charAt(0);
-		//charAt(0) Àº "abcde"¸¦ ÀÔ·ÂÇÏ¸é 0¹øÂ° ±ÛÀÚÀ§Ä¡ a¸¦ Ãâ·Â ÇØ¼®ÇÑ´Ù´Â ¶æ
-		//¿©·¯±ÛÀÚ ÀÔ·ÂÇØµµ Ã¹¹øÂ°¸¸ ÀÎ½Ä
+		//charAt(0) ì€ "abcde"ë¥¼ ì…ë ¥í•˜ë©´ 0ë²ˆì§¸ ê¸€ììœ„ì¹˜ aë¥¼ ì¶œë ¥ í•´ì„í•œë‹¤ëŠ” ëœ»
+		//ì—¬ëŸ¬ê¸€ì ì…ë ¥í•´ë„ ì²«ë²ˆì§¸ë§Œ ì¸ì‹
 		
 		
-		if('0'<= ch && ch <= '9') { //if¿¡´Â Á¶°Ç½ÄÀÌ µé¾î°£´Ù - boolean Å¸ÀÔ
-			System.out.printf("ÀÔ·ÂÇÏ½Å ¹®ÀÚ´Â ¼ıÀÚÀÔ´Ï´Ù. %n");
-		}	//Ç¥ÁØÃâ·Â
+		if('0'<= ch && ch <= '9') { //ifì—ëŠ” ì¡°ê±´ì‹ì´ ë“¤ì–´ê°„ë‹¤ - boolean íƒ€ì…
+			System.out.printf("ì…ë ¥í•˜ì‹  ë¬¸ìëŠ” ìˆ«ìì…ë‹ˆë‹¤. %n");
+		}	//í‘œì¤€ì¶œë ¥
 		
 		if(('a'<= ch && ch <= 'z') || ('A' <= ch && ch <= 'Z')) {
-			System.out.printf("ÀÔ·ÂÇÏ½Å ¹®ÀÚ´Â ¿µ¹®ÀÚÀÔ´Ï´Ù. %n");
+			System.out.printf("ì…ë ¥í•˜ì‹  ë¬¸ìëŠ” ì˜ë¬¸ìì…ë‹ˆë‹¤. %n");
 		}
 		
 		
 		///////////////////////////////////////////////////////////////////
 		
-		System.out.printf("¹®ÀÚ¸¦ ÇÏ³ª ÀÔ·ÂÇÏ¼¼¿ä. >>");
+		System.out.printf("ë¬¸ìë¥¼ í•˜ë‚˜ ì…ë ¥í•˜ì„¸ìš”. >>");
 		String input1 = scanner.nextLine();
 		ch = input1.charAt(0);
 		
 				if('0'<= ch && ch <= '9') {
-			System.out.printf("ÀÔ·ÂÇÏ½Å ¹®ÀÚ´Â ¼ıÀÚÀÔ´Ï´Ù. %n");
+			System.out.printf("ì…ë ¥í•˜ì‹  ë¬¸ìëŠ” ìˆ«ìì…ë‹ˆë‹¤. %n");
 		}
 		
 		if(('a'<= ch && ch <= 'z') || ('A' <= ch && ch <= 'Z')) {
-			System.out.printf("ÀÔ·ÂÇÏ½Å ¹®ÀÚ´Â ¿µ¹®ÀÚÀÔ´Ï´Ù. %n");
+			System.out.printf("ì…ë ¥í•˜ì‹  ë¬¸ìëŠ” ì˜ë¬¸ìì…ë‹ˆë‹¤. %n");
 		}
 		scanner.close();
 	}

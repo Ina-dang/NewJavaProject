@@ -1,18 +1,18 @@
-package prizm;
+ï»¿package prizm;
 
 import shape.Shape;
 import shape.D3;
 import tri.Tri;
 
 public class Prizm extends Shape implements D3 {
-	private Tri tri; //ÃÊ±â¿¡ ´ºÆ®¶óÀÌ¾Ş±Û ¾ÈµÊ »ı¼ºÇÒ¶§ °¡´É
+	private Tri tri; //ì´ˆê¸°ì— ë‰´íŠ¸ë¼ì´ì•µê¸€ ì•ˆë¨ ìƒì„±í• ë•Œ ê°€ëŠ¥
 
 	public Prizm(int x, int y, int z) {
 		super(z);
 		tri = new Tri(x, y);
 	}
 	
-	// ¿ø±âµÕÀÌ¶û °ø½Ä°°¾Æ¼­ ³ªÁß¿¡´Â Àú triµµ Á¦¾îÇÏ·Á°í ÇÒ°ÅÀÓ
+	// ì›ê¸°ë‘¥ì´ë‘ ê³µì‹ê°™ì•„ì„œ ë‚˜ì¤‘ì—ëŠ” ì € trië„ ì œì–´í•˜ë ¤ê³  í• ê±°ì„
 	@Override
 	public double getVolume() {
 		return tri.getArea() * getI();

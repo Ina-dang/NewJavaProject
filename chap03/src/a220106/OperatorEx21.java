@@ -1,4 +1,4 @@
-package a220106;
+ï»¿package a220106;
 
 public class OperatorEx21 {
 	public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class OperatorEx21 {
 //		System.out.printf("'A' == 65    \t %b%n", 'A' == 65);
 		System.out.printf("'A' > 'B'    \t %b%n", 'A' > 'B');
 //		System.out.printf("'A'+1 != 'B' \t %b%n", 'A'+1 != 'B');
-	//ÀÚ¹Ù°¡ ÀÚ²Ù problems·Î ¹¹¶óÇØ¼­ ÁÖ¼®ÇØµÒ
+	//ìë°”ê°€ ìê¾¸ problemsë¡œ ë­ë¼í•´ì„œ ì£¼ì„í•´ë‘ 
 	
 		
 		/*
@@ -15,7 +15,7 @@ public class OperatorEx21 {
 		System.out.println(k); //The local variable k may not have been initialized
 		*/
 		
-		int k = 19;//k¿¡ °ª³Ö¾î¼­ int k¸¦ initialized(ÃÊ±âÈ­) ÇØÁà¾ßÇÔ
+		int k = 19;//kì— ê°’ë„£ì–´ì„œ int kë¥¼ initialized(ì´ˆê¸°í™”) í•´ì¤˜ì•¼í•¨
 		System.out.println(k); 
 		
 	}

@@ -1,27 +1,27 @@
-package a220105;
+ï»¿package a220105;
 
 public class Summary {
 	public static void main(String[] args) {
 		/*
-		 * ¹®ÀÚµµ ÄÄÇ»ÅÍ´Â ¼ýÀÚ·Î ÀÌÇØÇÑ´Ù
+		 * ë¬¸ìžë„ ì»´í“¨í„°ëŠ” ìˆ«ìžë¡œ ì´í•´í•œë‹¤
 		 * 
-		 * À¯´ÏÄÚµå 48 0
-		 * À¯´ÏÄÚµå 65 Á¤µµ´Â ¿Ü¿öµÎÀÚ! 'A'
-		 * À¯´ÏÄÚµå 97 'a'
-		 * '°¡'µµ ¿Ü¿öµÎ¸é ÁÁ´Ù '44032'
+		 * ìœ ë‹ˆì½”ë“œ 48 0
+		 * ìœ ë‹ˆì½”ë“œ 65 ì •ë„ëŠ” ì™¸ì›Œë‘ìž! 'A'
+		 * ìœ ë‹ˆì½”ë“œ 97 'a'
+		 * 'ê°€'ë„ ì™¸ì›Œë‘ë©´ ì¢‹ë‹¤ '44032'
 		 * 
-		 * Å°º¸µå¿¡µµ key code°¡ ÀÖ´Ù
+		 * í‚¤ë³´ë“œì—ë„ key codeê°€ ìžˆë‹¤
 		 */
 		
 		/*
-		 * Á¤¼öÇü Áß ¿Ö int°¡ Áß¿äÇÑ°¡
+		 * ì •ìˆ˜í˜• ì¤‘ ì™œ intê°€ ì¤‘ìš”í•œê°€
 		 * 
 		 * byte val1 = 10;
 		 * byte val2 = 20;
-		 * byte val3 = val1 + val2; ¿À·ù¶ä
+		 * byte val3 = val1 + val2; ì˜¤ë¥˜ëœ¸
 		 * 
-		 * »ê¼úÇü »ó½Â°ªÀ¸·Î int°¡ µÈ´Ù
-		 * (¿¬»êÀÚ¸¦ È£ÃâÇÏ¸é int°¡ µÊ)
+		 * ì‚°ìˆ í˜• ìƒìŠ¹ê°’ìœ¼ë¡œ intê°€ ëœë‹¤
+		 * (ì—°ì‚°ìžë¥¼ í˜¸ì¶œí•˜ë©´ intê°€ ë¨)
 		 */
 	}
 

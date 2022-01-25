@@ -1,18 +1,18 @@
-package circle;
+ï»¿package circle;
 
 import shape.Shape;
 import shape.D2;
 
 public class Circle extends Shape implements D2 {
-//get I ¸¦ ÇÁ·ÎÅØÆ®·Î ½á¾ßÇÔ
+//get I ë¥¼ í”„ë¡œí…íŠ¸ë¡œ ì¨ì•¼í•¨
 
-		 //ÇöÀç »ı¼ºÀÚ°¡ ¾Æ¹«°Íµµ Á¤ÀÇµÇ¾îÀÖÁö¾ÊÀº ±âº»»ı¼ºÀÚ¸¸ ÀÖÀ½ ±×·¸±â¶§¹®¿¡ ¾êµµ Ãß°¡»ı¼ºÀÚ È£ÃâÇØÁà¾ßÇÔ 
-			// ¼­Å¬¿¡ °ü·ÃµÈ°É ¼öÆÛ¿¡¼­
-			public Circle(int r) { //int iÀÌ¸§´Ù¸£°ÔÁØ°Å
-				super(r); //¼­Å¬¿¡¼­ r ¿äÃ»
+		 //í˜„ì¬ ìƒì„±ìê°€ ì•„ë¬´ê²ƒë„ ì •ì˜ë˜ì–´ìˆì§€ì•Šì€ ê¸°ë³¸ìƒì„±ìë§Œ ìˆìŒ ê·¸ë ‡ê¸°ë•Œë¬¸ì— ì–˜ë„ ì¶”ê°€ìƒì„±ì í˜¸ì¶œí•´ì¤˜ì•¼í•¨ 
+			// ì„œí´ì— ê´€ë ¨ëœê±¸ ìˆ˜í¼ì—ì„œ
+			public Circle(int r) { //int iì´ë¦„ë‹¤ë¥´ê²Œì¤€ê±°
+				super(r); //ì„œí´ì—ì„œ r ìš”ì²­
 			}	
 
-		//»ı¼ºÇßÀ¸´Ï ±¸ÇöÇØ¾ßÁö
+		//ìƒì„±í–ˆìœ¼ë‹ˆ êµ¬í˜„í•´ì•¼ì§€
 			@Override
 			public double getCircum() {
 				return 2 * Math.PI * getI();
@@ -24,7 +24,7 @@ public class Circle extends Shape implements D2 {
 				return getI() * getI() * Math.PI;
 			}
 			
-	//¼­Å¬¿¡¼­ ¹İÁö¸§ °ªº¯°æÇÏ·Á¸é Á÷Á¢ °ª ÀÔ·ÂÇÏ¸éµÊ
+	//ì„œí´ì—ì„œ ë°˜ì§€ë¦„ ê°’ë³€ê²½í•˜ë ¤ë©´ ì§ì ‘ ê°’ ì…ë ¥í•˜ë©´ë¨
 	public void setR ( int r) {
 		setI(r);
 	}

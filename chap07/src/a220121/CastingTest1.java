@@ -1,29 +1,29 @@
-package a220121;
+ï»¿package a220121;
 
 public class CastingTest1 {
 	public static void main(String[] args) {
-		Car car = null; //¿¹¿ÜÃ³¸® ÇÒ ¶§ ¸¹ÀÌ ¾¸
+		Car car = null; //ì˜ˆì™¸ì²˜ë¦¬ í•  ë•Œ ë§ì´ ì”€
 		FireEngine fe = new FireEngine();
 		FireEngine fe2 = null;
 		
 		fe.drive();
 		fe.water();
-		car = fe;		// car = (Car)fe;¿¡¼­ Çüº¯È¯ÀÌ »ı·«µÈ ÇüÅÂ´Ù.
-//		car.water();		// ÄÄÆÄÀÏ¿¡·¯. CarÅ¸ÀÔÀÇ ÂüÁ¶º¯¼ö·Î´Â water()¸¦ È£ÃâÇÒ ¼ö ¾ø´Ù.
-		((FireEngine)car).water();		// car ¸ÕÀú Ä³½ºÆÃ ÇÏ¸é ¾µ ¼ö ÀÖÀ½
-		fe2 = (FireEngine)car; // ÀÚ¼ÕÅ¸ÀÔ ¡ç Á¶»óÅ¸ÀÔ
+		car = fe;		// car = (Car)fe;ì—ì„œ í˜•ë³€í™˜ì´ ìƒëµëœ í˜•íƒœë‹¤.
+//		car.water();		// ì»´íŒŒì¼ì—ëŸ¬. Caríƒ€ì…ì˜ ì°¸ì¡°ë³€ìˆ˜ë¡œëŠ” water()ë¥¼ í˜¸ì¶œí•  ìˆ˜ ì—†ë‹¤.
+		((FireEngine)car).water();		// car ë¨¼ì € ìºìŠ¤íŒ… í•˜ë©´ ì“¸ ìˆ˜ ìˆìŒ
+		fe2 = (FireEngine)car; // ìì†íƒ€ì… â† ì¡°ìƒíƒ€ì…
 		fe2.water();
 		fe2.stop();
 
 		System.out.println("=================");
 		
-		Car car2 = new Car(); // Ä« ÀÎ½ºÅÏ½º »ı¼º
+		Car car2 = new Car(); // ì¹´ ì¸ìŠ¤í„´ìŠ¤ ìƒì„±
 //		car2 = fe;
 		System.out.println(fe instanceof Car);			//true 
-		System.out.println(fe instanceof FireEngine);	//true	== ¾ê´Â ÀÚ±âÅ¸ÀÔ Ä³½ºÆÃ
-		//Ä«Å¸ÀÔ ÀÎ½ºÅÏ½º¿Àºê³Ä ¼Ò¹æÂ÷ ÀÎ½ºÅÏ½º¿Àºê³Ä == Çüº¯È¯ µÇ³Ä? 
+		System.out.println(fe instanceof FireEngine);	//true	== ì–˜ëŠ” ìê¸°íƒ€ì… ìºìŠ¤íŒ…
+		//ì¹´íƒ€ì… ì¸ìŠ¤í„´ìŠ¤ì˜¤ë¸Œëƒ ì†Œë°©ì°¨ ì¸ìŠ¤í„´ìŠ¤ì˜¤ë¸Œëƒ == í˜•ë³€í™˜ ë˜ëƒ? 
 		
-		System.out.println(car2 instanceof Car);		//true == ¾ê´Â ÀÚ±âÅ¸ÀÔ Ä³½ºÆÃ
+		System.out.println(car2 instanceof Car);		//true == ì–˜ëŠ” ìê¸°íƒ€ì… ìºìŠ¤íŒ…
 		System.out.println(car2 instanceof FireEngine);	//false
 		
 		System.out.println(car.getClass().getName());

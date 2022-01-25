@@ -1,13 +1,13 @@
-package a220121.starcraft;
+ï»¿package a220121.starcraft;
 
 class Marine extends Unit {
 
 	@Override
-	void move(int x, int y) { /* ÁöÁ¤µÈ À§Ä¡·Î ÀÌµ¿ */
-		System.out.println(getClass().getSimpleName() + "ÀÌ " + x + ", " + y + "ÁÂÇ¥·Î ÀÌµ¿ÇÕ´Ï´Ù");
+	void move(int x, int y) { /* ì§€ì •ëœ ìœ„ì¹˜ë¡œ ì´ë™ */
+		System.out.println(getClass().getSimpleName() + "ì´ " + x + ", " + y + "ì¢Œí‘œë¡œ ì´ë™í•©ë‹ˆë‹¤");
 	}
-//	void stimPack() { /* ½ºÆÀÆÑÀ» »ç¿ëÇÑ´Ù */ }
+//	void stimPack() { /* ìŠ¤íŒ€íŒ©ì„ ì‚¬ìš©í•œë‹¤ */ }
 	void stimPack() {
-		System.out.println("½ºÆÀÆÑ »ç¿ë");
+		System.out.println("ìŠ¤íŒ€íŒ© ì‚¬ìš©");
 	}
 } 

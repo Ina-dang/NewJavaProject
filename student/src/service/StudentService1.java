@@ -1,22 +1,22 @@
-package service;
+ï»¿package service;
 
 import static utils.StudentUtil.*;
 import static domain.Student.*;
 import app.StudentEx;
 import domain.Student;
 
-public class StudentService1 { //±â´É
+public class StudentService1 { //ê¸°ëŠ¥
 	
-	//ÇĞ»ıµ¥ÀÌÅÍ
+	//í•™ìƒë°ì´í„°
 	Student[] students = new Student[10];
 
 	
-	int cnt; //ÇöÀç ÇĞ»ı ÀÎ¿ø¼ö
+	int cnt; //í˜„ì¬ í•™ìƒ ì¸ì›ìˆ˜
 	
-	String[] names = {"±è°æº¸", "±èµ¿¿±", "±è»óÇö", "±è½ÂÁ¾", "±è¿¹Âù", "±èÄ¡Çü", "±èÅÂÀ±"};
+	String[] names = {"ê¹€ê²½ë³´", "ê¹€ë™ì—½", "ê¹€ìƒí˜„", "ê¹€ìŠ¹ì¢…", "ê¹€ì˜ˆì°¬", "ê¹€ì¹˜í˜•", "ê¹€íƒœìœ¤"};
 	
 	
-	public StudentService1() { //½ºÆ©´øÆ®¼­ºñ½º »ı¼ºÀÚ
+	public StudentService1() { //ìŠ¤íŠœë˜íŠ¸ì„œë¹„ìŠ¤ ìƒì„±ì
 		for (int i = 0; i < names.length; i++) {
 			students[cnt] = new Student(220000 + cnt + 1 + "", names[cnt], getScore(), getScore(), getScore());
 			cnt++;
@@ -27,38 +27,38 @@ public class StudentService1 { //±â´É
 		return (int)(Math.random()*41)+60;
 	}
 	
-	//Á¶È¸
+	//ì¡°íšŒ
 	void list() {
-		System.out.println("ÇĞ¹ø\t  ÀÌ¸§\t  ±¹¾î\t ¿µ¾î\t ¼öÇĞ\t ÃÑÁ¡\t Æò±Õ");
+		System.out.println("í•™ë²ˆ\t  ì´ë¦„\t  êµ­ì–´\t ì˜ì–´\t ìˆ˜í•™\t ì´ì \t í‰ê· ");
 		System.out.println("======================================================");
 		for (int i = 0; i < cnt; i++) {
-				System.out.println(students[i]); // ÀÌ ÁÖ¼Ò°ªÀ» toStringÀ» »ç¿ëÇØ ¹®ÀÚ¿­·Î ¹İÈ¯
+				System.out.println(students[i]); // ì´ ì£¼ì†Œê°’ì„ toStringì„ ì‚¬ìš©í•´ ë¬¸ìì—´ë¡œ ë°˜í™˜
 		}
 
 
 	}
 	
-	//µî·Ï
+	//ë“±ë¡
 	void register() { 
 		
-		students[cnt++] = new Student(nextLine("ÇĞ¹ø>"), nextLine("ÀÌ¸§"), nextInt("±¹¾î"), 
-				nextInt("¿µ¾î"), nextInt("¼öÇĞ") );
+		students[cnt++] = new Student(nextLine("í•™ë²ˆ>"), nextLine("ì´ë¦„"), nextInt("êµ­ì–´"), 
+				nextInt("ì˜ì–´"), nextInt("ìˆ˜í•™") );
 
 	}
-	//µî·ÏºÎºĞ ³¡
+	//ë“±ë¡ë¶€ë¶„ ë
 	Student student = new Student();
 	
-	//¼öÁ¤
+	//ìˆ˜ì •
 	public void modify() { 
-		//ÇĞ¹øÀ¸·Î ÇĞ»ıÀ» Å½»ö ÈÄ ÇĞ»ı µ¥ÀÌÅÍ Áß ÀÌ¸§ , ¼ºÀû ¼öÁ¤
-		String no = nextLine("¼öÁ¤ÇÒ ÇĞ»ıÀÇ ÇĞ¹ø >> "); 
+		//í•™ë²ˆìœ¼ë¡œ í•™ìƒì„ íƒìƒ‰ í›„ í•™ìƒ ë°ì´í„° ì¤‘ ì´ë¦„ , ì„±ì  ìˆ˜ì •
+		String no = nextLine("ìˆ˜ì •í•  í•™ìƒì˜ í•™ë²ˆ >> "); 
 		for (int i = 0; i < cnt; i++) {
-			if (students[i].getNo().equals(no)) { //equals È®ÀÎ
+			if (students[i].getNo().equals(no)) { //equals í™•ì¸
 				System.out.println(students[i]);
-				String name = nextLine("ÀÌ¸§>");
-				int kor = nextInt("±¹¾î>");
-				int eng = nextInt("¿µ¾î>");
-				int math = nextInt("¼öÇĞ>");
+				String name = nextLine("ì´ë¦„>");
+				int kor = nextInt("êµ­ì–´>");
+				int eng = nextInt("ì˜ì–´>");
+				int math = nextInt("ìˆ˜í•™>");
 
 				students[i].setName(name);
 				students[i].setKor(kor);
@@ -66,16 +66,16 @@ public class StudentService1 { //±â´É
 				students[i].setMath(math);
 			}
 		}
-	}//modify ³¡
+	}//modify ë
 	
-	//»èÁ¦
+	//ì‚­ì œ
 	boolean flag = false;
 	
 	public void delete() {
-		String no = nextLine("»èÁ¦ÇÒ ÇĞ»ıÀÇ ÇĞ¹ø >>"); 
+		String no = nextLine("ì‚­ì œí•  í•™ìƒì˜ í•™ë²ˆ >>"); 
 		for (int i = 0; i < cnt; i++) {
-			if (students[i].getNo().equals(no)) { //equals È®ÀÎ
-				System.out.println(this.names + "À» »èÁ¦ÇÕ´Ï´Ù");
+			if (students[i].getNo().equals(no)) { //equals í™•ì¸
+				System.out.println(this.names + "ì„ ì‚­ì œí•©ë‹ˆë‹¤");
 				for (int j = 0; j < cnt-1; j++) {
 					students[j] = students[j+1]; 
 				}

@@ -1,38 +1,38 @@
-package a220110;
+ï»¿package a220110;
 
 import java.util.Scanner;
 
-public class Homework {//À·³îÀÌ ¸¸µé¾î¿À±â
+public class Homework {//ìœ·ë†€ì´ ë§Œë“¤ì–´ì˜¤ê¸°
 	public static void main(String[] args) {
 		
-//	À·³îÀÌ·Î ¿¹½Ã
-//	0000 : À· 1/16
+//	ìœ·ë†€ì´ë¡œ ì˜ˆì‹œ
+//	0000 : ìœ· 1/16
 //	0111 : 
-//	1000 : °É 4/16
-//	1100 : °³ 6/16
-//	1110 : µµ 4/16 = 1/4
-//	1111 : ¸ğ 1/16
+//	1000 : ê±¸ 4/16
+//	1100 : ê°œ 6/16
+//	1110 : ë„ 4/16 = 1/4
+//	1111 : ëª¨ 1/16
 		
 		/*
-		 * 16ºĞÀÇ ¸îÀ¸·Î µµ°³°ÉÀ·¸ğ°¡ ³ª¿Â´Ù
-		 * FlowEx7 ³­¼ö È®ÀÎ
+		 * 16ë¶„ì˜ ëª‡ìœ¼ë¡œ ë„ê°œê±¸ìœ·ëª¨ê°€ ë‚˜ì˜¨ë‹¤
+		 * FlowEx7 ë‚œìˆ˜ í™•ì¸
 		 */
 		
 	Scanner scanner = new Scanner(System.in);
-	System.out.print("À·³îÀÌ>> ");
-//	String input = scanner.nextLine(); ÀÌ°Å¾øÀ¸¸é ¹Ù·Î À·´øÁ®Áü
+	System.out.print("ìœ·ë†€ì´>> ");
+//	String input = scanner.nextLine(); ì´ê±°ì—†ìœ¼ë©´ ë°”ë¡œ ìœ·ë˜ì ¸ì§
 	
 	int num = (int)(Math.random() * 16) + 1;
 	if (num <= 4) {
-		System.out.println("µµ");
+		System.out.println("ë„");
 	} else if (num <= 10) {
-		System.out.println("°³");
+		System.out.println("ê°œ");
 	} else if (num <= 14 ) {
-		System.out.println("°É");
+		System.out.println("ê±¸");
 	} else if (num <= 15) {
-		System.out.println("À·");
+		System.out.println("ìœ·");
 	} else
-		System.out.println("¸ğ");
+		System.out.println("ëª¨");
 	
 
 	scanner.close();

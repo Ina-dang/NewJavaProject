@@ -1,17 +1,17 @@
-package a220113;
+ï»¿package a220113;
 
 public class MiniHwResult {
 	public static void main(String[] args) {
-		//¼Ò¼ö ±¸ÇÏ±â
+		//ì†Œìˆ˜ êµ¬í•˜ê¸°
 		/*
-		 * ¾à¼ö : 1º¸´Ù Å« ÀÚ¿¬¼ö Áß "ÀÚ±âÀÚ½ÅÀÇ ¼ýÀÚ ÀÌÇÏ"ÀÎ ¼ýÀÚ Áß "³ª´©¾î ¶³¾îÁö´Â ¼ýÀÚ"
-		 * 			= ÀÚ½ÅÀÇ ¼ýÀÚ ÀÌÇÏÀÇ ÀÚ¿¬¼ö(1º¸´Ù Å« Á¤¼ö) Áß ³ª´©¾î ¶³¾îÁö´Â ¼ýÀÚ
+		 * ì•½ìˆ˜ : 1ë³´ë‹¤ í° ìžì—°ìˆ˜ ì¤‘ "ìžê¸°ìžì‹ ì˜ ìˆ«ìž ì´í•˜"ì¸ ìˆ«ìž ì¤‘ "ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ìˆ«ìž"
+		 * 			= ìžì‹ ì˜ ìˆ«ìž ì´í•˜ì˜ ìžì—°ìˆ˜(1ë³´ë‹¤ í° ì •ìˆ˜) ì¤‘ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ìˆ«ìž
 		 * 
-		 * ³ª´©¾î ¶³¾îÁø´Ù = ÀÚ½ÅÀÇ ¼ýÀÚ¿Í ±× ¼ýÀÚ¸¦ ³ª´©¾úÀ» ¶§ 0ÀÌ µÇ´Â °Í
+		 * ë‚˜ëˆ„ì–´ ë–¨ì–´ì§„ë‹¤ = ìžì‹ ì˜ ìˆ«ìžì™€ ê·¸ ìˆ«ìžë¥¼ ë‚˜ëˆ„ì—ˆì„ ë•Œ 0ì´ ë˜ëŠ” ê²ƒ
 		 * 
 		 */
 		/*
-		 * ¼Ò¼ö : 1°ú ÀÚ±â ÀÚ½Å¸¸À¸·Î ³ª´©¾î ¶³¾îÁö´Â ¼ýÀÚ
+		 * ì†Œìˆ˜ : 1ê³¼ ìžê¸° ìžì‹ ë§Œìœ¼ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ìˆ«ìž
 		 * 		
 		 */
 		
@@ -23,21 +23,21 @@ public class MiniHwResult {
 		System.out.println(6%6);
 		System.out.println("===============");
 		
-		//30¹øÀÇ ¼Ò¼ö¸¦ ¸¸³¯¶§±îÁö
+		//30ë²ˆì˜ ì†Œìˆ˜ë¥¼ ë§Œë‚ ë•Œê¹Œì§€
 
-		for(int num = 2, cnt = 0 ; cnt < 30 ; num++) { //º¯¼ö¸¦ ÁöÁ¤ÇØÁÖ´Â°Ô ÁÁÀ½. 
+		for(int num = 2, cnt = 0 ; cnt < 30 ; num++) { //ë³€ìˆ˜ë¥¼ ì§€ì •í•´ì£¼ëŠ”ê²Œ ì¢‹ìŒ. 
 			boolean flag = false;
 			
 			for (int i = 2; i < num ; i++) {
 				if( num % i==0 ) {
-			//System.out.printf("¼ýÀÚ %d´Â %d·Î ³ª´©¾úÀ» ¶§ ³ª¸ÓÁö°¡ %d%n",num,i,num%i);
+			//System.out.printf("ìˆ«ìž %dëŠ” %dë¡œ ë‚˜ëˆ„ì—ˆì„ ë•Œ ë‚˜ë¨¸ì§€ê°€ %d%n",num,i,num%i);
 					flag = true;
 					break;
 				}
 			}
 			if(!flag) {
 				cnt++;
-				System.out.println(num + "Àº(´Â)" + (flag ? "¼Ò¼ö¾Æ´Ô" : "¼Ò¼ö"));
+				System.out.println(num + "ì€(ëŠ”)" + (flag ? "ì†Œìˆ˜ì•„ë‹˜" : "ì†Œìˆ˜"));
 			}
 		}
 	}

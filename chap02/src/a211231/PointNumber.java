@@ -1,19 +1,19 @@
-package a211231;
+ï»¿package a211231;
 
 public class PointNumber {
 	public static void main(String[] args) {
 		double val1 = 3.14;
 		
 		double result = val1 + 1;
-		// ¼Ò¼öÁ¡ 15ÀÚ¸®±îÁö Á¤¹Ğµµ(precision)
+		// ì†Œìˆ˜ì  15ìë¦¬ê¹Œì§€ ì •ë°€ë„(precision)
 		System.out.println(val1);
 		System.out.println(result);
 		System.out.println(val1 + result);
 		
-		float val2 = 3.14f; // µÚ¿¡ f¸¦ ºÙ¿©Áà¾ß ¿À·ù°¡ ¾È¶ä
+		float val2 = 3.14f; // ë’¤ì— fë¥¼ ë¶™ì—¬ì¤˜ì•¼ ì˜¤ë¥˜ê°€ ì•ˆëœ¸
 		
 		float result2 = val2 + 1;
-		// ¼Ò¼öÁ¡ 7ÀÚ¸®±îÁö Á¤¹Ğµµ(precision)
+		// ì†Œìˆ˜ì  7ìë¦¬ê¹Œì§€ ì •ë°€ë„(precision)
 		System.out.println(val2);
 		System.out.println(result2);
 	}

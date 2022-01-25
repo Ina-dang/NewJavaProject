@@ -1,11 +1,11 @@
-package a220113;
+ï»¿package a220113;
 
 public class Ch5_03 {
 	public static void main(String[] args) {
-		int[] arr = {10,20,30,40,50}; //5°³ÀÇ int °ªÀ» ÀúÀåÇÒ¼ö ÀÖ´Â intÅ¸ÀÔ ¹è¿­ arr
+		int[] arr = {10,20,30,40,50}; //5ê°œì˜ int ê°’ì„ ì €ì¥í• ìˆ˜ ìˆëŠ” intíƒ€ì… ë°°ì—´ arr
 		int sum = 0;
-//			  ÃÊ±âÈ­	Á¶°Ç½Ä			Áõ°¨½Ä
-		for (int i = 0; i < arr.length; i++) { //0ºÎÅÍ arr.length±îÁö 1¾¿Áõ°¡
+//			  ì´ˆê¸°í™”	ì¡°ê±´ì‹			ì¦ê°ì‹
+		for (int i = 0; i < arr.length; i++) { //0ë¶€í„° arr.lengthê¹Œì§€ 1ì”©ì¦ê°€
 			sum += arr[i]; //sum = sum + arr[i];
 //			System.out.println(arr[i]);
 		}

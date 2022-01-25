@@ -1,4 +1,4 @@
-package a220124;
+ï»¿package a220124;
 
 import java.util.stream.Collectors;
 
@@ -7,25 +7,25 @@ public class FighterTest {
 		Fighter f = new Fighter();
 		
 		if (f instanceof Unit)
-			System.out.println("f´Â UnitÅ¬·¡½ºÀÇ ÀÚ¼ÕÀÔ´Ï´Ù.");
+			System.out.println("fëŠ” Unití´ë˜ìŠ¤ì˜ ìì†ì…ë‹ˆë‹¤.");
 		if (f instanceof Fightable)
-			System.out.println("f´Â FightableÀÎÅÍÅ¬·¡½º¸¦ ±¸ÇöÇß½À´Ï´Ù.");
+			System.out.println("fëŠ” Fightableì¸í„°í´ë˜ìŠ¤ë¥¼ êµ¬í˜„í–ˆìŠµë‹ˆë‹¤.");
 		if (f instanceof Movable)
-			System.out.println("f´Â MovableÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇß½À´Ï´Ù.");
+			System.out.println("fëŠ” Movableì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í–ˆìŠµë‹ˆë‹¤.");
 		if (f instanceof Attackable)
-			System.out.println("f´Â AttackableÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇß½À´Ï´Ù.");
+			System.out.println("fëŠ” Attackableì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í–ˆìŠµë‹ˆë‹¤.");
 		if (f instanceof Object)
-			System.out.println("f´Â ObjectÅ¬·¡½ºÀÇ ÀÚ¼ÕÀÔ´Ï´Ù.");
+			System.out.println("fëŠ” Objectí´ë˜ìŠ¤ì˜ ìì†ì…ë‹ˆë‹¤.");
 		
-		//´ÙÇü¼º¿¡ ÀÇÇØ ±¸Çö °¡´ÉÇØÁü
+		//ë‹¤í˜•ì„±ì— ì˜í•´ êµ¬í˜„ ê°€ëŠ¥í•´ì§
 		Unit unit = new Fighter();
-		unit.currentHP = 10; // ÄÄÆÄÀÏ·¯°¡ À¯´ÖÅ¸ÀÔÀ¸·Î ÀÎ½ÄÇØ¼­ x,y,hp ¼¼°³¸¸ »ç¿ë°¡´É
+		unit.currentHP = 10; // ì»´íŒŒì¼ëŸ¬ê°€ ìœ ë‹›íƒ€ì…ìœ¼ë¡œ ì¸ì‹í•´ì„œ x,y,hp ì„¸ê°œë§Œ ì‚¬ìš©ê°€ëŠ¥
 	
 		Fightable fightable = new Fighter(); 
-		fightable.attack(f); //À¯´ÖÀÎ½ºÅÏ½º»ç¿ë. 
-		Attackable attackable = new Fighter();  //attack ¸Ş¼­µå È£Ãâ°¡´É
+		fightable.attack(f); //ìœ ë‹›ì¸ìŠ¤í„´ìŠ¤ì‚¬ìš©. 
+		Attackable attackable = new Fighter();  //attack ë©”ì„œë“œ í˜¸ì¶œê°€ëŠ¥
 		attackable.attack(f); 
-		Movable movable = new Fighter(); //move ¸Ş¼­µå È£Ãâ°¡´É
+		Movable movable = new Fighter(); //move ë©”ì„œë“œ í˜¸ì¶œê°€ëŠ¥
 		movable.move(1, 2);
 		
 		
@@ -33,12 +33,12 @@ public class FighterTest {
 	}
 }
 interface Fightable extends Movable, Attackable {}
-interface Movable { void move(int x, int y);} //°¢±â ÀÚ±â°ªÀÇ Ãß»ó¸Ş¼­µå¸¦ °¡Áö°íÀÖÀ½
-interface Attackable { void attack(Unit u); } //°¢±â ÀÚ±â°ªÀÇ Ãß»ó¸Ş¼­µå¸¦ °¡Áö°íÀÖÀ½
+interface Movable { void move(int x, int y);} //ê°ê¸° ìê¸°ê°’ì˜ ì¶”ìƒë©”ì„œë“œë¥¼ ê°€ì§€ê³ ìˆìŒ
+interface Attackable { void attack(Unit u); } //ê°ê¸° ìê¸°ê°’ì˜ ì¶”ìƒë©”ì„œë“œë¥¼ ê°€ì§€ê³ ìˆìŒ
 
 class Fighter extends Unit implements Fightable {
-	public void move(int x, int y) {/* ³»¿ë»ı·« */}
-	public void attack(Unit u) {/* ³»¿ë»ı·« */}
+	public void move(int x, int y) {/* ë‚´ìš©ìƒëµ */}
+	public void attack(Unit u) {/* ë‚´ìš©ìƒëµ */}
 }
 
 class Unit {

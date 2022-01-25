@@ -1,4 +1,4 @@
-package a220103;
+ï»¿package a220103;
 
 public class StringEx {
 	public static void main(String[] args) {
@@ -15,11 +15,11 @@ public class StringEx {
 		System.out.println(7 + 7 + "" );
 		System.out.println("" + 7 + 7);
 		
-		System.out.println(str + "¹öÀü");
+		System.out.println(str + "ë²„ì „");
 		
 		// -------------------------
 		System.out.println(7 + "7");
-		System.out.println(7 + '7'); //'7'Àº ASCII·Î ÀÎ½ÄµÅ¼­ 55·Î ÇØ¼®
+		System.out.println(7 + '7'); //'7'ì€ ASCIIë¡œ ì¸ì‹ë¼ì„œ 55ë¡œ í•´ì„
 		
 		
 	}

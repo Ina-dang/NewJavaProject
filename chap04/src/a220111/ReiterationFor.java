@@ -1,8 +1,8 @@
-package a220111;
+ï»¿package a220111;
 
-public class ReiterationFor {//ÁßÃ¸ for¹®
+public class ReiterationFor {//ì¤‘ì²© forë¬¸
 	public static void main(String[] args) {
-		// 5Çà 10¿­ÀÇ *À» ÂïÀ¸·Á¸é ¾î¶»°Ô ÇØ¾ßÇÒ±î
+		// 5í–‰ 10ì—´ì˜ *ì„ ì°ìœ¼ë ¤ë©´ ì–´ë–»ê²Œ í•´ì•¼í• ê¹Œ
 		
 		for(int i= 1; i <= 5; i++) {
 			System.out.print("*");

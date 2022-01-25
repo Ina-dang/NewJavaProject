@@ -1,4 +1,4 @@
-package a220116;
+ï»¿package a220116;
 
 import java.util.Arrays;
 
@@ -6,18 +6,18 @@ import java.util.Arrays;
 //	public static void main(String[] args) {
 //		
 //		int[] arr = {40, 50, 30, 10, 20};
-//		int min = arr[0]; // ¹è¿­ÀÇ Ã¹ ¹øÂ° °ªÀ¸·Î ÃÖ¼Ò°ªÀ» ÃÊ±âÈ­ ÇÑ´Ù.
+//		int min = arr[0]; // ë°°ì—´ì˜ ì²« ë²ˆì§¸ ê°’ìœ¼ë¡œ ìµœì†Œê°’ì„ ì´ˆê¸°í™” í•œë‹¤.
 //		int idx = 0; 
 //		
 //		for (int i = 1; i < arr.length; i++) {
-//			if (min > arr[i] ) { //minÀÌ arrº¸´Ù Å¬°æ¿ì
+//			if (min > arr[i] ) { //minì´ arrë³´ë‹¤ í´ê²½ìš°
 //				min = arr[i];
 //				idx = i;
 //			}
 //		}
-//			System.out.println("ÃÖ¼Ò°ª :" + min);
-//			System.out.println(idx); //¸î ¹ø ÀÎµ¦½º°¡ ÃÖ¼Ò°ªÀÎÁö ³ª¿È
-//		//40ÀÇ °ª°ú 10ÀÇ °ª ±³È¯
+//			System.out.println("ìµœì†Œê°’ :" + min);
+//			System.out.println(idx); //ëª‡ ë²ˆ ì¸ë±ìŠ¤ê°€ ìµœì†Œê°’ì¸ì§€ ë‚˜ì˜´
+//		//40ì˜ ê°’ê³¼ 10ì˜ ê°’ êµí™˜
 //		int tmp = arr[0]; 
 //		arr[0] = arr[idx];
 //		arr[idx] = tmp;
@@ -26,7 +26,7 @@ import java.util.Arrays;
 //	}
 //}
 
-// À§ÀÇ °ª¿¡¼­ ´õ °£´ÜÇÏ°Ô ÁÙÀÌ±â
+// ìœ„ì˜ ê°’ì—ì„œ ë” ê°„ë‹¨í•˜ê²Œ ì¤„ì´ê¸°
 
 public class InsertionSort {
 	public static void main(String[] args) {
@@ -36,13 +36,13 @@ public class InsertionSort {
 		int idx = 0; 
 		
 		for (int i = 1; i < arr.length; i++) {
-			if ( arr[idx] > arr[i] ) { // arrº¸´Ù Å¬°æ¿ì
-				idx = i; //ÀÎµ¦½º ¹øÂ°¸¦ ±â·Ï
+			if ( arr[idx] > arr[i] ) { // arrë³´ë‹¤ í´ê²½ìš°
+				idx = i; //ì¸ë±ìŠ¤ ë²ˆì§¸ë¥¼ ê¸°ë¡
 			}
 		}
-		System.out.println(arr[idx]); //¸î ¹ø ÀÎµ¦½º°¡ ÃÖ¼Ò°ªÀÎÁö ³ª¿È
-			System.out.println(idx); //¸î ¹ø ÀÎµ¦½º°¡ ÃÖ¼Ò°ªÀÎÁö ³ª¿È
-		//40ÀÇ °ª°ú 10ÀÇ °ª ±³È¯
+		System.out.println(arr[idx]); //ëª‡ ë²ˆ ì¸ë±ìŠ¤ê°€ ìµœì†Œê°’ì¸ì§€ ë‚˜ì˜´
+			System.out.println(idx); //ëª‡ ë²ˆ ì¸ë±ìŠ¤ê°€ ìµœì†Œê°’ì¸ì§€ ë‚˜ì˜´
+		//40ì˜ ê°’ê³¼ 10ì˜ ê°’ êµí™˜
 		int tmp = arr[0]; 
 		arr[0] = arr[idx];
 		arr[idx] = tmp;

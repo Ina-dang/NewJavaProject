@@ -1,4 +1,4 @@
-	/*
+Ôªø	/*
 	 * Date   : 2021-12-30
 	 * Source : HelloWorld2.java
 	 * Author : Ina.
@@ -11,25 +11,25 @@
 	public class HelloWorld2 {
 		// ctrl + space : code assist
 		public static void main(String[] args) {
-		// comments : ¡÷ºÆ
-		// // << «— ¡Ÿ ¡÷ºÆ
+		// comments : Ï£ºÏÑù
+		// // << Ìïú Ï§Ñ Ï£ºÏÑù
 		/*
-		 * π¸¿ß¡÷ºÆ (ctrl+shift+/) ≈‰±€æ»µ 
+		 * Î≤îÏúÑÏ£ºÏÑù (ctrl+shift+/) ÌÜ†Í∏ÄÏïàÎê®
 		 */
-		// Ctrl + / & ≈‰±€∞°¥…
-			System.out.println("¿˙≥·ππ∏‘¡ˆ");
-//			System.out.println("¿˙≥·ππ∏‘¡ˆ");
-//			System.out.println("¿˙≥·ππ∏‘¡ˆ");
-//			System.out.println("¿˙≥·ππ∏‘¡ˆ"); Ctrl + /
-//			System.out.println("¿˙≥·ππ∏‘¡ˆ");
-			//System.out.println("¿˙≥·ππ∏‘¡ˆ");
-			/*System.out.println("¿˙≥·ππ∏‘¡ˆ");
-			System.out.println("¿˙≥·ππ∏‘¡ˆ");
-			System.out.println("¿˙≥·ππ∏‘¡ˆ");
-			System.out.println("¿˙≥·ππ∏‘¡ˆ");
-			System.out.println("¿˙≥·ππ∏‘¡ˆ");
+		// Ctrl + / & ÌÜ†Í∏ÄÍ∞ÄÎä•
+			System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
+//			System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
+//			System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
+//			System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ"); Ctrl + /
+//			System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
+			//System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
+			/*System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
+			System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
+			System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
+			System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
+			System.out.println("Ï†ÄÎÖÅÎ≠êÎ®πÏßÄ");
 			*/
-			// ∂Û¿Œ ¿Ãµø alt + ¿ß æ∆∑° »≠ªÏ«•
-			// ∂Û¿Œ ∫πªÁ alt + ctrl + ¿ß æ∆∑° »≠ªÏ«•
+			// ÎùºÏù∏ Ïù¥Îèô alt + ÏúÑ ÏïÑÎûò ÌôîÏÇ¥Ìëú
+			// ÎùºÏù∏ Î≥µÏÇ¨ alt + ctrl + ÏúÑ ÏïÑÎûò ÌôîÏÇ¥Ìëú
 		}
 }

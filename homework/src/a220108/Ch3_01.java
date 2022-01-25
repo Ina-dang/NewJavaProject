@@ -1,4 +1,4 @@
-package a220108;
+ï»¿package a220108;
 
 public class Ch3_01 {
 	public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class Ch3_01 {
 		System.out.println(!('A' <= c && c <= 'Z'));
 		System.out.println('C'-c);
 		System.out.println('5'-'0');
-//		System.out.println(c+1);//»ê¼ú¿¬»êÀÌ¶ó º°µµÀÇ casting¾øÀÌ´Â intÅ¸ÀÔÀ¸·Î ³ª¿È
+//		System.out.println(c+1);//ì‚°ìˆ ì—°ì‚°ì´ë¼ ë³„ë„ì˜ castingì—†ì´ëŠ” intíƒ€ìž…ìœ¼ë¡œ ë‚˜ì˜´
 		System.out.println(c); 
 		System.out.println(++c);
 		System.out.println(c++); 

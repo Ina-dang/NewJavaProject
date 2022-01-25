@@ -1,32 +1,32 @@
-package a220110;
+ï»¿package a220110;
 
 public class Switch {
 /*
- * switch ´ÜÁ¡
- * 1. µ¿µîºñ±³¿¬»êÀÚ¸¸ °¡´É (==)
+ * switch ë‹¨ì 
+ * 1. ë™ë“±ë¹„êµì—°ì‚°ìë§Œ ê°€ëŠ¥ (==)
  * 
- * ¹üÀ§¿¬»ê ¾øÀ» ¶§ ÇÏ´Â°Ô Á© ÁÁ´Ù
- * ½ºÀ§Ä¡µµ ÁßÃ¸°¡´ÉÇÔ
+ * ë²”ìœ„ì—°ì‚° ì—†ì„ ë•Œ í•˜ëŠ”ê²Œ ì ¤ ì¢‹ë‹¤
+ * ìŠ¤ìœ„ì¹˜ë„ ì¤‘ì²©ê°€ëŠ¥í•¨
  * 
- * switch ¼ø¼­
- * 1. Á¶°Ç½ÄÀ» °è»êÇÑ´Ù
- * 2. Á¶°Ç½ÄÀÇ °á°ú¿Í ÀÏÄ¡ÇÏ´Â case¹®À¸·Î ÀÌµ¿ÇÑ´Ù
- * 3. ÀÌÈÄÀÇ ¹®ÀåµéÀ» ¼öÇàÇÑ´Ù
- * 4. break¹®ÀÌ³ª switch¹®ÀÇ ³¡À» ¸¸³ª¸é switch¹® ÀüÃ¼¸¦ ºüÁ®³ª°£´Ù
+ * switch ìˆœì„œ
+ * 1. ì¡°ê±´ì‹ì„ ê³„ì‚°í•œë‹¤
+ * 2. ì¡°ê±´ì‹ì˜ ê²°ê³¼ì™€ ì¼ì¹˜í•˜ëŠ” caseë¬¸ìœ¼ë¡œ ì´ë™í•œë‹¤
+ * 3. ì´í›„ì˜ ë¬¸ì¥ë“¤ì„ ìˆ˜í–‰í•œë‹¤
+ * 4. breakë¬¸ì´ë‚˜ switchë¬¸ì˜ ëì„ ë§Œë‚˜ë©´ switchë¬¸ ì „ì²´ë¥¼ ë¹ ì ¸ë‚˜ê°„ë‹¤
  */
 	public static void main(String[] args) {
 		int val = 1;
-		switch (val) { //key¿¡´Â º¯¼ö
-		case 1:    //value¿¡´Â ½ÇÁ¦ °ª
+		switch (val) { //keyì—ëŠ” ë³€ìˆ˜
+		case 1:    //valueì—ëŠ” ì‹¤ì œ ê°’
 			System.out.println("case 1");
 			break;
 		case 2:    
 			System.out.println("case 2");
-			break; //break ¾øÀ¸¸é °è¼Ó ³ª¿È
+			break; //break ì—†ìœ¼ë©´ ê³„ì† ë‚˜ì˜´
 		case 3:    
 			System.out.println("case 3");
 			break;
-		default:  //default ¾øÀ¸¸é ¿ÜÀÇ °ª Ãâ·Â½Ã ¾Æ¹«°Íµµ ¾È¶ä
+		default:  //default ì—†ìœ¼ë©´ ì™¸ì˜ ê°’ ì¶œë ¥ì‹œ ì•„ë¬´ê²ƒë„ ì•ˆëœ¸
 			System.out.println("case 4");
 			break;
 		}
@@ -34,16 +34,16 @@ public class Switch {
 		int grant = 1;
 		switch (grant) {
 		case 7:
-			System.out.println("ÀÛ¼º ±ÇÇÑ Ãëµæ");
+			System.out.println("ì‘ì„± ê¶Œí•œ ì·¨ë“");
 			break;
 		case 5:
-			System.out.println("½ÇÇà ±ÇÇÑ Ãëµæ");
+			System.out.println("ì‹¤í–‰ ê¶Œí•œ ì·¨ë“");
 			break;
 		case 4:
-			System.out.println("ÀĞ±â ±ÇÇÑ Ãëµæ");
+			System.out.println("ì½ê¸° ê¶Œí•œ ì·¨ë“");
 			break;
 		default:
-			System.out.println("±ÇÇÑ ¾øÀ½");
+			System.out.println("ê¶Œí•œ ì—†ìŒ");
 			break;
 		}
 	}

@@ -1,4 +1,4 @@
-package a220110;
+ï»¿package a220110;
 
 import java.util.Scanner;
 
@@ -7,18 +7,18 @@ public class FlowEx5 {
 		int score = 0;
 		char grade = ' ', opt = '0';
 		
-		System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. >>");
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”. >>");
 		
 		Scanner scanner = new Scanner(System.in);
-		score = scanner.nextInt(); // È­¸éÀ» ÅëÇØ ÀÔ·Â¹ŞÀº Á¡¼ö¸¦ score ¿¡ ÀúÀå
+		score = scanner.nextInt(); // í™”ë©´ì„ í†µí•´ ì…ë ¥ë°›ì€ ì ìˆ˜ë¥¼ score ì— ì €ì¥
 		
-		System.out.printf("´ç½ÅÀÇ Á¡¼ö´Â %dÀÔ´Ï´Ù. %n", score);
+		System.out.printf("ë‹¹ì‹ ì˜ ì ìˆ˜ëŠ” %dì…ë‹ˆë‹¤. %n", score);
 		
 //		if (score >= 90) {
-//			grade = 'A';    // Á¡¼ö°¡ 90Á¡ ÀÌ»óÀÌ¶ó¸é 'A'Ãâ·ÂÇÏ°í
-//			if (score >= 98) { //±× AÁß¿¡ 98Á¡ ÀÌ»óÀÎ°Ç opt + Ãâ·Â
+//			grade = 'A';    // ì ìˆ˜ê°€ 90ì  ì´ìƒì´ë¼ë©´ 'A'ì¶œë ¥í•˜ê³ 
+//			if (score >= 98) { //ê·¸ Aì¤‘ì— 98ì  ì´ìƒì¸ê±´ opt + ì¶œë ¥
 //				opt = '+';
-//			} else if (score < 94) { //90Á¡ÀÌ»óÀÎµ¥ 94Á¡¹Ì¸¸Àº - Ãâ·Â
+//			} else if (score < 94) { //90ì ì´ìƒì¸ë° 94ì ë¯¸ë§Œì€ - ì¶œë ¥
 //				opt = '-';
 //			}
 //		} else if (score >= 80) {
@@ -32,9 +32,9 @@ public class FlowEx5 {
 //			grade = 'C';
 //		}
 		
-		//ÀÌ·¸°Ô ¿©·¯¹ø ¾ÈÁÖ°í ¿É¼ÇÀ» ÇÏ³ª·Î ÁÙÀÏ ¼ö ÀÖ´Ù
+		//ì´ë ‡ê²Œ ì—¬ëŸ¬ë²ˆ ì•ˆì£¼ê³  ì˜µì…˜ì„ í•˜ë‚˜ë¡œ ì¤„ì¼ ìˆ˜ ìˆë‹¤
 		if (score >= 90) {
-			grade = 'A';    // Á¡¼ö°¡ 90Á¡ ÀÌ»óÀÌ¶ó¸é 'A'Ãâ·ÂÇÏ°í
+			grade = 'A';    // ì ìˆ˜ê°€ 90ì  ì´ìƒì´ë¼ë©´ 'A'ì¶œë ¥í•˜ê³ 
 		} else if (score >= 80) {
 			grade = 'B';
 		} else {
@@ -47,7 +47,7 @@ public class FlowEx5 {
 				opt = '-';
 			}
 		}
-		System.out.printf("´ç½ÅÀÇ ÇĞÁ¡Àº %c%cÀÔ´Ï´Ù. %n", grade, opt);
+		System.out.printf("ë‹¹ì‹ ì˜ í•™ì ì€ %c%cì…ë‹ˆë‹¤. %n", grade, opt);
 	scanner.close();
 	}	
 }

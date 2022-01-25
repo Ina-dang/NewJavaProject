@@ -1,30 +1,30 @@
-package a220107;
+ï»¿package a220107;
 
-public class Conditional { //Á¶°Ç¹®
+public class Conditional { //ì¡°ê±´ë¬¸
 	public static void main(String[] args) {
 		/*
-		 * Á¦¾î¹®(control statement) : pgÀÇ Èå¸§(flow)¸¦ ¹Ù²Ù´Â ¿ªÇÒÀ» ÇÏ´Â ¹®Àåµé
+		 * ì œì–´ë¬¸(control statement) : pgì˜ íë¦„(flow)ë¥¼ ë°”ê¾¸ëŠ” ì—­í• ì„ í•˜ëŠ” ë¬¸ì¥ë“¤
 		 *  
-		 * - Á¶°Ç¹®(conditional statement) = if, switch
-		 * {} ºí·°ÀÌ¶ó ºÎ¸§ . ÁÖ°Ç½ÄÀÇ ¿¬»ê°á°ú¿¡ µû¶ó ½ÇÇàÇÒ ¹®ÀåÀÌ ´Ş¶óÁ®¼­ pgÀÇ flow¸¦ º¯°æ °¡´É
-		 * ÁÖ·Î if ¸¹ÀÌ»ç¿ë 
-		 * Ã³¸® ¼ö°¡ ¸¹À»¶§´Â switch°¡ ´õ ÁÁÁö¸¸ Á¦¾àÀÌ ¸¹´Ù
+		 * - ì¡°ê±´ë¬¸(conditional statement) = if, switch
+		 * {} ë¸”ëŸ­ì´ë¼ ë¶€ë¦„ . ì£¼ê±´ì‹ì˜ ì—°ì‚°ê²°ê³¼ì— ë”°ë¼ ì‹¤í–‰í•  ë¬¸ì¥ì´ ë‹¬ë¼ì ¸ì„œ pgì˜ flowë¥¼ ë³€ê²½ ê°€ëŠ¥
+		 * ì£¼ë¡œ if ë§ì´ì‚¬ìš© 
+		 * ì²˜ë¦¬ ìˆ˜ê°€ ë§ì„ë•ŒëŠ” switchê°€ ë” ì¢‹ì§€ë§Œ ì œì•½ì´ ë§ë‹¤
 		 * 
-		 * - if¹® ÂüÀÏ¶§¸¸ ¼öÇàÇÏ´Â°Ô if
-		 * [ifÀÇ ±¸¼º¹æ½Ä]
-		 * if(Á¶°Ç½Ä) {
-		 * 		¹®Àå(Á¶°Ç½ÄÀÌ trueÀÏ ¶§ ¼öÇàµÉ ¹®ÀåµéÀ» Àû´Â´Ù)
+		 * - ifë¬¸ ì°¸ì¼ë•Œë§Œ ìˆ˜í–‰í•˜ëŠ”ê²Œ if
+		 * [ifì˜ êµ¬ì„±ë°©ì‹]
+		 * if(ì¡°ê±´ì‹) {
+		 * 		ë¬¸ì¥(ì¡°ê±´ì‹ì´ trueì¼ ë•Œ ìˆ˜í–‰ë  ë¬¸ì¥ë“¤ì„ ì ëŠ”ë‹¤)
 		 * }
 		 * 
 		 */
 		int score = 0;
 		if  (score >= 60) {
-			System.out.println("ÇÕ°İÀÔ´Ï´Ù");
-			System.out.println("ÃàÇÏÇÕ´Ï´Ù");
+			System.out.println("í•©ê²©ì…ë‹ˆë‹¤");
+			System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤");
 		} 
 		else {
-			System.out.println("ºÒÇÕ°İÀÔ´Ï´Ù");
-			System.out.println("´ÙÀ½ ±âÈ¸¸¦ µµÀüÇÏ¼¼¿ä");
+			System.out.println("ë¶ˆí•©ê²©ì…ë‹ˆë‹¤");
+			System.out.println("ë‹¤ìŒ ê¸°íšŒë¥¼ ë„ì „í•˜ì„¸ìš”");
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package a220119;
+ï»¿package a220119;
 
 public class Prev {
 	public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Prev {
 	System.out.println(parent.age);
 	System.out.println(child.age);
 
-//	System.out.println(parent.name);//ÀÌ°Ç¾ÈµÊ
+//	System.out.println(parent.name);//ì´ê±´ì•ˆë¨
 	System.out.println(child.name);
 	
 	GrandChild grandChild = new GrandChild();
@@ -21,20 +21,20 @@ class Parent {
 	int age;
 }
 
-// Child & Child2 ¿¡¼­ °øÅëÀûÀ¸·Î Ãß°¡ÇØ¾ßÇÒ ¸â¹ö(¸â¹öº¯¼ö³ª ¸Ş¼­µå)°¡ ÀÖ´Ù¸é °øÅëÀÎ Parent¿¡ Ãß°¡ÇÏ´Â°Ô ³ªÀ½
+// Child & Child2 ì—ì„œ ê³µí†µì ìœ¼ë¡œ ì¶”ê°€í•´ì•¼í•  ë©¤ë²„(ë©¤ë²„ë³€ìˆ˜ë‚˜ ë©”ì„œë“œ)ê°€ ìˆë‹¤ë©´ ê³µí†µì¸ Parentì— ì¶”ê°€í•˜ëŠ”ê²Œ ë‚˜ìŒ
 
 class Child extends Parent{
 	String name;
 }
 
 class Child2 extends Parent{
-	//Child2·Î ¸¸µé ¼ö ÀÖ´Â ÇÊµåÀÇ °³¼ö 1°³ (ParentÅ¬·¡½º int age;)
+	//Child2ë¡œ ë§Œë“¤ ìˆ˜ ìˆëŠ” í•„ë“œì˜ ê°œìˆ˜ 1ê°œ (Parentí´ë˜ìŠ¤ int age;)
 }
 
 class GrandChild extends Child{
 //	indirect superclass : Child
 //	direct superclass	: Parent
 	
-	//Parent¿¡¼­ Áö¿ì¸é extends¿¡¼­µµ ´ÙÁö¿öÁü 
+	//Parentì—ì„œ ì§€ìš°ë©´ extendsì—ì„œë„ ë‹¤ì§€ì›Œì§ 
 	
 }

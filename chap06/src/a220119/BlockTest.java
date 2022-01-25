@@ -1,24 +1,24 @@
-package a220119;
+ï»¿package a220119;
 
-public class BlockTest {//static Á¤¸®ÀÛ¾÷ 
-	//blockTest°¡ ·ÎµåµÇ¸é ³»°¡ÇØ¾ßÇÒ static ¿¡´ëÇÑ ÃÊ±âÈ­ ÀÛ¾÷À» ÇÏ°ÔµÊ
-	static { //Å¬·¡½º ÃÊ±âÈ­
+public class BlockTest {//static ì •ë¦¬ì‘ì—… 
+	//blockTestê°€ ë¡œë“œë˜ë©´ ë‚´ê°€í•´ì•¼í•  static ì—ëŒ€í•œ ì´ˆê¸°í™” ì‘ì—…ì„ í•˜ê²Œë¨
+	static { //í´ë˜ìŠ¤ ì´ˆê¸°í™”
 		System.out.println("static {  }");
 	}
 	
-	//¾ê µÑÀº new¿¡ ÀÇÇØ¼­ ÀÎ½ºÅÏ½º »ı¼ºµÉ ¶§ ÃÊ±âÈ­ ÇÔ
-	public BlockTest () {//»ı¼ºÀÚ
-		System.out.println("»ı¼ºÀÚ}");
-	} //µÑÀÇ ¾ğ±Ş ¼ø¼­°¡ ´Ş¶óÁ®µµ ¾ğÁ¦³ª ÃÊ±âÈ­ ºí·°ÀÌ ¸ÕÀúÀÓ »ı¼ºÀÚ ±×´ã
+	//ì–˜ ë‘˜ì€ newì— ì˜í•´ì„œ ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ë  ë•Œ ì´ˆê¸°í™” í•¨
+	public BlockTest () {//ìƒì„±ì
+		System.out.println("ìƒì„±ì}");
+	} //ë‘˜ì˜ ì–¸ê¸‰ ìˆœì„œê°€ ë‹¬ë¼ì ¸ë„ ì–¸ì œë‚˜ ì´ˆê¸°í™” ë¸”ëŸ­ì´ ë¨¼ì €ì„ ìƒì„±ì ê·¸ë‹´
 	
-	{ //ÀÎ½ºÅÏ½º ÃÊ±âÈ­
+	{ //ì¸ìŠ¤í„´ìŠ¤ ì´ˆê¸°í™”
 		System.out.print(" {");
 
 	}
 	
 	
 	
-	//¸í½ÃÀû ÃÊ±âÈ­, ÃÊ±âÈ­ºí·°Àº ¸ÕÀú ¾´ ¾Ö°¡ ³ª¿È
+	//ëª…ì‹œì  ì´ˆê¸°í™”, ì´ˆê¸°í™”ë¸”ëŸ­ì€ ë¨¼ì € ì“´ ì• ê°€ ë‚˜ì˜´
 	int i = 10;
 	{
 		i = 100;
@@ -27,18 +27,18 @@ public class BlockTest {//static Á¤¸®ÀÛ¾÷
 	{
 		j = 100;
 	}
-	int j = 10; //10ÀÇ °ªÀÌ ³ª¿È
+	int j = 10; //10ì˜ ê°’ì´ ë‚˜ì˜´
 	
 	
-	public static void main(String[] args) { //±×·¡¼­ Àú ¾È¿¡ ÁÖ¼®ÇØµµ Å¬·¡½º´Â ÇÑ¹ø ÃÊ±âÈ­ ÇÔ
+	public static void main(String[] args) { //ê·¸ë˜ì„œ ì € ì•ˆì— ì£¼ì„í•´ë„ í´ë˜ìŠ¤ëŠ” í•œë²ˆ ì´ˆê¸°í™” í•¨
 		System.out.println("BlockTest bt = new BlockTest(); ");
-		BlockTest bt = new BlockTest(); //ÀÎ½ºÅÏ¼ö °ü°èµÈ°Íµé Á¤¸®ÀÛ¾÷ÇÔ
+		BlockTest bt = new BlockTest(); //ì¸ìŠ¤í„´ìˆ˜ ê´€ê³„ëœê²ƒë“¤ ì •ë¦¬ì‘ì—…í•¨
 		
 		System.out.println("BlockTest bt2 = new BlockTest(); ");
-		BlockTest bt2 = new BlockTest(); //ÀÎ½ºÅÏ½º »ı¼ºµÉ ¶§¸¶´Ù ¼öÇà
+		BlockTest bt2 = new BlockTest(); //ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ë  ë•Œë§ˆë‹¤ ìˆ˜í–‰
 		
 		System.out.println("==========================");
-		System.out.println(new BlockTest().i); //100 °ª
-		System.out.println(new BlockTest().j); //10 °ª
+		System.out.println(new BlockTest().i); //100 ê°’
+		System.out.println(new BlockTest().j); //10 ê°’
 	}
 }

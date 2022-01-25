@@ -1,24 +1,24 @@
-package a220113;
+ï»¿package a220113;
 
 public class Ch5_08r {
 	
 	public static void main(String[] args) {
 		int[] answer  = { 1,4,4,3,1,4,4,2,1,3,2}; //3*** , 2**, 2**, 4****
 		// 1, 2, 3, 4
-		int[] counter = new int[4]; //ÀÎµ¦½º 0,1,2,3 
+		int[] counter = new int[4]; //ì¸ë±ìŠ¤ 0,1,2,3 
 		// [3, 2, 2, 4]
 		
 		
 		// 1, 2, 3, 4 > 0, 1, 2, 3
 		
-		for (int i = 0; i < answer.length; i++) { //answerÀÇ °ªÀ» °¢ ¹æ¸¶´Ù ÇÒ´ç
+		for (int i = 0; i < answer.length; i++) { //answerì˜ ê°’ì„ ê° ë°©ë§ˆë‹¤ í• ë‹¹
 //			System.out.print(answer[i]-1); 
 //			counter[answer[i]-1]++; 
 //			// [0, 0, 0, 0]
 //			// [1, 0, 0, 0]
 //			// [0, 0, 1, 0]
 //			// [0, 0, 2, 0]
-//			// [0, 1, 2, 0] .. ÀÌ·±½ÄÀ¸·Î ¹Ýº¹Çß´Ù´Â ¶æ
+//			// [0, 1, 2, 0] .. ì´ëŸ°ì‹ìœ¼ë¡œ ë°˜ë³µí–ˆë‹¤ëŠ” ëœ»
 			
 			switch (answer[i]-1) {
 			case 0:
@@ -39,7 +39,7 @@ public class Ch5_08r {
 			}
 		}
 		for (int i = 0; i < counter.length; i++) { 
-			//index ¼Ó °ª¸¸Å­ º° 
+			//index ì† ê°’ë§Œí¼ ë³„ 
 			System.out.printf("%d", counter[i]); 
 			for (int j = 0; j < counter[i]; j++) {
 				System.out.printf("%s", "*"); 

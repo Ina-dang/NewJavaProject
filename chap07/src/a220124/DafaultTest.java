@@ -1,4 +1,4 @@
-package a220124;
+ï»¿package a220124;
 
 public class DafaultTest {
 	public static void main(String[] args) {
@@ -8,9 +8,9 @@ public class DafaultTest {
 		B b = new Test();
 		b.m();
 		
-		System.out.println(A.i); //ÀÎ½ºÅÏ½º»ó¼ö x Å¬·¡½º »ó¼ö¶ó ³ª¿È
-		System.out.println(B.i); //Å¬·¡½º »ó¼ö¶ó ³ª¿È
-//		System.out.println(C.i); //¸ğÈ£ÇÏ´Ù°í ³ª¿Â´Ù
+		System.out.println(A.i); //ì¸ìŠ¤í„´ìŠ¤ìƒìˆ˜ x í´ë˜ìŠ¤ ìƒìˆ˜ë¼ ë‚˜ì˜´
+		System.out.println(B.i); //í´ë˜ìŠ¤ ìƒìˆ˜ë¼ ë‚˜ì˜´
+//		System.out.println(C.i); //ëª¨í˜¸í•˜ë‹¤ê³  ë‚˜ì˜¨ë‹¤
 		
 		a.dm();
 		
@@ -26,8 +26,8 @@ interface A {
 	void m();	
 	
 	default void dm() {
-		//±¸ÇöºÎ ÀÖ°Ô ÇÏ´Â ¸Ş¼­µå 
-		//ÀÎÅÍÆäÀÌ½º´Â ±¸»ó¸Ş¼­µå ¹®¹ıÀûÀ¸·Î ¸ø¾²¹Ç·Î ¿©±â¿£ default ºÙÀÏ°Å
+		//êµ¬í˜„ë¶€ ìˆê²Œ í•˜ëŠ” ë©”ì„œë“œ 
+		//ì¸í„°í˜ì´ìŠ¤ëŠ” êµ¬ìƒë©”ì„œë“œ ë¬¸ë²•ì ìœ¼ë¡œ ëª»ì“°ë¯€ë¡œ ì—¬ê¸°ì—” default ë¶™ì¼ê±°
 		System.out.println("A.dm()");
 	}
 }

@@ -1,19 +1,19 @@
-package a220114;
+ï»¿package a220114;
 
 public class Ex07Shuffle { //shuffle
 	public static void main(String[] args) {
 		int[] numArr = new int[10];
-//		System.out.println(numArr[0]); 0~9 ÀÎµ¦½º ±îÁö ´Ù °ª 0µé¾î°¡ÀÖÀ½
+//		System.out.println(numArr[0]); 0~9 ì¸ë±ìŠ¤ ê¹Œì§€ ë‹¤ ê°’ 0ë“¤ì–´ê°€ìˆìŒ
 		
-		for (int i = 0; i < numArr.length; i++) { //0À» ÀÎµ¦½º10±îÁö 1¾¿Áõ°¡
-			numArr[i] = i; //¹è¿­À» 0~9ÀÇ ¼ıÀÚ·Î ÃÊ±âÈ­ÇÑ´Ù.
+		for (int i = 0; i < numArr.length; i++) { //0ì„ ì¸ë±ìŠ¤10ê¹Œì§€ 1ì”©ì¦ê°€
+			numArr[i] = i; //ë°°ì—´ì„ 0~9ì˜ ìˆ«ìë¡œ ì´ˆê¸°í™”í•œë‹¤.
 			System.out.print(numArr[i]);			
 		}
 		System.out.println();
 		
-		for (int i = 0; i < numArr.length; i++) { //0~9±îÁö °¹¼ö ¹ø µ·´Ù 
-			int n = (int)(Math.random() * 10); //0~9ÁßÀÇ ÇÑ °ªÀ» ÀÓÀÇ·Î ¾ò´Â´Ù.
-			int tmp = numArr[0]; //ÀÓ½Ãº¯¼ö
+		for (int i = 0; i < numArr.length; i++) { //0~9ê¹Œì§€ ê°¯ìˆ˜ ë²ˆ ëˆë‹¤ 
+			int n = (int)(Math.random() * 10); //0~9ì¤‘ì˜ í•œ ê°’ì„ ì„ì˜ë¡œ ì–»ëŠ”ë‹¤.
+			int tmp = numArr[0]; //ì„ì‹œë³€ìˆ˜
 			numArr[0] = numArr[n];
 			numArr[n] = tmp;
 		}

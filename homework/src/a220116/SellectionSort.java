@@ -1,6 +1,6 @@
-package a220116;
+ï»¿package a220116;
 
-public class SellectionSort { //¼±ÅÃ Á¤·Ä
+public class SellectionSort { //ì„ íƒ ì •ë ¬
 	public static void main(String[] args) {
 		int[] numArr = new int[10];
 		
@@ -11,7 +11,7 @@ public class SellectionSort { //¼±ÅÃ Á¤·Ä
 		
 //		for (int i = 0; i < numArr.length; i++) {
 //			if (numArr[i] < Integer.MIN_VALUE) {
-//				// °¡Àå ÀÛÀº¼ıÀÚ ¾ÕÀ¸·Î °¡Á®¿À±â 
+//				// ê°€ì¥ ì‘ì€ìˆ«ì ì•ìœ¼ë¡œ ê°€ì ¸ì˜¤ê¸° 
 //				System.out.print(i);
 //			}
 //		}

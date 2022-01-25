@@ -1,10 +1,10 @@
-package a220117;
+ï»¿package a220117;
 
 public class Card {
 	String kind;
 	int number;
 	static int width = 100;
 	static int height = 250;
-//ÀÎ½ºÅÏ½º º¯¼ö 2°³
-//Å¬·¡½ºº¯¼ö 2°³
+//ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ 2ê°œ
+//í´ë˜ìŠ¤ë³€ìˆ˜ 2ê°œ
 }

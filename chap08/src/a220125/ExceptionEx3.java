@@ -1,4 +1,4 @@
-package a220125;
+ï»¿package a220125;
 
 public class ExceptionEx3 {
 	public static void main(String[] args) {
@@ -9,9 +9,9 @@ public class ExceptionEx3 {
 			try {
 				result = number / (int)(Math.random() * 10);
 				System.out.println(result);
-			} catch (ArithmeticException e) { //¾Æ¸®½º¸ŞÆ½ÀÍ¼Á¼Ç Å¸ÀÔÀÇ e ÀÎ½ºÅÏ½º
+			} catch (ArithmeticException e) { //ì•„ë¦¬ìŠ¤ë©”í‹±ìµì…‰ì…˜ íƒ€ì…ì˜ e ì¸ìŠ¤í„´ìŠ¤
 				System.out.println("0");
-			}//try-catch ³¡
-		}//for³¡
+			}//try-catch ë
+		}//forë
 	}
 }

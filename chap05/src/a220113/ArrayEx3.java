@@ -1,66 +1,66 @@
-package a220113;
+ï»¿package a220113;
 
 public class ArrayEx3 {
 	public static void main(String[] args) {
 		int[] arr = new int[5];
 		
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = i + 1; //°ªÀ» 1,2,3,4,5·Î ÃÊ±âÈ­
+			arr[i] = i + 1; //ê°’ì„ 1,2,3,4,5ë¡œ ì´ˆê¸°í™”
 		}	
-			System.out.println("[º¯°æÀü]");
+			System.out.println("[ë³€ê²½ì „]");
 			System.out.println("arr.length:" + arr.length);
 		
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println("arr["+i+"]:" + arr[i]);
-			//¿©±â±îÁöÇÏ¸é arr[4]:5±îÁö Ãâ·Â
+			//ì—¬ê¸°ê¹Œì§€í•˜ë©´ arr[4]:5ê¹Œì§€ ì¶œë ¥
 		}
 		
-		int[] tmp = new int[arr.length*2]; //ÀÓ½Ã ¹è¿­ -> ±âÁ¸¹è¿­ *2 »ı¼º
+		int[] tmp = new int[arr.length*2]; //ì„ì‹œ ë°°ì—´ -> ê¸°ì¡´ë°°ì—´ *2 ìƒì„±
 		
 		for (int i = 0; i < arr.length; i++) {
-			tmp[i] = arr[i]; //°¡Á®¿Â °ª ÇÑ¹ø ¼øÈ¯
+			tmp[i] = arr[i]; //ê°€ì ¸ì˜¨ ê°’ í•œë²ˆ ìˆœí™˜
 		}
-		arr = tmp; //tmp¿¡ ÀúÀåµÈ °ªÀ» arr¿¡ ÀúÀåÇÑ´Ù. (µ¤¾î¾¸)
+		arr = tmp; //tmpì— ì €ì¥ëœ ê°’ì„ arrì— ì €ì¥í•œë‹¤. (ë®ì–´ì”€)
 	
-		System.out.println("[º¯°æÈÄ]");
-		System.out.println("arr.length:" + arr.length); //arrÀ» È£ÃâÇßÁö¸¸ ÁÖ¼Ò°¡ tmp·Î µÇ¾îÀÖÀ¸¹Ç·Î 10Ä­ÀÌ ³ª¿Â´Ù
+		System.out.println("[ë³€ê²½í›„]");
+		System.out.println("arr.length:" + arr.length); //arrì„ í˜¸ì¶œí–ˆì§€ë§Œ ì£¼ì†Œê°€ tmpë¡œ ë˜ì–´ìˆìœ¼ë¯€ë¡œ 10ì¹¸ì´ ë‚˜ì˜¨ë‹¤
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println("arr["+i+"]:" + arr[i]);
 		}
-		//ÇÑ¹ø ´õ ÇÒ¶§´Â int °ª ¼±¾ğ ¾ÈÇÔ. Áßº¹¼±¾ğ ¿À·ù¶ä
-			tmp = new int[arr.length*2]; //ÀÓ½Ã ¹è¿­ -> ±âÁ¸¹è¿­ *2 »ı¼º
+		//í•œë²ˆ ë” í• ë•ŒëŠ” int ê°’ ì„ ì–¸ ì•ˆí•¨. ì¤‘ë³µì„ ì–¸ ì˜¤ë¥˜ëœ¸
+			tmp = new int[arr.length*2]; //ì„ì‹œ ë°°ì—´ -> ê¸°ì¡´ë°°ì—´ *2 ìƒì„±
 		
 		for (int i = 0; i < arr.length; i++) {
-			tmp[i] = arr[i]; //°¡Á®¿Â °ª ÇÑ¹ø ¼øÈ¯
+			tmp[i] = arr[i]; //ê°€ì ¸ì˜¨ ê°’ í•œë²ˆ ìˆœí™˜
 		}
-		arr = tmp; //tmp¿¡ ÀúÀåµÈ °ªÀ» arr¿¡ ÀúÀåÇÑ´Ù. (µ¤¾î¾¸)
+		arr = tmp; //tmpì— ì €ì¥ëœ ê°’ì„ arrì— ì €ì¥í•œë‹¤. (ë®ì–´ì”€)
 		
-		System.out.println("[º¯°æÈÄ]");
-		System.out.println("arr.length:" + arr.length); //arrÀ» È£ÃâÇßÁö¸¸ ÁÖ¼Ò°¡ tmp·Î µÇ¾îÀÖÀ¸¹Ç·Î 10Ä­ÀÌ ³ª¿Â´Ù
+		System.out.println("[ë³€ê²½í›„]");
+		System.out.println("arr.length:" + arr.length); //arrì„ í˜¸ì¶œí–ˆì§€ë§Œ ì£¼ì†Œê°€ tmpë¡œ ë˜ì–´ìˆìœ¼ë¯€ë¡œ 10ì¹¸ì´ ë‚˜ì˜¨ë‹¤
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println("arr["+i+"]:" + arr[i]);
 		}
 		
 		System.out.println("==============");
-		//¹è¿­ÀÇ º¹»ç for¹®À» arraycopy()·Î ¹Ù²ãº¸ÀÚ
+		//ë°°ì—´ì˜ ë³µì‚¬ forë¬¸ì„ arraycopy()ë¡œ ë°”ê¿”ë³´ì
 //		System.arraycopy(src, srcPos, dest, destPos, length);;
 		/*
-		 * src     : ¼Ò½º (¿ø½Ã) . ¿øº»ÆÄÀÏ
-		 * srcPos  : ¼Ò½ºÆ÷Áö¼Ç
-		 * dest    : Å¸°Ù. ´ë»ó. µµÂøÁö
-		 * destPos : µµÂøÀ§Ä¡
-		 * length  : ±æÀÌ
+		 * src     : ì†ŒìŠ¤ (ì›ì‹œ) . ì›ë³¸íŒŒì¼
+		 * srcPos  : ì†ŒìŠ¤í¬ì§€ì…˜
+		 * dest    : íƒ€ê²Ÿ. ëŒ€ìƒ. ë„ì°©ì§€
+		 * destPos : ë„ì°©ìœ„ì¹˜
+		 * length  : ê¸¸ì´
 		 */
 		
-		tmp = new int[arr.length*2]; //ÀÓ½Ã ¹è¿­ -> ±âÁ¸¹è¿­ *2 »ı¼º
+		tmp = new int[arr.length*2]; //ì„ì‹œ ë°°ì—´ -> ê¸°ì¡´ë°°ì—´ *2 ìƒì„±
 		
 		for (int i = 0; i < arr.length; i++) {
-			tmp[i] = arr[i]; //°¡Á®¿Â °ª ÇÑ¹ø ¼øÈ¯
+			tmp[i] = arr[i]; //ê°€ì ¸ì˜¨ ê°’ í•œë²ˆ ìˆœí™˜
 		}
-		arr = tmp; //tmp¿¡ ÀúÀåµÈ °ªÀ» arr¿¡ ÀúÀåÇÑ´Ù. (µ¤¾î¾¸)
+		arr = tmp; //tmpì— ì €ì¥ëœ ê°’ì„ arrì— ì €ì¥í•œë‹¤. (ë®ì–´ì”€)
 		
-		System.out.println("[º¯°æÈÄ]");
-		System.out.println("arr.length:" + arr.length); //arrÀ» È£ÃâÇßÁö¸¸ ÁÖ¼Ò°¡ tmp·Î µÇ¾îÀÖÀ¸¹Ç·Î 10Ä­ÀÌ ³ª¿Â´Ù
+		System.out.println("[ë³€ê²½í›„]");
+		System.out.println("arr.length:" + arr.length); //arrì„ í˜¸ì¶œí–ˆì§€ë§Œ ì£¼ì†Œê°€ tmpë¡œ ë˜ì–´ìˆìœ¼ë¯€ë¡œ 10ì¹¸ì´ ë‚˜ì˜¨ë‹¤
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println("arr["+i+"]:" + arr[i]);
 		}

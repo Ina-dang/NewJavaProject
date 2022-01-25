@@ -1,4 +1,4 @@
-package a220113;
+ï»¿package a220113;
 
 public class ArrayEx1 {
 	public static void main(String[] args) {
@@ -11,18 +11,18 @@ public class ArrayEx1 {
 		
 		score[0]   = 50;
 		score[1]   = 60;
-		score[k+1] = 70; // score[2] = 70 ÀÌ¶ó´Â ¶æ
+		score[k+1] = 70; // score[2] = 70 ì´ë¼ëŠ” ëœ»
 		score[3]   = 80;
 		score[4]   = 90;
 		
-		//  i*10 + 50 ÀÇ ÆĞÅÏÀ» Ã£¾Æ³»±â
+		//  i*10 + 50 ì˜ íŒ¨í„´ì„ ì°¾ì•„ë‚´ê¸°
 		
 		int tmp = score[k+2] + score[4]; //score[3] + score[4]
 		
 		for(int i=0; i < 5; i++) {
 			System.out.printf("score[%d]:%d%n",i,score[i]);
 		}
-		System.out.printf("tmp:%d%n", tmp); //¾È¿¡ µé¾î°¡ÀÖÀ¸¸é ¾êµµ 5¹ø ³ª¿È
+		System.out.printf("tmp:%d%n", tmp); //ì•ˆì— ë“¤ì–´ê°€ìˆìœ¼ë©´ ì–˜ë„ 5ë²ˆ ë‚˜ì˜´
 //		System.out.printf("score[%d]:%d%n", 7, score[7]);
 	}
 }

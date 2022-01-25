@@ -1,4 +1,4 @@
-package a220121;
+ï»¿package a220121;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ public class PolyArgumentTest {
 		b.summary();
 		
 	Product product = new Product(10) {};
-		//¼±¾ğºÎ¸¸ ÀÛ¼ºÇÏ°í ±¸ÇöºÎ´Â ÀÛ¼ºÇÏ´Â´ë·Î ³²°ÜµĞ´Ù
+		//ì„ ì–¸ë¶€ë§Œ ì‘ì„±í•˜ê³  êµ¬í˜„ë¶€ëŠ” ì‘ì„±í•˜ëŠ”ëŒ€ë¡œ ë‚¨ê²¨ë‘”ë‹¤
 	}
 }
 
@@ -44,18 +44,18 @@ class Audio extends Product { Audio() { super(50); } }
 class Buyer {
 	int money = 1000;
 	int bonusPoint;
-	Product[] item = new Product[10]; //±¸ÀÔÇÑ Á¦Ç°À» ÀúÀåÇÏ±â À§ÇÑ ¹è¿­
+	Product[] item = new Product[10]; //êµ¬ì…í•œ ì œí’ˆì„ ì €ì¥í•˜ê¸° ìœ„í•œ ë°°ì—´
 	int i; 
 	
-	void buy(Product p) { //½ÇÁ¦ ±¸¸ÅÇÒ ´ë»óÀÇ Á¶»óÅ¬·¡½º
+	void buy(Product p) { //ì‹¤ì œ êµ¬ë§¤í•  ëŒ€ìƒì˜ ì¡°ìƒí´ë˜ìŠ¤
 		if(money < p.price) {
-			System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÏ¿© ¹°°ÇÀ» »ì ¼ö ¾ø½À´Ï´Ù");
+			System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•˜ì—¬ ë¬¼ê±´ì„ ì‚´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤");
 			return;
 		}
 		money -= p.price;
 		bonusPoint += p.bonusPoint;
-		item[i++] = p; // »óÇ°³ÖÀ¸¸é ¿©±â¹è¿­¿¡ °ªÀÌ µé¾î°¨ 
-		System.out.println( p + "À»/¸¦ ±¸ÀÔÇß½À´Ï´Ù");
+		item[i++] = p; // ìƒí’ˆë„£ìœ¼ë©´ ì—¬ê¸°ë°°ì—´ì— ê°’ì´ ë“¤ì–´ê° 
+		System.out.println( p + "ì„/ë¥¼ êµ¬ì…í–ˆìŠµë‹ˆë‹¤");
 	}
 	
 	void summary() {
@@ -65,18 +65,18 @@ class Buyer {
 //			if (item [i] == null) {
 //				break;
 //			}
-			sum += item[i].price; //»óÇ°¹è¿­¿¡ÀÖ´Â °¡°İ¸¸ °¡Á®¿Í¼­ ´õÇÏ±¸
-			itemList += item[i] + ", "; //»óÇ°¹è¿­¿¡¼­  »óÇ° ÀÌ¸§Ãß°¡
+			sum += item[i].price; //ìƒí’ˆë°°ì—´ì—ìˆëŠ” ê°€ê²©ë§Œ ê°€ì ¸ì™€ì„œ ë”í•˜êµ¬
+			itemList += item[i] + ", "; //ìƒí’ˆë°°ì—´ì—ì„œ  ìƒí’ˆ ì´ë¦„ì¶”ê°€
 		}
 		
-		System.out.println("±¸ÀÔÇÏ½Å ¹°Ç°ÀÇ ÃÑ ±İ¾×Àº" + sum + "ÀÔ´Ï´Ù");
-//		System.out.println("±¸ÀÔÇÏ½Å Á¦Ç°Àº " + Arrays.toString(item) + "ÀÔ´Ï´Ù"); //null°ªµµ ³ª¿È
-		System.out.println("±¸ÀÔÇÏ½Å Á¦Ç°Àº " + itemList + "ÀÔ´Ï´Ù");
+		System.out.println("êµ¬ì…í•˜ì‹  ë¬¼í’ˆì˜ ì´ ê¸ˆì•¡ì€" + sum + "ì…ë‹ˆë‹¤");
+//		System.out.println("êµ¬ì…í•˜ì‹  ì œí’ˆì€ " + Arrays.toString(item) + "ì…ë‹ˆë‹¤"); //nullê°’ë„ ë‚˜ì˜´
+		System.out.println("êµ¬ì…í•˜ì‹  ì œí’ˆì€ " + itemList + "ì…ë‹ˆë‹¤");
 	}
 
 	
 	@Override
 	public String toString() {
-		return String.format(" [³²Àºµ·=%s, bonusPoint=%s]", money, bonusPoint); //main¸Ş¼­µå¿¡¼­ Ãâ·ÂÇÒ¶§ 
+		return String.format(" [ë‚¨ì€ëˆ=%s, bonusPoint=%s]", money, bonusPoint); //mainë©”ì„œë“œì—ì„œ ì¶œë ¥í• ë•Œ 
 	}
 }

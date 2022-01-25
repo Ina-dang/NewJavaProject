@@ -1,4 +1,4 @@
-package a220105;
+ï»¿package a220105;
 
 public class OperatorEx14 {
 	public static void main(String[] args) {
@@ -20,14 +20,14 @@ public class OperatorEx14 {
 		}	
 		System.out.println();	
 		
-		//¡èº»¹® ¿¹½Ã 
-		//¾Æ·¡´Â ¼±»ı´ÔÀÌ ÀÀ¿ëÇÑ°Í°°À¾´Ï´Ù
+		//â†‘ë³¸ë¬¸ ì˜ˆì‹œ 
+		//ì•„ë˜ëŠ” ì„ ìƒë‹˜ì´ ì‘ìš©í•œê²ƒê°™ìë‹ˆë‹¤
 		
-		System.out.println('ÆR' - '°¡' + 1);
+		System.out.println('í£' - 'ê°€' + 1);
 		
 		System.out.println(11172 / 19f);
 		
-		for(int i = '°¡'; i < '±î'; i++) {
+		for(int i = 'ê°€'; i < 'ê¹Œ'; i++) {
 			System.out.print((char)i);
 		}
 		

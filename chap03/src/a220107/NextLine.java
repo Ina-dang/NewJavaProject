@@ -1,13 +1,13 @@
-package a220107;
+ï»¿package a220107;
 
 public class NextLine {
 	public static void main(String[] args) {
-//		\n = °èÇà
+//		\n = ê³„í–‰
 		System.out.print("abcd"); 
 		System.out.print("\n1234\n");
-//		System.out.printf("\n1234"); printµç fµç \nÀº °¡´É . f´Â %nµµ µÊ
+//		System.out.printf("\n1234"); printë“  fë“  \nì€ ê°€ëŠ¥ . fëŠ” %në„ ë¨
 		System.out.print("abcd"); 
-		System.out.println(); // ÀÌ·¸°Ôµµ °¡´É 
+		System.out.println(); // ì´ë ‡ê²Œë„ ê°€ëŠ¥ 
 		System.out.print("1234");
 	}
 }

@@ -1,4 +1,4 @@
-//package a220119;
+ï»¿//package a220119;
 //
 //class Shape{
 //	String color = "black";
@@ -19,29 +19,29 @@
 //		this(0,0);
 //	}
 //	String getXY() {
-//		return "("+x+", "+y+")"; //x¿Í yÀÇ °ªÀ» ¹®ÀÚ¿­·Î ¹İÈ¯
+//		return "("+x+", "+y+")"; //xì™€ yì˜ ê°’ì„ ë¬¸ìì—´ë¡œ ë°˜í™˜
 //	}
 //}
 //
 //class Circle extends Shape {
-//	Point center; //¿øÀÇ ¿øÁ¡ÁÂÇ¥
-//	int r;		  //¹İÁö¸§
+//	Point center; //ì›ì˜ ì›ì ì¢Œí‘œ
+//	int r;		  //ë°˜ì§€ë¦„
 //	
 //	Circle(){
-//		this(new Point(0,0), 100); //Circle(Point center, int)¸¦ È£Ãâ
+//		this(new Point(0,0), 100); //Circle(Point center, int)ë¥¼ í˜¸ì¶œ
 //	}
 //	Circle(Point center, int r){
 //		this.center = center;
 //		this.r = r;
 //	}
 //	
-//	void draw() { //¿øÀ» ±×¸®´Â ´ë½Å¿¡ ¿øÀÇ Á¤º¸¸¦ Ãâ·Â
+//	void draw() { //ì›ì„ ê·¸ë¦¬ëŠ” ëŒ€ì‹ ì— ì›ì˜ ì •ë³´ë¥¼ ì¶œë ¥
 //		System.out.printf("[center=(%d, %d), r=%d, color=%s]%n", center.x, center.y, r, color);		
 //	}
 //}
 //
 //class Triangle extends Shape { //Triangle has a Shape
-//	Point[] p = new Point[3]; //3°³ÀÇ pointÀÎ½ºÅÏ½º¸¦ ´ãÀ» ¹è¿­ »ı¼º
+//	Point[] p = new Point[3]; //3ê°œì˜ pointì¸ìŠ¤í„´ìŠ¤ë¥¼ ë‹´ì„ ë°°ì—´ ìƒì„±
 //	
 //	Triangle(Point[] p ) {
 //		this.p = p;
@@ -63,7 +63,7 @@
 //		Triangle t = new Triangle(p);
 //		Circle c = new Circle(new Point(150,150),50);
 //		
-//		t.draw(); //»ï°¢ÇüÀ» ±×¸°´Ù
-//		c.draw(); //¿øÀ» ±×¸°´Ù
+//		t.draw(); //ì‚¼ê°í˜•ì„ ê·¸ë¦°ë‹¤
+//		c.draw(); //ì›ì„ ê·¸ë¦°ë‹¤
 //	}
 //}

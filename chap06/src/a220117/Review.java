@@ -1,20 +1,20 @@
-package a220117;
+ï»¿package a220117;
 
-public class Review { //°´Ã¼ÁöÇâ
+public class Review { //ê°ì²´ì§€í–¥
 	public static void main(String[] args) {
 
 		/*
-		 * Å¬·¡½º : ¼³°èµµ
-		 * °´Ã¼   : Á¦Ç°
-		 * - °´Ã¼ÀÇ ¼Ó¼º : ¸â¹öº¯¼ö, ÇÊµå
-		 * - °´Ã¼ÀÇ ±â´É : ¸Þ¼­µå, ÇÔ¼ö
+		 * í´ëž˜ìŠ¤ : ì„¤ê³„ë„
+		 * ê°ì²´   : ì œí’ˆ
+		 * - ê°ì²´ì˜ ì†ì„± : ë©¤ë²„ë³€ìˆ˜, í•„ë“œ
+		 * - ê°ì²´ì˜ ê¸°ëŠ¥ : ë©”ì„œë“œ, í•¨ìˆ˜
 		 * 
-		 * method, function Â÷ÀÌ´Â js ¶§ ´õ ÀÚ¼¼È÷ ÇÔ
+		 * method, function ì°¨ì´ëŠ” js ë•Œ ë” ìžì„¸ížˆ í•¨
 		 * 
-		 * ÀÎ½ºÅÏ½º : ¾î¶°ÇÑ Å¬·¡½º·ÎºÎÅÍ ¸¸µé¾îÁø °´Ã¼
+		 * ì¸ìŠ¤í„´ìŠ¤ : ì–´ë– í•œ í´ëž˜ìŠ¤ë¡œë¶€í„° ë§Œë“¤ì–´ì§„ ê°ì²´
 		 *  
 		 *  
-		 *  ÀÚ¹Ù¿Í °°Àº °´Ã¼ÁöÇâ¾ð¾î¿¡¼­´Â Å¬·¡½º°¡ °ð »ç¿ëÀÚ Á¤ÀÇ Å¸ÀÔÀÌ´Ù
+		 *  ìžë°”ì™€ ê°™ì€ ê°ì²´ì§€í–¥ì–¸ì–´ì—ì„œëŠ” í´ëž˜ìŠ¤ê°€ ê³§ ì‚¬ìš©ìž ì •ì˜ íƒ€ìž…ì´ë‹¤
 		 */
 		
 	}

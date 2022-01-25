@@ -1,40 +1,40 @@
-package a220111;
+ï»¿package a220111;
 
-public class HwResult1 { //À·³îÀÌ µÎ¹øÂ° ÇØ¼³
+public class HwResult1 { //ìœ·ë†€ì´ ë‘ë²ˆì§¸ í•´ì„¤
 	public static void main(String[] args) {
 //		int r1 = (int)(Math.random() * 2); // 0,1 
-		// À· ¾ş¾î¶ó µÚÁı¾î¶ó
+		// ìœ· ì—ì–´ë¼ ë’¤ì§‘ì–´ë¼
 		
 		for (int i = 0 ; i < 4 ; i++ ) {
-		//¡è ¸¦ 4°³¸¦ ¸¸µå´Â°Í À·4°³·Î »ı°¢ÇÏ°í µû·Îµû·Î 
+		//â†‘ ë¥¼ 4ê°œë¥¼ ë§Œë“œëŠ”ê²ƒ ìœ·4ê°œë¡œ ìƒê°í•˜ê³  ë”°ë¡œë”°ë¡œ 
 		int r1 = (int)(Math.random() * 2); // 0,1 
-		int r2 = (int)(Math.random() * 2); // 0,3ÇÏ°í½ÍÀ¸¸é ÇüÅÂÀÇ ¼ö * 3 
+		int r2 = (int)(Math.random() * 2); // 0,3í•˜ê³ ì‹¶ìœ¼ë©´ í˜•íƒœì˜ ìˆ˜ * 3 
 		int r3 = (int)(Math.random() * 2); // 0,5 
 		int r4 = (int)(Math.random() * 2); // 0,7
-								  //¡è°æ¿ìÀÇ ¼ö °¹¼ö
-										 //¡è³»°¡ ¿øÇÏ´Â ÇüÅÂÀÇ ¼ö Á¶Á¤
+								  //â†‘ê²½ìš°ì˜ ìˆ˜ ê°¯ìˆ˜
+										 //â†‘ë‚´ê°€ ì›í•˜ëŠ” í˜•íƒœì˜ ìˆ˜ ì¡°ì •
 		
-//		int r5 = (int)(Math.random() * 2) *7 +2 ; // 2,9 > °°Àº °ª Ã£±â >> 0,7 
+//		int r5 = (int)(Math.random() * 2) *7 +2 ; // 2,9 > ê°™ì€ ê°’ ì°¾ê¸° >> 0,7 
 										//0, 1 > 0, 7 > 2, 9
 		
 		
-		//¾ê³× ÇÕÇÏ¸é ÃÖÀú°ª 0 ÃÖ´ë°ª 4
-		//0 ¸ğ 
+		//ì–˜ë„¤ í•©í•˜ë©´ ìµœì €ê°’ 0 ìµœëŒ€ê°’ 4
+		//0 ëª¨ 
 		switch (r1+r2+r3+r4) {
 		case 0:
-			System.out.println("¸ğ");
+			System.out.println("ëª¨");
 			break;
 		case 1:
-			System.out.println("µµ");
+			System.out.println("ë„");
 			break;
 		case 2:
-			System.out.println("°³");
+			System.out.println("ê°œ");
 			break;
 		case 3:
-			System.out.println("°É");
+			System.out.println("ê±¸");
 			break;
 		case 4:
-			System.out.println("À·");
+			System.out.println("ìœ·");
 			break;
 		default:
 			break;

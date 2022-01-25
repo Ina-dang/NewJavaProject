@@ -1,26 +1,26 @@
-package a220103;
+ï»¿package a220103;
 
 import java.util.Scanner;
 
 public class ScannerEx {
 	public static void main(String[] args) {
 	/*
-	 * Scanner Å¬·¡½º¸¦ »ç¿ëÇÏ·Á¸é
-	 * import java.util.*; ¸¦ ÀÔ·ÂÇÏ¸é µÈ´Ù
-	 * ÂüÁ¶Çü º¯¼ö¸¦ °´Ã¼¶ó°í ºÎ¸§
+	 * Scanner í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•˜ë ¤ë©´
+	 * import java.util.*; ë¥¼ ì…ë ¥í•˜ë©´ ëœë‹¤
+	 * ì°¸ì¡°í˜• ë³€ìˆ˜ë¥¼ ê°ì²´ë¼ê³  ë¶€ë¦„
 	 * 
-	 * nextInt, nextFloat ¹ö±×ÀÖÀ¸´Ï ¾²Áö¸¶¼À
+	 * nextInt, nextFloat ë²„ê·¸ìˆìœ¼ë‹ˆ ì“°ì§€ë§ˆì…ˆ
 	 * 
 	 */
 	
-		Scanner scanner = new Scanner(System.in); //¿Ü¿ì±â! scanner °´Ã¼(º¯¼ö) »ı¼º
+		Scanner scanner = new Scanner(System.in); //ì™¸ìš°ê¸°! scanner ê°ì²´(ë³€ìˆ˜) ìƒì„±
 		
-		System.out.print("µÎÀÚ¸® Á¤¼ö¸¦ ÇÏ³ª ÀÔ·ÂÇØÁÖ¼¼¿ä >>");
-		String input = scanner.nextLine(); // nextLing() ÀÔ·Â ´ë±â»óÅÂ > ÀÔ·ÂÇÑ °ªÀ» input¿¡ ÀúÀå	
-		int num = Integer.parseInt(input); // ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­À» ¼ıÀÚ·Î º¯È¯ 
-										   // String Å¸ÀÔÀÇ inputÀ» int Å¸ÀÔÀÇ numÀ¸·Î º¯È¯
+		System.out.print("ë‘ìë¦¬ ì •ìˆ˜ë¥¼ í•˜ë‚˜ ì…ë ¥í•´ì£¼ì„¸ìš” >>");
+		String input = scanner.nextLine(); // nextLing() ì…ë ¥ ëŒ€ê¸°ìƒíƒœ > ì…ë ¥í•œ ê°’ì„ inputì— ì €ì¥	
+		int num = Integer.parseInt(input); // ì…ë ¥ë°›ì€ ë¬¸ìì—´ì„ ìˆ«ìë¡œ ë³€í™˜ 
+										   // String íƒ€ì…ì˜ inputì„ int íƒ€ì…ì˜ numìœ¼ë¡œ ë³€í™˜
 		
-		System.out.println("ÀÔ·Â³»¿ë :" + input);
+		System.out.println("ì…ë ¥ë‚´ìš© :" + input);
 		System.out.printf("num=%d%n", num);
 		
 		scanner.close();

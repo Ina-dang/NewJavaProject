@@ -1,47 +1,47 @@
-package a220119;
+ï»¿package a220119;
 
-//Card Å¬·¡½º ½ÃÀÛ
-class Card { //Ä«µåÅ¬·¡½º º¸·¯°¡´Âµ¥ ´Ù¸¥ Å¸ÀÔ¾ø³× ÀÌ°ÅºÎÅÍ
-	//»ó¼ö 6°³ (Å« ´ë¹®ÀÚ + _¾ğ´õ¹Ù¿¬°á)
-	static final int KIND_MAX = 4;   //Ä«µåº° ¹«´ÌÀÇ ¼ö (Á¾·ùÀÇ ÃÖ´ë°ª)
-	static final int NUM_MAX = 13;   //¹«´Ìº° Ä«µå ¼ö (Ä«µå ÇÑ Á¾·ù´ç °¹¼ö)
+//Card í´ë˜ìŠ¤ ì‹œì‘
+class Card { //ì¹´ë“œí´ë˜ìŠ¤ ë³´ëŸ¬ê°€ëŠ”ë° ë‹¤ë¥¸ íƒ€ì…ì—†ë„¤ ì´ê±°ë¶€í„°
+	//ìƒìˆ˜ 6ê°œ (í° ëŒ€ë¬¸ì + _ì–¸ë”ë°”ì—°ê²°)
+	static final int KIND_MAX = 4;   //ì¹´ë“œë³„ ë¬´ëŠ¬ì˜ ìˆ˜ (ì¢…ë¥˜ì˜ ìµœëŒ€ê°’)
+	static final int NUM_MAX = 13;   //ë¬´ëŠ¬ë³„ ì¹´ë“œ ìˆ˜ (ì¹´ë“œ í•œ ì¢…ë¥˜ë‹¹ ê°¯ìˆ˜)
 
-	// ¼ıÀÚ ÁØ ÀÌÀ¯´Â °¡Ä¡ ¼ø¼­ SPADE°¡ Á¦ÀÏ °¡Ä¡³ô¾Æ¼­ 4
+	// ìˆ«ì ì¤€ ì´ìœ ëŠ” ê°€ì¹˜ ìˆœì„œ SPADEê°€ ì œì¼ ê°€ì¹˜ë†’ì•„ì„œ 4
 	static final int SPADE = 4;
 	static final int DIAMOND = 3;
 	static final int HEART = 2;
 	static final int CLOVER = 1;
 	
-	//static final·Î ¼±¾ğµÇ¾îÀÖ¾î¼­ ¾î¶² Ä«µåµçÁö°£¿¡ ¡èÀ§¿¡´Â ´Ù °°Àº°ªÀ» Áö´Ô (Å¬·¡½ºº¯¼ö)
+	//static finalë¡œ ì„ ì–¸ë˜ì–´ìˆì–´ì„œ ì–´ë–¤ ì¹´ë“œë“ ì§€ê°„ì— â†‘ìœ„ì—ëŠ” ë‹¤ ê°™ì€ê°’ì„ ì§€ë‹˜ (í´ë˜ìŠ¤ë³€ìˆ˜)
 	
-	//ÀÌ°Ç Ä«µå 52ÀåÀÌ °¡Á®¾ß ÇÒ °³º°ÀÇ °ªÀ» °ü¸®ÇÏ±âÀ§ÇØ ÀÎ½ºÅÏ½º º¯¼ö ÇÊ¿ä
+	//ì´ê±´ ì¹´ë“œ 52ì¥ì´ ê°€ì ¸ì•¼ í•  ê°œë³„ì˜ ê°’ì„ ê´€ë¦¬í•˜ê¸°ìœ„í•´ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ í•„ìš”
 	int kind;
 	int number;
 	
 	Card(){
-		this(SPADE, 1); //Ã¹¹øÂ°°ª ÀÌ°É·Î È£ÃâÇÒ°ÅÀÓ (±âº»°ª¼³Á¤) Card c´Â ´ºÄ«µå½ºÆäÀÌµå ÇÏ¸é ÀÌ°ÍºÎÅÍ³ª¿È
+		this(SPADE, 1); //ì²«ë²ˆì§¸ê°’ ì´ê±¸ë¡œ í˜¸ì¶œí• ê±°ì„ (ê¸°ë³¸ê°’ì„¤ì •) Card cëŠ” ë‰´ì¹´ë“œìŠ¤í˜ì´ë“œ í•˜ë©´ ì´ê²ƒë¶€í„°ë‚˜ì˜´
 	}
-	//Ä«µåÅ¬·¡½º À§¿¡¸»°í ¹Ø¿¡ ¾êºÎÅÍ ÀÛ¼ºÇØ¾ßÇÔ
-	Card(int kind, int number){ //È£Ãâ´çÇÒ »ı¼ºÀÚ int Å¸ÀÔ kind¿Í int Å¸ÀÔ ¼ıÀÚ ¶ó¼­ 
+	//ì¹´ë“œí´ë˜ìŠ¤ ìœ„ì—ë§ê³  ë°‘ì— ì–˜ë¶€í„° ì‘ì„±í•´ì•¼í•¨
+	Card(int kind, int number){ //í˜¸ì¶œë‹¹í•  ìƒì„±ì int íƒ€ì… kindì™€ int íƒ€ì… ìˆ«ì ë¼ì„œ 
 		this.kind = kind; 			
 		this.number = number;
 	}
 	
 	
-	//ÀÎ½ºÅÏ½º¸¦ È®ÀÎÇÏ¶ó°í ÇßÀ»¶§ ÁÖ¼Ò°ª ´ë½Å ´ëÃ¼µÉ ¹®ÀÚ¿­
-	// (¼±¾ğºÎ °íÁ¤µÇ¾îÀÖÀ½) public String toStringÀ¸·Î ¹«Á¶°Ç ÇÏ°í return ½ºÆ®¸µ ÇØ¾ßÇÔ
+	//ì¸ìŠ¤í„´ìŠ¤ë¥¼ í™•ì¸í•˜ë¼ê³  í–ˆì„ë•Œ ì£¼ì†Œê°’ ëŒ€ì‹  ëŒ€ì²´ë  ë¬¸ìì—´
+	// (ì„ ì–¸ë¶€ ê³ ì •ë˜ì–´ìˆìŒ) public String toStringìœ¼ë¡œ ë¬´ì¡°ê±´ í•˜ê³  return ìŠ¤íŠ¸ë§ í•´ì•¼í•¨
 	public String toString() {
 //		String[] kinds = {"", "CLOVER", "HEART", "DIAMOND", "SPADE"}; 
 		String[] kinds = {"CLOVER", "HEART", "DIAMOND", "SPADE"}; 
-//		String numbers = "0123456789XJQK"; //¼ıÀÚ 10Àº X·Î
-		String numbers = "A23456789XJQK"; //¼ıÀÚ 10Àº X·Î
+//		String numbers = "0123456789XJQK"; //ìˆ«ì 10ì€ Xë¡œ
+		String numbers = "A23456789XJQK"; //ìˆ«ì 10ì€ Xë¡œ
 	
-					// ¹®ÀÚ¿­·Î ¹İÈ¯
+					// ë¬¸ìì—´ë¡œ ë°˜í™˜
 //	return "Kind : " + kinds[this.kind] + ", number ; " + numbers.charAt(this.number);
 //	return "Kind : " + kinds[kind-1] + ", number ; " + numbers.charAt(this.number-1);
 	return String.format("(%s %c)", kinds[kind-1], numbers.charAt(number-1));
-	} //String Å¬·¡½º ³¡
+	} //String í´ë˜ìŠ¤ ë
 	
 	
 }
-//Card Å¬·¡½º ³¡
+//Card í´ë˜ìŠ¤ ë

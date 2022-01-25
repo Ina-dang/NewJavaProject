@@ -1,18 +1,18 @@
-package a220119;
+ï»¿package a220119;
 
 public class Inheritance {
 /*
- * »ó¼Ó (inheritance)
- * ±âÁ¸ÀÇ Å¬·¡½º¸¦ Àç»ç¿ëÇÏ¿© »õ·Î¿î Å¬·¡½º ÀÛ¼º
+ * ìƒì† (inheritance)
+ * ê¸°ì¡´ì˜ í´ëž˜ìŠ¤ë¥¼ ìž¬ì‚¬ìš©í•˜ì—¬ ìƒˆë¡œìš´ í´ëž˜ìŠ¤ ìž‘ì„±
  * 
  */
 	
-	// ÀÚ¹Ù¿¡¼­ »ó¼ÓÀ» ±¸ÇöÇÏ´Â ¹æ¹ý
-	// »õ·Î ÀÛ¼ºÇÏ°íÀÚ ÇÏ´Â Å¬·¡½ºÀÇ ÀÌ¸§µÚ¿¡ extends »ó¼Ó¹Þ°íÀÚÇÏ´Â Å¬·¡½º 
+	// ìžë°”ì—ì„œ ìƒì†ì„ êµ¬í˜„í•˜ëŠ” ë°©ë²•
+	// ìƒˆë¡œ ìž‘ì„±í•˜ê³ ìž í•˜ëŠ” í´ëž˜ìŠ¤ì˜ ì´ë¦„ë’¤ì— extends ìƒì†ë°›ê³ ìží•˜ëŠ” í´ëž˜ìŠ¤ 
 	
 	/*
-	 * Á¶»óÅ¬·¡½º : parent class, super class, base class
-	 * ÀÚ¼ÕÅ¬·¡½º : child class, sub class, derived class
+	 * ì¡°ìƒí´ëž˜ìŠ¤ : parent class, super class, base class
+	 * ìžì†í´ëž˜ìŠ¤ : child class, sub class, derived class
 	 * 
 	 */
 	
@@ -22,13 +22,13 @@ public class Inheritance {
 	
 	class Child extends Parent{}
 	
-	// ÀÚ¼ÕÀº Á¶»óÀÇ ¸ðµç ¸â¹ö¸¦ »ó¼Ó¹Þ±â ¶§¹®¿¡ Á¶»óÅ¬·¡½º¸¦ Æ÷ÇÔÇÑ´Ù°í »ý°¢ÇÒ ¼ö ÀÖ´Ù
-	// À§ ¿¹½Ã´Â ChildÅ¬·¡½º¿¡ ÀÚµ¿ÀûÀ¸·Î age¶ó´Â ¸â¹öº¯¼ö°¡ Ãß°¡µÈ´Ù
+	// ìžì†ì€ ì¡°ìƒì˜ ëª¨ë“  ë©¤ë²„ë¥¼ ìƒì†ë°›ê¸° ë•Œë¬¸ì— ì¡°ìƒí´ëž˜ìŠ¤ë¥¼ í¬í•¨í•œë‹¤ê³  ìƒê°í•  ìˆ˜ ìžˆë‹¤
+	// ìœ„ ì˜ˆì‹œëŠ” Childí´ëž˜ìŠ¤ì— ìžë™ì ìœ¼ë¡œ ageë¼ëŠ” ë©¤ë²„ë³€ìˆ˜ê°€ ì¶”ê°€ëœë‹¤
 	
 	
 	/*
-	 * »ý¼ºÀÚ¿Í ÃÊ±âÈ­ ºí·°Àº »ó¼ÓµÇÁö ¾Ê´Â´Ù. ¸â¹ö¸¸ »ó¼ÓµÈ´Ù
-	 * ÀÚ¼ÕÅ¬·¡½ºÀÇ ¸â¹ö °³¼ö´Â Á¶»ó Å¬·¡½ºº¸´Ù Ç×»ó °°°Å³ª ¸¹´Ù
+	 * ìƒì„±ìžì™€ ì´ˆê¸°í™” ë¸”ëŸ­ì€ ìƒì†ë˜ì§€ ì•ŠëŠ”ë‹¤. ë©¤ë²„ë§Œ ìƒì†ëœë‹¤
+	 * ìžì†í´ëž˜ìŠ¤ì˜ ë©¤ë²„ ê°œìˆ˜ëŠ” ì¡°ìƒ í´ëž˜ìŠ¤ë³´ë‹¤ í•­ìƒ ê°™ê±°ë‚˜ ë§Žë‹¤
 	 */
 	
 	

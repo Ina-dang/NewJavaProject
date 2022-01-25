@@ -1,4 +1,4 @@
-package a220118;
+ï»¿package a220118;
 
 class Data { int x; }
 
@@ -12,25 +12,25 @@ class PrimitiveParamEx {
 		System.out.println("After change (d.x)");
 		System.out.println("main() : x = " + d.x);
 	
-//		change¸Ş¼­µåÀÇ ¸Å°³º¯¼ö°¡ ÂüÁ¶ÇüÀÌ¶ó °ªÀÌ¾Æ´Ñ °ªÀÌ ÀúÀåµÈ ÁÖ¼Ò¸¦ change¸Ş¼­µå¿¡°Ô ³Ñ°ÜÁÖ¾î¼­ °ªº¯°æ°¡´É
+//		changeë©”ì„œë“œì˜ ë§¤ê°œë³€ìˆ˜ê°€ ì°¸ì¡°í˜•ì´ë¼ ê°’ì´ì•„ë‹Œ ê°’ì´ ì €ì¥ëœ ì£¼ì†Œë¥¼ changeë©”ì„œë“œì—ê²Œ ë„˜ê²¨ì£¼ì–´ì„œ ê°’ë³€ê²½ê°€ëŠ¥
 		change(d); 
 		System.out.println("After change (d)");
 		System.out.println("main() : d.x = " + d.x);
 	}
 	
-	//±âº»ÀÚ·áÇü int
+	//ê¸°ë³¸ìë£Œí˜• int
 	static void change(int x) {
 		x = 100;
 		System.out.println("change() : x = " + x);	
 		
 	}	
-	//ÂüÁ¶ÀÚ·áÇü Data
-	static void change(Data d) { //change¸Ş¼­µå È£Ãâ ÈÄ¿¡ d.xÀÇ °ªÀÌ º¯°æµÈ ¿¹Á¦
+	//ì°¸ì¡°ìë£Œí˜• Data
+	static void change(Data d) { //changeë©”ì„œë“œ í˜¸ì¶œ í›„ì— d.xì˜ ê°’ì´ ë³€ê²½ëœ ì˜ˆì œ
 		d.x = 1000;
 		System.out.println("change() : d.x = " + d.x);		
 	}	
-//	//ÂüÁ¶ÀÚ·áÇü Data
-//	static void change(Data data) { //change¸Ş¼­µå È£Ãâ ÈÄ¿¡ d.xÀÇ °ªÀÌ º¯°æµÈ ¿¹Á¦
+//	//ì°¸ì¡°ìë£Œí˜• Data
+//	static void change(Data data) { //changeë©”ì„œë“œ í˜¸ì¶œ í›„ì— d.xì˜ ê°’ì´ ë³€ê²½ëœ ì˜ˆì œ
 //		data.x = 1000;
 //		System.out.println("change() : d.x = " + d.x);		
 //	}	

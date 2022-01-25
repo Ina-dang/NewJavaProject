@@ -1,12 +1,12 @@
-package a220112;
+ï»¿package a220112;
 
 public class Array2 {
 	public static void main(String[] args) {
-		// ¹è¿­ÀÇ °ªÀ» ÀÎµ¦½º [1] °ªÀº 4 [2]´Â 8 12 16 20 ·Î ±¸ÇØº¸¼À
+		// ë°°ì—´ì˜ ê°’ì„ ì¸ë±ìŠ¤ [1] ê°’ì€ 4 [2]ëŠ” 8 12 16 20 ë¡œ êµ¬í•´ë³´ì…ˆ
 		// 4 8 12 16 20
 		// 1 2 3  4  5
 		// 0 1 2  3  4  == i
-		//ÀÌ·¸°Ô ÇØµÎµÊ
+		//ì´ë ‡ê²Œ í•´ë‘ë¨
 //			score[0] = 4; 
 //			score[1] = 4*2; 
 //			score[2] = 4*3; 
@@ -20,7 +20,7 @@ public class Array2 {
 		}
 			
 
-		int[] score2 = score; // score¿¡ ´ã°ÜÀÖ´Â 'ÁÖ¼Ò'°ªÀ» int[]Å¸ÀÔÀÇ score2¿¡ ÇÒ´ç
+		int[] score2 = score; // scoreì— ë‹´ê²¨ìˆëŠ” 'ì£¼ì†Œ'ê°’ì„ int[]íƒ€ì…ì˜ score2ì— í• ë‹¹
 		score2[3] = 100;
 		
 		for(int i = 0 ; i < score.length ; i++) {
@@ -28,6 +28,6 @@ public class Array2 {
 		}
 		System.out.println(score);
 		System.out.println(score);
-//		new String("abcd"); // »ı¼ºÇÏ°í °ªÀ» ¾È´ãÀ½ --> ½º·¹±â
+//		new String("abcd"); // ìƒì„±í•˜ê³  ê°’ì„ ì•ˆë‹´ìŒ --> ìŠ¤ë ˆê¸°
 	}
 }

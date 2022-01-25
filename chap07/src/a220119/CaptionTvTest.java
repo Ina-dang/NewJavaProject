@@ -1,4 +1,4 @@
-package a220119;
+﻿package a220119;
 
 public class CaptionTvTest {
 	boolean power;

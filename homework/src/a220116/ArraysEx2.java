@@ -1,4 +1,4 @@
-package a220116;
+ï»¿package a220116;
 
 import java.util.Arrays;
 
@@ -11,14 +11,14 @@ public class ArraysEx2 {
 		char[] chArr = {'a', 'b', 'c', 'd'};
 		
 		for (int i = 0; i < iArr1.length; i++) {
-			iArr1[i] = i + 1; // 1~10 ÀÇ ¼ýÀÚ¸¦ ¼ø¼­´ë·Î ¹è¿­¿¡ ³Ö´Â´Ù.	
+			iArr1[i] = i + 1; // 1~10 ì˜ ìˆ«ìžë¥¼ ìˆœì„œëŒ€ë¡œ ë°°ì—´ì— ë„£ëŠ”ë‹¤.	
 		}
 		
 		for (int i = 0; i < iArr2.length; i++) {
-			iArr2[i] = (int)(Math.random() * 10) + 1; // 1~10 ÀÇ °ªÀ» ¹è¿­¿¡ ÀúÀå
+			iArr2[i] = (int)(Math.random() * 10) + 1; // 1~10 ì˜ ê°’ì„ ë°°ì—´ì— ì €ìž¥
 		}
 		
-		// ¹è¿­¿¡ ÀúÀåµÈ °ªµéÀ» Ãâ·ÂÇÑ´Ù.
+		// ë°°ì—´ì— ì €ìž¥ëœ ê°’ë“¤ì„ ì¶œë ¥í•œë‹¤.
 		for (int i = 0; i < iArr1.length; i++) {
 			System.out.print(iArr1[i] + ",");
 		}
@@ -26,7 +26,7 @@ public class ArraysEx2 {
 		System.out.println(Arrays.toString(iArr2));
 		System.out.println(Arrays.toString(iArr3));
 		System.out.println(Arrays.toString(chArr));
-		System.out.println(iArr3); // ÁÖ¼Ò°¡³ª¿È
+		System.out.println(iArr3); // ì£¼ì†Œê°€ë‚˜ì˜´
 		System.out.println(chArr);
 		
 		

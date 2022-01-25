@@ -1,110 +1,110 @@
-package a220105;
+ï»¿package a220105;
 
-public class Operator { //¿¬»êÀÚ ~ ºÎÈ£¿¬»êÀÚ ~p96
+public class Operator { //ì—°ì‚°ìž ~ ë¶€í˜¸ì—°ì‚°ìž ~p96
 
-//¿¬»êÀÚ ÆÄÆ®¿¡¼­´Â ÀÌ°Ô ¹«½¼ÀÇ¹Ì·Î »ç¿ëµÇ´Â ±âÈ£ÀÎÁö ÀÌÇØÇÏÀÚ
+//ì—°ì‚°ìž íŒŒíŠ¸ì—ì„œëŠ” ì´ê²Œ ë¬´ìŠ¨ì˜ë¯¸ë¡œ ì‚¬ìš©ë˜ëŠ” ê¸°í˜¸ì¸ì§€ ì´í•´í•˜ìž
 	public static void main(String[] args) {
-		// ¿¬»êÀÚ(operator) : ¿¬»êÀ» ¼öÇàÇÏ´Â ±âÈ£
+		// ì—°ì‚°ìž(operator) : ì—°ì‚°ì„ ìˆ˜í–‰í•˜ëŠ” ê¸°í˜¸
 		/*
-		 * operator : ¿¬»êÀ» ¼öÇàÇÏ´Â ±âÈ£
-		 * operand  : ÇÇ¿¬»êÀÚ, ¿¬»êÀÚÀÇ ÀÛ¾÷´ë»ó(º¯¼ö, »ó¼ö, ¸®ÅÍ·², ¼ö½Ä)
+		 * operator : ì—°ì‚°ì„ ìˆ˜í–‰í•˜ëŠ” ê¸°í˜¸
+		 * operand  : í”¼ì—°ì‚°ìž, ì—°ì‚°ìžì˜ ìž‘ì—…ëŒ€ìƒ(ë³€ìˆ˜, ìƒìˆ˜, ë¦¬í„°ëŸ´, ìˆ˜ì‹)
 		 * 
-		 * +,-,*,/  : ÀÌÇ×¿¬»êÀÚ
+		 * +,-,*,/  : ì´í•­ì—°ì‚°ìž
 		 * 
-		 * operator´Â operand·Î ¿¬»êÀ» ¼öÇàÇÏ°í ³ª¸é Ç×»ó °á°ú°ªÀ» ¹ÝÈ¯ÇÑ´Ù.
-		 * ¿¹¸¦µé¾î xÀÇ °ªÀÌ 5ÀÏ ¶§ µ¡¼À¿¬»ê 'x+3'ÀÇ °á°ú°ªÀº 8ÀÌ µÈ´Ù.
+		 * operatorëŠ” operandë¡œ ì—°ì‚°ì„ ìˆ˜í–‰í•˜ê³  ë‚˜ë©´ í•­ìƒ ê²°ê³¼ê°’ì„ ë°˜í™˜í•œë‹¤.
+		 * ì˜ˆë¥¼ë“¤ì–´ xì˜ ê°’ì´ 5ì¼ ë•Œ ë§ì…ˆì—°ì‚° 'x+3'ì˜ ê²°ê³¼ê°’ì€ 8ì´ ëœë‹¤.
 		 * 
 		 */
 		
 		/*
-		 * ¼ö½Ä(expression) : ¾à¾î(exp ¶Ç´Â expr) : ¿¬»êÀÚ¿Í ÇÇ¿¬»êÀÚ¸¦ Á¶ÇÕÇÏ¿© °è»êÇÏ°íÀÚÇÏ´Â ¹Ù¸¦ Ç¥ÇöÇÑ °Í
-		 * Æò°¡(evaluation) : ¾à¾î(eva), ½ÄÀ» °è»êÇÏ¿© °á°ú¸¦ ¾ò´Â °Í
-		 * ÀÛ¼ºÇÑ ½ÄÀ» ÇÁ·Î±×·¥¿¡ Æ÷ÇÔ½ÃÅ°·Á¸é ½ÄÀÇ ³¡¿¡ ';'¸¦ ºÙ¿©¼­ ¹®ÀåÀ¸·Î ¸¸µé¾î¾ß ÇÑ´Ù
+		 * ìˆ˜ì‹(expression) : ì•½ì–´(exp ë˜ëŠ” expr) : ì—°ì‚°ìžì™€ í”¼ì—°ì‚°ìžë¥¼ ì¡°í•©í•˜ì—¬ ê³„ì‚°í•˜ê³ ìží•˜ëŠ” ë°”ë¥¼ í‘œí˜„í•œ ê²ƒ
+		 * í‰ê°€(evaluation) : ì•½ì–´(eva), ì‹ì„ ê³„ì‚°í•˜ì—¬ ê²°ê³¼ë¥¼ ì–»ëŠ” ê²ƒ
+		 * ìž‘ì„±í•œ ì‹ì„ í”„ë¡œê·¸ëž¨ì— í¬í•¨ì‹œí‚¤ë ¤ë©´ ì‹ì˜ ëì— ';'ë¥¼ ë¶™ì—¬ì„œ ë¬¸ìž¥ìœ¼ë¡œ ë§Œë“¤ì–´ì•¼ í•œë‹¤
 		 * 
 		 *  4 * x + 3
-		 *  4 * x + 3; // statement(¹®Àå)
-		 *  = 23;	   // °á°ú¸¦ ¾ò¾úÁö¸¸ ¾²ÀÌÁö ¾Ê°í »ç¶óÁø´Ù
-		 *  ±×·¸±â ¶§¹®¿¡ ¾Æ·¡¿Í °°ÀÌ ´ëÀÔ¿¬»êÀÚ = ¸¦ »ç¿ëÇØ¼­ º¯¼ö¿Í °°ÀÌ °ªÀ» ÀúÀåÇÒ ¼ö ÀÖ´Â °ø°£¿¡ °á°ú¸¦ ÀúÀåÇØ¾ß ÇÑ´Ù
+		 *  4 * x + 3; // statement(ë¬¸ìž¥)
+		 *  = 23;	   // ê²°ê³¼ë¥¼ ì–»ì—ˆì§€ë§Œ ì“°ì´ì§€ ì•Šê³  ì‚¬ë¼ì§„ë‹¤
+		 *  ê·¸ë ‡ê¸° ë•Œë¬¸ì— ì•„ëž˜ì™€ ê°™ì´ ëŒ€ìž…ì—°ì‚°ìž = ë¥¼ ì‚¬ìš©í•´ì„œ ë³€ìˆ˜ì™€ ê°™ì´ ê°’ì„ ì €ìž¥í•  ìˆ˜ ìžˆëŠ” ê³µê°„ì— ê²°ê³¼ë¥¼ ì €ìž¥í•´ì•¼ í•œë‹¤
 		 *  
 		 *  y = 4 * x + 3;
 		 *  
-		 *  ¸¸ÀÏ ½ÄÀÇ Æò°ú°á°ú¸¦ Ãâ·ÂÇÏ±â¸¸ ¿øÇÒ »Ó, ÀÌ °ªÀ» ´Ù¸¥°÷¿¡ »ç¿ëÇÏÁö ¾ÊÀ» °ÍÀÌ¶ó¸é println()¾È¿¡ Á÷Á¢½áµµ µÈ´Ù
+		 *  ë§Œì¼ ì‹ì˜ í‰ê³¼ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ê¸°ë§Œ ì›í•  ë¿, ì´ ê°’ì„ ë‹¤ë¥¸ê³³ì— ì‚¬ìš©í•˜ì§€ ì•Šì„ ê²ƒì´ë¼ë©´ println()ì•ˆì— ì§ì ‘ì¨ë„ ëœë‹¤
 		 *  System.out.println(4 * x + 3);
 		 *  
 		 */
 		
 		/*
-		 * operator type (¿¬»êÀÚÀÇ Á¾·ù) p87È®ÀÎ
+		 * operator type (ì—°ì‚°ìžì˜ ì¢…ë¥˜) p87í™•ì¸
 		 * 
-		 * »ê¼ú¿¬»êÀÚ : +, -, *, /, %, <<, >>, >>> | »çÄ¢¿¬»ê, ³ª¸ÓÁö¿¬»ê(%), >>µéÀº shift(º¯È¯)À¸·Î ºñÆ®¿¡´ëÇÑ ÀÚ¸´¼öº¯È¯ ±Ùµ¥Àß¾È¾¸
-		 * ºñ±³¿¬»êÀÚ : >, <, >=, <=, ==, != 	   | pg¿¡¼­´Â == °°´Ù != ´Ù¸£´Ù ÀÓ (=,¡Á¾È¾¸)
+		 * ì‚°ìˆ ì—°ì‚°ìž : +, -, *, /, %, <<, >>, >>> | ì‚¬ì¹™ì—°ì‚°, ë‚˜ë¨¸ì§€ì—°ì‚°(%), >>ë“¤ì€ shift(ë³€í™˜)ìœ¼ë¡œ ë¹„íŠ¸ì—ëŒ€í•œ ìžë¦¿ìˆ˜ë³€í™˜ ê·¼ë°ìž˜ì•ˆì”€
+		 * ë¹„êµì—°ì‚°ìž : >, <, >=, <=, ==, != 	   | pgì—ì„œëŠ” == ê°™ë‹¤ != ë‹¤ë¥´ë‹¤ ìž„ (=,â‰ ì•ˆì”€)
 		 * 				
-		 * 				(><ÀÇ ¾à¾î´Â ¿Ü¿öµÎ¸é ÁÁ´Ù!)
+		 * 				(><ì˜ ì•½ì–´ëŠ” ì™¸ì›Œë‘ë©´ ì¢‹ë‹¤!)
 		 * 				< : lt		a < b 		a lesser than b
 		 * 				> : gt		a > b 		a greater than n
 		 * 
-		 * ³í¸®¿¬»êÀÚ : &&, ||, !, &, |, ^, ~	   | &and |or !not ^caret ~
-		 * ´ëÀÔ¿¬»êÀÚ : =						   | ¿ìº¯ÀÇ °ªÀ» ÁÂº¯¿¡ ÀúÀå
-		 * ±âÅ¸		  : (type), ?:, instanceof 	   | Çüº¯È¯¿¬»êÀÚ(casting operator), »ïÇ×¿¬»êÀÚ, instanceof¿¬»êÀÚ
+		 * ë…¼ë¦¬ì—°ì‚°ìž : &&, ||, !, &, |, ^, ~	   | &and |or !not ^caret ~
+		 * ëŒ€ìž…ì—°ì‚°ìž : =						   | ìš°ë³€ì˜ ê°’ì„ ì¢Œë³€ì— ì €ìž¥
+		 * ê¸°íƒ€		  : (type), ?:, instanceof 	   | í˜•ë³€í™˜ì—°ì‚°ìž(casting operator), ì‚¼í•­ì—°ì‚°ìž, instanceofì—°ì‚°ìž
 		 * 
 		 */
 		
 		/*
-		 * ´ÜÇ×¿¬»êÀÚ 	: ÇÇ¿¬»êÀÚÀÇ °³¼ö°¡ ÇÏ³ª. ¿©±â¿¡ ÀÖ´Â +,-´Â ºÎÈ£¿¬»êÀÚ : (-3)ÀÇ -À½¼öÇ¥½Ã °°Àº °æ¿ì
-		 * ÀÌÇ×¿¬»êÀÚ 	: ´ëºÎºÐ ope°¡ ¿©±â Æ÷ÇÔ
-		 * »ïÇ×¿¬»êÀÚ 	: ?: only
-		 * Çüº¯È¯¿¬»êÀÚ : (type)
+		 * ë‹¨í•­ì—°ì‚°ìž 	: í”¼ì—°ì‚°ìžì˜ ê°œìˆ˜ê°€ í•˜ë‚˜. ì—¬ê¸°ì— ìžˆëŠ” +,-ëŠ” ë¶€í˜¸ì—°ì‚°ìž : (-3)ì˜ -ìŒìˆ˜í‘œì‹œ ê°™ì€ ê²½ìš°
+		 * ì´í•­ì—°ì‚°ìž 	: ëŒ€ë¶€ë¶„ opeê°€ ì—¬ê¸° í¬í•¨
+		 * ì‚¼í•­ì—°ì‚°ìž 	: ?: only
+		 * í˜•ë³€í™˜ì—°ì‚°ìž : (type)
 		 */
 		
 		System.out.println(5 - 2 > 1 + 1); //3 operators, 5 operands
 		
 		/*
-		 * ¿¬»êÀÚ Á¾·ù Á¤¸®
+		 * ì—°ì‚°ìž ì¢…ë¥˜ ì •ë¦¬
 		 * 
-		 * »ê¼ú > ºñ±³ > ³í¸® > ´ëÀÔ. ´ëÀÔÀº Á¦ÀÏ ¸¶Áö¸·¿¡ ¼öÇàµÈ´Ù.
-		 * ´ÜÇ× > ÀÌÇ× > »ïÇ×. 		  ´ÜÇ× ¿¬»êÀÚÀÇ ¿ì¼±¼øÀ§°¡ ÀÌÇ×¿¬»êÀÚº¸´Ù ³ô´Ù.
-		 * ´ÜÇ× ¿¬»êÀÚ¿Í ´ëÀÔ ¿¬»êÀÚ¸¦ Á¦¿ÜÇÑ ¸ðµç ¿¬»êÀÇ ÁøÇà¹æÇâÀº ¿ÞÂÊ¿¡¼­ ¿À¸¥ÂÊÀÌ´Ù
+		 * ì‚°ìˆ  > ë¹„êµ > ë…¼ë¦¬ > ëŒ€ìž…. ëŒ€ìž…ì€ ì œì¼ ë§ˆì§€ë§‰ì— ìˆ˜í–‰ëœë‹¤.
+		 * ë‹¨í•­ > ì´í•­ > ì‚¼í•­. 		  ë‹¨í•­ ì—°ì‚°ìžì˜ ìš°ì„ ìˆœìœ„ê°€ ì´í•­ì—°ì‚°ìžë³´ë‹¤ ë†’ë‹¤.
+		 * ë‹¨í•­ ì—°ì‚°ìžì™€ ëŒ€ìž… ì—°ì‚°ìžë¥¼ ì œì™¸í•œ ëª¨ë“  ì—°ì‚°ì˜ ì§„í–‰ë°©í–¥ì€ ì™¼ìª½ì—ì„œ ì˜¤ë¥¸ìª½ì´ë‹¤
 		 * 
 		 */
 		
-		/* p91 ½ÄÁ¤¸®
-		 * ÀÌÇ× ¿¬»êÀÚ´Â µÎ ÇÇ¿¬»êÀÚÀÇ Å¸ÀÔÀÌ ÀÏÄ¡ÇØ¾ß ¿¬»ê °¡´É
-		 * ´ëºÎºÐ ´õ Å«Å¸ÀÔÀ¸·Î ÀÏÄ¡µÊ (ÀÛÀº Å¸ÀÔÀ¸·Î ÇÏ¸é data loss À§Çè)
+		/* p91 ì‹ì •ë¦¬
+		 * ì´í•­ ì—°ì‚°ìžëŠ” ë‘ í”¼ì—°ì‚°ìžì˜ íƒ€ìž…ì´ ì¼ì¹˜í•´ì•¼ ì—°ì‚° ê°€ëŠ¥
+		 * ëŒ€ë¶€ë¶„ ë” í°íƒ€ìž…ìœ¼ë¡œ ì¼ì¹˜ë¨ (ìž‘ì€ íƒ€ìž…ìœ¼ë¡œ í•˜ë©´ data loss ìœ„í—˜)
 		 * 
 		 * int   i = 10;
 		 * float f = 20.0f;
 		 * 
-		 * float result = f + (float)i; // Çüº¯È¯À¸·Î µÎ ÇÇ¿¬»êÀÚÀÇ Å¸ÀÔÀ» ÀÏÄ¡
+		 * float result = f + (float)i; // í˜•ë³€í™˜ìœ¼ë¡œ ë‘ í”¼ì—°ì‚°ìžì˜ íƒ€ìž…ì„ ì¼ì¹˜
 		 * 
-		 * float result = f + i; 	 	// Å« Å¸ÀÔÀ¸·Î Çüº¯È¯½Ã, Çüº¯È¯¿¬»êÀÚ »ý·«°¡´É
+		 * float result = f + i; 	 	// í° íƒ€ìž…ìœ¼ë¡œ í˜•ë³€í™˜ì‹œ, í˜•ë³€í™˜ì—°ì‚°ìž ìƒëžµê°€ëŠ¥
 		 * 
 		 * 
 		 * p92
-		 * 1. µÎ ÇÇ¿¬»êÀÚÀÇ Å¸ÀÔÀ» °°°Ô ÀÏÄ¡½ÃÅ²´Ù (º¸´Ù Å« Å¸ÀÔÀ¸·Î ÀÏÄ¡)
+		 * 1. ë‘ í”¼ì—°ì‚°ìžì˜ íƒ€ìž…ì„ ê°™ê²Œ ì¼ì¹˜ì‹œí‚¨ë‹¤ (ë³´ë‹¤ í° íƒ€ìž…ìœ¼ë¡œ ì¼ì¹˜)
 		 *  - long   + int   -> long   + long   -> long 
 		 *  - float  + int   -> float  + float  -> float
 		 *  - double + float -> double + double -> double
 		 * 
-		 * 2. ÇÇ¿¬»êÀÚÀÇ Å¸ÀÔÀÌ intº¸´Ù ÀÛÀº Å¸ÀÔÀÌ¸é int·Î º¯È¯
+		 * 2. í”¼ì—°ì‚°ìžì˜ íƒ€ìž…ì´ intë³´ë‹¤ ìž‘ì€ íƒ€ìž…ì´ë©´ intë¡œ ë³€í™˜
 		 *  - byte + short -> int + int -> int
 		 *  - char + short -> int + int -> int
 		 * 
 		 * 
-		 * ¸ðµç ¿¬»ê¿¡¼­ '»ê¼úº¯È¯'ÀÌ ÀÏ¾î³ªÁö¸¸, ½¬ÇÁÆ®¿¬»êÀÚ(<<,>>), Áõ°¨¿¬»êÀÚ(++,--)´Â ¿¹¿Ü
+		 * ëª¨ë“  ì—°ì‚°ì—ì„œ 'ì‚°ìˆ ë³€í™˜'ì´ ì¼ì–´ë‚˜ì§€ë§Œ, ì‰¬í”„íŠ¸ì—°ì‚°ìž(<<,>>), ì¦ê°ì—°ì‚°ìž(++,--)ëŠ” ì˜ˆì™¸
 		 * 
-		 * ¡Ø ¿¬»ê°á°úÀÇ Å¸ÀÔÀº ÇÇ¿¬»êÀÚÀÇ Å¸ÀÔ°ú ÀÏÄ¡ÇÑ´Ù. 
-		 *   ¿¹¸¦µé¾î int / int °á°ú´Â intÀÌ´Ù. float double°ú °°Àº ½Ç¼öÇüÀÌ ¾Æ´Ï±â ¶§¹®¿¡ ¼Ò¼öÁ¡ ÀÌÇÏ´Â ¹ö·ÁÁø´Ù.
+		 * â€» ì—°ì‚°ê²°ê³¼ì˜ íƒ€ìž…ì€ í”¼ì—°ì‚°ìžì˜ íƒ€ìž…ê³¼ ì¼ì¹˜í•œë‹¤. 
+		 *   ì˜ˆë¥¼ë“¤ì–´ int / int ê²°ê³¼ëŠ” intì´ë‹¤. float doubleê³¼ ê°™ì€ ì‹¤ìˆ˜í˜•ì´ ì•„ë‹ˆê¸° ë•Œë¬¸ì— ì†Œìˆ˜ì  ì´í•˜ëŠ” ë²„ë ¤ì§„ë‹¤.
 		 *   
-		 * 5 / 2 -> 2 (2.5°¡ ¾Æ´Ñ 2°¡µÈ´Ù)
+		 * 5 / 2 -> 2 (2.5ê°€ ì•„ë‹Œ 2ê°€ëœë‹¤)
 		 *   
-		 * 2.5ÀÇ °á°ú°ªÀ» ¿øÇÏ¸é
+		 * 2.5ì˜ ê²°ê³¼ê°’ì„ ì›í•˜ë©´
 		 *   
-		 * float result = 5 / 2; // °á°ú 2.0 (µÑ´Ù intÇüÀ¸·Î result¿¡ ÀúÀåµÇ¾î float·Î Ãâ·Â)
-		 * float result = 5 / 2f; // °á°ú 2.5 (ÇÏ³ª°¡ float)
+		 * float result = 5 / 2; // ê²°ê³¼ 2.0 (ë‘˜ë‹¤ intí˜•ìœ¼ë¡œ resultì— ì €ìž¥ë˜ì–´ floatë¡œ ì¶œë ¥)
+		 * float result = 5 / 2f; // ê²°ê³¼ 2.5 (í•˜ë‚˜ê°€ float)
 		 *  
-		 * ¡Ø »ê¼úº¯È¯ÀÌ¶õ? ¿¬»ê ¼öÇà Á÷Àü¿¡ ¹ß»ýÇÏ´Â ÇÇ¿¬»êÀÚÀÇ ÀÚµ¿Çüº¯È¯
-		 *   - µÎ ÇÇ¿¬»êÀÚÀÇ Å¸ÀÔÀ» °°°Ô ÀÏÄ¡½ÃÅ²´Ù(º¸´Ù Å« Å¸ÀÔÀ¸·Î ÀÏÄ¡)
-		 *   - ÇÇ¿¬»êÀÚÀÇ Å¸ÀÔÀÌ intº¸´Ù ÀÛÀº Å¸ÀÔÀÌ¸é int·Î º¯È¯µÈ´Ù
+		 * â€» ì‚°ìˆ ë³€í™˜ì´ëž€? ì—°ì‚° ìˆ˜í–‰ ì§ì „ì— ë°œìƒí•˜ëŠ” í”¼ì—°ì‚°ìžì˜ ìžë™í˜•ë³€í™˜
+		 *   - ë‘ í”¼ì—°ì‚°ìžì˜ íƒ€ìž…ì„ ê°™ê²Œ ì¼ì¹˜ì‹œí‚¨ë‹¤(ë³´ë‹¤ í° íƒ€ìž…ìœ¼ë¡œ ì¼ì¹˜)
+		 *   - í”¼ì—°ì‚°ìžì˜ íƒ€ìž…ì´ intë³´ë‹¤ ìž‘ì€ íƒ€ìž…ì´ë©´ intë¡œ ë³€í™˜ëœë‹¤
 		 *     
 		 */
 		
@@ -118,21 +118,21 @@ public class Operator { //¿¬»êÀÚ ~ ºÎÈ£¿¬»êÀÚ ~p96
 		
 		System.out.println(ch2);
 		
-		ch2++; //ÈÄÀ§Çü -> º¯¼öÀÇ °ªÀ» ¸ÕÀú ÀÐ¾î¿Â(ÂüÁ¶) ÈÄ¿¡ °ªÀ» Áõ°¡½ÃÅ²´Ù
+		ch2++; //í›„ìœ„í˜• -> ë³€ìˆ˜ì˜ ê°’ì„ ë¨¼ì € ì½ì–´ì˜¨(ì°¸ì¡°) í›„ì— ê°’ì„ ì¦ê°€ì‹œí‚¨ë‹¤
 		System.out.println(ch2);		
 		
-		++ch2; //ÀüÀ§Çü -> º¯¼ö(ÇÇ¿¬»êÀÚ)ÀÇ °ªÀ» ¸ÕÀú Áõ°¡½ÃÅ² ÈÄ¿¡ º¯¼öÀÇ °ªÀ» ÀÐ¾î¿È
+		++ch2; //ì „ìœ„í˜• -> ë³€ìˆ˜(í”¼ì—°ì‚°ìž)ì˜ ê°’ì„ ë¨¼ì € ì¦ê°€ì‹œí‚¨ í›„ì— ë³€ìˆ˜ì˜ ê°’ì„ ì½ì–´ì˜´
 		System.out.println(ch2);
 		
 		//========================= e
 		
-		System.out.println(ch2++); // °ªÀ» ¸ÕÀú ÀÐ°í Áõ°¡Çß°í °á°ú¸¦ ÀúÀå¸¸ ÇØ¼­ Ãâ·Â¿¡´Â °ª¸¸ ³ª¿È
-		System.out.println(ch2);   // ÀúÀåµÈ °ª
+		System.out.println(ch2++); // ê°’ì„ ë¨¼ì € ì½ê³  ì¦ê°€í–ˆê³  ê²°ê³¼ë¥¼ ì €ìž¥ë§Œ í•´ì„œ ì¶œë ¥ì—ëŠ” ê°’ë§Œ ë‚˜ì˜´
+		System.out.println(ch2);   // ì €ìž¥ëœ ê°’
 		System.out.println(++ch2);
 		
 		
 		
-		//¿¹½Ã¹®Á¦
+		//ì˜ˆì‹œë¬¸ì œ
 		/*
 		int i = 5;
 		
@@ -145,16 +145,16 @@ public class Operator { //¿¬»êÀÚ ~ ºÎÈ£¿¬»êÀÚ ~p96
 		int i=5, j=0;
 		
 		j = i++;
-		System.out.println("j=i++; ½ÇÇàÈÄ, i=" + i +", j=" + j);
+		System.out.println("j=i++; ì‹¤í–‰í›„, i=" + i +", j=" + j);
 		
-		i=5;			// °á°ú¸¦ ºñ±³ÇÏ±â À§ÇØ, i¿Í jÀÇ °ªÀ» ´Ù½Ã 5¿Í 0À¸·Î º¯°æ
+		i=5;			// ê²°ê³¼ë¥¼ ë¹„êµí•˜ê¸° ìœ„í•´, iì™€ jì˜ ê°’ì„ ë‹¤ì‹œ 5ì™€ 0ìœ¼ë¡œ ë³€ê²½
 		j=0;
 		
 		j = ++i;
-		System.out.println("j=++i; ½ÇÇàÈÄ, i=" + i + ", j=" + j);
+		System.out.println("j=++i; ì‹¤í–‰í›„, i=" + i + ", j=" + j);
 		
 		//
-		System.out.println("============overflowÀÀ¿ë"); //pg ´Â 1 Áõ°¨À» ÀÚÁÖ¾¸
+		System.out.println("============overflowì‘ìš©"); //pg ëŠ” 1 ì¦ê°ì„ ìžì£¼ì”€
 		
 		byte b = Byte.MAX_VALUE;
 		b++;
@@ -162,7 +162,7 @@ public class Operator { //¿¬»êÀÚ ~ ºÎÈ£¿¬»êÀÚ ~p96
 		System.out.println(b);
 		
 		i = 0;
-		System.out.println(-i); //Ãâ·Â°ª 0
+		System.out.println(-i); //ì¶œë ¥ê°’ 0
 		
 		
 				

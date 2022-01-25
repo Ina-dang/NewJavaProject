@@ -1,4 +1,4 @@
-package a220111;
+ï»¿package a220111;
 
 public class FlowEx12 {
 	public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class FlowEx12 {
 		
 		for(int i = 1 ; i <= 5 ; i++)
 			System.out.print(i);
-		//forµµ ºí·° ¾øÀÌ °¡³Õ
+		//forë„ ë¸”ëŸ­ ì—†ì´ ê°€ë„
 		System.out.println();
 	}
 }

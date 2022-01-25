@@ -1,11 +1,11 @@
-package a220121;
+ï»¿package a220121;
 
 import java.util.Calendar;
 
 public class SingletonTest {
-	//Singleton vs Prototype ÀÎ½ºÅÏ½º »ı¼º¹æ¹ıÂ÷ÀÌ
-//	µ¿ÀÏÇÑÁÖ¼Ò¸¦ ¿©·¯¹ø ¾ğ±ŞÇÏ³Ä
-//	°¢±â ´Ù¸¥ ÁÖ¼ÒÀÇ ÀÎ½ºÅÏ½º¸¦ ³²±æ°ÍÀÌ³Ä
+	//Singleton vs Prototype ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ë°©ë²•ì°¨ì´
+//	ë™ì¼í•œì£¼ì†Œë¥¼ ì—¬ëŸ¬ë²ˆ ì–¸ê¸‰í•˜ëƒ
+//	ê°ê¸° ë‹¤ë¥¸ ì£¼ì†Œì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë‚¨ê¸¸ê²ƒì´ëƒ
 	public static void main(String[] args) {
 		Singleton singleton = Singleton.getInstance();
 		Singleton singleton2 = Singleton.getInstance();
@@ -23,11 +23,11 @@ public class SingletonTest {
 		Prototype prototype3 = Prototype.getInstance();
 		System.out.println(prototype);
 		System.out.println(prototype2); 
-		System.out.println(prototype3); //¿©±â´Â ´Ù ´Ù¸¥ÁÖ¼Ò »ı¼ºµÊ
+		System.out.println(prototype3); //ì—¬ê¸°ëŠ” ë‹¤ ë‹¤ë¥¸ì£¼ì†Œ ìƒì„±ë¨
 
 		System.out.println(prototype == prototype2);
 		
-		//Ä¶¸°´õ
+		//ìº˜ë¦°ë”
 		Calendar calendar = Calendar.getInstance();
 		Calendar calendar2 = Calendar.getInstance();
 		
@@ -35,8 +35,8 @@ public class SingletonTest {
 	}
 }
 
-class Singleton{ //°è¼ÓÀûÀ¸·Î °°Àº ÁÖ¼Ò¸¦ ÁÜ
-	// Å¬·¡½º °ÙÅÍÃ³·³ ÀÛµ¿ÇÑ´Ù
+class Singleton{ //ê³„ì†ì ìœ¼ë¡œ ê°™ì€ ì£¼ì†Œë¥¼ ì¤Œ
+	// í´ë˜ìŠ¤ ê²Ÿí„°ì²˜ëŸ¼ ì‘ë™í•œë‹¤
 		
 	private static Singleton singleton = new Singleton();
 	private Singleton() {}

@@ -1,20 +1,20 @@
-package a220106;
+ï»¿package a220106;
 
 public class OperatorEx23 {
 	public static void main(String[] args) {
-		String str1 = new String("abc"); //ÂüÁ¶ÀÚ·áÇü ¾ÆÁÖ Æ¯ÀÌÇØ¼­ ¸®ÅÍ·²(¹®ÀÚÇü)µµ °¡Áú ¼ö ÀÖÀ½
-		String str2 = new String("abc"); //new ÀûÈù°Ô Á¤½Ä¹®¹ı
-//		ÂüÁ¶ÀÚ·áÇüÀº ÁÖ¼Ò¸¦ ºñ±³ÇÑ´Ù
+		String str1 = new String("abc"); //ì°¸ì¡°ìë£Œí˜• ì•„ì£¼ íŠ¹ì´í•´ì„œ ë¦¬í„°ëŸ´(ë¬¸ìí˜•)ë„ ê°€ì§ˆ ìˆ˜ ìˆìŒ
+		String str2 = new String("abc"); //new ì íŒê²Œ ì •ì‹ë¬¸ë²•
+//		ì°¸ì¡°ìë£Œí˜•ì€ ì£¼ì†Œë¥¼ ë¹„êµí•œë‹¤
 		
-		System.out.printf("\"abc\"==\"abc\" ? %b%n", "abc"=="abc"); // "" µû¿ÈÇ¥ »çÀÌ¿¡ " ³ÖÀ¸·Á¸é \" ·Î ÀÔ·Â ÇØ¾ßÇÑ´Ù
+		System.out.printf("\"abc\"==\"abc\" ? %b%n", "abc"=="abc"); // "" ë”°ì˜´í‘œ ì‚¬ì´ì— " ë„£ìœ¼ë ¤ë©´ \" ë¡œ ì…ë ¥ í•´ì•¼í•œë‹¤
 		System.out.printf(" str1==\"abc\" ? %b%n",    str1== "abc");
 		System.out.printf(" str1==\"abc\" ? %b%n",    str2== "abc");
-//		System.out.printf(" str2==\"abc\" ? %b%n",    str2 = new String("abc")); //new string ÀÌ¶û °´Ã¼°¡ ´Ù¸§ 
+//		System.out.printf(" str2==\"abc\" ? %b%n",    str2 = new String("abc")); //new string ì´ë‘ ê°ì²´ê°€ ë‹¤ë¦„ 
 		System.out.printf(" str1.equals(\"abc\") ? %b%n",    str1.equals("abc"));
 		System.out.printf(" str2.equals(\"abc\") ? %b%n",    str2.equals("abc"));
-		System.out.printf(" str2.equals(\"abc\") ? %b%n",    str2.equals("ABC")); //equals()´Â °´Ã¼°¡ ´Ş¶óµµ ³»¿ë¸¸ °°À¸¸é trueÇØÁÜ
+		System.out.printf(" str2.equals(\"abc\") ? %b%n",    str2.equals("ABC")); //equals()ëŠ” ê°ì²´ê°€ ë‹¬ë¼ë„ ë‚´ìš©ë§Œ ê°™ìœ¼ë©´ trueí•´ì¤Œ
 		System.out.printf(" str2.equalsIgnoreCase(\"ABC\") ? %b%n",    str2.equalsIgnoreCase("ABC"));
 		
-		System.out.println("\"°¡³ª´Ù\""); //µû¿ÈÇ¥ ³Ö¾î¼­ Ãâ·ÂÇÏ´Â ¹ı
+		System.out.println("\"ê°€ë‚˜ë‹¤\""); //ë”°ì˜´í‘œ ë„£ì–´ì„œ ì¶œë ¥í•˜ëŠ” ë²•
 	}
 }

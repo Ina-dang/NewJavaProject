@@ -1,9 +1,9 @@
-package a220107;
+ï»¿package a220107;
 
 public class FlowEx1 {
 	public static void main(String[] args) {
 		int x = 0;
-		System.out.printf("x=%d ÀÏ ¶§, ÂüÀÎ °ÍÀº%n", x);
+		System.out.printf("x=%d ì¼ ë•Œ, ì°¸ì¸ ê²ƒì€%n", x);
 		
 		if(x==0) System.out.println("x==0"); // 0 true
 		if(x!=0) System.out.println("x!=0"); //   false
@@ -14,7 +14,7 @@ public class FlowEx1 {
 		System.out.println(x);
 		
 		x = 1;
-		System.out.printf("x=%d ÀÏ ¶§, ÂüÀÎ °ÍÀº%n", x);
+		System.out.printf("x=%d ì¼ ë•Œ, ì°¸ì¸ ê²ƒì€%n", x);
 		
 		if(x==0) System.out.println("x==0"); // 1 false
 		if(x!=0) System.out.println("x!=0"); //   true
@@ -22,12 +22,12 @@ public class FlowEx1 {
 		if(!(x!=0)) System.out.println("!(x!=0)"); // false
 		
 		x = 10;
-		System.out.printf("x=%d ÀÏ ¶§, ÂüÀÎ °ÍÀº%n", x);
+		System.out.printf("x=%d ì¼ ë•Œ, ì°¸ì¸ ê²ƒì€%n", x);
 		
 		if(x>=0 || x<=12) {
-			System.out.println("0ÀÔ´Ï´Ù"); 
-			System.out.print("ÀÌ»óÀÔ´Ï´Ù\n"); 
-			System.out.printf("%d%s%d %n %s %n%d%s%d", 11,"        ",11," ÃßÄ«Æ÷Ä«",11,"        ",11); 
+			System.out.println("0ìž…ë‹ˆë‹¤"); 
+			System.out.print("ì´ìƒìž…ë‹ˆë‹¤\n"); 
+			System.out.printf("%d%s%d %n %s %n%d%s%d", 11,"        ",11," ì¶”ì¹´í¬ì¹´",11,"        ",11); 
 		}
 	}
 }

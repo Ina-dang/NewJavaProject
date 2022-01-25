@@ -1,6 +1,6 @@
-package a220116;
+ï»¿package a220116;
 
-public class BubbleSort { //¹öºíÁ¤·Ä
+public class BubbleSort { //ë²„ë¸”ì •ë ¬
 	public static void main(String[] args) {
 		int[] numArr = new int[10];
 		
@@ -9,13 +9,13 @@ public class BubbleSort { //¹öºíÁ¤·Ä
 		}
 		System.out.println();
 		
-		for (int i = 0; i < numArr.length-1; i++) { //outer loop -1ÀÎÀÌÀ¯´Â -1¾ÈÇÏ¸é length º¸´Ù ¸¹Àº ¼ö ºñ±³ÇØ¼­ ¿À·ù¶ä
+		for (int i = 0; i < numArr.length-1; i++) { //outer loop -1ì¸ì´ìœ ëŠ” -1ì•ˆí•˜ë©´ length ë³´ë‹¤ ë§ì€ ìˆ˜ ë¹„êµí•´ì„œ ì˜¤ë¥˜ëœ¸
 			boolean changed = false;
 			
 			for (int j = 0; j < numArr.length-1-i; j++) { 
 				if(numArr[j] > numArr[j+1]) { 
 				int temp = numArr[j];
-				numArr[j] = numArr[j+1];   // =====================> ÀÌ ºÎºĞ Àß Á¤·ÄÇÏ±â
+				numArr[j] = numArr[j+1];   // =====================> ì´ ë¶€ë¶„ ì˜ ì •ë ¬í•˜ê¸°
 				numArr[j+1] = temp;
 				changed = true;
 				}

@@ -1,10 +1,10 @@
-package a220117;
+ï»¿package a220117;
 
 public class CallStackTest {
 	public static void main(String[] args) {
 		System.out.println("main 1");
-		firstMethod(); //static¸Ş¼­µå´Â °´Ã¼ »ı¼º¾øÀÌ È£Ãâ °¡´É 
-		//main1 È£ÃâµÚ¿¡ fristMethod Å¬·¡½º·Î µé¾î°¡¼­ /first1 second first2 main2/ ÇÏ°í main2
+		firstMethod(); //staticë©”ì„œë“œëŠ” ê°ì²´ ìƒì„±ì—†ì´ í˜¸ì¶œ ê°€ëŠ¥ 
+		//main1 í˜¸ì¶œë’¤ì— fristMethod í´ë˜ìŠ¤ë¡œ ë“¤ì–´ê°€ì„œ /first1 second first2 main2/ í•˜ê³  main2
 		System.out.println("main 2");
 	}
 	

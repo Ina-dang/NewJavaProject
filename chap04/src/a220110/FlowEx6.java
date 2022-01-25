@@ -1,26 +1,26 @@
-package a220110;
+ï»¿package a220110;
 
 import java.util.Scanner;
 
 public class FlowEx6 {
 	public static void main(String[] args) {
-		System.out.print("ÇöÀç ¿ùÀ» ÀÔ·ÂÇÏ¼¼¿ä. >>");
+		System.out.print("í˜„ì¬ ì›”ì„ ì…ë ¥í•˜ì„¸ìš”. >>");
 		
 		Scanner scanner = new Scanner(System.in);
 		int month = scanner.nextInt();
 		
 		switch(month/3) {
 		case 1:
-			System.out.println("ÇöÀçÀÇ °èÀıÀº º½ÀÔ´Ï´Ù.");
+			System.out.println("í˜„ì¬ì˜ ê³„ì ˆì€ ë´„ì…ë‹ˆë‹¤.");
 			break;
 		case 2:
-			System.out.println("ÇöÀçÀÇ °èÀıÀº ¿©¸§ÀÔ´Ï´Ù.");
+			System.out.println("í˜„ì¬ì˜ ê³„ì ˆì€ ì—¬ë¦„ì…ë‹ˆë‹¤.");
 			break;
 		case 3:
-			System.out.println("ÇöÀçÀÇ °èÀıÀº °¡À»ÀÔ´Ï´Ù.");
+			System.out.println("í˜„ì¬ì˜ ê³„ì ˆì€ ê°€ì„ì…ë‹ˆë‹¤.");
 			break;
 		default : 
-			System.out.println("ÇöÀçÀÇ °èÀıÀº °Ü¿ïÀÔ´Ï´Ù.");	
+			System.out.println("í˜„ì¬ì˜ ê³„ì ˆì€ ê²¨ìš¸ì…ë‹ˆë‹¤.");	
 		
 			scanner.close();
 			/*

@@ -1,35 +1,35 @@
-package a220113;
+ï»¿package a220113;
 
 public class Ch5_10 {
 	public static void main(String[] args) {
-		char[] abcCode = //26°³. ¾ËÆÄºªÀÓ
+		char[] abcCode = //26ê°œ. ì•ŒíŒŒë²³ì„
 			{ '`','~','!','@','#','$','%','^','&','*','(',')','-','_','+','=','|','[',']','{','}',';',':',',','.','/'};
 	
 						//  0   1   2   3   4   5   6   7   8   9
-//		System.out.println(abcCode.length); // ¸î°³ÀÎ°¡ È®ÀÎ
+//		System.out.println(abcCode.length); // ëª‡ê°œì¸ê°€ í™•ì¸
 
 		char[] numCode = { 'q','w','e','r','t','y','u','i','o','p'}; //10
 		
 		String src = "abc123";
 		String result = ""; //`~!wer
 		
-		// ¹®ÀÚ¿­ srcÀÇ ¹®ÀÚ¸¦ charAt()À¸·Î ÇÏ³ª¾¿ ÀĞ¾î¼­ º¯È¯ ÈÄ result¿¡ ÀúÀå
-		for (int i = 0; i < src.length(); i++) { //0ºÎÅÍ src ±æÀÌ±îÁö 1¾¿ Ãß°¡
+		// ë¬¸ìì—´ srcì˜ ë¬¸ìë¥¼ charAt()ìœ¼ë¡œ í•˜ë‚˜ì”© ì½ì–´ì„œ ë³€í™˜ í›„ resultì— ì €ì¥
+		for (int i = 0; i < src.length(); i++) { //0ë¶€í„° src ê¸¸ì´ê¹Œì§€ 1ì”© ì¶”ê°€
 			char ch = src.charAt(i);
 
 //			if (ch >= '0' && ch <= '9') {
-//				//¼ıÀÚ
+//				//ìˆ«ì
 //				// '0' - '0' >> 0
 //				// '1' - '0' >> 1
 //				result += numCode[ ch - '0' ];
 //			} else {
-//				//¿µ¹®ÀÚ
+//				//ì˜ë¬¸ì
 //				// 'a' - 'a' >>0
 //				// 'b' - 'a' >>1
-//				result += abcCode[ch - 'a']; //abcÄÚµåÀÇ 0¹øÂ°
+//				result += abcCode[ch - 'a']; //abcì½”ë“œì˜ 0ë²ˆì§¸
 //			}
 //			
-//			¡é °£´ÜÇÏ°Ôµµ ¹Ù²ãº¸ÀÚ
+//			â†“ ê°„ë‹¨í•˜ê²Œë„ ë°”ê¿”ë³´ì
 //			
 			result += ch >= '0' && ch <= '9' ? numCode[ ch - '0' ] : abcCode[ch - 'a'];
 			

@@ -1,19 +1,19 @@
-package a220118;
+ï»¿package a220118;
 
 public class ReferenceParamEx3 {
 	public static void main(String[] args) {
-		//¸ŞÀÎ¸Ş¼­µå ÇÑÀÏ
-		// ¹è¿­È£Ãâ
-		// ¼±¾ğ
-		// ÇÑ¹ø´õÈ£Ãâ
+		//ë©”ì¸ë©”ì„œë“œ í•œì¼
+		// ë°°ì—´í˜¸ì¶œ
+		// ì„ ì–¸
+		// í•œë²ˆë”í˜¸ì¶œ
 		int[] arr = {3, 2, 1, 6, 5, 4};
-		printArr(arr);		// ¹è¿­ÀÇ ¸ğµç ¿ä¼Ò¸¦ Ãâ·Â
-		sortArr(arr);		// ¹è¿­À» Á¤·Ä
-		printArr(arr);		// Á¤·Ä ÈÄ °á°ú¸¦ Ãß·Â
-		System.out.println("sum = " + sumArr(arr)); 	// ¹è¿­ÀÇ ÃÑÇÕÀ» Ãâ·Â 
+		printArr(arr);		// ë°°ì—´ì˜ ëª¨ë“  ìš”ì†Œë¥¼ ì¶œë ¥
+		sortArr(arr);		// ë°°ì—´ì„ ì •ë ¬
+		printArr(arr);		// ì •ë ¬ í›„ ê²°ê³¼ë¥¼ ì¶”ë ¥
+		System.out.println("sum = " + sumArr(arr)); 	// ë°°ì—´ì˜ ì´í•©ì„ ì¶œë ¥ 
 	}
 	
-	static void printArr(int[] arr) { // ¹è¿­ÀÇ ¸ğµç ¿ä¼Ò¸¦ Ãâ·Â
+	static void printArr(int[] arr) { // ë°°ì—´ì˜ ëª¨ë“  ìš”ì†Œë¥¼ ì¶œë ¥
 		System.out.print("[");
 		for (int i : arr) {
 			System.out.print( i + ",");
@@ -21,7 +21,7 @@ public class ReferenceParamEx3 {
 		System.out.println("]");
 	}
 
-	static int sumArr (int[] arr) {// ¹è¿­ÀÇ ¸ğµç ÇÕÀ» ¹İÈ¯
+	static int sumArr (int[] arr) {// ë°°ì—´ì˜ ëª¨ë“  í•©ì„ ë°˜í™˜
 		int sum = 0;
 		
 		for (int i = 0; i < arr.length; i++) {
@@ -30,7 +30,7 @@ public class ReferenceParamEx3 {
 		return sum; 
 		
 	}
-	static void sortArr(int[] arr) {// ¹è¿­À» ¿À¸§Â÷¼øÀ¸·Î Á¤·Ä
+	static void sortArr(int[] arr) {// ë°°ì—´ì„ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬
 		for (int i = 0; i < arr.length - 1 ; i++) {
 			for (int j = 0; j < arr.length - 1 - i; j++) {
 					if (arr[j] > arr[j+1]) {

@@ -1,6 +1,6 @@
-package shape;
+ï»¿package shape;
 
 public interface D3 {
-	double getVolume(); //ºÎÇÇ
-	//°¡Áö°í ÀÖ´Ù
+	double getVolume(); //ë¶€í”¼
+	//ê°€ì§€ê³  ìžˆë‹¤
 }

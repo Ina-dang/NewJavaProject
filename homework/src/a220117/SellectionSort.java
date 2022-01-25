@@ -1,14 +1,14 @@
-package a220117;
+ï»¿package a220117;
 
 import java.util.Arrays;
 
-public class SellectionSort { //ÃÖ¼Ò°ª±¸ÇØ¼­ ¼±ÅÃÁ¤·Ä
+public class SellectionSort { //ìµœì†Œê°’êµ¬í•´ì„œ ì„ íƒì •ë ¬
 	public static void main(String[] args) {
 		
 		int[] arr = {50, 20, 30, 10, 40};
-		//¿©±â¿¡ int idx = 0À» ³ÖÀ¸¸é Áßº¹¼ıÀÚ´Â Á¤·ÄÀÌ ¾ÈµÊ ==> ²À ¾Æ·¡ ¹İº¹¹®¿¡ ³Ö¾î¾ßÇÔ 0°ªÀ¸·Î ÇÏ¸é °è¼Ó ÃÖ¼Ò°ªÀÌ¶û¸¸ ºñ±³ÇÔ
+		//ì—¬ê¸°ì— int idx = 0ì„ ë„£ìœ¼ë©´ ì¤‘ë³µìˆ«ìëŠ” ì •ë ¬ì´ ì•ˆë¨ ==> ê¼­ ì•„ë˜ ë°˜ë³µë¬¸ì— ë„£ì–´ì•¼í•¨ 0ê°’ìœ¼ë¡œ í•˜ë©´ ê³„ì† ìµœì†Œê°’ì´ë‘ë§Œ ë¹„êµí•¨
 		for (int j = 0; j < arr.length - 1 ; j++) {
-			int idx = j; //²À ¿©±â¿¡ idx = j ¸¦ ÇØ¾ßÇÔ
+			int idx = j; //ê¼­ ì—¬ê¸°ì— idx = j ë¥¼ í•´ì•¼í•¨
 			for (int i = j + 1; i < arr.length; i++) {
 				if ( arr[idx] > arr[i]) {
 					idx = i;
@@ -19,7 +19,7 @@ public class SellectionSort { //ÃÖ¼Ò°ª±¸ÇØ¼­ ¼±ÅÃÁ¤·Ä
 			arr [j] = arr[idx];
 			arr [idx] = tmp;
 			
-			System.out.println(Arrays.toString(arr)); // ÃÖ¼Ò°ª ±¸ÇÑ ÈÄ Á¤·Ä
+			System.out.println(Arrays.toString(arr)); // ìµœì†Œê°’ êµ¬í•œ í›„ ì •ë ¬
 		}
 	}
 }

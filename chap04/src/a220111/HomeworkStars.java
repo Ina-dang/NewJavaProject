@@ -1,7 +1,7 @@
-package a220111;
+ï»¿package a220111;
 
 public class HomeworkStars {
-	//5*5¸¶¸§¸ð ±¸Çö¹ý °úÁ¦ 
+	//5*5ë§ˆë¦„ëª¨ êµ¬í˜„ë²• ê³¼ì œ 
 	/*
 	 *      *
 	 *     ***
@@ -9,7 +9,7 @@ public class HomeworkStars {
 	 *     ***
 	 *      *
 	 */
-	//FlowEx16Âü°í
+	//FlowEx16ì°¸ê³ 
 	public static void main(String[] args) {
 		int cnt = 5;
 		for(int i= 0;  i < cnt;  i++ ) {
@@ -29,7 +29,7 @@ public class HomeworkStars {
 
 //		for(int i= 0;  i < 5;  i++ ) {
 //			for(int j = 0 ; j < 5; j++) {
-////				boolean b = i == 2 ; //ifº¸´Ù booleanÀ¸·Î ³ÖÀ¸¸é ³ªÁß¿¡ ¹Ù²Ù±â ½±´Ù
+////				boolean b = i == 2 ; //ifë³´ë‹¤ booleanìœ¼ë¡œ ë„£ìœ¼ë©´ ë‚˜ì¤‘ì— ë°”ê¾¸ê¸° ì‰½ë‹¤
 ////				boolean b1 = j == 2 ; 
 //				boolean b2 = i == 2 || j ==2 || (i > 0 && i < 4) && (j > 0 && j < 4)  ; 
 //				if (b2) {
@@ -43,4 +43,4 @@ public class HomeworkStars {
 //					System.out.printf("     ");
 //				}
 //			}
-//			System.out.println(""); //ÀÌ°Ô µÇ³×;;
+//			System.out.println(""); //ì´ê²Œ ë˜ë„¤;;

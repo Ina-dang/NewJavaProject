@@ -1,6 +1,6 @@
-package a220112;
+ï»¿package a220112;
 
-public class HwResultStars { //º°¸¸µé±â
+public class HwResultStars { //ë³„ë§Œë“¤ê¸°
 	public static void main(String[] args) {
 		int cnt = 11;
 

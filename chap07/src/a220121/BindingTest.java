@@ -1,4 +1,4 @@
-package a220121;
+ï»¿package a220121;
 
 public class BindingTest {
 	public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class BindingTest {
 		A.sm();
 		B.sm();
 		
-		//´ÙÇü¼ºÀû¿ë
+		//ë‹¤í˜•ì„±ì ìš©
 		
 		a = b; //A a = new B;
 		System.out.println(a.i);
@@ -19,10 +19,10 @@ public class BindingTest {
 		a.m();
 		b.m();
 		
-		//µ¿Àû¹ÙÀÎµù(Dynamic Binding)
-		//¸â¹öº¯¼ö°¡ Á¶»ó ÀÚ¼Õ Å¬·¡½º Áßº¹ Á¤ÀÇµÈ°æ¿ì °¢ Å¬·¡½º¿¡ ¼±¾ðµÈ ¸â¹öº¯¼ö »ç¿ë
-		//ÀÎ½ºÅÏ½º ¸Þ¼­µå´Â Áßº¹¼±¾ð ÇÑ °æ¿ì(¿À¹ö¶óÀÌµù) ½ÇÁ¦ ÀÎ½ºÅÏ½ºÀÇ ¸â¹ö(¸Þ¼­µå)¸¦ È£Ãâ
-		//ÀÎ½ºÅÏ½º ¸Þ¼­µå´Â ½ÇÇà½Ã ÀÎ½ºÅÏ½º¿¡ ÀÇÇØ °áÁ¤µÊ
+		//ë™ì ë°”ì¸ë”©(Dynamic Binding)
+		//ë©¤ë²„ë³€ìˆ˜ê°€ ì¡°ìƒ ìžì† í´ëž˜ìŠ¤ ì¤‘ë³µ ì •ì˜ëœê²½ìš° ê° í´ëž˜ìŠ¤ì— ì„ ì–¸ëœ ë©¤ë²„ë³€ìˆ˜ ì‚¬ìš©
+		//ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œëŠ” ì¤‘ë³µì„ ì–¸ í•œ ê²½ìš°(ì˜¤ë²„ë¼ì´ë”©) ì‹¤ì œ ì¸ìŠ¤í„´ìŠ¤ì˜ ë©¤ë²„(ë©”ì„œë“œ)ë¥¼ í˜¸ì¶œ
+		//ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œëŠ” ì‹¤í–‰ì‹œ ì¸ìŠ¤í„´ìŠ¤ì— ì˜í•´ ê²°ì •ë¨
 	}
 }
 

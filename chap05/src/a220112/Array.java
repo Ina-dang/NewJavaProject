@@ -1,6 +1,6 @@
-package a220112;
+ï»¿package a220112;
 
-public class Array { //¹è¿­
+public class Array { //ë°°ì—´
 	static int value;
 	
 	public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Array { //¹è¿­
 //		int result = 0;
 		int i = 10;
 		System.out.println(value);
-		int [] score = new int [5]; //¹è¿­ ¼±¾ð
+		int [] score = new int [5]; //ë°°ì—´ ì„ ì–¸
 		System.out.println(score[0]);
 		System.out.println(score[1]);
 		System.out.println(score[2]);
@@ -25,18 +25,18 @@ public class Array { //¹è¿­
 		System.out.println(score[4]);
 
 		System.out.println("============");
-		for( i = 0; i < 5; i++) { //À§¿¡ ÀÎÆ® ¼±¾ð ÀÖ¾î¼­ int »°À½
+		for( i = 0; i < 5; i++) { //ìœ„ì— ì¸íŠ¸ ì„ ì–¸ ìžˆì–´ì„œ int ëºìŒ
 			System.out.println(score[1]);
 		}
 			
 		System.out.println("============");
-		for( i = 0; i < score.length; i++) { //À§¿¡ ÀÎÆ® ¼±¾ð ÀÖ¾î¼­ int »°À½
-						//scoreÀÇ ±æÀÌ
+		for( i = 0; i < score.length; i++) { //ìœ„ì— ì¸íŠ¸ ì„ ì–¸ ìžˆì–´ì„œ int ëºìŒ
+						//scoreì˜ ê¸¸ì´
 			System.out.println(score[i]);
 		}
 		
-			// [I@ µÚ¿¡ ¼ýÀÚ·Î µÈ ÁÖ¼Ò³ª¿È		
-			// score Å¸ÀÔ ? int []
-			// score [0]Å¸ÀÔ ? int
+			// [I@ ë’¤ì— ìˆ«ìžë¡œ ëœ ì£¼ì†Œë‚˜ì˜´		
+			// score íƒ€ìž… ? int []
+			// score [0]íƒ€ìž… ? int
 	}
 }

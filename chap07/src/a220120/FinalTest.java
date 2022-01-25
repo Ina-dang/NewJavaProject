@@ -1,25 +1,25 @@
-package a220120;
+ï»¿package a220120;
 
 import java.util.Arrays;
 
 public class FinalTest {
 	final int NUMBER;
 	
-	FinalTest(){ //»ı¼ºÀÚ
-		NUMBER = 10; //ÃÊ±âÈ­ ½ÃÁ¡ µÚ·Î ¹Ì·ç¸é ¿¡·¯¾È¶ä
-//		NUMBER = 20; //finalÀÌ¶ó ¹Ù²Ù·Á ÇÏ¸é ¿À·ù
+	FinalTest(){ //ìƒì„±ì
+		NUMBER = 10; //ì´ˆê¸°í™” ì‹œì  ë’¤ë¡œ ë¯¸ë£¨ë©´ ì—ëŸ¬ì•ˆëœ¸
+//		NUMBER = 20; //finalì´ë¼ ë°”ê¾¸ë ¤ í•˜ë©´ ì˜¤ë¥˜
 	}
 	public static void main(String[] args) {
 		
-		final int[] arr = {1, 2, 3 ,4 ,5}; //int¹è¿­Å¸ÀÔ ÂüÁ¶ÀÚ·áÇü
+		final int[] arr = {1, 2, 3 ,4 ,5}; //intë°°ì—´íƒ€ì… ì°¸ì¡°ìë£Œí˜•
 		arr[2] = 10; 
-		System.out.println(Arrays.toString(arr)); //±×·¸Áö¸¸ °ª º¯°æµÊ
-		//ÀÌÀ¯ == ¹è¿­ÀÇ ÁÖ¼Ò°ªÀ» ¹Ù²Ü ¼ö ¾ø±â ¶§¹®
-//		arr = new int[3]; //arrÀÇ ÁÖ¼Ò º¯°æÀº ¿¡·¯³²
+		System.out.println(Arrays.toString(arr)); //ê·¸ë ‡ì§€ë§Œ ê°’ ë³€ê²½ë¨
+		//ì´ìœ  == ë°°ì—´ì˜ ì£¼ì†Œê°’ì„ ë°”ê¿€ ìˆ˜ ì—†ê¸° ë•Œë¬¸
+//		arr = new int[3]; //arrì˜ ì£¼ì†Œ ë³€ê²½ì€ ì—ëŸ¬ë‚¨
 		
-		//¸ğµç ÂüÁ¶ÀÚ·áÇüÀº ¶È°°À½
+		//ëª¨ë“  ì°¸ì¡°ìë£Œí˜•ì€ ë˜‘ê°™ìŒ
 		
 		final FinalTest test = new FinalTest();
-//		test = new FinalTest(); //ÀÌ¶§µµ final ºÙÀ¸¸é ¿À·ù
+//		test = new FinalTest(); //ì´ë•Œë„ final ë¶™ìœ¼ë©´ ì˜¤ë¥˜
 	}
 }

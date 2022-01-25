@@ -1,11 +1,11 @@
-package tri;
+ï»¿package tri;
 
 import shape.Shape;
 import shape.D2;
 
 public class Tri extends Shape implements D2 {
 	private int x;
-	public Tri(int x, int y) { //¾ê´Â x¶û ¿ÍÀÌ´Ï±î 2°³°ªÇÊ¿ä
+	public Tri(int x, int y) { //ì–˜ëŠ” xë‘ ì™€ì´ë‹ˆê¹Œ 2ê°œê°’í•„ìš”
 		super(y);
 		this.x = x;
 	}
@@ -13,11 +13,11 @@ public class Tri extends Shape implements D2 {
 	@Override
 	public double getCircum() {
 		return Math.sqrt(getI()*getI() + x*x) + getI() ;
-				//ºøº¯°ª±¸ÇÏ±â getiÁ¦°ö xÁ¦°ö¿¡ ·çÆ®¾º¿ò
+				//ë¹—ë³€ê°’êµ¬í•˜ê¸° getiì œê³± xì œê³±ì— ë£¨íŠ¸ì”Œì›€
 	}
 	@Override
 	public double getArea() {
 		return getI() * x / 2d;
-		//getI°¡ ÇöÀç y·Î ¾²ÀÌ°íÀÖÀ½
+		//getIê°€ í˜„ì¬ yë¡œ ì“°ì´ê³ ìˆìŒ
 	}	
 }

@@ -1,24 +1,24 @@
-package a220105;
+ï»¿package a220105;
 
-import java.util.*; // Scanner Å¬·¡½º »ç¿ëÇÏ±âÀ§ÇØ Ãß°¡
+import java.util.*; // Scanner í´ë˜ìŠ¤ ì‚¬ìš©í•˜ê¸°ìœ„í•´ ì¶”ê°€
 public class ScannerPrac {
 	public static void main(String[] args) {
 			
-	Scanner scanner = new Scanner(System.in); // ScannerÅ¬·¡½º °´Ã¼ »ı¼º
+	Scanner scanner = new Scanner(System.in); // Scannerí´ë˜ìŠ¤ ê°ì²´ ìƒì„±
 	
 //	int a = ' ';
 //	int b = ' ';
-//	int c ; //¼±¾ğ¸¸ ÇØµµµÊ
+//	int c ; //ì„ ì–¸ë§Œ í•´ë„ë¨
 	
-	System.out.print("Ã¹¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+	System.out.print("ì²«ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 	String input = new String(scanner.nextLine());
-	int a = Integer.parseInt(input); // int ÀÔ·ÂÇÏ¸é Áßº¹¼±¾ğÀÌ¶ó Áö¿ö¾ßÇÔ. (À§¿¡ ¼±¾ğÀÌ ¾øÀ¸¸é int ÀÔ·Â)
+	int a = Integer.parseInt(input); // int ì…ë ¥í•˜ë©´ ì¤‘ë³µì„ ì–¸ì´ë¼ ì§€ì›Œì•¼í•¨. (ìœ„ì— ì„ ì–¸ì´ ì—†ìœ¼ë©´ int ì…ë ¥)
 
-	System.out.print("µÎ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+	System.out.print("ë‘ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 	String input1 = scanner.nextLine();
 	int b = Integer.parseInt(input1);
 	
-	System.out.print("¼¼¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+	System.out.print("ì„¸ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 	int c = Integer.parseInt(scanner.nextLine());
 	
 	System.out.printf("%d + %d + %d = %d%n", a, b, c, a + b + c);
@@ -26,19 +26,19 @@ public class ScannerPrac {
 	System.out.printf("%d * %d + %d = %d%n", a, b, c, a * b + c);
 
 	
-	//ÀÏ¹İ ±âº» ¸Ş¼­µå´Â ¾Ë¾Æ¼­ Á¾·áµÊ
-	// ÂüÁ¶ Å¸ÀÔ Æ¯È÷ io °è¿­Àº overhead(ºÎÇÏÁ¤µµ)°¡ ½ÉÇØ¼­ ÀÚ¿øÀ» »ç¿ëÇÑ´Ù°í ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇßÀ»¶§ ÀÚ¿øÀ» Á¾·áÇÒ¶§ ¸í½ÃÀûÀ¸·Î ÇØÁà¾ßÇÔ
-	// ÀÌ°É ¾È¾´´Ù°íÇØ¼­ ¾öÃ» Å«¹®Á¦°¡ »ı±âÁø ¾ÊÀ½ (¿ì¸®°¡ ½ÇÇàÇÑ°Ç ±İ¹æ ½ÇÇàÇß´Ù°¡ ±İ¹æ ²¨Áö´Â°Å´Ï±î)
-	// ±Ùµ¥ ¼­¹öÃ³·³ Áö¼ÓÀûÀ¸·Î µ¿ÀÛÇØ¾ßÇÏ´Â ÇÑ¹ø½ÇÇàÇÏ°í ¹ö¸®´Â°Ô¾Æ´Ï¶ó °è¼ÓÄÑÁ®ÀÖ¾î¾ßÇÏ´Â°Å´Â
-	// ²¨Áà¾ßÇÔ. ºñ½ÁÇÑ ¾ÖµéÀÌ ÀÖÀ½ ³ªÁß¿¡ ¶Ç ¹è¿ò
+	//ì¼ë°˜ ê¸°ë³¸ ë©”ì„œë“œëŠ” ì•Œì•„ì„œ ì¢…ë£Œë¨
+	// ì°¸ì¡° íƒ€ì… íŠ¹íˆ io ê³„ì—´ì€ overhead(ë¶€í•˜ì •ë„)ê°€ ì‹¬í•´ì„œ ìì›ì„ ì‚¬ìš©í•œë‹¤ê³  ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í–ˆì„ë•Œ ìì›ì„ ì¢…ë£Œí• ë•Œ ëª…ì‹œì ìœ¼ë¡œ í•´ì¤˜ì•¼í•¨
+	// ì´ê±¸ ì•ˆì“´ë‹¤ê³ í•´ì„œ ì—„ì²­ í°ë¬¸ì œê°€ ìƒê¸°ì§„ ì•ŠìŒ (ìš°ë¦¬ê°€ ì‹¤í–‰í•œê±´ ê¸ˆë°© ì‹¤í–‰í–ˆë‹¤ê°€ ê¸ˆë°© êº¼ì§€ëŠ”ê±°ë‹ˆê¹Œ)
+	// ê·¼ë° ì„œë²„ì²˜ëŸ¼ ì§€ì†ì ìœ¼ë¡œ ë™ì‘í•´ì•¼í•˜ëŠ” í•œë²ˆì‹¤í–‰í•˜ê³  ë²„ë¦¬ëŠ”ê²Œì•„ë‹ˆë¼ ê³„ì†ì¼œì ¸ìˆì–´ì•¼í•˜ëŠ”ê±°ëŠ”
+	// êº¼ì¤˜ì•¼í•¨. ë¹„ìŠ·í•œ ì• ë“¤ì´ ìˆìŒ ë‚˜ì¤‘ì— ë˜ ë°°ì›€
 	
 //	System.out.printf("%d / %d = %d%n", a, b, a / b);
 //	System.out.printf("%d / %f = %f%n", a, (float)b, a / (float)b); 
 	
-	System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+	System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 	int d = Integer.parseInt(scanner.nextLine());
 	
-	System.out.println(d % 2 == 0 ? "Â¦¼ö" : "È¦¼ö");
+	System.out.println(d % 2 == 0 ? "ì§ìˆ˜" : "í™€ìˆ˜");
 	
 	scanner.close();	
 	}

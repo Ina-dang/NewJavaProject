@@ -1,6 +1,6 @@
-package a220119;
+ï»¿package a220119;
 
-class Point { //Point class ¼³°èµµ 
+class Point { //Point class ì„¤ê³„ë„ 
 	int x;
 	int y;
 	
@@ -12,19 +12,19 @@ class Point { //Point class ¼³°èµµ
 }
 
 class Circle1{
-	int x; //x ÁÂÇ¥
-	int y; //y ÁÂÇ¥
-	int r; //¹İÁö¸§
+	int x; //x ì¢Œí‘œ
+	int y; //y ì¢Œí‘œ
+	int r; //ë°˜ì§€ë¦„
 }
 
 class Circle{
 
-	Point c; // Point Å¸ÀÔ ¸â¹öº¯¼ö»ç¿ë => Æ÷ÇÔ°ü°è¶ó°í ºÎ¸§
+	Point c; // Point íƒ€ì… ë©¤ë²„ë³€ìˆ˜ì‚¬ìš© => í¬í•¨ê´€ê³„ë¼ê³  ë¶€ë¦„
 	
 	int r;
 	Circle(){}
 	Circle(int x, int y, int r){
-		c = new Point(x,y); //Æ÷ÇÔ°ü°è
+		c = new Point(x,y); //í¬í•¨ê´€ê³„
 		c.x    = x;
 		c.y    = y;
 		this.r = r;
@@ -33,12 +33,12 @@ class Circle{
 
 public class CircleTest {
 	public static void main(String[] args) {
-		//Circle Å¸ÀÔÀÇ ÀÎ½ºÅÏ½º °´Ã¼ »ı¼º
+		//Circle íƒ€ì…ì˜ ì¸ìŠ¤í„´ìŠ¤ ê°ì²´ ìƒì„±
 		Circle circle = new Circle(10,20,30);
-			//»ı¼ºÀÚ¸¦ »ç¿ëÇØ¼­ 3°³ÀÇ int Å¸ÀÔ ¹Ş°Ô Àû¿ë (»ı¼ºÀÚ ¿øÇÏ´Â Å¬·¡½º¾È¿¡ »ı¼º)
+			//ìƒì„±ìë¥¼ ì‚¬ìš©í•´ì„œ 3ê°œì˜ int íƒ€ì… ë°›ê²Œ ì ìš© (ìƒì„±ì ì›í•˜ëŠ” í´ë˜ìŠ¤ì•ˆì— ìƒì„±)
 		
-		//ÀÌ ¿øÀÇ xÁÂÇ¥´Â?? yÁÂÇ¥´Â?? ¹İÁö¸§Àº??ÀÔ´Ï´Ù Ãâ·Â
-		System.out.printf("ÀÌ ¿øÀÇ xÁÂÇ¥´Â %s yÁÂÇ¥´Â %s ¹İÁö¸§Àº %s ÀÔ´Ï´Ù.", circle.c.x, circle.c.y, circle.r);
+		//ì´ ì›ì˜ xì¢Œí‘œëŠ”?? yì¢Œí‘œëŠ”?? ë°˜ì§€ë¦„ì€??ì…ë‹ˆë‹¤ ì¶œë ¥
+		System.out.printf("ì´ ì›ì˜ xì¢Œí‘œëŠ” %s yì¢Œí‘œëŠ” %s ë°˜ì§€ë¦„ì€ %s ì…ë‹ˆë‹¤.", circle.c.x, circle.c.y, circle.r);
 	}
 
 

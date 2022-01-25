@@ -1,18 +1,18 @@
-package a220107;
+ï»¿package a220107;
 
 import java.util.Scanner;
 
 public class FlowEx4 {// if else if else
 	public static void main(String[] args) {
 		/*
-		 * ÇÏ³ª°¡ ¼öÇàµÇ´Â ±¸Á¶ÀÎµ¥ Ã³¸®ÇØ¾ßÇÒ °æ¿ìÀÇ ¼ö°¡ ¼ÂÀÌ»óÀÎ°æ¿ì
+		 * í•˜ë‚˜ê°€ ìˆ˜í–‰ë˜ëŠ” êµ¬ì¡°ì¸ë° ì²˜ë¦¬í•´ì•¼í•  ê²½ìš°ì˜ ìˆ˜ê°€ ì…‹ì´ìƒì¸ê²½ìš°
 		 */
 		int score = 0;
 		char grade = ' ';
 
-		System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >> ");
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. >> ");
 		Scanner scanner = new Scanner(System.in);
-		score = scanner.nextInt(); // È­¸éÀ» ÅëÇØ ÀÔ·Â¹ŞÀº ¼ıÀÚ¸¦ score¿¡ ÀúÀå
+		score = scanner.nextInt(); // í™”ë©´ì„ í†µí•´ ì…ë ¥ë°›ì€ ìˆ«ìë¥¼ scoreì— ì €ì¥
 
 //		if (score >= 90) {
 //			grade = 'A';
@@ -24,7 +24,7 @@ public class FlowEx4 {// if else if else
 //			grade = 'D';
 //		}
 
-		//À§¿¡ ÀûÀº ½ÄÀ» DºÎÅÍ A·Î ¿ª¼øÀ¸·Î Àû¾îº¸±â
+		//ìœ„ì— ì ì€ ì‹ì„ Dë¶€í„° Aë¡œ ì—­ìˆœìœ¼ë¡œ ì ì–´ë³´ê¸°
 		if (score < 70) {
 			grade = 'D';
 		} else if (score < 80) {
@@ -35,7 +35,7 @@ public class FlowEx4 {// if else if else
 			grade = 'A';
 		}
 
-		System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº " + grade + " ÀÔ´Ï´Ù.");
+		System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ " + grade + " ì…ë‹ˆë‹¤.");
 
 		scanner.close();
 	}

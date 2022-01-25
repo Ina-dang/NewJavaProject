@@ -1,11 +1,11 @@
-package a211231;
+ï»¿package a211231;
 
 public class MemorySize {
 	public static void main(String[] args) {
-		// 1000 = 10^3 ¡æ »ç¶÷ÀÌ »ı°¢
-		// 1024 = 2^10 ¡æ ÄÄÇ»ÅÍ°¡ ÇØ¼®
+		// 1000 = 10^3 â†’ ì‚¬ëŒì´ ìƒê°
+		// 1024 = 2^10 â†’ ì»´í“¨í„°ê°€ í•´ì„
 		
-		// long Å¸ÀÔÀº µÚ¿¡ L ºÙ¿©Áà¾ßÇÔ
+		// long íƒ€ì…ì€ ë’¤ì— L ë¶™ì—¬ì¤˜ì•¼í•¨
 		long size = 23_617_085_440L;
 		
 		double humanUnit = 1000;

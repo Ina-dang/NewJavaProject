@@ -1,4 +1,4 @@
-package a220107;
+﻿package a220107;
 
 public class OperatorEx24 {
 	public static void main(String[] args) {

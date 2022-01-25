@@ -1,4 +1,4 @@
-package a220106;
+ï»¿package a220106;
 
 public class OperatorEx22 {
 	public static void main(String[] args) {
@@ -7,10 +7,10 @@ public class OperatorEx22 {
 		double d2 = (double)f;
 		double d3 = .1f;
 		
-//ÀÚ¹Ù ÀÚ²Ù ¶È°°Àº°Å ¿ÖÇÏ†v¼­ ÁÖ¼®Ã³¸®ÇÔ		
+//ìë°” ìê¾¸ ë˜‘ê°™ì€ê±° ì™œí•˜ëƒ¬ì„œ ì£¼ì„ì²˜ë¦¬í•¨		
 //		System.out.printf("10.0==10.0f %b%n", 10.0==10.0f);
 		System.out.printf("0.1==0.1f %b%n", .1==.1f);
-		System.out.printf("f  = %19.17f%n", f); //19.17 == 19ÀÚ¸® Ãâ·ÂÇÏ°í 17¹øÂ°ÀÚ¸®±îÁö ¼Ò¼öÁ¡
+		System.out.printf("f  = %19.17f%n", f); //19.17 == 19ìë¦¬ ì¶œë ¥í•˜ê³  17ë²ˆì§¸ìë¦¬ê¹Œì§€ ì†Œìˆ˜ì 
 		System.out.printf("d  = %19.17f%n", d);
 		System.out.printf("d2 = %19.17f%n", d2);
 		System.out.printf("d3 = %19.17f%n", d3);
@@ -19,7 +19,7 @@ public class OperatorEx22 {
 		System.out.printf("d2==f %b%n", d2==f);
 		System.out.printf("(float)d==f %b%n", (float)d==f);
 		
-		// ³ª´Â Å¬·¡½º ¸¸µé¾ú´Âµ¥ ÆÄÀÏÈ®Àå¸íÀº .java
+		// ë‚˜ëŠ” í´ë˜ìŠ¤ ë§Œë“¤ì—ˆëŠ”ë° íŒŒì¼í™•ì¥ëª…ì€ .java
 		
 		
 		

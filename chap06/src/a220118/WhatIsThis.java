@@ -1,22 +1,22 @@
-package a220118;
+ï»¿package a220118;
 
 public class WhatIsThis {
 	public static void main(String[] args) {
-		WhatIsThis isThis = new WhatIsThis(); //ÀÎ½ºÅÏ½º »ı¼º
-		//ÀÎ½ºÅÏ½º¿¡´Â ÁÖ¼Ò°¡ Á¸Àç
-		System.out.println(isThis); //¼¼ °³ ´Ù °°Àº ÁÖ¼Ò°ªÃâ·Â
+		WhatIsThis isThis = new WhatIsThis(); //ì¸ìŠ¤í„´ìŠ¤ ìƒì„±
+		//ì¸ìŠ¤í„´ìŠ¤ì—ëŠ” ì£¼ì†Œê°€ ì¡´ì¬
+		System.out.println(isThis); //ì„¸ ê°œ ë‹¤ ê°™ì€ ì£¼ì†Œê°’ì¶œë ¥
 		isThis.printWhatIsThis();
 		System.out.println(isThis.getWhatIsThis());
 	}
 	
-	WhatIsThis getWhatIsThis() {//This ¸®ÅÏÇÏ°í ¸®ÅÏÅ¸ÀÔ Å¬·¡½º
-		return this; //¹Ì·¡¿¡ »ı¼ºµÉ °´Ã¼
+	WhatIsThis getWhatIsThis() {//This ë¦¬í„´í•˜ê³  ë¦¬í„´íƒ€ì… í´ë˜ìŠ¤
+		return this; //ë¯¸ë˜ì— ìƒì„±ë  ê°ì²´
 	}
 	
-	void printWhatIsThis() { //void´Ï±î º°µµ ¸®ÅÏ ¾øÀ½.
+	void printWhatIsThis() { //voidë‹ˆê¹Œ ë³„ë„ ë¦¬í„´ ì—†ìŒ.
 		System.out.println(this);
 	}
 //	static void sm() {
-//		System.out.println(this); //Å¬·¡½º º¯¼ö¿¡¼­´Â this¾ÈµÊ
+//		System.out.println(this); //í´ë˜ìŠ¤ ë³€ìˆ˜ì—ì„œëŠ” thisì•ˆë¨
 //	}
 }

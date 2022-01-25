@@ -1,10 +1,10 @@
-package a220107;
+ï»¿package a220107;
 
-public class BitOpr { //ºñÆ®¿¬»êÀÚ
+public class BitOpr { //ë¹„íŠ¸ì—°ì‚°ì
 	public static void main(String[] args) {
 		
 	// & | ^ ~ << >> >>>
-	// ^  : XOR(exclusive or ¹èÅ¸Àû ³í¸®ÇÕ), caret. ÇÇ¿¬»êÀÚ °ªÀÇ °á°ú°¡ ´Ş¶ó¾ß¸¸ Âü // µÎ°³°¡ °°À¸¸é °ÅÁş
+	// ^  : XOR(exclusive or ë°°íƒ€ì  ë…¼ë¦¬í•©), caret. í”¼ì—°ì‚°ì ê°’ì˜ ê²°ê³¼ê°€ ë‹¬ë¼ì•¼ë§Œ ì°¸ // ë‘ê°œê°€ ê°™ìœ¼ë©´ ê±°ì§“
 	
 		System.out.println(8 & 6); 
 		System.out.println(8 | 6); 
@@ -13,20 +13,20 @@ public class BitOpr { //ºñÆ®¿¬»êÀÚ
 		 *  		 111 : 7
 		 * 		 	 101 : 5
 		 *  
-		 *  &ÀÇ °á°ú 101
-		 *  |ÀÇ °á°ú 111
-		 *  ^ÀÇ °á°ú 010   
+		 *  &ì˜ ê²°ê³¼ 101
+		 *  |ì˜ ê²°ê³¼ 111
+		 *  ^ì˜ ê²°ê³¼ 010   
 		 */
 		/*
 		 *  		 1000 : 8
 		 * 		 	 0110 : 6
 		 *  
-		 *  &ÀÇ °á°ú 0000
-		 *  |ÀÇ °á°ú 1111
-		 *  ^ÀÇ °á°ú 1110  
+		 *  &ì˜ ê²°ê³¼ 0000
+		 *  |ì˜ ê²°ê³¼ 1111
+		 *  ^ì˜ ê²°ê³¼ 1110  
 		 */
 		
-		//~ (ºñÆ®ºÎÁ¤¿¬»ê) : boolean Å¸ÀÔÀ» ´ë»óÀ¸·Î ÇÑ ºÎÁ¤ÀÌ ¾Æ´Ñ ¼ıÀÚ´ë»ó ºÎÁ¤
+		//~ (ë¹„íŠ¸ë¶€ì •ì—°ì‚°) : boolean íƒ€ì…ì„ ëŒ€ìƒìœ¼ë¡œ í•œ ë¶€ì •ì´ ì•„ë‹Œ ìˆ«ìëŒ€ìƒ ë¶€ì •
 		System.out.println(7);
 		System.out.println(~7);
 		
@@ -39,20 +39,20 @@ public class BitOpr { //ºñÆ®¿¬»êÀÚ
 		//ip 0.0.0.0 ~ 255.255.255.255 
 				
 		
-									//2^n°öÇÏ±â 111[2]
+									//2^nê³±í•˜ê¸° 111[2]
 		System.out.println(7 << 3); //0011_1000 : 56
 		System.out.println(7 << 2); //0001_1100 : 28
-		System.out.println(7 << 1); //0000_1110 : 7		¡è ÀÚ¸´¼ö°¡ 1°³¾¿ ¿·À¸·Î °¨
+		System.out.println(7 << 1); //0000_1110 : 7		â†‘ ìë¦¿ìˆ˜ê°€ 1ê°œì”© ì˜†ìœ¼ë¡œ ê°
 		System.out.println(7 << 0); //0000_0111
 		System.out.println(7 >> 1); //0000_0011
 		System.out.println(7 >> 2); //0000_0001
 		System.out.println(7 >> 3); //0000_0000
-									// <<<´Â ÀÖÁö¸¸ >>>´Â ¾ø´Ù
+									// <<<ëŠ” ìˆì§€ë§Œ >>>ëŠ” ì—†ë‹¤
 		System.out.println(Integer.toBinaryString(-1024));
-		System.out.println(Integer.toBinaryString(-1024 >> 1)); // /2°¡ µÊ
+		System.out.println(Integer.toBinaryString(-1024 >> 1)); // /2ê°€ ë¨
 		System.out.println(Integer.toBinaryString(-1024 << 1));
-		System.out.println(Integer.toBinaryString(-1024 >>> 1)); //ºÎÈ£ ¹«½Ã shift ºÎÈ£¸¦ ¹«½ÃÇÏ°í 0À¸·Î¸¸ Ã¤¿ò³×
-		// x << n Àº x * 2^nÀÇ °á°ú¿Í °°´Ù
-		// x >> n Àº x / 2^nÀÇ °á°ú¿Í °°´Ù
+		System.out.println(Integer.toBinaryString(-1024 >>> 1)); //ë¶€í˜¸ ë¬´ì‹œ shift ë¶€í˜¸ë¥¼ ë¬´ì‹œí•˜ê³  0ìœ¼ë¡œë§Œ ì±„ì›€ë„¤
+		// x << n ì€ x * 2^nì˜ ê²°ê³¼ì™€ ê°™ë‹¤
+		// x >> n ì€ x / 2^nì˜ ê²°ê³¼ì™€ ê°™ë‹¤
 	}
 }

@@ -1,13 +1,13 @@
-package app;
+ï»¿package app;
 
 import static utils.StudentUtil.*;
 import service.StudentService;
 
-public class StudentEx { //Ex°¡ ½ÇÇàºÎºĞÀÌ ÀÖ´Ù´Â ¶æ
-	public static void main(String[] args) { //¸ŞÀÎ¸Ş¼­µå Ãß¿ì°¡¾Æ
-//		Student student = new Student(); // ÀÌ°Ô ÇĞ»ı ÇÑ ¸í ÀÌ¶ó´Â ¶æ
+public class StudentEx { //Exê°€ ì‹¤í–‰ë¶€ë¶„ì´ ìˆë‹¤ëŠ” ëœ»
+	public static void main(String[] args) { //ë©”ì¸ë©”ì„œë“œ ì¶”ìš°ê°€ì•„
+//		Student student = new Student(); // ì´ê²Œ í•™ìƒ í•œ ëª… ì´ë¼ëŠ” ëœ»
 		
-//		System.out.println(student); //ÀÌ·¸°Ô ÇÏ¸é ÁÖ¼Ò¸¸ ³ª¿È
+//		System.out.println(student); //ì´ë ‡ê²Œ í•˜ë©´ ì£¼ì†Œë§Œ ë‚˜ì˜´
 //		System.out.println(student.sum());
 //		System.out.println(student.avg());
 		
@@ -16,12 +16,12 @@ public class StudentEx { //Ex°¡ ½ÇÇàºÎºĞÀÌ ÀÖ´Ù´Â ¶æ
 		
 		for (boolean b = true ; b ;) { 
 			
-			int input = nextInt("1.ÇĞ»ıÁ¶È¸ 2.ÇĞ»ıµî·Ï 3.ÇĞ»ıÁ¤º¸¼öÁ¤ 4.ÇĞ»ı»èÁ¦ 5.Á¾·á ");
+			int input = nextInt("1.í•™ìƒì¡°íšŒ 2.í•™ìƒë“±ë¡ 3.í•™ìƒì •ë³´ìˆ˜ì • 4.í•™ìƒì‚­ì œ 5.ì¢…ë£Œ ");
 			
 			switch (input) {
 			case 1:
 				service.list();
-				//StudentService class À§¿¡ ÀÎ½ºÅÏ½º »ı¼ºÇßÀ½
+				//StudentService class ìœ„ì— ì¸ìŠ¤í„´ìŠ¤ ìƒì„±í–ˆìŒ
 				break;
 			case 2:
 				service.register();
@@ -36,14 +36,14 @@ public class StudentEx { //Ex°¡ ½ÇÇàºÎºĞÀÌ ÀÖ´Ù´Â ¶æ
 				
 				break;
 			case 5:
-				System.out.println("Á¾·áÇÕ´Ï´Ù");
+				System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤");
 				
 				b = false;
 
 				break;
 				
 			default:
-				System.out.println("¿Ã¹Ù¸¥ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("ì˜¬ë°”ë¥¸ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 
 				break;
 			}

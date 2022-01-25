@@ -1,7 +1,7 @@
-package a220125;
+ï»¿package a220125;
 
-//Áö¿ªº¯¼ö ¼±¾ğÀ§Ä¡ : ¸Ş¼­µå ¾È
-//Áö¿ªÅ¬·¡½º : ¸Ş¼­µå ¾È . °ª¸®ÅÏÇØÁÖÁö ¾Ê´ÂÀÌ»ó ¿ÜºÎ¿¡¼­ Á¢±ÙºÒ°¡
+//ì§€ì—­ë³€ìˆ˜ ì„ ì–¸ìœ„ì¹˜ : ë©”ì„œë“œ ì•ˆ
+//ì§€ì—­í´ë˜ìŠ¤ : ë©”ì„œë“œ ì•ˆ . ê°’ë¦¬í„´í•´ì£¼ì§€ ì•ŠëŠ”ì´ìƒ ì™¸ë¶€ì—ì„œ ì ‘ê·¼ë¶ˆê°€
 public class AnnoyTest {
 	public static void main(String[] args) {
 		Runnable runnable1 = getRunnable(); 
@@ -17,23 +17,23 @@ public class AnnoyTest {
 		
 	}	
 	static Runnable getRunnable() {
-		//´ÙÇü¼ºÇØ¼­ ÀÌ ¾È¿¡¼­ Áö¿ªÅ¬·¡½º ¸¸µé¾îº¼²¨
-		class RunnableImpl implements Runnable { //ÀÎ½ºÅÏ½º ±¸ÇöÇÏ·Á¸é ±¸ÇöÇÒ ±¸ÇöÅ¬·¡½º Ã£¾Æ¾ßÇÏ´Ï±î Áö¿ªÅ¬·¡½º¿¡¼­ Ã£¾Æ¿È
+		//ë‹¤í˜•ì„±í•´ì„œ ì´ ì•ˆì—ì„œ ì§€ì—­í´ë˜ìŠ¤ ë§Œë“¤ì–´ë³¼êº¼
+		class RunnableImpl implements Runnable { //ì¸ìŠ¤í„´ìŠ¤ êµ¬í˜„í•˜ë ¤ë©´ êµ¬í˜„í•  êµ¬í˜„í´ë˜ìŠ¤ ì°¾ì•„ì•¼í•˜ë‹ˆê¹Œ ì§€ì—­í´ë˜ìŠ¤ì—ì„œ ì°¾ì•„ì˜´
 			@Override
 			public void run() {
 			System.out.println("getRunnable().run()");
 			}
 		}
-		return new RunnableImpl(); //±×¸®°í ±× ÀÎ½ºÅÏ½º ¸®ÅÏ
+		return new RunnableImpl(); //ê·¸ë¦¬ê³  ê·¸ ì¸ìŠ¤í„´ìŠ¤ ë¦¬í„´
 	}
 	
-	//ÀÍ¸íÅ¬·¡½º
+	//ìµëª…í´ë˜ìŠ¤
 	static Runnable runnable = new Runnable() {
 		@Override 
 		public void run() {	
 			System.out.println("runnble.run()");
 		}
-	}; //new¿¡´ëÇÑ ¿¬Àå¼±ÀÌ¶ó¼­ ¼¼¹ÌÄİ·ĞÀ¸·Î ²À ´İ¾Æ¾ßÇÔ (»ı·«ºÒ°¡)
+	}; //newì—ëŒ€í•œ ì—°ì¥ì„ ì´ë¼ì„œ ì„¸ë¯¸ì½œë¡ ìœ¼ë¡œ ê¼­ ë‹«ì•„ì•¼í•¨ (ìƒëµë¶ˆê°€)
 }
 
 interface Runnable {

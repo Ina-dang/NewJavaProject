@@ -1,6 +1,6 @@
-package a220117;
+ï»¿package a220117;
 
-public class MyMath { //¼ø¼­°¡ Áß¿äÇÑ ¿¹Á¦
+public class MyMath { //ìˆœì„œê°€ ì¤‘ìš”í•œ ì˜ˆì œ
 	
 		long add(long a, long b) {
 			long result = a+b;
@@ -13,4 +13,4 @@ public class MyMath { //¼ø¼­°¡ Áß¿äÇÑ ¿¹Á¦
 		double divide(double a, double b) {
 			return a / b;
 		}
-}// ¸â¹öº¯¼ö ¾ø°í ´Ù ¸Ş¼­µå·Î ±¸¼ºµÇ¾îÀÖÀ½
+}// ë©¤ë²„ë³€ìˆ˜ ì—†ê³  ë‹¤ ë©”ì„œë“œë¡œ êµ¬ì„±ë˜ì–´ìˆìŒ

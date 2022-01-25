@@ -1,22 +1,22 @@
-package a220125;
+ï»¿package a220125;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-//ÆøÅºµ¹¸®±â¿¡¼­ ÆøÅºÅÍÁú¶§ ¿¹¿Ü »óÈ²
-//ÆøÅºÀ» ´øÁö°í throw throws , ÆøÅºÀ» ¹Ş°í catch
+//í­íƒ„ëŒë¦¬ê¸°ì—ì„œ í­íƒ„í„°ì§ˆë•Œ ì˜ˆì™¸ ìƒí™©
+//í­íƒ„ì„ ë˜ì§€ê³  throw throws , í­íƒ„ì„ ë°›ê³  catch
 
-public class Prev { //¿¹¿ÜÃ³¸®
+public class Prev { //ì˜ˆì™¸ì²˜ë¦¬
 	public static void main(String[] args) throws IOException {
-		//8ÀåÀÇ Å°¿öµå try, catch, finally, throw, throws
+		//8ì¥ì˜ í‚¤ì›Œë“œ try, catch, finally, throw, throws
 		
-		//RuntimeException     : unchecked Exception ==> ÄÄÆÄÀÏ·¯°¡ ¹«½Ã
-		//non-RuntimeException : checked Exception   ==> ÄÄÆÄÀÏ·¯°¡ Ã¼Å©
+		//RuntimeException     : unchecked Exception ==> ì»´íŒŒì¼ëŸ¬ê°€ ë¬´ì‹œ
+		//non-RuntimeException : checked Exception   ==> ì»´íŒŒì¼ëŸ¬ê°€ ì²´í¬
 		
-		FileInputStream fis = new FileInputStream("text.txt"); //¿À·ù¶°¼­ À§¿¡ throws ¸¦ Ãß°¡ÇØÁÜ
-		//ÀÌ´ë·Î ½ÇÇàÀº °¡´ÉÇØÁö´Âµ¥ ¸·»ó ½ÇÇàÇØº¸¸é ¿À·ù¶ä
-		//±Ùµ¥ chap08¿¡ text.txt¸¸µé¸é ¿À·ù ¾È¶ä
+		FileInputStream fis = new FileInputStream("text.txt"); //ì˜¤ë¥˜ë– ì„œ ìœ„ì— throws ë¥¼ ì¶”ê°€í•´ì¤Œ
+		//ì´ëŒ€ë¡œ ì‹¤í–‰ì€ ê°€ëŠ¥í•´ì§€ëŠ”ë° ë§‰ìƒ ì‹¤í–‰í•´ë³´ë©´ ì˜¤ë¥˜ëœ¸
+		//ê·¼ë° chap08ì— text.txtë§Œë“¤ë©´ ì˜¤ë¥˜ ì•ˆëœ¸
 		int b = 0;
 		while ((b = fis.read()) != -1) {
 			System.out.print(b + "::" + (char)b);

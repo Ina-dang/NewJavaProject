@@ -1,27 +1,27 @@
-package a220118;
+ï»¿package a220118;
 
-public class Parameter {//¸Å°³º¯¼ö
+public class Parameter {//ë§¤ê°œë³€ìˆ˜
 	/*
-	 * ±âº»Çü ¸Å°³º¯¼ö : º¯¼öÀÇ °ªÀÌ º¹»çµÊ
-	 * ÂüÁ¶Çü ¸Å°³º¯¼ö : ÀÎ½ºÅÏ½ºÀÇ ÁÖ¼Ò°¡ º¹»çµÊ
+	 * ê¸°ë³¸í˜• ë§¤ê°œë³€ìˆ˜ : ë³€ìˆ˜ì˜ ê°’ì´ ë³µì‚¬ë¨
+	 * ì°¸ì¡°í˜• ë§¤ê°œë³€ìˆ˜ : ì¸ìŠ¤í„´ìŠ¤ì˜ ì£¼ì†Œê°€ ë³µì‚¬ë¨
 	 */
 	
 	/*
-	 * ÀÚ¹ÙÀÇ ¸ðµç È£ÃâÀº
-	 * call by value (°ª¿¡ ÀÇÇÑ È£Ãâ)
+	 * ìžë°”ì˜ ëª¨ë“  í˜¸ì¶œì€
+	 * call by value (ê°’ì— ì˜í•œ í˜¸ì¶œ)
 	 * 
-	 * ÀÚ¹Ù´Â °á·ÐÀûÀ¸·Î
-	 * call by reference°¡ ¾ø´Ù ( ÂüÁ¶µµ value )
+	 * ìžë°”ëŠ” ê²°ë¡ ì ìœ¼ë¡œ
+	 * call by referenceê°€ ì—†ë‹¤ ( ì°¸ì¡°ë„ value )
 	 */
 	
 	
 	/*
-	 * Àç±ÍÈ£Ãâ
-	 * ¹Ýº¹¹®ÀÌ¶û ºñ½Á ÇÑ ³Ë³¦
+	 * ìž¬ê·€í˜¸ì¶œ
+	 * ë°˜ë³µë¬¸ì´ëž‘ ë¹„ìŠ· í•œ ë„‰ë‚Œ
 	 * 
-	 * Àç±ÍÈ£Ãâµµ Á¶°Ç¹®ÀÌ ÇÊ¼öÀûÀ¸·Î µû¶ó´Ù´Ñ´Ù
+	 * ìž¬ê·€í˜¸ì¶œë„ ì¡°ê±´ë¬¸ì´ í•„ìˆ˜ì ìœ¼ë¡œ ë”°ë¼ë‹¤ë‹Œë‹¤
 	 * 
-	 * ÄÚµå ³Ê¹« Âª¾Æµµ °¡µ¶¼º ¾ÈÁÁ¾ÆÁø´Ù
+	 * ì½”ë“œ ë„ˆë¬´ ì§§ì•„ë„ ê°€ë…ì„± ì•ˆì¢‹ì•„ì§„ë‹¤
 	 * 
 	 * 
 	 */

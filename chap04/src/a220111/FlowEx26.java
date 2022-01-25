@@ -1,11 +1,11 @@
-package a220111;
+ï»¿package a220111;
 
 public class FlowEx26 {
 	public static void main(String[] args) {
 		int sum = 0;
 		int i   = 0;
-		//whileÀÌ¶ó¼­ sum i µû·Î °ª ÁÜ
-		while ((sum += ++i) <= 20) { //°ıÈ£ ¾È¹­À¸¸é ´ëÀÔ¿¬»ê´ë½Å ºñ±³¿¬»êºÎÅÍÇÔ
+		//whileì´ë¼ì„œ sum i ë”°ë¡œ ê°’ ì¤Œ
+		while ((sum += ++i) <= 20) { //ê´„í˜¸ ì•ˆë¬¶ìœ¼ë©´ ëŒ€ì…ì—°ì‚°ëŒ€ì‹  ë¹„êµì—°ì‚°ë¶€í„°í•¨
 			//  sum =  sum + ++i
 			//  sum =  sum + 1
 			//  sum =  0  + 1

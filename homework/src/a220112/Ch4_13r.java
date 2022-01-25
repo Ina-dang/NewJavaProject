@@ -1,27 +1,27 @@
-package a220112;
+ï»¿package a220112;
 
 public class Ch4_13r {
-	// CharAtÀ» »ç¿ëÇØ ¹®ÀÚ¿­ÀÌ ¼ıÀÚÀÎÁö¾Æ´ÑÁöÆÇ´Ü 
-	// o´Â ¼Ò¹®ÀÚoÀÓ
+	// CharAtì„ ì‚¬ìš©í•´ ë¬¸ìì—´ì´ ìˆ«ìì¸ì§€ì•„ë‹Œì§€íŒë‹¨ 
+	// oëŠ” ì†Œë¬¸ìoì„
 	public static void main(String[] args) {
 		{
 			String value = "12o34";
 			char ch = ' ';
-			boolean isNumber = true; //¼Ò¼ö¶§ ½è´ø flag¶û °°´Ù°í »ı°¢ÇÏ¸éµÈ´Ù
+			boolean isNumber = true; //ì†Œìˆ˜ë•Œ ì¼ë˜ flagë‘ ê°™ë‹¤ê³  ìƒê°í•˜ë©´ëœë‹¤
 			
-			// ¹İº¹¹®°ú charAt(int i)¸¦ ÀÌ¿ëÇØ¼­ ¹®ÀÚ¿­ÀÇ ¹®ÀÚ¸¦ ÇÏ³ª¾¿ ÀĞ¾î¼­ °Ë»ç
+			// ë°˜ë³µë¬¸ê³¼ charAt(int i)ë¥¼ ì´ìš©í•´ì„œ ë¬¸ìì—´ì˜ ë¬¸ìë¥¼ í•˜ë‚˜ì”© ì½ì–´ì„œ ê²€ì‚¬
 			for ( int i= 0; i<value.length() ;i++) {
-				// ÄÚµå
+				// ì½”ë“œ
 				if (!(ch >= '0' && ch<='9')) {
-				ch = value.charAt(i); //¿Ü¾ÊµÇ
+				ch = value.charAt(i); //ì™¸ì•Šë˜
 				break;
 				}
 			}
 			if (!isNumber) {
-				System.out.println(value +"´Â ¼ıÀÚÀÔ´Ï´Ù" );
+				System.out.println(value +"ëŠ” ìˆ«ìì…ë‹ˆë‹¤" );
 			} else {
-				System.out.println(value + "´Â ¼ıÀÚ°¡ ¾Æ´Õ´Ï´Ù");
+				System.out.println(value + "ëŠ” ìˆ«ìê°€ ì•„ë‹™ë‹ˆë‹¤");
 			}
-		}//°á°ú 12o34´Â ¼ıÀÚ°¡ ¾Æ´Õ´Ï´Ù
+		}//ê²°ê³¼ 12o34ëŠ” ìˆ«ìê°€ ì•„ë‹™ë‹ˆë‹¤
 	}
 }

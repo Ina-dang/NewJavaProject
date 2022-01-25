@@ -1,26 +1,26 @@
-package a220111;
+ï»¿package a220111;
 
 import java.util.Scanner;
 
 public class FlowEx25 {
 	public static void main(String[] args) {
 		int num = 0, sum = 0;
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä. (¿¹:12345)>");
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”. (ì˜ˆ:12345)>");
 		
 		Scanner scanner = new Scanner(System.in);
 		String tmp = scanner.nextLine();
-		num = Integer.parseInt(tmp); //ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­tmpÀ» numÀ¸·Î º¯È¯
+		num = Integer.parseInt(tmp); //ì…ë ¥ë°›ì€ ë¬¸ìì—´tmpì„ numìœ¼ë¡œ ë³€í™˜
 		
-		while(num != 0) { //numÀÌ 0ÀÌ ¾Æ´Ò¶§±îÁö ¹İº¹¹® ³»¿¡¼­ ¹İº¹ÇÒ°Å´Ù
-			// numÀ» 10À¸·Î ³ª´« ³ª¸ÓÁö¸¦ sum¿¡ ´õÇÔ
+		while(num != 0) { //numì´ 0ì´ ì•„ë‹ë•Œê¹Œì§€ ë°˜ë³µë¬¸ ë‚´ì—ì„œ ë°˜ë³µí• ê±°ë‹¤
+			// numì„ 10ìœ¼ë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ë¥¼ sumì— ë”í•¨
 			sum += num % 10; 
 			// sum = sum + num % 10 
 			//        0  + 12345 % 10
 			System.out.printf("sum =%3d num %d%n", sum, num);
 //			System.out.println(num%10);
-			num /= 10; // num = num / 10; numÀ» 10À¸·Î ³ª´« °ªÀ» ´Ù½Ã num¿¡ ÀúÀå
+			num /= 10; // num = num / 10; numì„ 10ìœ¼ë¡œ ë‚˜ëˆˆ ê°’ì„ ë‹¤ì‹œ numì— ì €ì¥
 		}
-				System.out.println("°¢ ÀÚ¸®¼öÀÇ ÇÕ:" + sum);
+				System.out.println("ê° ìë¦¬ìˆ˜ì˜ í•©:" + sum);
 				scanner.close();
 	}
 }

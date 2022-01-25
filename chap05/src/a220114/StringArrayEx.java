@@ -1,4 +1,4 @@
-package a220114;
+ï»¿package a220114;
 
 import java.util.Arrays;
 
@@ -6,57 +6,57 @@ public class StringArrayEx {
 	public static void main(String[] args) {
 		
 		/*
-		 * String str : ÂüÁ¶ÀÚ·áÇü class
-		 * new String(); : »ı¼ºÀÚ(constructor)
+		 * String str : ì°¸ì¡°ìë£Œí˜• class
+		 * new String(); : ìƒì„±ì(constructor)
 		 */
 		
-//		String °´Ã¼ »ı¼º ¹æ¹ı
-//		1. Å«µû¿ÈÇ¥ ""
-//		2. new¿¬»êÀÚ »ç¿ë
+//		String ê°ì²´ ìƒì„± ë°©ë²•
+//		1. í°ë”°ì˜´í‘œ ""
+//		2. newì—°ì‚°ì ì‚¬ìš©
 		String str1 = "abc";
-		String str2 = new String("abc"); //new ==> heap¿¡ ¸¸µå´Â°Ô ¿øÄ¢
+		String str2 = new String("abc"); //new ==> heapì— ë§Œë“œëŠ”ê²Œ ì›ì¹™
 		String str3 = "abc";
 		String str4 = new String("abc");
 		
 		System.out.println(str1 == str2); //false
 		System.out.println(str2 == str3); //false
-		System.out.println(str1 == str3); //true ==> StringÀ» new·Î »ı¼ºÇÏÁö ¾Ê°í ""¸®ÅÍ·²·Î »ı¼ºÇÑ °æ¿ì
-										  //str1°ú str3ÀÌ °íÀ¯ÀÇ ÀÎ½ºÅÏ½º¸¦ °øÀ¯ÇÏµµ·Ï internedµÊ
+		System.out.println(str1 == str3); //true ==> Stringì„ newë¡œ ìƒì„±í•˜ì§€ ì•Šê³  ""ë¦¬í„°ëŸ´ë¡œ ìƒì„±í•œ ê²½ìš°
+										  //str1ê³¼ str3ì´ ê³ ìœ ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ê³µìœ í•˜ë„ë¡ internedë¨
 		System.out.println(str2 == str4); //false
 		
-		System.out.println(str1 == str2.intern()); //ÀÌ·¸°Ô ÇÏ¸é true·Î ³ª¿È
+		System.out.println(str1 == str2.intern()); //ì´ë ‡ê²Œ í•˜ë©´ trueë¡œ ë‚˜ì˜´
 		
 		/*
-		 * String literal »ı¼º ½Ã ÇØ´ç String °ªÀº Heap ¿µ¿ª ³» "String Constant Pool"¿¡ ÀúÀåµÇ¾î Àç»ç¿ëµÇÁö¸¸,
-		 * new ¿¬»êÀÚ·Î »ı¼ºÇÏ¸é °°Àº ³»¿ëÀÌ¶óµµ ¿©·¯ °³ÀÇ °´Ã¼°¡ °¢°¢ Heap ¿µ¿ªÀ» Â÷ÁöÇÏ±â ¶§¹®
+		 * String literal ìƒì„± ì‹œ í•´ë‹¹ String ê°’ì€ Heap ì˜ì—­ ë‚´ "String Constant Pool"ì— ì €ì¥ë˜ì–´ ì¬ì‚¬ìš©ë˜ì§€ë§Œ,
+		 * new ì—°ì‚°ìë¡œ ìƒì„±í•˜ë©´ ê°™ì€ ë‚´ìš©ì´ë¼ë„ ì—¬ëŸ¬ ê°œì˜ ê°ì²´ê°€ ê°ê° Heap ì˜ì—­ì„ ì°¨ì§€í•˜ê¸° ë•Œë¬¸
 		 * 
-		 * ¹®ÀÚ¿­ ¸®ÅÍ·²À» »ı¼ºÇÏ¸é »ó¼öÇ®¿¡ µî·ÏÇÔ
-		 * -> µ¿ÀÏÇÑ ¹®ÀÚ¿­ÀÌ Á¸ÀçÇÏ¸é Àç»ç¿ë
+		 * ë¬¸ìì—´ ë¦¬í„°ëŸ´ì„ ìƒì„±í•˜ë©´ ìƒìˆ˜í’€ì— ë“±ë¡í•¨
+		 * -> ë™ì¼í•œ ë¬¸ìì—´ì´ ì¡´ì¬í•˜ë©´ ì¬ì‚¬ìš©
 		 */
 
 		
-//		//³»°¡ ¸¸µç Å¬·¡½ºµéÀÌ ¸¸µé¾î Áö´Â ÀÌÀ¯
+//		//ë‚´ê°€ ë§Œë“  í´ë˜ìŠ¤ë“¤ì´ ë§Œë“¤ì–´ ì§€ëŠ” ì´ìœ 
 //		
-//		int a = 10; //ÀÎÆ® ¸®ÅÍ·²¿¡ 10lÀº µé¾î°¡Áö¾ÊÀ½ ¾îÁö°£ÇÑ ±âº»ÀÚ·áµéÀº ÀÚ½Å¸¸ÀÇ °ªÀ» °¡Áø ¸®ÅÍ·²ÀÌ ÀÖ±â ¶§¹®
+//		int a = 10; //ì¸íŠ¸ ë¦¬í„°ëŸ´ì— 10lì€ ë“¤ì–´ê°€ì§€ì•ŠìŒ ì–´ì§€ê°„í•œ ê¸°ë³¸ìë£Œë“¤ì€ ìì‹ ë§Œì˜ ê°’ì„ ê°€ì§„ ë¦¬í„°ëŸ´ì´ ìˆê¸° ë•Œë¬¸
 //		int[] arr = {1, 2, 3};
 //
-////		ÂüÁ¶ ÀÚ·áÇüÀº °íÀ¯ÀÇ ¸®ÅÍ·²ÀÌ Á¸Àç ÇÏÁö ¾ÊÀ½. 
-////		´Ü, ¹è¿­ & ¹®ÀÚ¿­Àº Á¦¿Ü
+////		ì°¸ì¡° ìë£Œí˜•ì€ ê³ ìœ ì˜ ë¦¬í„°ëŸ´ì´ ì¡´ì¬ í•˜ì§€ ì•ŠìŒ. 
+////		ë‹¨, ë°°ì—´ & ë¬¸ìì—´ì€ ì œì™¸
 //		
 //		
-//		StringEx ex = new StringEx(); // ÂüÁ¶ÀÚ·áÇüÀº new¿Í ÀÚ±â¿Í ¶È°°Àº ÀÌ¸§ÀÇ 
+//		StringEx ex = new StringEx(); // ì°¸ì¡°ìë£Œí˜•ì€ newì™€ ìê¸°ì™€ ë˜‘ê°™ì€ ì´ë¦„ì˜ 
 //		Review result = new Review();
 		
-//		Àú°Å ¹è¿ì´Â ÀÌÀ¯
-		String[] strs = new String[3]; // nullµé¾îÀÖÀ½
-		//				{} ==> new´Â ¾È½áÁ®ÀÖÁö¸¸ ±×³É »ı·«µÇ¾îÀÖÀ» »Ó ¾êµµ newÀÓ
-		//			  = new String[3] {1,2,3} ÀÌ¶õ ¶æ ±Ùµ¥ °°ÀÌ ¾ÈÀûÈû
+//		ì €ê±° ë°°ìš°ëŠ” ì´ìœ 
+		String[] strs = new String[3]; // nullë“¤ì–´ìˆìŒ
+		//				{} ==> newëŠ” ì•ˆì¨ì ¸ìˆì§€ë§Œ ê·¸ëƒ¥ ìƒëµë˜ì–´ìˆì„ ë¿ ì–˜ë„ newì„
+		//			  = new String[3] {1,2,3} ì´ë€ ëœ» ê·¼ë° ê°™ì´ ì•ˆì í˜
 		strs[0] = str1;
 		strs[1] = str2;
-		strs[2] = "abc"; //°°Àº ¹®ÀÚ ½áÁ®ÀÖÀ¸¸é °á±¹ °°Àº °ªµé¾î°¨
+		strs[2] = "abc"; //ê°™ì€ ë¬¸ì ì¨ì ¸ìˆìœ¼ë©´ ê²°êµ­ ê°™ì€ ê°’ë“¤ì–´ê°
 		System.out.println(Arrays.toString(strs));
-		System.out.println(strs[0] == strs[2]); //°°Àº ÁÖ¼Ò°ªÀÔ´Ï±î ¹°¾îº½
-		System.out.println("abc" == "abc"); //¡èÀ§¿¡°¡ ÀÌ¸»ÀÓ °á±¹
+		System.out.println(strs[0] == strs[2]); //ê°™ì€ ì£¼ì†Œê°’ì…ë‹ˆê¹Œ ë¬¼ì–´ë´„
+		System.out.println("abc" == "abc"); //â†‘ìœ„ì—ê°€ ì´ë§ì„ ê²°êµ­
 		
 	}
 }

@@ -1,4 +1,4 @@
-package shape1;
+ï»¿package shape1;
 import circle.*;
 import shape.*;
 import tri.*;
@@ -8,26 +8,26 @@ import prizm.*;
 
 public class ShapeTest {
 	public static void main(String[] args) {
-//		//¿ø °è»êÈ®ÀÎ
+//		//ì› ê³„ì‚°í™•ì¸
 //		Circle circle = new Circle(3);
 //		circle.getArea();
 //		circle.getCircum();
 //		System.out.println(circle.getArea());
 //		System.out.println(circle.getCircum());
 //		
-//		//»ï°¢Çü °è»êÈ®ÀÎ
+//		//ì‚¼ê°í˜• ê³„ì‚°í™•ì¸
 //		Tri tri = new Tri(3,4);
 //		tri.getArea();
 //		tri.getCircum();
 //		System.out.println(tri.getArea());
 //		System.out.println(tri.getCircum());
 //		
-//		//¿ø±âµÕ °è»êÈ®ÀÎ
+//		//ì›ê¸°ë‘¥ ê³„ì‚°í™•ì¸
 //		Cylinder cylinder = new Cylinder(3, 4);
 //		System.out.println(cylinder.getArea());
 //		System.out.println(cylinder.getVolume());
 //		
-//		//»ï°¢Åë °è»êÈ®ÀÎ
+//		//ì‚¼ê°í†µ ê³„ì‚°í™•ì¸
 //		Prizm prizm = new Prizm(3, 4, 5);
 //		System.out.println(prizm.getArea());
 //		System.out.println(prizm.getVolume());
@@ -44,39 +44,39 @@ public class ShapeTest {
 		shapes[3] = new Prizm(3,4,5);
 		
 		for (Shape s : shapes) {
-			System.out.println(s.getClass().getSimpleName() + "ÀÇ ³ÐÀÌ´Â" + s.getArea());
+			System.out.println(s.getClass().getSimpleName() + "ì˜ ë„“ì´ëŠ”" + s.getArea());
 			if(s instanceof D2) {
-				System.out.println(s.getClass().getSimpleName() + "ÀÇ µÑ·¹´Â" + ((D2)s).getCircum());
+				System.out.println(s.getClass().getSimpleName() + "ì˜ ë‘˜ë ˆëŠ”" + ((D2)s).getCircum());
 			}
 			if(s instanceof D3) {
-				System.out.println(s.getClass().getSimpleName() + "ÀÇ µÑ·¹´Â" + ((D3)s).getVolume());
+				System.out.println(s.getClass().getSimpleName() + "ì˜ ë‘˜ë ˆëŠ”" + ((D3)s).getVolume());
 			}
 		}
 	}
 }
-//shape : µµÇü ÇÏÀ§ Å¬·¡½º Á¦ÀÛ ( 2Â÷¿ø µµÇü, 3Â÷¿ø µµÇü )
-//2Â÷¿øµµÇü : ¿ø, »ç°¢Çü, Á÷°¢»ï°¢Çü >> ±â´É : µÑ·¹, ³ÐÀÌ°ª °è»ê
-/* ¿ø : r(¹ÝÁö¸§ ÇÏ³ª·Î µÑ·¹ ³ÐÀÌ ±¸ÇÒ ¼ö ÀÖÀ½)
- * Á÷»ç°¢Çü : x, y ÀÖÀ¸¸é µÑ·¹ ³ÐÀÌ ±¸ÇÒ ¼ö ÀÖÀ½
- * Á÷°¢»ï°¢Çü : x, y 
+//shape : ë„í˜• í•˜ìœ„ í´ëž˜ìŠ¤ ì œìž‘ ( 2ì°¨ì› ë„í˜•, 3ì°¨ì› ë„í˜• )
+//2ì°¨ì›ë„í˜• : ì›, ì‚¬ê°í˜•, ì§ê°ì‚¼ê°í˜• >> ê¸°ëŠ¥ : ë‘˜ë ˆ, ë„“ì´ê°’ ê³„ì‚°
+/* ì› : r(ë°˜ì§€ë¦„ í•˜ë‚˜ë¡œ ë‘˜ë ˆ ë„“ì´ êµ¬í•  ìˆ˜ ìžˆìŒ)
+ * ì§ì‚¬ê°í˜• : x, y ìžˆìœ¼ë©´ ë‘˜ë ˆ ë„“ì´ êµ¬í•  ìˆ˜ ìžˆìŒ
+ * ì§ê°ì‚¼ê°í˜• : x, y 
  * 
- * ÇÊ¿äÇÑ ÇÊµå°¹¼ö Ã£À¸¸é µÊ
- * ´Ù ÀÎÆ®´Ï±î ±×·¯¸é Á¶»óÀº ÀÎÆ®ÇÏ³ª¸é µÇ°Ú³×? ¶ó´Â »ý°¢À¸·Î °¡º¸ÀÚ
+ * í•„ìš”í•œ í•„ë“œê°¯ìˆ˜ ì°¾ìœ¼ë©´ ë¨
+ * ë‹¤ ì¸íŠ¸ë‹ˆê¹Œ ê·¸ëŸ¬ë©´ ì¡°ìƒì€ ì¸íŠ¸í•˜ë‚˜ë©´ ë˜ê² ë„¤? ë¼ëŠ” ìƒê°ìœ¼ë¡œ ê°€ë³´ìž
  * 
- * Á¢±ÙÁ¦¾îÀÚ±îÁö ÁË´Ù °í·ÁÇÒ°Å´Ù 
+ * ì ‘ê·¼ì œì–´ìžê¹Œì§€ ì£„ë‹¤ ê³ ë ¤í• ê±°ë‹¤ 
  * 
  */
 
-//3Â÷¿øµµÇü : ¿ø±âµÕ, À°¸éÃ¼, »ï°¢±âµÕ	±â´É : °Ñ³ÐÀÌ, ºÎÇÇ °è»ê
+//3ì°¨ì›ë„í˜• : ì›ê¸°ë‘¥, ìœ¡ë©´ì²´, ì‚¼ê°ê¸°ë‘¥	ê¸°ëŠ¥ : ê²‰ë„“ì´, ë¶€í”¼ ê³„ì‚°
 /*
  * 
  */
 
 
-//3Â÷¿ø 2Â÷¿ø µÑÀÇ °øÅëÁ¡À» Ã£¾Æ¾ßÇÔ
-// °øÅëÁ¡ÀÌ¶óÇÏ¸é ³ÐÀÌ ±¸ÇÏ±â ¾Æ´Ñ°¡
-// ¿ø°ú ¿ø±âµÕÀÇ °ü°è´Â ¹¹·Î ¼³¸íÇÒ°Ç°¡ 
-//¿ø°ú¿ø±âµÕÀº »ó¼ÓÀÌ¾Æ´Ï¶ó has ÀÎ Æ÷ÇÔ°ü°è·Î
+//3ì°¨ì› 2ì°¨ì› ë‘˜ì˜ ê³µí†µì ì„ ì°¾ì•„ì•¼í•¨
+// ê³µí†µì ì´ë¼í•˜ë©´ ë„“ì´ êµ¬í•˜ê¸° ì•„ë‹Œê°€
+// ì›ê³¼ ì›ê¸°ë‘¥ì˜ ê´€ê³„ëŠ” ë­ë¡œ ì„¤ëª…í• ê±´ê°€ 
+//ì›ê³¼ì›ê¸°ë‘¥ì€ ìƒì†ì´ì•„ë‹ˆë¼ has ì¸ í¬í•¨ê´€ê³„ë¡œ
 
-//ÀûÀýÇÑ ÇüÅÂÀÇ Ãß»óÅ¬·¡½º, ÀÎÅÍÆäÀÌ½º ´Ù ½á¼­ ¸¸µé±â
-//°øÅëÁ¡ Ã£¾Æ¼­ »ó¼Ó ¸¸µå´Â°Ç°¡?
+//ì ì ˆí•œ í˜•íƒœì˜ ì¶”ìƒí´ëž˜ìŠ¤, ì¸í„°íŽ˜ì´ìŠ¤ ë‹¤ ì¨ì„œ ë§Œë“¤ê¸°
+//ê³µí†µì  ì°¾ì•„ì„œ ìƒì† ë§Œë“œëŠ”ê±´ê°€?

@@ -1,4 +1,4 @@
-package a220117;
+﻿package a220117;
 
 public class MyMathTest {
 	public static void main(String[] args) {

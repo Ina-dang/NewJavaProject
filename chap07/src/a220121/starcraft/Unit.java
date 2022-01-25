@@ -1,11 +1,11 @@
-package a220121.starcraft;
+ï»¿package a220121.starcraft;
 
 abstract public class Unit {
 	int x, y;
 	
-	abstract void move(int x, int y); //¸öÅë ¸¸µéÀÚ¸¶ÀÚ ÄÄÆÄÀÏ ¿À·ù¶ä
-//	void stop() {/*ÇöÀç À§Ä¡¿¡ Á¤Áö*/}	
-	void stop() {System.out.println(getClass().getSimpleName() + "¸ØÃã");
+	abstract void move(int x, int y); //ëª¸í†µ ë§Œë“¤ìë§ˆì ì»´íŒŒì¼ ì˜¤ë¥˜ëœ¸
+//	void stop() {/*í˜„ì¬ ìœ„ì¹˜ì— ì •ì§€*/}	
+	void stop() {System.out.println(getClass().getSimpleName() + "ë©ˆì¶¤");
 	}
 	
 }

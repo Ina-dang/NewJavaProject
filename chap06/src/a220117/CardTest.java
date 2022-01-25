@@ -1,30 +1,30 @@
-package a220117;
+ï»¿package a220117;
 
-public class CardTest { //Ch6 CardTest ¿¹Á¦¿¡¼­ Card µû·Î Å¬·¡½º ÆÄÀÏ ºĞ¸®ÇÔ
+public class CardTest { //Ch6 CardTest ì˜ˆì œì—ì„œ Card ë”°ë¡œ í´ë˜ìŠ¤ íŒŒì¼ ë¶„ë¦¬í•¨
 	
-	public static void main(String[] args) { //ÀÔ·Â°ª
+	public static void main(String[] args) { //ì…ë ¥ê°’
 		
-		System.out.println("Card.width = " + Card.width); // »çÀü¿¡ CardÅ¬·¡½º¿¡¼­ ÃÊ±âÈ­ ÇÑ °ªÀÌ Ãâ·Â
+		System.out.println("Card.width = " + Card.width); // ì‚¬ì „ì— Cardí´ë˜ìŠ¤ì—ì„œ ì´ˆê¸°í™” í•œ ê°’ì´ ì¶œë ¥
 		System.out.println("Card.height = " + Card.height);
-						// Å¬·¡½ºº¯¼ö(static)´Â¡è °´Ã¼»ı¼º ¾øÀÌ 'Å¬·¡½ºÀÌ¸§.Å¬·¡½ºº¯¼ö'·Î Á÷Á¢ »ç¿ë°¡´É
+						// í´ë˜ìŠ¤ë³€ìˆ˜(static)ëŠ”â†‘ ê°ì²´ìƒì„± ì—†ì´ 'í´ë˜ìŠ¤ì´ë¦„.í´ë˜ìŠ¤ë³€ìˆ˜'ë¡œ ì§ì ‘ ì‚¬ìš©ê°€ëŠ¥
 		
 		Card c1 = new Card();
-		c1.kind = "Heart"; //Card Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º
-		c1.number = 7;     //Card Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º (°¢°¢ °ªÀ» °ü¸®)
+		c1.kind = "Heart"; //Card í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤
+		c1.number = 7;     //Card í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ (ê°ê° ê°’ì„ ê´€ë¦¬)
 		
 		Card c2 = new Card();
-		c2.kind = "Spade"; //ÀÎ½ºÅÏ½º º¯¼öÀÇ °ªÀ» º¯°æÇÑ´Ù.
+		c2.kind = "Spade"; //ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì˜ ê°’ì„ ë³€ê²½í•œë‹¤.
 		c2.number = 4;
 		
-		System.out.printf("c1Àº %s, %dÀÌ°í Å©±â´Â(%d, %d)%n", c1.kind, c1.number, Card.width, Card.height);
-		System.out.printf("c1Àº %s, %dÀÌ°í Å©±â´Â(%d, %d)%n", c2.kind, c2.number, Card.width, Card.height);
+		System.out.printf("c1ì€ %s, %dì´ê³  í¬ê¸°ëŠ”(%d, %d)%n", c1.kind, c1.number, Card.width, Card.height);
+		System.out.printf("c1ì€ %s, %dì´ê³  í¬ê¸°ëŠ”(%d, %d)%n", c2.kind, c2.number, Card.width, Card.height);
 		
-		System.out.println("c1ÀÇ width¿Í hight¸¦ °¢°¢ 50, 80 À¸·Î º¯°æÇÕ´Ï´Ù");
-		c1.width = 50; //Å¬·¡½º º¯¼öÀÇ °ªÀ» º¯°æÇÑ´Ù
+		System.out.println("c1ì˜ widthì™€ hightë¥¼ ê°ê° 50, 80 ìœ¼ë¡œ ë³€ê²½í•©ë‹ˆë‹¤");
+		c1.width = 50; //í´ë˜ìŠ¤ ë³€ìˆ˜ì˜ ê°’ì„ ë³€ê²½í•œë‹¤
 		c1.height = 80;
 		
-		System.out.printf("c1Àº %s, %dÀÌ°í Å©±â´Â(%d, %d)%n", c1.kind, c1.number, Card.width, Card.height);
-		System.out.printf("c1Àº %s, %dÀÌ°í Å©±â´Â(%d, %d)%n", c2.kind, c2.number, Card.width, Card.height);
+		System.out.printf("c1ì€ %s, %dì´ê³  í¬ê¸°ëŠ”(%d, %d)%n", c1.kind, c1.number, Card.width, Card.height);
+		System.out.printf("c1ì€ %s, %dì´ê³  í¬ê¸°ëŠ”(%d, %d)%n", c2.kind, c2.number, Card.width, Card.height);
 		
 	}
 }

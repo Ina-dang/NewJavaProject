@@ -1,21 +1,21 @@
-package a220118;
+ï»¿package a220118;
 
 public class InitTest {
-	public static void main(String[] args) { //Å¬·¡½º°¡ ·ÎµåµÉ¶§ Å¬·¡½º´Â ÃÊ±âÈ­µÊ
+	public static void main(String[] args) { //í´ë˜ìŠ¤ê°€ ë¡œë“œë ë•Œ í´ë˜ìŠ¤ëŠ” ì´ˆê¸°í™”ë¨
 		
 //		System.out.println(Init.si);
 //		System.out.println(Init.si);
 
-//		Init init = new Init(); //ÀÎ½ºÅÏ½º»ı¼º
-//		//ÀÎ½ºÅÏ½º¸¦ ¸¸µç´Ù = °´Ã¼ = °´Ã¼¼³°èµµ´Â Å¬·¡½º ==> Áï °´Ã¼¸¦ ¸¸µé·Á¸é ¼³°èµµ°¡ ÀÖ¾î¾ßÇÔ. ÃÊ±âÈ­ °ÅÄ¡°ÔµÊ
+//		Init init = new Init(); //ì¸ìŠ¤í„´ìŠ¤ìƒì„±
+//		//ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë§Œë“ ë‹¤ = ê°ì²´ = ê°ì²´ì„¤ê³„ë„ëŠ” í´ë˜ìŠ¤ ==> ì¦‰ ê°ì²´ë¥¼ ë§Œë“¤ë ¤ë©´ ì„¤ê³„ë„ê°€ ìˆì–´ì•¼í•¨. ì´ˆê¸°í™” ê±°ì¹˜ê²Œë¨
 //		System.out.println(init.i);
 		
 		new Init();
 		new Init();
 //		new Init();
-		Init init = new Init(); //ÀÎ½ºÅÏ½º»ı¼º
+		Init init = new Init(); //ì¸ìŠ¤í„´ìŠ¤ìƒì„±
 
-//		System.out.println(Init.si); //´Ü ÇÑ¹ø ÃÊ±âÈ­¶ó ¾ğÁ¦µç 1·Î ³ª¿È
+//		System.out.println(Init.si); //ë‹¨ í•œë²ˆ ì´ˆê¸°í™”ë¼ ì–¸ì œë“  1ë¡œ ë‚˜ì˜´
 		
 
 			
@@ -23,13 +23,13 @@ public class InitTest {
 }
 
 class Init {
-static int cnt = 1; //¸Ş¼­µå
+static int cnt = 1; //ë©”ì„œë“œ
 static int count() {
 	System.out.println("count().cnt :: " + cnt);
 	return cnt++;
 }
 
-static int si = count(); //Ä«¿îÆ® °ªÀÌ µé¾î°¨ //s´Â InitTestÅ¬·¡½ºÀÇ ¸â¹ö
+static int si = count(); //ì¹´ìš´íŠ¸ ê°’ì´ ë“¤ì–´ê° //sëŠ” InitTestí´ë˜ìŠ¤ì˜ ë©¤ë²„
 
 int i = count();
 }

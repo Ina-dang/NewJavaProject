@@ -1,36 +1,36 @@
-package a220119;
+ï»¿package a220119;
 
-//Deck class ½ÃÀÛ
-class Deck { //¼³°èµµº¸´Âµ¥ CardÅ¸ÀÔÀÌ º¸ÀÌ³ß ÇÏ¸é¼­ Card¸¦ ¸ÕÀúÀûÀ¸·¯°¡¾ßÇÔ
-//	final int CARD_NUM = 52;   //52Àå
+//Deck class ì‹œìž‘
+class Deck { //ì„¤ê³„ë„ë³´ëŠ”ë° Cardíƒ€ìž…ì´ ë³´ì´ë„¹ í•˜ë©´ì„œ Cardë¥¼ ë¨¼ì €ì ìœ¼ëŸ¬ê°€ì•¼í•¨
+//	final int CARD_NUM = 52;   //52ìž¥
 	final int CARD_NUM = Card.NUM_MAX * Card.KIND_MAX;
 	
-	Card cardArr[] = new Card[CARD_NUM]; //Ä«µåÅ¸ÀÔ cardArr¹è¿­ »ý¼º ÀÎµ¦½º¿¡ 52µé¾îÀÖÀ½
+	Card cardArr[] = new Card[CARD_NUM]; //ì¹´ë“œíƒ€ìž… cardArrë°°ì—´ ìƒì„± ì¸ë±ìŠ¤ì— 52ë“¤ì–´ìžˆìŒ
 
 	
 	Deck() {
 //		int i = 0; 		
-//		for (int k = Card.KIND_MAX; k > 0 ; k--) { // Ä«µåÅ¬·¡½º Ä«µåº° ¹«´ÌÀÇ ¼ö k °¡ 0ÀÌ µÉ¶§±îÁö 1¾¿ °¨¼Ò
-		for (int i = 0, k = Card.KIND_MAX; k > 0 ; k--) { // Ä«µåÅ¬·¡½º Ä«µåº° ¹«´ÌÀÇ ¼ö k °¡ 0ÀÌ µÉ¶§±îÁö 1¾¿ °¨¼Ò
-			for (int n = 0; n < Card.NUM_MAX; n++) { // 0ÀÌ ¹«´Ìº° Ä«µåÀÇ ¼ö¿¡ µµ´ÞÇÒ ¶§±îÁö 1¾¿Áõ°¡
+//		for (int k = Card.KIND_MAX; k > 0 ; k--) { // ì¹´ë“œí´ëž˜ìŠ¤ ì¹´ë“œë³„ ë¬´ëŠ¬ì˜ ìˆ˜ k ê°€ 0ì´ ë ë•Œê¹Œì§€ 1ì”© ê°ì†Œ
+		for (int i = 0, k = Card.KIND_MAX; k > 0 ; k--) { // ì¹´ë“œí´ëž˜ìŠ¤ ì¹´ë“œë³„ ë¬´ëŠ¬ì˜ ìˆ˜ k ê°€ 0ì´ ë ë•Œê¹Œì§€ 1ì”© ê°ì†Œ
+			for (int n = 0; n < Card.NUM_MAX; n++) { // 0ì´ ë¬´ëŠ¬ë³„ ì¹´ë“œì˜ ìˆ˜ì— ë„ë‹¬í•  ë•Œê¹Œì§€ 1ì”©ì¦ê°€
 				cardArr[i++] = new Card(k, n+1);
-				// cardArr[ÃÑ52°³ °ø°£¹è¿­]¿¡ k,n+1 ´ã¾ÆÁÜ
+				// cardArr[ì´52ê°œ ê³µê°„ë°°ì—´]ì— k,n+1 ë‹´ì•„ì¤Œ
 			}
 		}
 	}
-	//Ä«µåÅ¸ÀÔÀ¸·Î ¹ÝÈ¯ÇÏ´Â ÀÎ½ºÅÏ½º ¸Þ¼­µå
-	Card pick(int index) { // ==·£´ýÇÈ
-		return cardArr[index]; //cardArr[] Æ¯Á¤ÀÎµ¦½º ¹ÝÈ¯
+	//ì¹´ë“œíƒ€ìž…ìœ¼ë¡œ ë°˜í™˜í•˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ
+	Card pick(int index) { // ==ëžœë¤í”½
+		return cardArr[index]; //cardArr[] íŠ¹ì •ì¸ë±ìŠ¤ ë°˜í™˜
 	}
 	
 	Card pick() {
 		int index = (int)(Math.random() * CARD_NUM);
-		return pick(index); //pickÀ» ÀÌ¿ë¤·ÇØ¼­ À§¿¡ È£Ãâ
-//		return cardArr[index] µµ °¡´É
+		return pick(index); //pickì„ ì´ìš©ã…‡í•´ì„œ ìœ„ì— í˜¸ì¶œ
+//		return cardArr[index] ë„ ê°€ëŠ¥
 	}
 	
 	
-	void shuffle() { //·£´ý»Ì±â 5-8
+	void shuffle() { //ëžœë¤ë½‘ê¸° 5-8
 		for (int i = 0; i < cardArr.length; i++) {
 			int r = (int)(Math.random() * CARD_NUM); 
 		
@@ -40,4 +40,4 @@ class Deck { //¼³°èµµº¸´Âµ¥ CardÅ¸ÀÔÀÌ º¸ÀÌ³ß ÇÏ¸é¼­ Card¸¦ ¸ÕÀúÀûÀ¸·¯°¡¾ßÇÔ
 		}
 	}
 }
-//Deck Å¬·¡½º ³¡
+//Deck í´ëž˜ìŠ¤ ë

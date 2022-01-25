@@ -1,9 +1,9 @@
-package a220111;
+ï»¿package a220111;
 
-public class Review { //ÁßÃ¸ for
-//	depth ÁÙÀÌ±â
-//	for¹®ÀÌ »óÇÏ ÇüÅÂ¿Í ±íÀÌÇüÅÂ´Â ´Ù¸£´Ù
-//	forÀÌ »óÇÏ·Î ÀÖ´Â°Ô ´õ ³´´Ù
+public class Review { //ì¤‘ì²© for
+//	depth ì¤„ì´ê¸°
+//	forë¬¸ì´ ìƒí•˜ í˜•íƒœì™€ ê¹Šì´í˜•íƒœëŠ” ë‹¤ë¥´ë‹¤
+//	forì´ ìƒí•˜ë¡œ ìžˆëŠ”ê²Œ ë” ë‚«ë‹¤
 	
 	
 //	if(b1) {
@@ -13,18 +13,18 @@ public class Review { //ÁßÃ¸ for
 //	}
 //
 //	if(b1&&b2) {
-//		µÎ °³°¡ °°´Ù¸é ÀÌ·±½ÄÀ¸·Î ±íÀÌ Á¶Àý
+//		ë‘ ê°œê°€ ê°™ë‹¤ë©´ ì´ëŸ°ì‹ìœ¼ë¡œ ê¹Šì´ ì¡°ì ˆ
 //	}
 //	while(b1&&b2) {
 //		
 //	}
 //	for( ; b1&&b2 ; ) {
-//		//ÀÌ·¸°Ô Á¶°Ç½Ä¸¸ ÀÖ´Â for¹®Àº while°ú °°´Ù
+//		//ì´ë ‡ê²Œ ì¡°ê±´ì‹ë§Œ ìžˆëŠ” forë¬¸ì€ whileê³¼ ê°™ë‹¤
 //	}
 	
 	/*
-	 * for : ¹Ýº¹ È½¼ö(±â°£)¸¦ ¾Ë°íÀÖÀ» ¶§ °­·ÁÄí
-	 * while : ±¸Á¶°¡ °£´ÜÇÏ´Ù. if¹®°ú ±¸Á¶°¡ °°Áö¸¸ whileÀº Á¶°Ç½ÄÀÌ °ÅÁþÀÌ µÉ ¶§±îÁö ¹Ýº¹
+	 * for : ë°˜ë³µ íšŸìˆ˜(ê¸°ê°„)ë¥¼ ì•Œê³ ìžˆì„ ë•Œ ê°•ë ¤ì¿ 
+	 * while : êµ¬ì¡°ê°€ ê°„ë‹¨í•˜ë‹¤. ifë¬¸ê³¼ êµ¬ì¡°ê°€ ê°™ì§€ë§Œ whileì€ ì¡°ê±´ì‹ì´ ê±°ì§“ì´ ë  ë•Œê¹Œì§€ ë°˜ë³µ
 	 */
 	
 	

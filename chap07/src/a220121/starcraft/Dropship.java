@@ -1,11 +1,11 @@
-package a220121.starcraft;
+ï»¿package a220121.starcraft;
 
 class Dropship extends Unit {
 
 	@Override
-	void move(int x, int y) { /* ÁöÁ¤µÈ À§Ä¡·Î ÀÌµ¿ */
-		System.out.println(getClass().getSimpleName() + "ÀÌ " + x + ", " + y + "ÁÂÇ¥·Î ÀÌµ¿ÇÕ´Ï´Ù");
+	void move(int x, int y) { /* ì§€ì •ëœ ìœ„ì¹˜ë¡œ ì´ë™ */
+		System.out.println(getClass().getSimpleName() + "ì´ " + x + ", " + y + "ì¢Œí‘œë¡œ ì´ë™í•©ë‹ˆë‹¤");
 	}
-	void load() {System.out.println("¼±ÅÃµÈ ´ë»óÀ» ÅÂ¿î´Ù.");}
-	void unload() {System.out.println("¼±ÅÃµÈ ´ë»óÀ» ³»¸°´Ù.");}
+	void load() {System.out.println("ì„ íƒëœ ëŒ€ìƒì„ íƒœìš´ë‹¤.");}
+	void unload() {System.out.println("ì„ íƒëœ ëŒ€ìƒì„ ë‚´ë¦°ë‹¤.");}
 }

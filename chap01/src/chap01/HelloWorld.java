@@ -1,11 +1,11 @@
-package chap01;
+ï»¿package chap01;
 
 public class HelloWorld {
-	public static void main(String[] args) { // main ¸Ş¼­µåÀÇ ¼±¾ğºÎ
+	public static void main(String[] args) { // main ë©”ì„œë“œì˜ ì„ ì–¸ë¶€
 		/* 
-	 	ÁÖ¼®À» Á¦¿ÜÇÑ ¸ğµç ÄÚµå´Â Å¬·¡½ºÀÇ ºí·°{} ³»¿¡ ÀÛ¼ºÇØ¾ßÇÑ´Ù.
+	 	ì£¼ì„ì„ ì œì™¸í•œ ëª¨ë“  ì½”ë“œëŠ” í´ë˜ìŠ¤ì˜ ë¸”ëŸ­{} ë‚´ì— ì‘ì„±í•´ì•¼í•œë‹¤.
 	 */
-	// ½ÇÇàµÉ ¹®ÀåµéÀ» Àû´Â´Ù.
-			System.out.println("Hello, world."); // È­¸é¿¡ ±ÛÀÚ¸¦ Ãâ·ÂÇÑ´Ù.)
+	// ì‹¤í–‰ë  ë¬¸ì¥ë“¤ì„ ì ëŠ”ë‹¤.
+			System.out.println("Hello, world."); // í™”ë©´ì— ê¸€ìë¥¼ ì¶œë ¥í•œë‹¤.)
 	}
 }

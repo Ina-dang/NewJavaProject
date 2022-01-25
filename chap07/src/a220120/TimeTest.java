@@ -1,4 +1,4 @@
-package a220120;
+﻿package a220120;
 
 public class TimeTest {
 	public static void main(String[] args) {

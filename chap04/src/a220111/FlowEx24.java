@@ -1,10 +1,10 @@
-package a220111;
+ï»¿package a220111;
 
 public class FlowEx24 {
 	public static void main(String[] args) throws InterruptedException {
 		int i = 11;
 		
-		System.out.println("Ä«¿îÆ® ´Ù¿îÀ» ½ÃÀÛÇÕ´Ï´Ù.");
+		System.out.println("ì¹´ìš´íŠ¸ ë‹¤ìš´ì„ ì‹œì‘í•©ë‹ˆë‹¤.");
 		
 		while(i-- != 0) {
 			System.out.println(i);

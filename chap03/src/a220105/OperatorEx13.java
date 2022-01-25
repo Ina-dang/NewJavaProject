@@ -1,25 +1,25 @@
-package a220105;
+ï»¿package a220105;
 
 import java.util.Calendar;
 
 public class OperatorEx13 {
 	public static void main(String[] args) {
 		char c1 = 'a';
-//		final char c1 = 'a'; //°íÁ¤°ª »ó¼ö finalÀ» Ãß°¡ÇÒ °æ¿ì¿£ c1+1 °¡³Õ | ÄÄÆÄÀÏ·¯¿¡ ÀÇÇØ¼­ ÆÇ´Ü 
+//		final char c1 = 'a'; //ê³ ì •ê°’ ìƒìˆ˜ finalì„ ì¶”ê°€í•  ê²½ìš°ì—” c1+1 ê°€ë„ | ì»´íŒŒì¼ëŸ¬ì— ì˜í•´ì„œ íŒë‹¨ 
 		
-//		char c2 = c1  + 1; //Type mismatch - º¯¼ö¿Í ¸®ÅÍ·²°£ÀÇ ¿¬»ê
-		char c2 = 'a' + 1; //¸®ÅÍ·² °£ÀÇ ¿¬»ê
-//		char c2 = 97  + 1;//°¡³Õ
+//		char c2 = c1  + 1; //Type mismatch - ë³€ìˆ˜ì™€ ë¦¬í„°ëŸ´ê°„ì˜ ì—°ì‚°
+		char c2 = 'a' + 1; //ë¦¬í„°ëŸ´ ê°„ì˜ ì—°ì‚°
+//		char c2 = 97  + 1;//ê°€ë„
 		
 		System.out.println(c1);
 		System.out.println(c2);
 		
-//		D-day °è»ê : ÇöÀç ³¯Â¥·ÎºÎÅÍ ´ë»ó ³¯Â¥ »çÀÌ°£ÀÇ °£°İ °è»ê
+//		D-day ê³„ì‚° : í˜„ì¬ ë‚ ì§œë¡œë¶€í„° ëŒ€ìƒ ë‚ ì§œ ì‚¬ì´ê°„ì˜ ê°„ê²© ê³„ì‚°
 		Calendar cal = Calendar.getInstance();
 		cal.set(2022, 5, 18);
 		System.out.println(cal);
 		
-//		¿¹Á¤½Ã°£ - ÇöÀç 
+//		ì˜ˆì •ì‹œê°„ - í˜„ì¬ 
 		//System.currentTimeMillis();
 		System.out.println(System.currentTimeMillis());
 		

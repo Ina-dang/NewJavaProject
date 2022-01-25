@@ -1,6 +1,6 @@
-package shape;
+ï»¿package shape;
 
 public interface D2 {
-	//2Â÷¿ø 2D ¾Õ¿¡¸ø½á¼­ D2·ÎÀÌ¸§
-	double getCircum(); //µÑ·¹
+	//2ì°¨ì› 2D ì•ì—ëª»ì¨ì„œ D2ë¡œì´ë¦„
+	double getCircum(); //ë‘˜ë ˆ
 }

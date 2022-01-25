@@ -1,6 +1,6 @@
-package a211231;
+ï»¿package a211231;
 
-public class DataType {  //»ó¼ö¿Í ¸®ÅÍ·²(constant & literal)
+public class DataType {  //ìƒìˆ˜ì™€ ë¦¬í„°ëŸ´(constant & literal)
 	public static void main(String[] args) {
 		
 //		int val3 = 10;
@@ -10,61 +10,61 @@ public class DataType {  //»ó¼ö¿Í ¸®ÅÍ·²(constant & literal)
 //		val3 = 20;
 		
 	/* 
-	 * ¸®ÅÍ·²ÀÇ Å¸ÀÔ°ú Á¢¹Ì»ç -> º¯¼ö¿¡ Å¸ÀÔÀÌ ÀÖ´Â °ÍÃ³·³ ¸®ÅÍ·²¿¡µµ Å¸ÀÔÀÌ ÀÖ´Ù.
-	 * 1. ³í¸®Çü(Á¢¹Ì»çx) : false, true
-	 * 2. Á¤¼öÇü(long-l¶Ç´ÂL, int-x) : 123, 0b0101(2Áø¼ö¸®ÅÍ·²), 077(8Áø¼ö), 0xFF(16Áø¼ö), 100L(·ÕÅ¸ÀÔ)
-	 * 				l,L Çò°¥¸®¹Ç·Î ´ë¹®ÀÚL ÃßÃµ
-	 * 3. ½Ç¼öÇü(float-f, double-d) : 3.14, 3.0e8, 1.4f(float¸®ÅÍ·²), ox1.0p-1(p´Â º¸Åë Á¦°öÀ» ÀÇ¹Ì)
-	 * 4. ¹®ÀÚÇü(Á¢¹Ì»çx) : 'A', '1', '\n'
-	 * 5. ¹®ÀÚ¿­(Á¢¹Ì»çx) : "ABC", "123", "A", "true"
+	 * ë¦¬í„°ëŸ´ì˜ íƒ€ì…ê³¼ ì ‘ë¯¸ì‚¬ -> ë³€ìˆ˜ì— íƒ€ì…ì´ ìˆëŠ” ê²ƒì²˜ëŸ¼ ë¦¬í„°ëŸ´ì—ë„ íƒ€ì…ì´ ìˆë‹¤.
+	 * 1. ë…¼ë¦¬í˜•(ì ‘ë¯¸ì‚¬x) : false, true
+	 * 2. ì •ìˆ˜í˜•(long-lë˜ëŠ”L, int-x) : 123, 0b0101(2ì§„ìˆ˜ë¦¬í„°ëŸ´), 077(8ì§„ìˆ˜), 0xFF(16ì§„ìˆ˜), 100L(ë¡±íƒ€ì…)
+	 * 				l,L í—·ê°ˆë¦¬ë¯€ë¡œ ëŒ€ë¬¸ìL ì¶”ì²œ
+	 * 3. ì‹¤ìˆ˜í˜•(float-f, double-d) : 3.14, 3.0e8, 1.4f(floatë¦¬í„°ëŸ´), ox1.0p-1(pëŠ” ë³´í†µ ì œê³±ì„ ì˜ë¯¸)
+	 * 4. ë¬¸ìí˜•(ì ‘ë¯¸ì‚¬x) : 'A', '1', '\n'
+	 * 5. ë¬¸ìì—´(ì ‘ë¯¸ì‚¬x) : "ABC", "123", "A", "true"
 	 * 
-	 * long, float ¸®ÅÍ·² ½Å°æ¾²±â
+	 * long, float ë¦¬í„°ëŸ´ ì‹ ê²½ì“°ê¸°
 	 */
 		
 		//boolean, char, int, double
 		
-		boolean val1 = true; //³í¸®Çü true or false
+		boolean val1 = true; //ë…¼ë¦¬í˜• true or false
 		System.out.println(val1);
 		
-		int val2 = 0b1000; //Á¤¼öÇü b=binary 1000Àº 2Áø¹ı = 8
+		int val2 = 0b1000; //ì •ìˆ˜í˜• b=binary 1000ì€ 2ì§„ë²• = 8
 		System.out.println(val2);
 		
-		int val3 = 077; //Á¤¼öÇü 8Áø¹ı
+		int val3 = 077; //ì •ìˆ˜í˜• 8ì§„ë²•
 		System.out.println(val3);
 		
-		int val4 = 0xFF; //Á¤¼öÇü ´ë¼Ò¹®ÀÚ ±¸ºĞx
+		int val4 = 0xFF; //ì •ìˆ˜í˜• ëŒ€ì†Œë¬¸ì êµ¬ë¶„x
 		System.out.println(val4);
 		
-		float val5 = 123.456f; //½Ç¼öÇü ´õºí¸®ÅÍ·² fºÙ¿©¾ß ÇÔ
+		float val5 = 123.456f; //ì‹¤ìˆ˜í˜• ë”ë¸”ë¦¬í„°ëŸ´ fë¶™ì—¬ì•¼ í•¨
 		System.out.println(val5);
 		
-		double val6 = 123.456; //½Ç¼öÇü d´Â ÇÊ¿ä¾øÀ½
+		double val6 = 123.456; //ì‹¤ìˆ˜í˜• dëŠ” í•„ìš”ì—†ìŒ
 		System.out.println(val6);
 		
-		double val7 = .1; //0.1¿¡¼­ 0»©µµµÊ
+		double val7 = .1; //0.1ì—ì„œ 0ë¹¼ë„ë¨
 		System.out.println(val7);
 		
 		long val9 = 10;
 		System.out.println(val9);
 		
-		// float val10 = 10.1; µÚ¿¡ f ¾øÀ¸¸é double·Î ÀÎ½ÄÇØ¼­ ¿À·ù ¶ä 
+		// float val10 = 10.1; ë’¤ì— f ì—†ìœ¼ë©´ doubleë¡œ ì¸ì‹í•´ì„œ ì˜¤ë¥˜ ëœ¸ 
 		float val10 = 10.1f;
 		System.out.println(val10);
 		
-		// int val11 = 100L; L¸®ÅÍ·²ÀÌ intº¸´Ù Ä¿¼­ ¿À·ù¶ä
+		// int val11 = 100L; Lë¦¬í„°ëŸ´ì´ intë³´ë‹¤ ì»¤ì„œ ì˜¤ë¥˜ëœ¸
 		int val11 = 100;
 		System.out.println(val11);
 		
-		// ¹®ÀÚ¿¡¼­ char type 48, 65, 97¼ıÀÚ Áß¿ä
-		// ±× Áß °¡Àå Áß¿äÇÑ ¼ıÀÚ 65
-		/* ASCII (American Standard Code for Information Interchange) ¹Ì±¹ ±¹¸³ Ç¥ÁØ ÇùÈ¸
-		 * ¿µ¹® ¾ËÆÄºªÀ» »ç¿ëÇÏ´Â ´ëÇ¥ ¹®ÀÚ ÀÎÄÚµù
-		 * Decimal = 10Áø¼ö
+		// ë¬¸ìì—ì„œ char type 48, 65, 97ìˆ«ì ì¤‘ìš”
+		// ê·¸ ì¤‘ ê°€ì¥ ì¤‘ìš”í•œ ìˆ«ì 65
+		/* ASCII (American Standard Code for Information Interchange) ë¯¸êµ­ êµ­ë¦½ í‘œì¤€ í˜‘íšŒ
+		 * ì˜ë¬¸ ì•ŒíŒŒë²³ì„ ì‚¬ìš©í•˜ëŠ” ëŒ€í‘œ ë¬¸ì ì¸ì½”ë”©
+		 * Decimal = 10ì§„ìˆ˜
 		 * Hexadecimal = 16 
 		 * Binary = 2
 		 * Octal = 8
 		 * 
-		 * 0 ~ 127 ±îÁö Decimal ÃÑ 128°³ ASCII table (7ºñÆ®)
+		 * 0 ~ 127 ê¹Œì§€ Decimal ì´ 128ê°œ ASCII table (7ë¹„íŠ¸)
 		 * Decimal 48 = Char 0
 		 * Decimal 65 = Char A
 		 * Decimal 97 = Char a

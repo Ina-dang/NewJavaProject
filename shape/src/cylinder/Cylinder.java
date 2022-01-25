@@ -1,4 +1,4 @@
-package cylinder;
+ï»¿package cylinder;
 
 import shape.Shape;
 import circle.Circle;
@@ -6,14 +6,14 @@ import shape.D3;
 
 public class Cylinder extends Shape implements D3 { 
 	//class Cylinder extends Shape3D { 
-		//¿ø±âµÕÀº 2Â÷¿ø µµÇüÀ» °¡Áö°íÀÖ´Ù Á¤µµ. ±×·¯´Ï±î ¿øÀ» °¡Áö°íÀÖ¾î¾ßÁö
-		//¾ê´Â Á¶»óÅ¬·¡½º Á÷Á¢ÀûÀ¸·Î »ó¼Ó¹ŞÁø¾ÊÀ½ ´ë½Å ¾ê´Â 
+		//ì›ê¸°ë‘¥ì€ 2ì°¨ì› ë„í˜•ì„ ê°€ì§€ê³ ìˆë‹¤ ì •ë„. ê·¸ëŸ¬ë‹ˆê¹Œ ì›ì„ ê°€ì§€ê³ ìˆì–´ì•¼ì§€
+		//ì–˜ëŠ” ì¡°ìƒí´ë˜ìŠ¤ ì§ì ‘ì ìœ¼ë¡œ ìƒì†ë°›ì§„ì•ŠìŒ ëŒ€ì‹  ì–˜ëŠ” 
 
 		private Circle circle;
 
-		public Cylinder(int r, int z) { //¹İÁö¸§, zÀÇ ³ôÀÌ°ª
-			super(z); //¾Á¸°´õ»ç¿ëÀ»À§ÇÑ ÀÎ½ºÅÏ½º»ı¼º
-			circle = new Circle(r); //½áÅ¬°ª »ç¿ëÀ» À§ÇÑ ÀÎ½ºÅÏ½º»ı¼º
+		public Cylinder(int r, int z) { //ë°˜ì§€ë¦„, zì˜ ë†’ì´ê°’
+			super(z); //ì”°ë¦°ë”ì‚¬ìš©ì„ìœ„í•œ ì¸ìŠ¤í„´ìŠ¤ìƒì„±
+			circle = new Circle(r); //ì¨í´ê°’ ì‚¬ìš©ì„ ìœ„í•œ ì¸ìŠ¤í„´ìŠ¤ìƒì„±
 
 		}
 		

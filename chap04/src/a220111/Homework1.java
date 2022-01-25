@@ -1,8 +1,8 @@
-package a220111;
+ï»¿package a220111;
 
 public class Homework1 {
 	public static void main(String[] args) {
-		//¿µ´ë¹®ÀÚ ¼ıÀÚ·Î Á¶ÇÕµÈ 20±ÛÀÚÀÇ¹®ÀÚ
+		//ì˜ëŒ€ë¬¸ì ìˆ«ìë¡œ ì¡°í•©ëœ 20ê¸€ìì˜ë¬¸ì
 		
 		for(int i = 0; i<20; i++) {
 		

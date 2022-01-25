@@ -1,40 +1,40 @@
-package a220111;
+ï»¿package a220111;
 
 public class Ch4_01 {
 	public static void main(String[] args) {
 		int x = 10;
-//		ÄÄÆÄÀÏ ¿¡·¯ ¾È³ª°Ô ÀÏ´Ü ½Ä ½áµÎ¸é ÁÁ´Ù
-//		int Çü º¯¼ö x °¡ 10º¸´Ù Å©°í 20º¸´Ù ÀÛÀ»¶§ trueÀÎ Á¶°Ç½Ä
+//		ì»´íŒŒì¼ ì—ëŸ¬ ì•ˆë‚˜ê²Œ ì¼ë‹¨ ì‹ ì¨ë‘ë©´ ì¢‹ë‹¤
+//		int í˜• ë³€ìˆ˜ x ê°€ 10ë³´ë‹¤ í¬ê³  20ë³´ë‹¤ ìž‘ì„ë•Œ trueì¸ ì¡°ê±´ì‹
 		boolean b1 = x > 10 && x < 20 ;
 		System.out.println(b1);
-//		charÇü º¯¼ö ch°¡ °ø¹éÀÌ³ª ÅÇÀÌ ¾Æ´Ò¶§ true ÀÎ Á¶°Ç½Ä
+//		charí˜• ë³€ìˆ˜ chê°€ ê³µë°±ì´ë‚˜ íƒ­ì´ ì•„ë‹ë•Œ true ì¸ ì¡°ê±´ì‹
 		char ch = ' ';
 		boolean b2 = ch != ' ' || ch != '\t';
 		System.out.println(b2);
-//		charÇü º¯¼ö ch°¡ 'x'¶Ç´Â 'X'ÀÏ¶§ true ÀÎ Á¶°Ç½Ä
+//		charí˜• ë³€ìˆ˜ chê°€ 'x'ë˜ëŠ” 'X'ì¼ë•Œ true ì¸ ì¡°ê±´ì‹
 		boolean b3 = ch =='x' || ch == 'X';
 		System.out.println(b3);
-//		charÇü º¯¼ö ch°¡ ¼ýÀÚ('0'~'9')ÀÏ¶§ true ÀÎ Á¶°Ç½Ä
+//		charí˜• ë³€ìˆ˜ chê°€ ìˆ«ìž('0'~'9')ì¼ë•Œ true ì¸ ì¡°ê±´ì‹
 		boolean b4 = ch >= '0' && ch <= '9';
 		System.out.println(b4);
-//		charÇü º¯¼ö ch°¡ ¿µ¹®ÀÚ(´ë¹®ÀÚ ¶Ç´Â ¼Ò¹®ÀÚ)ÀÏ¶§ true ÀÎ Á¶°Ç½Ä
+//		charí˜• ë³€ìˆ˜ chê°€ ì˜ë¬¸ìž(ëŒ€ë¬¸ìž ë˜ëŠ” ì†Œë¬¸ìž)ì¼ë•Œ true ì¸ ì¡°ê±´ì‹
 		boolean b5 = ch >= 'A' && ch <='Z' || ch >= 'a' && ch <= 'z';
 		System.out.println(b5);
 		boolean b6 = ch >= 'A' && ch <= 90 || ch >= 'a' && ch <= 'Z'+32;
 		System.out.println(b6);
-//		intÇü º¯¼ö year°¡ 400À¸·Î ³ª´² ¶³¾îÁö°Å³ª 4·Î ¶³¾îÁö°í 100À¸·Î ³ª´²¶³¾îÁöÁö¾ÊÀ»¶§ Æ®·Î
+//		intí˜• ë³€ìˆ˜ yearê°€ 400ìœ¼ë¡œ ë‚˜ëˆ  ë–¨ì–´ì§€ê±°ë‚˜ 4ë¡œ ë–¨ì–´ì§€ê³  100ìœ¼ë¡œ ë‚˜ëˆ ë–¨ì–´ì§€ì§€ì•Šì„ë•Œ íŠ¸ë¡œ
 		int year = 0;
 		boolean b7 = year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
 		System.out.println(b7);
-//		boolean Çü º¯¼ö powerOn°¡ falseÀÏ¶§ true ÀÎ Á¶°Ç½Ä
+//		boolean í˜• ë³€ìˆ˜ powerOnê°€ falseì¼ë•Œ true ì¸ ì¡°ê±´ì‹
 		boolean powerOn = !(1 > 3);
 		System.out.println(powerOn);
 		/*
-		 * ½Ü ´ä
+		 * ìŒ¤ ë‹µ
 		 * boolean powerOn = false;
 		 * boolean b8 = !powerOn;
 		 */
-//		¹®ÀÚ¿­ ÂüÁ¶º¯¼ö strÀÌ yes ÀÏ¶§ trueÀÎ Á¶°Ç½Ä
+//		ë¬¸ìžì—´ ì°¸ì¡°ë³€ìˆ˜ strì´ yes ì¼ë•Œ trueì¸ ì¡°ê±´ì‹
 //		int a = 3;
 //		String str = a >= 3 ? "yes" : "false"; 
 //		System.out.println(str);

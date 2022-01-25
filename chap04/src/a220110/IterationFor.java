@@ -1,19 +1,19 @@
-package a220110;
+ï»¿package a220110;
 
 public class IterationFor {
 	public static void main(String[] args) {
-//		°¢ ±¸°£À» ¼¼¹ÌÄÝ·ÐÀ¸·Î ±¸ºÐ
-//		for(1ÃÊ±âÈ­;2Á¶°Ç½Ä;4Áõ°¨½Ä){
-//					3¹®Àå
+//		ê° êµ¬ê°„ì„ ì„¸ë¯¸ì½œë¡ ìœ¼ë¡œ êµ¬ë¶„
+//		for(1ì´ˆê¸°í™”;2ì¡°ê±´ì‹;4ì¦ê°ì‹){
+//					3ë¬¸ìž¥
 //		}
 		
-		// ¼öÇà¼ø¼­ Àß È®ÀÎÇÏ±â (ÃÊ±âÈ­¡æÁ¶°Ç½Ä¡æ¹®Àå¡æÁõ°¨½Ä)
+		// ìˆ˜í–‰ìˆœì„œ ìž˜ í™•ì¸í•˜ê¸° (ì´ˆê¸°í™”â†’ì¡°ê±´ì‹â†’ë¬¸ìž¥â†’ì¦ê°ì‹)
 		
 		for(int i = 1; i <= 2 ; i++) {
-			System.out.println("¾È³çÈ÷°¡¼¼¿ä");
+			System.out.println("ì•ˆë…•ížˆê°€ì„¸ìš”");
 		}
 		for(int i = 1; i <= 5 ; i+=2) {
-			System.out.println("¾È³ç");
+			System.out.println("ì•ˆë…•");
 		}
 		for(int i = 1; i <= 8 ; i*=2) {
 			System.out.println("hi");
@@ -32,7 +32,7 @@ public class IterationFor {
 		System.out.println("======================");
 		for(int i = 2 ; i <= 9 ; i ++) { //8 
 			for(int j = 1 ; j <= 9 ; j++) { //9
-				//¸»ÇÏ´Â °¨ÀÚµéÀº ÁßÃ¸¹Ýº¹¹®ÀÌ ¾î·Á¿ï°ÅÀÓ
+				//ë§í•˜ëŠ” ê°ìžë“¤ì€ ì¤‘ì²©ë°˜ë³µë¬¸ì´ ì–´ë ¤ìš¸ê±°ìž„
 				System.out.println(i + "*" + j + "=" + i*j);
 			}
 		}	

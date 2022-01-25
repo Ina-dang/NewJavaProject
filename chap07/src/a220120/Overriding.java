@@ -1,8 +1,8 @@
-package a220120;
+ï»¿package a220120;
 
 public class Overriding {
-  //Á¶»óÅ¬·¡½º·ÎºÎÅÍ »ó¼Ó¹ŞÀº ¸Ş¼­µåÀÇ ³»¿ëÀ» º¯°æÇÏ´Â°Í
-// Å¬·¡½º ¸Ş¼­µå x ÀÎ½ºÅÏ½º ¸Ş¼­µå¿¡¼­¸¸°¡´É
+  //ì¡°ìƒí´ë˜ìŠ¤ë¡œë¶€í„° ìƒì†ë°›ì€ ë©”ì„œë“œì˜ ë‚´ìš©ì„ ë³€ê²½í•˜ëŠ”ê²ƒ
+// í´ë˜ìŠ¤ ë©”ì„œë“œ x ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œì—ì„œë§Œê°€ëŠ¥
 	class Point{ 
 		int x;
 		int y;
@@ -16,7 +16,7 @@ public class Overriding {
 
 		
 		String getLocation() {
-			return super.getLocation() + ", z : " + z; //Á¶»óÀÇ ¸Ş¼­µå È£Ãâ
+			return super.getLocation() + ", z : " + z; //ì¡°ìƒì˜ ë©”ì„œë“œ í˜¸ì¶œ
 //			return "x : " + x + ",y : " + y + ", z : " + z;
 		}
 	}
@@ -28,12 +28,12 @@ public class Overriding {
 	}
 	
 	class Child extends Parent {
-		void perentMethod() {} //¿À¹ö¶óÀÌµù
-		void parentMethod(int i) {} // ¿À¹ö·Îµù
+		void perentMethod() {} //ì˜¤ë²„ë¼ì´ë”©
+		void parentMethod(int i) {} // ì˜¤ë²„ë¡œë”©
 		
-		void childMethod() {}	// ¸ÕÀúÁ¤ÀÇ
-		void ChildMethod(int i) {} // Á¤ÀÇµÈ°É ¿À¹ö·Îµù
-//		void childMethod() {}	// Áßº¹Á¤ÀÇ¶ó ¿À·ù¶ä
+		void childMethod() {}	// ë¨¼ì €ì •ì˜
+		void ChildMethod(int i) {} // ì •ì˜ëœê±¸ ì˜¤ë²„ë¡œë”©
+//		void childMethod() {}	// ì¤‘ë³µì •ì˜ë¼ ì˜¤ë¥˜ëœ¸
 		
 	}	
 }

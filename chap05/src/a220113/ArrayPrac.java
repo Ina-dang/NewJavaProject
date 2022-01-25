@@ -1,8 +1,8 @@
-package a220113;
+ï»¿package a220113;
 
 import java.util.Arrays;
 
-//¾ÕÀ¸·Î ¾î·¹ÀÌ ÆĞÅ°Áö´Â ÀÚ¹ÙÀ¯Æ¿·Î ºÎ¸¦°Å¿¡¿ä ¶ó°í ¼±¾ğ
+//ì•ìœ¼ë¡œ ì–´ë ˆì´ íŒ¨í‚¤ì§€ëŠ” ìë°”ìœ í‹¸ë¡œ ë¶€ë¥¼ê±°ì—ìš” ë¼ê³  ì„ ì–¸
 
 public class ArrayPrac {
 	public static void main(String[] args) {
@@ -11,17 +11,17 @@ public class ArrayPrac {
 		int[] tmp = new int[arr.length * 2 ]; //{0, 0, 0, 0, 0, 0, 0, 0}
 		System.arraycopy(arr, 0, tmp, 0, 4);
 		/*
-		 * src     : ¼Ò½º (¿ø½Ã) . ¿øº»ÆÄÀÏ
-		 * srcPos  : ¼Ò½ºÆ÷Áö¼Ç ==> ¸î ¹ø ºÎÅÍ
-		 * dest    : Å¸°Ù. ´ë»ó. µµÂøÁö
-		 * destPos : ¸ñÀûÁöÀ§Ä¡ ¸¦ º¯°æÇÏ¸é ½ÃÀÛÁ¡ÀÌ ¹Ù²ñ
-		 * length  : ±æÀÌ ¸¦ º¯°æÇÏ¸é ±âÁ¸ ¹è¿­ÀÇ 2°³¸¸ µ¥·Á¿È
+		 * src     : ì†ŒìŠ¤ (ì›ì‹œ) . ì›ë³¸íŒŒì¼
+		 * srcPos  : ì†ŒìŠ¤í¬ì§€ì…˜ ==> ëª‡ ë²ˆ ë¶€í„°
+		 * dest    : íƒ€ê²Ÿ. ëŒ€ìƒ. ë„ì°©ì§€
+		 * destPos : ëª©ì ì§€ìœ„ì¹˜ ë¥¼ ë³€ê²½í•˜ë©´ ì‹œì‘ì ì´ ë°”ë€œ
+		 * length  : ê¸¸ì´ ë¥¼ ë³€ê²½í•˜ë©´ ê¸°ì¡´ ë°°ì—´ì˜ 2ê°œë§Œ ë°ë ¤ì˜´
 		 */
 		//{5, 6, 7, 0, 0, 0}
 		System.out.println(Arrays.toString(tmp));
-							//ÀÌ Arrays°¡ ¼ÓÇØÀÖ´Â°÷Àº java.util. 
-//		System.out.println(java.util.Arrays.toString(tmp)); ÇØ¾ßÇÏ´Âµ¥ ±×·¯¸é ¾î·¹ÀÌ ºÎ¸¦ ¶§¸¶´Ù ÇØ¾ßÇÔ
-//		ctrl + shift + o ´©¸£¸é À§¿¡ ½Ç¼ö·Î »èÁ¦ÇÑ ÀÚ¹ÙÀ¯Æ¿ ºÒ·¯Áü
+							//ì´ Arraysê°€ ì†í•´ìˆëŠ”ê³³ì€ java.util. 
+//		System.out.println(java.util.Arrays.toString(tmp)); í•´ì•¼í•˜ëŠ”ë° ê·¸ëŸ¬ë©´ ì–´ë ˆì´ ë¶€ë¥¼ ë•Œë§ˆë‹¤ í•´ì•¼í•¨
+//		ctrl + shift + o ëˆ„ë¥´ë©´ ìœ„ì— ì‹¤ìˆ˜ë¡œ ì‚­ì œí•œ ìë°”ìœ í‹¸ ë¶ˆëŸ¬ì§
 		
 	}	
 }

@@ -1,6 +1,6 @@
-package a220120;
+ï»¿package a220120;
 
-public class ConstTest { //super() Á¶»ó Å¬·¡½º »ı¼ºÀÚ ¿¹½Ã
+public class ConstTest { //super() ì¡°ìƒ í´ë˜ìŠ¤ ìƒì„±ì ì˜ˆì‹œ
 	public static void main(String[] args) {
 		B b = new B();
 		System.out.println(b.x);
@@ -9,10 +9,10 @@ public class ConstTest { //super() Á¶»ó Å¬·¡½º »ı¼ºÀÚ ¿¹½Ã
 		System.out.println(a); 
 		System.out.println(a.x);
 		System.out.println(a.y);
-//		System.out.println(a.z); //B ÀÎ½ºÅÏ½ºÀÎµ¥ Á¢±ÙÀÌ ¾ÈµÊ ==> ÄÄÆÄÀÏ·¯°¡ ' ³Ê¼±¾ğÀ» A·ÎÇØ¼­ ¿À·ù'¶ó°í ³»¹ñÀ½
-								 //ÄÄÆÄÀÏ·¯¿Í ·±ÀÇ ½ÃÁ¡Â÷ÀÌ
-//		System.out.println((B)a.z); //. ÀÌ ´õ ¿ì¼±¼øÀ§°¡ ´õ »¡¶ó¼­ Çüº¯È¯ÀÌ ¾ÈµÊ
-		System.out.println(((B)a).z); //°ıÈ£ ÃÄ¼­ ¿ì¼±¼øÀ§ Á¤ÇØÁà¾ßÇÔ
+//		System.out.println(a.z); //B ì¸ìŠ¤í„´ìŠ¤ì¸ë° ì ‘ê·¼ì´ ì•ˆë¨ ==> ì»´íŒŒì¼ëŸ¬ê°€ ' ë„ˆì„ ì–¸ì„ Aë¡œí•´ì„œ ì˜¤ë¥˜'ë¼ê³  ë‚´ë±‰ìŒ
+								 //ì»´íŒŒì¼ëŸ¬ì™€ ëŸ°ì˜ ì‹œì ì°¨ì´
+//		System.out.println((B)a.z); //. ì´ ë” ìš°ì„ ìˆœìœ„ê°€ ë” ë¹¨ë¼ì„œ í˜•ë³€í™˜ì´ ì•ˆë¨
+		System.out.println(((B)a).z); //ê´„í˜¸ ì³ì„œ ìš°ì„ ìˆœìœ„ ì •í•´ì¤˜ì•¼í•¨
 	
 	}
 }
@@ -27,10 +27,10 @@ class A {
 	
 //	A(){ super(); }
 	A(int x, int y){
-//		super(); // »ı¼ºÀÚÀÇ Ã¹ÁÙ¿¡ this()³ª super();°¡ ¾øÀ¸¸é ÄÄÆÄÀÏ·¯°¡ ±âº»»ı¼ºÀÚ¸¦ ¸¸µé·¯°£´Ù
+//		super(); // ìƒì„±ìì˜ ì²«ì¤„ì— this()ë‚˜ super();ê°€ ì—†ìœ¼ë©´ ì»´íŒŒì¼ëŸ¬ê°€ ê¸°ë³¸ìƒì„±ìë¥¼ ë§Œë“¤ëŸ¬ê°„ë‹¤
 		this.x = x;
 		this.y = y;
-		System.out.println(x + ", " + y + "·Î ÃÊ±âÈ­µÊ");
+		System.out.println(x + ", " + y + "ë¡œ ì´ˆê¸°í™”ë¨");
 	}
 }
 
