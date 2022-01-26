@@ -48,7 +48,9 @@ public class StudentService {
 		} //for문은 항상 매서드 내에 있어야하고, print도 메서드 몸통에 있어야함 
 	}	  // ,but {}블럭처리 해주면 생성자 내부로 인식돼서 가넝
 
-
+	int getScore() {
+		return (int)(Math.random()*41)+60;
+	}
 	
 	
 
