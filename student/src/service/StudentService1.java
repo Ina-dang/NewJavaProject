@@ -1,8 +1,8 @@
 ﻿package service;
 
-import static utils.StudentUtil.*;
-import static domain.Student.*;
-import app.StudentEx;
+import static utils.StudentUtil.nextInt;
+import static utils.StudentUtil.nextLine;
+
 import domain.Student;
 
 public class StudentService1 { //기능
@@ -84,6 +84,5 @@ public class StudentService1 { //기능
 				break;
 			}
 		}
-	
 	}
 }

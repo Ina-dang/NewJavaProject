@@ -15,6 +15,16 @@ public class Student {
 		// TODO Auto-generated constructor stub
 	}
 	
+	
+	
+	public Student(String no, String name) {
+		this(no, name, getScore(), getScore(), getScore());
+		this.no = no;
+		this.name = name;
+	}
+
+
+
 	public Student(String no, String name, int kor, int eng, int math) {
 		super();
 		this.no = no;
@@ -69,5 +79,10 @@ public class Student {
 				"    " + sum() + "    " + avg() ; 
 
 		return str;
+	}
+	
+	//점수 랜덤
+	private static int getScore() { //스태틱으로 처리해서 먽
+		return (int)(Math.random()*41)+60;
 	}
 }

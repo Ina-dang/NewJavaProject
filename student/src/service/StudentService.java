@@ -1,9 +1,13 @@
 ﻿package service;
 
-import static utils.StudentUtil.*;
+import static utils.StudentUtil.nextInt;
+import static utils.StudentUtil.nextLine;
 
-import app.StudentEx;
+import java.util.ArrayList;
+import java.util.List;
+
 import domain.Student;
+import exception.RangeException;
 
 
 public class StudentService {
@@ -18,9 +22,13 @@ public class StudentService {
 //			StudentUtil : student.utils에 존재
 //						, 모든 필드에 private 적용 (get,set), 삭제 기능 구현
 	// 01/21 : 이름등록제한, 점수범위
+//	// 01/26
 	
 	//객체배열 인스턴스변수 
-	Student[] students = new Student[10]; //학생들 관리
+//	Student[] students = new Student[10]; //학생들 관리 배열을 어레이리스트로 변환
+	//자바유틸 리스트 불러오기
+	List<Student> students = new ArrayList<Student>(); //리스트타입 스튜던트 선언
+	
 	
 	//220119 추가
 	int cnt; // 인트타입 카운트. 여기에 현재학생인원수 담을거
@@ -35,14 +43,12 @@ public class StudentService {
 	
 	public StudentService() { //스튜던트서비스 생성자
 		for (int i = 0; i < names.length; i++) {
-			students[cnt] = new Student(220000 + cnt + 1 + "", names[cnt], getScore(), getScore(), getScore());
-			cnt++;
+//			students[i] = new Student(220000 + i + 1 + "", names[i], getScore(), getScore(), getScore());
+			students.add(new Student(220000 + i + 1 + "", names[i]));
 		} //for문은 항상 매서드 내에 있어야하고, print도 메서드 몸통에 있어야함 
 	}	  // ,but {}블럭처리 해주면 생성자 내부로 인식돼서 가넝
 
-	int getScore() {
-		return (int)(Math.random()*41)+60;
-	}
+
 	
 	
 
@@ -52,10 +58,10 @@ public class StudentService {
 		//위에 들어간 학생데이터로 조회기능 구현
 		System.out.println("학번\t   이름\t   국어\t  영어\t수학  총점   평균");
 		System.out.println("========================================================");
-		for (int i = 0; i < cnt; i++) { //인스턴스 메서드끼리 는 클래스 안붙임
+		for (int i = 0; i < students.size(); i++) { //인스턴스 메서드끼리 는 클래스 안붙임
 			
 //	220119		// toString 사용해서 변경하셈 
-			System.out.println(students[i]);
+			System.out.println(students.get(i));
 		}
 	}//void list() 끝
 	
@@ -84,8 +90,8 @@ public class StudentService {
 //		String no = StudentEx.scanner.nextLine();
 		
 		//2 입력받은 데이터를 학생타입의 인스턴스로 생성 ==> 1번 입력 다해야한다
-		students[cnt++] = new Student(nextLine("학번> "), nextLine("이름> "), nextInt("국어>"), 
-										nextInt("영어>"), nextInt("수학>") );
+		students.add(new Student(nextLine("학번> "), nextLine("이름> "), nextInt("국어>"), 
+										nextInt("영어>"), nextInt("수학>")));
 		
 //220119		//3 students 배열의 cnt위치에 대입
 //		students[cnt++] = student;
@@ -96,7 +102,7 @@ public class StudentService {
 
 	// 3. 수정
 	
-	public void modify() { 
+	public void modify() throws RangeException  { 
 //		//학번으로 학생을 탐색 후 학생 데이터 중 이름 , 성적 수정
 
 		Student student = findBy(nextLine("수정할 학생의 학번>"));
@@ -107,7 +113,13 @@ public class StudentService {
 			System.out.println("수정 대상 : " + student);
 		}
 		student.setName(nextLine("이름 >"));
-		student.setKor(nextInt("국어>"));
+		
+		int kor = nextInt("국어>");
+		if (kor < 0 || kor > 100) {
+			throw new RangeException();
+		}
+		student.setKor(kor);
+//		student.setKor(nextInt("국어>"));
 		student.setEng(nextInt("영어>"));
 		student.setMath(nextInt("수학>"));
 	}//modify 끝
@@ -119,12 +131,13 @@ public class StudentService {
 	
 	public void remove() { 
 
-		int idx = findIndexBy(nextLine("삭제할 학생의 학번 >> "));
-		if(idx == -1 ) {
-			System.out.println("존재하지 않는 학번입니다");
-					return;
-		}
-		System.arraycopy(students, idx+1, students, idx, cnt-- - idx + 1);
+//		int idx = findBy(nextLine("삭제할 학생의 학번 >> "));
+//		if(idx == -1 ) {
+//			System.out.println("존재하지 않는 학번입니다");
+//					return;
+			students.remove(findBy(nextLine("삭제할 학생의 학번 >> ")));
+//		}
+//		System.arraycopy(students, idx+1, students, idx, cnt-- - idx + 1);
 		System.out.println("삭제되었습니다");
 		// 학번을 입력받아 해당 학생의 내용을 삭제
 		// [1, 2, null, 4, 5] >> [1, 2, 4, 5, 5] 실제로 들어있지만 cnt까지 탐색이라 결과적으론 [1, 2, 4, 5] 출력
@@ -136,23 +149,30 @@ public class StudentService {
 	//remove == 학생을 받아서 찾겠다
 	
 	private Student findBy(String no) {
-		int idx = findIndexBy(no);
-		if ( idx == -1) {
-			return null;
-		}		
-		return students[findIndexBy(no)];
-		
-	}
-	
-	//해당 학생의 인덱스번째 리턴
-	private int findIndexBy(String no) {
-		int ret = -1; //(찾으면 해당번째 못찾으면 -1이 나와서 기준값을 -1로 잡음)
-		for (int i = 0; i < cnt; i++) {
-			if (students[i].getNo().equals(no)) {
-				ret = i;
-				break;
+		Student student = null; 
+		for( Student s : students ) { //배열 사이즈만큼만 순회
+			if(s.getNo().equals(no)) { //s.getNo랑 no같으면 student출력
+				student = s;
 			}
 		}
-		return ret;
+		return student;
+		
 	}
 }
+//		int idx = findIndexBy(no);
+//		if ( idx == -1) {
+//			return null;
+//		}		
+		
+	
+//	//해당 학생의 인덱스번째 리턴
+//	private int findIndexBy(String no) {
+//		int ret = -1; //(찾으면 해당번째 못찾으면 -1이 나와서 기준값을 -1로 잡음)
+//		for (int i = 0; i < cnt; i++) {
+//			if (students.get(i).getNo().equals(no)) {
+//				ret = i;
+//				break;
+//			}
+//		}
+//		return ret;
+//	}
