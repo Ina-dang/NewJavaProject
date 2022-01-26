@@ -26,11 +26,11 @@ public class StudentService1 { //기능
 		for (int i = 0; i < names.length; i++) {
 			students.add(new Student(220000 + cnt + 1 + "", names[i]));
 		}
-	}
+	}	
 	
-	int getScore() {
-		return (int)(Math.random()*41)+60;
-	}
+//	int getScore() {
+//		return (int)(Math.random()*41)+60;
+//	}
 	
 	//조회
 	public void list() {

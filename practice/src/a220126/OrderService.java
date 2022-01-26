@@ -3,31 +3,64 @@ package a220126;
 import java.util.Scanner;
 
 public class OrderService {
-public static void main(String[] args) {
-	System.out.println("주문확인 메뉴입니다");
-}
+	private static int admin_password = 1111; // 직원 비밀번호 초기값
+	public static void main(String[] args) {
+		System.out.println("주문확인 메뉴입니다");
 
-public void order() {
-	
-}
-
-	//스캐너 유틸 때 따로빼서 공통으로 쓸꺼
-	private static String nextLine(String input) {
-	Scanner scanner = new Scanner(System.in);
-	return scanner.nextLine();
-}
-	private static int nextInt(String input) {
-		return Integer.parseInt(nextLine(input));
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("비밀번호를 입력해주세요 > ");
+		int tmp_pw = Integer.parseInt(scanner.nextLine());
+		if(tmp_pw == admin_password) {
+			System.out.println("직원 확인 했습니다.");
+		} else {
+		System.out.println("올바른 비밀번호가 아닙니다.");
+		}
+//		public void orderHistory() { //주문내역
+//			
+//		}
+//		
+//		public void calculate() { //영업관리 1.마감정산 2.준비금등록
+//			
+//			System.out.print("비밀번호를 입력해주세요 > ");
+//			int tmp_pw = Integer.parseInt(scanner.nextLine());
+//			if(tmp_pw == admin_password) {
+//				System.out.println("직원 확인 했습니다.");
+//			}
+//		}
+//		public void revenue() { //매출현황(수입) 1.전일매출(상품별,시간대별) 2.현매출(") 
+//			
 	}
-	
-	
 }
+
+	
+
+
+
+
+//	//스캐너 유틸 때 따로빼서 공통으로 쓰려나
+//	private static String nextLine(String input) {
+//	Scanner scanner = new Scanner(System.in);
+//	return scanner.nextLine();
+//	}
+//	private static int nextInt(String input) {
+//		return Integer.parseInt(nextLine(input));
+//	}
+	
+	
 // 매출현황
 	/*
 	나현쓰
 	- 주문 확인
 	- 영업 관리
 	- 매출 현황
+	
+	주문확인도 매출현황도 
+	List<E> extends Collection<E> 
+	public ArrayList() {
+        this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;
+    }
+    +학생데이터 끌어오기 응용
 	
 	products class 내
 	상품 코드는 고유번호로 (String code; ==> 001부터시작)
