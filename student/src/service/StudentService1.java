@@ -6,8 +6,6 @@ import static utils.StudentUtil.nextLine;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.text.StyledEditorKit.ForegroundAction;
-
 import domain.Student;
 import exception.RangeException;
 
@@ -44,23 +42,22 @@ public class StudentService1 { //기능
 	//등록
 	public void register() { 
 		
-		students.add(new Student(nextLine("학번>"), nextLine("이름"), nextInt("국어"), 
+		students.add(new Student(nextLine("학번>"), nextLine("이름", true), nextInt("국어"), 
 				nextInt("영어"), nextInt("수학")));
 	}
 	//등록부분 끝
 	Student student = new Student();
 	
-	//수정
+	//수정하기
 	public void modify() throws RangeException { 
 		//학번으로 학생을 탐색 후 학생 데이터 중 이름 , 성적 수정
 		Student student = findBy(nextLine("수정할 학생의 학번 >"));
 			if (student == null) { //equals 확인
 				System.out.println("존재하지 않는 학번입니다");
 				return;
-			} else {
-				System.out.println("수정 대상 : " + student);
-			}
-			student.setName(nextLine("이름 >"));
+			
+			} 
+			student.setName(nextLine("이름 >", true));
 			
 			int kor = nextInt("국어>");
 			if (kor < 0 || kor > 100) {

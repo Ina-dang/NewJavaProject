@@ -1,9 +1,8 @@
 ﻿package app;
 
-import static utils.StudentUtil.nextInt;
-
 import exception.RangeException;
 import service.StudentService;
+import utils.StudentUtil;
 
 public class StudentEx { //Ex가 실행부분이 있다는 뜻
 	public static void main(String[] args) { //메인메서드 추우가아
@@ -18,7 +17,7 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 		//트라이 캐치블럭 처리 해야됨
 		for (boolean b = true ; b ;) { 
 			try {
-				int input = nextInt("1.학생조회 2.학생등록 3.학생정보수정 4.학생삭제 5.종료 ");
+				int input = StudentUtil.nextInt("1.학생조회 2.학생등록 3.학생정보수정 4.학생삭제 5.종료 \n", 1, 5);
 				
 				switch (input) {
 				case 1:
@@ -39,21 +38,18 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 					break;
 				case 5:
 					System.out.println("종료합니다");
-					
 					b = false;
-	
 					break;
 					
 				default:
 					System.out.println("올바른 번호를 입력하세요");
-	
 					break;
 				}
 			} catch (NumberFormatException e) {
 				System.out.println("숫자형식으로 입력해주세요");
 			} catch (RangeException e) {
-				System.out.println("범위벗어남");
-				e.printStackTrace();
+				System.out.println(e.getMessage());
+				
 			}
 		}
 

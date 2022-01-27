@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import domain.Student;
-import exception.RangeException;
 
 
 public class StudentService {
@@ -92,7 +91,7 @@ public class StudentService {
 //		String no = StudentEx.scanner.nextLine();
 		
 		//2 입력받은 데이터를 학생타입의 인스턴스로 생성 ==> 1번 입력 다해야한다
-		students.add(new Student(nextLine("학번> "), nextLine("이름> "), nextInt("국어>"), 
+		students.add(new Student(nextLine("학번> "), nextLine("이름> ", true), nextInt("국어>"), 
 										nextInt("영어>"), nextInt("수학>")));
 		
 //220119		//3 students 배열의 cnt위치에 대입
@@ -100,28 +99,20 @@ public class StudentService {
 		//3 students 배열의 null위치에 대입
 
 	}
-	Student student = new Student();
+//	Student student = new Student();s
 
 	// 3. 수정
 	
-	public void modify() throws RangeException  { 
+	public void modify(){ 
 //		//학번으로 학생을 탐색 후 학생 데이터 중 이름 , 성적 수정
 
 		Student student = findBy(nextLine("수정할 학생의 학번>"));
 		if(student == null) {
 			System.out.println("존재하지 않는 학번입니다");
 			return;
-		} else {
-			System.out.println("수정 대상 : " + student);
 		}
-		student.setName(nextLine("이름 >"));
-		
-		int kor = nextInt("국어>");
-		if (kor < 0 || kor > 100) {
-			throw new RangeException();
-		}
-		student.setKor(kor);
-//		student.setKor(nextInt("국어>"));
+		student.setName(nextLine("이름 >", true));
+		student.setKor(nextInt("국어>"));
 		student.setEng(nextInt("영어>"));
 		student.setMath(nextInt("수학>"));
 	}//modify 끝
