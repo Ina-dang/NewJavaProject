@@ -1,12 +1,13 @@
-package Interphase;
+package interphase;
 
+import java.lang.invoke.SwitchPoint;
 import java.util.Scanner;
 
-import service.UserService2;
+import service.UserService;
 
-public class userInterface { // 유저 인터페이스
+public class UserMain { // 유저 인터페이스
 	Scanner sc = new Scanner(System.in);
-	UserService2 us = new UserService2();
+	UserService us = new UserService();
 	
 	public void user_main() { // 어드민 화면
 

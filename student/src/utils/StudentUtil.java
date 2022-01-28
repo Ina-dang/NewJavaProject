@@ -29,7 +29,7 @@ public class StudentUtil {
 	
 	public static int nextInt(String input, int start, int end) { //넥스트인트 오버로딩
 		int result = Integer.parseInt(nextLine(input));
-		if(start < result || end > result) 
+		if(start > result || end < result) 
 			throw new RangeException(start, end); // 이렇게하면 익셉션클래스에서 직접처리함
 		return result;
 	}

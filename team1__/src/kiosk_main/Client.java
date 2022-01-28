@@ -2,15 +2,15 @@ package kiosk_main;
 
 import java.util.Scanner;
 
-import Interphase.adminInterphase;
-import Interphase.userInterface;
+import interphase.AdminMain;
+import interphase.UserMain;
 
 public class Client {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		userInterface table = new userInterface(); // 테이블 서비스
-		adminInterphase admin = new adminInterphase(); // 어드민 서비스
+		UserMain table = new UserMain(); // 테이블 서비스
+		AdminMain admin = new AdminMain(); // 어드민 서비스
 		
 		System.out.println("*******************");
 		System.out.println("**     휴 밤     **");

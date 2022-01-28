@@ -15,7 +15,7 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 		StudentService service = new StudentService();
 	
 		//트라이 캐치블럭 처리 해야됨
-		for (boolean b = true ; b ;) { 
+		for (boolean b = true; b;) { 
 			try {
 				int input = StudentUtil.nextInt("1.학생조회 2.학생등록 3.학생정보수정 4.학생삭제 5.종료 \n", 1, 5);
 				
@@ -26,7 +26,7 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 					break;
 				case 2:
 					service.register();
-					
+
 					break;
 				case 3:
 					service.modify();
@@ -49,7 +49,6 @@ public class StudentEx { //Ex가 실행부분이 있다는 뜻
 				System.out.println("숫자형식으로 입력해주세요");
 			} catch (RangeException e) {
 				System.out.println(e.getMessage());
-				
 			}
 		}
 
