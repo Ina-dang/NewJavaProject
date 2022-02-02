@@ -33,8 +33,8 @@ public class UserService {
 				//그 골라서 출력은 어케하지
 				//일단은 시간이랑 메뉴 뜨는것만 보이게 해봤다..
 				String[] table1 = {"오징어", "진로", "맥주500cc"};
-				String[] table1_1 = {"오징어", "진로", "맥주500cc"};
-				String[] table1_2 = {"오징어", "진로", "맥주500cc"}; //2차원 배열로 table1의 인덱스 안에 주문시간대별로 각각의 인덱스 넣어야할까요
+				String[] table1_1 = {"진로", "맥주500cc"};
+				String[] table1_2 = {"어묵탕", "진로"}; //2차원 배열로 table1의 인덱스 안에 주문시간대별로 각각의 인덱스 넣어야할까요
 				System.out.println("주문내역확인");
 				System.out.printf("%s %s %n", new Date(), Arrays.toString(table1)); 
 				System.out.printf("%s %s %n", new Date(), Arrays.toString(table1_1)); 
