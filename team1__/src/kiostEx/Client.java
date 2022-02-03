@@ -1,9 +1,6 @@
-package kiosk_main;
+package kiostEx;
 
 import java.util.Scanner;
-
-import interphase.AdminMain;
-import interphase.UserMain;
 
 public class Client {
 	public static void main(String[] args) {

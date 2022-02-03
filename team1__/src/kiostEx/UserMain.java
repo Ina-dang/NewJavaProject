@@ -1,4 +1,4 @@
-package interphase;
+package kiostEx;
 
 import java.lang.invoke.SwitchPoint;
 import java.util.Scanner;

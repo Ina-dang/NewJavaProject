@@ -1,4 +1,4 @@
-package interphase;
+package kiostEx;
 
 import java.util.Scanner;
 

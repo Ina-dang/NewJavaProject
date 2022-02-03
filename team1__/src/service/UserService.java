@@ -31,7 +31,7 @@ public class UserService {
 	//			ArrayList<String> ready = new ArrayList<String>();  
 				//어레이리스트를 넣은 장바구니 어레이를 인덱스별로 골라서 출력하면 될 것 같은데..
 				//그 골라서 출력은 어케하지
-				//일단은 시간이랑 메뉴 뜨는것만 보이게 해봤다..
+				//일단은 시간이랑 메뉴 뜨는것만 보이게 해봤다.. (domain에서 나중에 끌어올거 + 시간은 내가 추가하겠지????)
 				String[] table1 = {"오징어", "진로", "맥주500cc"};
 				String[] table1_1 = {"진로", "맥주500cc"};
 				String[] table1_2 = {"어묵탕", "진로"}; //2차원 배열로 table1의 인덱스 안에 주문시간대별로 각각의 인덱스 넣어야할까요
