@@ -39,6 +39,11 @@ public class Client {
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					} // try 종료
+
+					
+					
+					
+					
 				}
 				
 				

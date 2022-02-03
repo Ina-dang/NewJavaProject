@@ -6,7 +6,6 @@ import Domain.MenuItem;
 import Service.AdminImpl;
 import Service.MenuImpl;
 
-//지울거임
 public class ClientEx {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -44,7 +43,7 @@ public class ClientEx {
 
 					
 					
-					
+					close = false;
 					
 				}
 				
