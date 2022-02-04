@@ -1,0 +1,29 @@
+package Service;
+
+import Domain.*;
+import service_kkb.ProductService;
+
+public class OrderService {
+	ProductService productService = new ProductService(); //경보프로덕트서비스 생성
+//  Product ==1:1관계==> Cart
+//	Cart ==다:1(카트여러개가 오더하나)==> Order
+//	Order ==얘도 다대일==> Table 로 이동
+
+	//주문내역
+	Order order = new Order();
+	Cart cart = new Cart();
+	
+	int no = 1;
+	
+	Cart cart2 = new Cart();
+	
+	int cartNo = 2;
+	int productNo = 102; //부대찌개 코드
+	int amount = 3; //3개
+	
+	cart2.setNo(cartNo);
+	cart2.setProductNo(productNo); 
+	cart2.setAmount(amount);
+	
+	
+}
