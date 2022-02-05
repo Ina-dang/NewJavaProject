@@ -1,7 +1,5 @@
 package a220128;
 
-import java.util.Arrays;
-
 import lombok.AllArgsConstructor;
 import lombok.ToString;
 
@@ -58,6 +56,7 @@ class Target2 implements Cloneable{
 		} 
 		return obj;//0.예외처리하자
 	}
+
 	
 	
 }

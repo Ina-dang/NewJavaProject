@@ -1,8 +1,5 @@
 package a220128;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
 public class CardToString {
 	public static void main(String[] args) {
 		Card c1 = new Card();
@@ -24,14 +21,17 @@ public class CardToString {
 @Data
 */
 
-@AllArgsConstructor
-@Data
+
 class Card{
 	String kind;
 	int number;
 	
 	Card(){
 		this("SPADE", 1);
+	}
+
+	public Card(String string, int i) {
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override

@@ -56,6 +56,7 @@ class Target1 implements Cloneable{ //클론가능한 인터페이스 넣어줌
 			e.printStackTrace();
 		} 
 		return obj;//0.예외처리하자
+	
 	}
 	
 	

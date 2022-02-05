@@ -29,6 +29,7 @@ class Target implements Cloneable{ //클론가능한 인터페이스 넣어줌
 	public Object clone() throws CloneNotSupportedException {
 		return super.clone();
 	}
+
 	
 	
 }
