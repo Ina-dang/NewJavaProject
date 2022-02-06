@@ -4,8 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import Service.ProductService;
-
 public class Order { //OrderService 
 	/*
 	 * Cart 배열이 들어가야함
@@ -14,6 +12,7 @@ public class Order { //OrderService
 	 * ㅎ_ㅎ
 	 */
 	Cart cart = new Cart();
+	
 	private int no; //주문번호 한 번에 카트 하나가일 확률 적음 주문 여러번 발생하니까
 	//그러면 이때 들어갈 타입 = 인트배열
 	private long time; // 주문시간
@@ -29,6 +28,7 @@ public class Order { //OrderService
 	}
 	
 	public Order(int no, long time, List<Cart> carts) {
+		super();
 		this.no = no;
 		this.time = time;
 		this.carts = carts;
@@ -42,11 +42,17 @@ public class Order { //OrderService
 
 	public long getTime() {return time;}
 	public void setTime(long time) {
+		this.time = time;
 	}
 
+	public List<Cart> getCarts() {return carts;}
+	public void setCarts(List<Cart> carts) {
+		this.carts = carts;
+	}
+	
 	
 	@Override //오류뜨는중
-	public String toString(){ 
-		return "===== 주문내역 >> [주문번호=" + no + ", 주문시간=" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(time) + "]" + "=====";
+	public String toString(){ //웨 nullPointException  ㅠㅠ..
+		return "===== 주문내역 >> [주문번호=" + no + ", 주문시간=" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(time) + "]" + cart.sum() + "=====";
 	}
 }

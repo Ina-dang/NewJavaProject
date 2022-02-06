@@ -58,16 +58,30 @@ public class Cart { //카트말고 order가 더 맞음
 		this.amount = amount;
 	}
 
+
 	public int sum() { //Cart클래스 내에서는 되는데 왜 Order에선 NullPointerException
 		return productService.findBy(getProductNo()).getPrice() * getAmount(); 
 	}
 	
+//	public Product findBy1(int code) {
+//		Product pd1 = null;
+//		for ( Product fd : carts) {
+//			if(fd.getCode() == (productNo)) {
+//				pd1 = fd;
+//			}
+//		}
+//		return Product();
+//	}
+
 	@Override
 	public String toString() {
-		return "장바구니 >> " + "[상품순서=" + cartNo + ", 상품번호=" + productService.findBy(getProductNo()).getName() + ", 수량=" + amount + ", 주문금액=" + sum() + "]";
+		return "장바구니 >> " + "[상품순서=" + cartNo + ", 상품번호=" + productService.findBy(getProductNo()) + ", 수량=" + amount + ", 주문금액=" + sum() + "]";
 
 	} //Customer 화면에서는 상품번호말고 상품이름뜨게
 	
+
+	
 	//sum은 여기서도 각각 합해줘야하고 cart sum 이랑 order sum 다름쓰 두개 필요
+
 }
 

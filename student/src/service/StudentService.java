@@ -149,7 +149,6 @@ public class StudentService {
 			}
 		}
 		return student;
-		
 	}
 }
 //		int idx = findIndexBy(no);

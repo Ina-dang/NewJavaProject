@@ -5,6 +5,7 @@ import static util.ScannerUtil.nextLine;
 
 import Service.OrderService;
 import Service.TableService;
+import exception.RangeException;
 
 public class Client {
 	public static void main(String[] args) {
@@ -55,7 +56,7 @@ public class Client {
 										break;
 										
 									case 3: //주문확인 ==> 나현쓰
-										orderService.order(); 
+										orderService.order(); // NullPointerException 중..
 										break;
 										
 									case 4://종업원호출
@@ -71,11 +72,11 @@ public class Client {
 								}
 							} catch (NumberFormatException e) {
 								System.out.println("숫자형식으로 입력해주세요");
-							} //try-catch 끝
-						}//while 끝
+							} 
+						}
 						break;
 						//이거 하고 갑자기 비밀번호로 넘어가짐 
-					//case 1 사용자 끝
+						
 					case 2://직원,관리자
 						// 직원 비밀번호 초기값 1111
 						
@@ -111,14 +112,14 @@ public class Client {
 									} // switch end
 								} catch (NumberFormatException e) {
 									System.out.println("숫자형식으로 입력해주세요");
-								} // try-catch 끝
+								} 
 							} // while end
 						} // if end
 					else {
 						System.out.println("올바른 비밀번호가 아닙니다.");
 					}
 					break;
-					//case 2 직원 관리자 끝 	
+						
 					case 3:	// 키오스크 종료용
 						mainCheck = false;
 						break;

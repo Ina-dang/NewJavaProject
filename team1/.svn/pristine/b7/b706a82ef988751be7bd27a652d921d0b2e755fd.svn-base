@@ -24,7 +24,7 @@ public class AdminService {
 	SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
 	SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd"); 
 	
-	//테이블관리,
+	
 	
 	
 	// 2. 영업 관리 =======> 나현

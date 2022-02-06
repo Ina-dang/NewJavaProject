@@ -51,7 +51,7 @@ public class Client {
 										
 									case 2://장바구니
 										
-										orderService.cart(); //주문확인 하려면 일단 담아야해서... order 테스트용으로 사용중(나현)
+//										orderService.cart(); //주문확인 하려면 일단 담아야해서... order 테스트용으로 사용중(나현)
 										break;
 										
 									case 3: //주문확인 ==> 나현쓰
