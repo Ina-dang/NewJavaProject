@@ -33,7 +33,7 @@ public class Order { //OrderService
 	public void setTime(long time) {
 	}
 	
-	public static int sum() {
+	int sum() {
 		int i = 0;
 		for (int j = 0; j < carts.size(); j++) {
 			i += carts.get(j).sum();

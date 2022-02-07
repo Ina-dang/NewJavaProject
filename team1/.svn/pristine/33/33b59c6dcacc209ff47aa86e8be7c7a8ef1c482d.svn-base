@@ -22,9 +22,9 @@ public class Cart { //카트말고 order가 더 맞음
  * product ====> order =====> table 이 관계
  */
 	
-	private static int cartNo; //주문번호 카트번호
-	private static int productNo; //상품번호
-	private static int amount; //카트에 들어갈 상품의 수량 (재고랑 다름)
+	private int cartNo; //주문번호 카트번호
+	private int productNo; //상품번호
+	private int amount; //카트에 들어갈 상품의 수량 (재고랑 다름)
 	
 	public Cart() {}
 		
@@ -35,19 +35,19 @@ public class Cart { //카트말고 order가 더 맞음
 	}
 	
 
-	public static int getCartNo() {return cartNo;}
+	public int getCartNo() {return cartNo;}
 
 	public void setNo(int cartNo) {
 		this.cartNo = cartNo;
 	}
 
-	public static int getProductNo() {return productNo;}
+	public int getProductNo() {return productNo;}
 
 	public void setProductNo(int productNo) {
 		this.productNo = productNo;
 	}
 
-	public static int getAmount() {return amount;}
+	public int getAmount() {return amount;}
 
 	public void setAmount(int amount) {
 		this.amount = amount;
