@@ -1,0 +1,104 @@
+package Service;
+
+import static util.ScannerUtil.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import Domain.Cart;
+import Domain.Order;
+
+public class OrderService {
+
+//  Product ==1:1관계==> Cart
+//   Cart ==다:1(카트여러개가 오더하나)==> Order
+//   Order ==얘도 다대일==> Table 로 이동
+
+	private TableService tableService = TableService.getInstance(); 
+	private ProductService productService = ProductService.getInstance();
+	private List<Order> orders = new ArrayList<Order>();
+	private List<Cart> carts = new ArrayList<Cart>(); // 기능 수행을 위한 임시 저장 공간
+
+	public Order findBy(int orderNo) {
+		for (Order o : orders) {
+			if (o.getNo() == orderNo)
+				return o;
+		}
+		return null;
+	}
+
+	public Cart findCartBy(Order order, int cartNo) { // remove findBy
+		Cart tmpCart = null;
+		for (Cart c : order.getCarts()) {
+			if (c.getCartNo() == cartNo) {
+				tmpCart = c;
+			}
+		}
+		return tmpCart;
+	}
+
+	public List<Cart> cart() {// 장바구니에 상품담기
+		int cartNo = 1;
+		productService.productsList();
+		while (true) {
+			Cart cart = new Cart(cartNo++, nextInt("상품 번호 >> "), nextInt("상품 수량>> "));
+			String input = nextLine("주문 취소(x), 주문 확정(c)");
+			if (input.equals("x"))
+				return new ArrayList<>();
+			carts.add(cart);
+			if (input.equals("c"))
+				break;
+		}
+		return carts;
+	}
+
+	public static void main(String[] args) {
+		OrderService service = new OrderService();
+		service.order(); // 주문발생
+		service.order(); // 주문발생
+		service.tableService.displayTables();
+		service.removeOrder();
+		service.tableService.displayTables();
+		
+		System.out.println(service.orders);
+		System.out.println(service.tableService.getTables());
+		
+	}
+	public void order() {
+		Order order = new Order(orders.isEmpty() ? 1 : orders.get(orders.size()-1).getNo()+1, System.currentTimeMillis()
+				, new ArrayList<Cart>(cart()));
+		System.out.println(order.sum() + "원을 주문합니다.");
+		orders.add(order);
+		tableService.getTable().getOrders().add(order);
+		carts.clear(); 
+	}
+//   
+//   public void removeCart() {//장바구니 삭제하기
+//      System.out.println(order.getCarts());
+//      order.getCarts().remove(cartFindBy(nextInt("삭제할 장바구니 상품 순서 >> ")));
+//      System.out.println("삭제되었습니다. \n");
+//      System.out.println("** 현재 장바구니 **");
+//      System.out.println(order.getCarts());
+//   }
+//   
+   public void removeOrder() {//주문 삭제하기
+	   tableService.getTable().getOrders().forEach(System.out::println);
+	   int orderNo = nextInt("취소할 주문의 번호를 입력하세요");
+	   Order order = findBy(orderNo);
+	   
+	   orders.remove(order); // 전체 주문 목록에서의 삭제
+	   tableService.getTable().getOrders().remove(order); // 테이블 내의 주문삭제
+   }
+//   
+//   public void orderHistory() { 
+//      for(Order o : orders) {
+//         System.out.println(o);
+//      }
+//   }
+//   
+//   public List<Order> getOrders() {
+//      return orders;
+//   }
+//   
+
+}

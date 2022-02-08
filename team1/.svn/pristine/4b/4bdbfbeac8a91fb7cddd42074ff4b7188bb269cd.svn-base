@@ -25,7 +25,7 @@ public class OrderService {
    private Order order = new Order();
    
    public void cart() {//장바구니에 상품담기   
-	  ProductService.getInstance().productsList();
+      ProductService.getInstance().userProductsList();
       order.getCarts().add(new Cart(nextInt("장바구니 번호 >> "), nextInt("상품 번호 >> "), nextInt("상품 수량>> ")));
       System.out.println(order.getCarts());
    }
@@ -73,7 +73,18 @@ public class OrderService {
    }
    
    public static void main(String[] args) {
-
+	   Order order = new Order();
+	   
+	   //담은상품번호 상품코드 수량
+	   Cart cart = new Cart(1, 101, 1);
+	   
+	   order.carts.add(cart);
+	   
+	   System.out.println(order.carts);
+	   
+	   OrderService.getInstatnce().orders.add(order);
+	   
+	   System.out.println(OrderService.getInstatnce().orders);
 	  
    }
 }

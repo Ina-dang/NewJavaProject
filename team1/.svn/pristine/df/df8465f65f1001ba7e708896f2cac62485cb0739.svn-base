@@ -73,7 +73,18 @@ public class OrderService {
    }
    
    public static void main(String[] args) {
-
+	   Order order = new Order();
+	   
+	   //담은상품번호 상품코드 수량
+	   Cart cart = new Cart(1, 101, 1);
+	   
+	   order.carts.add(cart);
+	   
+	   System.out.println(order.carts);
+	   
+	   OrderService.getInstatnce().orders.add(order);
+	   
+	   System.out.println(OrderService.getInstatnce().orders);
 	  
    }
 }
