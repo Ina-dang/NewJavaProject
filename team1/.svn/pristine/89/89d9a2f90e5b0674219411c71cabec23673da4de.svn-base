@@ -22,14 +22,16 @@ public class TableService {
 	   }
 	   
 	   // 테이블 현황
-	   public void tableStatus(int index) { // 몇번째 테이블인지
+	   public void tableStatus() { // 몇번째 테이블인지
 	      // 뭐뭐 출력할지 생각해야함둥
+	      int index = nextInt("테이블 번호 > ");
 	      System.out.println("\n" + index + "번째 테이블입니다.");
 	      table.getOrders().toString();
 	   }
 	   
 	   // 테이블 결제(카드 or 현금 or 카드 + 현금 or 더치페이)
-	   public void tablePay(int index) { // 몇번째 테이블인지
+	   public void tablePay() { // 몇번째 테이블인지
+	      int index = nextInt("테이블 번호 > ");
 	      tables.get(index);
 	      // 쭈루루룩
 	      // history에 저장
@@ -41,7 +43,12 @@ public class TableService {
 	      tables.set(endIndex, tables.get(startIndex));
 	      tables.set(startIndex, null);
 	   }
-	 
+	   
+	   // 사용중인 테이블 변경
+	   public int replaceIndex(int startIndex, int endIndex) {
+	      return endIndex;
+	   }
+	   
 	   // 테이블 전체 초기화
 	   public void tableInitAll() {
 	      for(int i = 0; i < 6; i++) {

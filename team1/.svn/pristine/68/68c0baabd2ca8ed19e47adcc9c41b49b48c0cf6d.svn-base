@@ -25,11 +25,13 @@ public class Order { //OrderService
 	}
 
 	public int getNo() {return no;}
+	
 	public void setNo(int no) {
 		this.no = no;
 	}
 
 	public long getTime() {return time;}
+	
 	public void setTime(long time) {
 	}
 	
@@ -47,5 +49,13 @@ public class Order { //OrderService
 	public String toString(){ 
 		return "===== 주문내역 >> [주문번호=" + no + ", 주문시간=" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(time) + "]" + "====="
 				+ "\n" + carts + "\n" +  "총 주문금액은 " + sum() + "원 입니다.";
+	}
+
+	public List<Cart> getCarts() {
+		return carts;
+	}
+
+	public void setCarts(List<Cart> carts) {
+		Order.carts = carts;
 	}
 }

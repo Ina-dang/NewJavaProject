@@ -88,10 +88,11 @@ public class SalesService {
 	
 	public static void main(String[] args) {
 		SalesService salesService = new SalesService();
+		OrderService orderService = new OrderService();
 		System.out.println(salesService.format1.format(salesService.now) + "시 까지 총 매출은 " + "" + "원 입니다.");
 		
 		//외 않들어가?
-		System.out.println(OrderService.orders.size());
+		System.out.println(orderService.getOrders().size());
 		
 	}
 }//class 끝
