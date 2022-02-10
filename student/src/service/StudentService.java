@@ -6,6 +6,7 @@ import static utils.StudentUtil.nextLine;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.StringFormatEx;
 import domain.Student;
 
 
@@ -56,15 +57,29 @@ public class StudentService {
 	// 1. 조회
 	//모든 메서드는 void로 해서 리턴안함
 	public void list() {
-		//위에 들어간 학생데이터로 조회기능 구현
-		System.out.println("학번\t   이름\t   국어\t  영어\t수학  총점   평균");
-		System.out.println("========================================================");
-		for (int i = 0; i < students.size(); i++) { //인스턴스 메서드끼리 는 클래스 안붙임
-			
-//	220119		// toString 사용해서 변경하셈 
-			System.out.println(students.get(i));
+		System.out.println(String.format("%s%s%s%s%s%s%s" 
+				, StringFormatEx.convert("학번", 10)
+				, StringFormatEx.convert("이름", 20)
+				, StringFormatEx.convert("국어", 5)
+				, StringFormatEx.convert("영어", 5)
+				, StringFormatEx.convert("수학", 5)
+				, StringFormatEx.convert("총점", 5)
+				, StringFormatEx.convert("평균", 9)
+				));
+		System.out.println("===============================================================");
+
+		for(Student s : students) {
+			System.out.print(StringFormatEx.convert(s.getNo(), 10));
+			System.out.print(StringFormatEx.convert(s.getName(), 20));
+			System.out.print(StringFormatEx.convert(s.getKor()+"", 5));
+			System.out.print(StringFormatEx.convert(s.getEng()+"", 5));
+			System.out.print(StringFormatEx.convert(s.getMath()+"", 5));
+			System.out.print(StringFormatEx.convert(s.sum()+"", 5));
+			System.out.print(StringFormatEx.convert(s.avg()+"", 9));
+			System.out.println();
 		}
-	}//void list() 끝
+		
+	}
 	
 	
 	

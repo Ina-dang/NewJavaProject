@@ -6,6 +6,7 @@ import static utils.StudentUtil.nextLine;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.StringFormatEx;
 import domain.Student;
 import exception.RangeException;
 
@@ -34,9 +35,17 @@ public class StudentService1 { //기능
 	public void list() {
 		System.out.println("학번\t  이름\t  국어\t 영어\t 수학\t 총점\t 평균");
 		System.out.println("======================================================");
-		for (int i = 0; i < cnt; i++) {
-				System.out.println(students.get(i));
+
+		for(Student s : students) {
+			System.out.print(StringFormatEx.convert(s.getNo(), 10));
+			System.out.print(StringFormatEx.convert(s.getName(), 20));
+			System.out.print(StringFormatEx.convert(s.getKor()+"", 5));
+			System.out.print(StringFormatEx.convert(s.getEng()+"", 5));
+			System.out.print(StringFormatEx.convert(s.getMath()+"", 5));
+			System.out.print(StringFormatEx.convert(s.sum()+"", 5));
+			System.out.print(StringFormatEx.convert(s.avg()+"", 9));
 		}
+		
 	}
 	
 	//등록

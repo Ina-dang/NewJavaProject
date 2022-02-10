@@ -15,15 +15,11 @@ public class Student {
 		// TODO Auto-generated constructor stub
 	}
 	
-	
-	
 	public Student(String no, String name) {
 		this(no, name, getScore(), getScore(), getScore());
 		this.no = no;
 		this.name = name;
 	}
-
-
 
 	public Student(String no, String name, int kor, int eng, int math) {
 		super();
