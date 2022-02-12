@@ -78,7 +78,6 @@ public class StudentService {
 			System.out.print(StringFormatEx.convert(s.avg()+"", 9));
 			System.out.println();
 		}
-		
 	}
 	
 	
